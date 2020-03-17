@@ -1,0 +1,116 @@
+---
+description: Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
+seo-description: Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
+seo-title: Opt-in-service valideren
+title: Opt-in-service valideren
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: tm+mt
+source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+
+---
+
+
+# Opt-in-service valideren{#validating-opt-in-service}
+
+Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
+
+## Hoofdlettergebruik 1: Inschakelen inschakelen {#section-c8fe1ee3711b420c8186c7057abbecb3}
+
+```
+Visitor.getInstance({{YOUR_ORG_ID}}, { 
+    doesOptInApply: true 
+});
+```
+
+![](assets/use_case_1_1.png)
+
+Wis voordat u de pagina laadt de cache en cookies.
+
+Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspecteren. Zoals in het scherm hierboven, selecteer het lusje van het *Netwerk* om de verzoeken te bekijken die van browser worden gemaakt.
+
+In het bovenstaande voorbeeld zijn de volgende Adobe JS-tags geïnstalleerd op de pagina: ECID, AAM, Analytics en Target.
+
+**Hoe kan worden aangetoond dat Opt-in werkt zoals u verwacht:**
+
+Aanvragen naar Adobe-servers worden niet weergegeven:
+
+* demdex.net/id
+* demdex.net/event
+* omtrdc.net/b/ss
+* omtrdc.net/m2
+* everesttech.net
+
+>[!NOTE]
+>
+>U zou een vraag aan kunnen zien, `http://dpm.demdex.net/optOutStatus`die een ALLEEN LEZEN eindpunt is dat wordt gebruikt om de status van de bezoeker Opt-out terug te winnen. Dit eindpunt zal niet in derdekoekjes resulteren die worden gecreeerd, en zal geen informatie van de pagina verzamelen.
+
+Er worden geen cookies weergegeven die met de Adobe-tags zijn gemaakt: (AMCV_{{UW_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+
+Ga in Chrome naar het tabblad *Toepassing* , vouw de sectie *Cookies* onder *Opslag* uit en selecteer de domeinnaam van uw website:
+
+![](assets/use_case_1_2.png)
+
+## Hoofdlettergebruik 2: Opt-in en opslag inschakelen {#section-bd28326f52474fa09a2addca23ccdc0f}
+
+```
+Visitor.getInstance({{YOUR_ORG_ID}}, { 
+    doesOptInApply: true, 
+    isOptInStorageEnabled: true 
+});
+```
+
+Het enige verschil in gebruikscase 2 is dat u *een nieuw cookie* ziet dat de opt-in-machtigingen bevat die door uw bezoeker worden verschaft: **adobeujs-optin**
+
+## Hoofdlettergebruik 3: Inschakelen en vooraf goedkeuren van Adobe Analytics inschakelen {#section-257fe582b425496cbf986d0ec12d3692}
+
+```
+var preApproveAnalytics = {}; 
+preApproveAnalytics[adobe.OptInCategories.ANALYTICS] = true;
+
+Visitor.getInstance({{YOUR_ORG_ID}}, { 
+    doesOptInApply: true, 
+    preOptInApprovals: preApproveAnalytics 
+});
+```
+
+Aangezien Adobe Analytics vooraf is goedgekeurd voor aanmelding, worden op het tabblad Netwerk aanvragen weergegeven voor de volgende server:
+
+![](assets/use_case_3_1.png)
+
+en op het tabblad Toepassing ziet u de cookies Analytics:
+
+![](assets/use_case_3_2.png)
+
+## Hoofdlettergebruik 4: Inschakelen en IAB inschakelen {#section-64331998954d4892960dcecd744a6d88}
+
+```
+Visitor.getInstance({{YOUR_ORG_ID}}, { 
+    doesOptInApply: true, 
+    isIabContext: true 
+});
+```
+
+**Hoe te om uw huidige toestemming IAB op de pagina te bekijken:**
+
+Open de ontwikkelaarsgereedschappen en selecteer het tabblad *Console* . Plak het volgende codefragment en druk op Enter:
+
+```
+<codeblock>
+  __cmp("getVendorConsents", null, function (vendorConsents) { 
+     console.log("Vendor Consent:", vendorConsents); }) 
+</codeblock>  
+  
+```
+
+Hier is een voorbeeldoutput wanneer de doelstellingen 1, 2, en 5 worden goedgekeurd, en de de verkopersidentiteitskaart van de Manager van de Audience wordt goedgekeurd:
+
+* demdex.net/id: De aanwezigheid van deze oproep bewijst dat ECID een id heeft aangevraagd bij demdex.net
+* demdex.net/event: De aanwezigheid van deze vraag toont aan dat de vraag van de gegevensinzameling DIL zoals verwacht werkt.
+* demdex.net/dest5.html: De aanwezigheid van deze vraag toont aan dat de Syncs van identiteitskaart worden teweeggebracht.
+
+![](assets/use_case_4_1.png)
+
+Als een van de volgende opties niet geldig is, worden geen aanvragen bij Adobe-servers en geen Adobe-cookies weergegeven:
+
+* De doelstellingen 1, 2 of 5 worden niet goedgekeurd.
+* De leverancier-id van Audience Manager is niet goedgekeurd.
