@@ -6,7 +6,7 @@ seo-title: Opmerkingen bij de release 2019
 title: Opmerkingen bij de release 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Iden
 
 ## Versie 4.4.1
 
-Selectievakje voor goedkeuring vóór aanmelding toevoegen voor media-analyse in ECID Launch Extension (CORE-33185)
+Schakel het selectievakje Goedkeuring vóór aanmelding voor mediacontrole in de ECID Launch Extension in.
 
 **Oplossingen**
 
-* Issue with ECID launch extension preOptInApproval input string parsing(CORE-34041)
-* De daling van prestaties wanneer trackingServer wordt gebruikt (CORE-32387)
+* Issue with ECID launch extension preOptInApproval input string parsing.
+* De daling van prestaties wanneer trackingServer wordt gebruikt.
 
 ## Versie 4.4 {#version-4point4}
 
@@ -32,11 +32,11 @@ Selectievakje voor goedkeuring vóór aanmelding toevoegen voor media-analyse in
 
 **Oplossingen, verbeteringen, verbeteringen**
 
-* We hebben een configuratieupdate uitgevoerd naar `cookieDomain`. De ECID-bibliotheek filtert nu de lege tekenreeks `cookieDomain` in `initConfig` en gebruikt het cookiedomein op hoofdniveau, dat door de getDomain-methode wordt geretourneerd. (CORE-2923)
-* We hebben een bug opgelost die verband houdt met `getVisitorValues` in `localVisitor`. (CORE-31287)
-* We hebben een fout verholpen waarbij er een inconsistentie was voor de MCOPTOUT-waarde in de Safari-browser, geretourneerd door de `getVisitorValue` methode. (CORE-29719)
+* We hebben een configuratieupdate uitgevoerd naar `cookieDomain`. De ECID-bibliotheek filtert nu de lege tekenreeks `cookieDomain` in `initConfig` en gebruikt het cookiedomein op hoofdniveau, dat door de getDomain-methode wordt geretourneerd.
+* We hebben een bug opgelost die verband houdt met `getVisitorValues` in `localVisitor`.
+* We hebben een fout verholpen waarbij er een inconsistentie was voor de MCOPTOUT-waarde in de Safari-browser, geretourneerd door de `getVisitorValue` methode.
 * We hebben de plug-in-bibliotheek bijgewerkt door het abonnement op gebeurtenissen op `optIn.off` te zeggen.
-* We hebben een fout verholpen met betrekking tot de functie setTimeout, waarbij het Content Security Policy (CSP) op sommige klantsites werd `setTimeout` overtreden. (CORE-30623)
+* We hebben een fout verholpen met betrekking tot de functie setTimeout, waarbij het Content Security Policy (CSP) op sommige klantsites werd `setTimeout` overtreden.
 
 ## Versie 4.3 {#version-4point3}
 
@@ -46,7 +46,7 @@ Selectievakje voor goedkeuring vóór aanmelding toevoegen voor media-analyse in
 
 ## Versie 4.1
 
-Bijwerken `publishDestinations` per nieuwe API-wijziging. Met deze update kan de referentie-informatie van de pagina desgewenst worden weergegeven tijdens de id - synchronisatie. (CORE-23693)
+Bijwerken `publishDestinations` per nieuwe API-wijziging. Met deze update kan de referentie-informatie van de pagina desgewenst worden weergegeven tijdens de id - synchronisatie.
 
 ## Versie 4.2
 
@@ -54,9 +54,9 @@ Ondersteuning voor de plug-in Audience Manager voor IAB TCF, beschikbaar via het
 
 **Oplossingen**
 
-* IAB + OptIn krijgt geen MID voor het reviseren van klanten (CORE-26022)
-* OptInApply-configuratie met open-in is nu opgelost in DTM (DTM-12958)
-* De ECID-optie om te weigeren schakelt id-syncs uit (CORE-23814)
+* IAB + OptIn krijgt geen MID voor het reviseren van klanten.
+* Correctie van bug met betrekking tot de plug-in-configuratie OptInApply in DTM.
+* De ECID-optie om te weigeren schakelt id-syncs uit.
 
 ## Versie 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
