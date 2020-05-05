@@ -6,7 +6,7 @@ seo-title: Cookies en de Experience Cloud Identity Service
 title: Cookies en de Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -114,7 +114,7 @@ In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie w
  </tbody> 
 </table>
 
-Voor verwante informatie, zie het [Begrip van Vraag aan het Domein](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)van de Index.
+Voor verwante informatie, zie het [Begrip van Vraag aan het Domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)van de Index.
 
 ## De Experience Cloud-id genereren {#section-15f69c0bac394b4b9966a23fbc586d17}
 
