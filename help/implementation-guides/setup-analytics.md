@@ -6,7 +6,7 @@ seo-title: Implementeer de Experience Cloud Identity Service voor Analytics
 title: Implementeer de Experience Cloud Identity Service voor Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -36,10 +36,10 @@ Voer de volgende stappen uit om de id-service voor Adobe Analytics te implemente
 
 ## Stap 1: De ID-servicecode downloaden {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-De [!UICONTROL ID Service] code vereist de `VisitorAPI.js` codebibliotheek. Deze codebibliotheek downloaden:
+Voor de [!UICONTROL id-service] is de `VisitorAPI.js` codebibliotheek vereist. Deze codebibliotheek downloaden:
 
-1. Ga naar **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
-1. Klik [!UICONTROL Code Manager]op **[!UICONTROL JavaScript (New)]** of **[!UICONTROL JavaScript (Legacy)]**.
+1. Ga naar **[!UICONTROL Beheer]** > **[!UICONTROL Codebeheer]**.
+1. Klik in [!UICONTROL Codebeheer]op **[!UICONTROL JavaScript (Nieuw)]** of **[!UICONTROL JavaScript (Verouderd)]**.
 
    Hiermee worden gecomprimeerde codebibliotheken gedownload.
 
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Stap 3: Voeg uw Experience Cloud Organization-id toe aan Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -184,7 +184,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 U kunt de respijtperiode uitschakelen nadat u de kolommen `post_visid_high` en `post_visid_low` kolommen hebt ingevoerd.
 
-Zie [de Verwijzing](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)van de Kolom van Gegevens van de Klikstream.
+Zie [de Verwijzing](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html)van de Kolom van Gegevens van de Klikstream.
 
 **Clickstream-gegevensinsluiting**
 
@@ -197,7 +197,7 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [AMCV-cookie](../introduction/cookies.md) in het domein waar uw pagina wordt gehost.
-* MID-waarde in de [!DNL Analytics] afbeeldingsaanvraag met het [Adobe-foutopsporingsprogramma](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
+* MID-waarde in de [!DNL Analytics] afbeeldingsaanvraag met het [Adobe-foutopsporingsprogramma](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html).
 
 Zie, [test en verifieer de Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
