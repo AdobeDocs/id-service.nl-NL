@@ -6,7 +6,7 @@ seo-title: Implementeer de Experience Cloud Identity Service voor Doel
 title: Implementeer de Experience Cloud Identity Service voor Doel
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -25,7 +25,7 @@ Deze instructies gelden voor doelklanten die de Experience Cloud Identity Servic
 
 ## Stap 1: De ID-servicecode ophalen {#section-b32ba0548aa546a79dd38be59832a53e}
 
-De [!UICONTROL ID Service] code vereist de `VisitorAPI.js` codebibliotheek. Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor deze code.
+Voor de [!UICONTROL id-service] is de `VisitorAPI.js` codebibliotheek vereist. Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor deze code.
 
 ## Stap 2: Voeg de functie Visitor.getInstance aan de code van de Dienst van identiteitskaart toe {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Stap 3: Voeg uw Experience Cloud Organization-id toe aan Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
