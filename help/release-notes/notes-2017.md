@@ -6,16 +6,16 @@ seo-title: Opmerkingen bij de release 2017
 title: Opmerkingen bij de release 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
-# Opmerkingen bij de release 2017 {#release-notes}
+# 2017 Release Notes {#release-notes}
 
 Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2017.
 
-Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Zie de opmerkingen bij de [vorige release](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) of de koppelingen onder aan deze pagina voor opmerkingen bij de oudere ID-service.
+Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Oplossing voor een probleem dat ertoe leidde dat de id-service redundante server
 
 **Nieuwe documentatie**
 
-[DNS Prefetch gebruiken met de Verschillende Oplossingen en de Diensten van de Wolk van de Ervaring `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[DNS Prefetch gebruiken met de Verschillende Oplossingen en de Diensten van de Wolk van de Ervaring](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versie 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
