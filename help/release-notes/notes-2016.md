@@ -6,16 +6,16 @@ seo-title: Opmerkingen bij de release 2016
 title: Opmerkingen bij de release 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
-# Opmerkingen bij de release 2016 {#release-notes}
+# 2016 Release Notes {#release-notes}
 
 Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2016.
 
-Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Zie de [opmerkingen bij](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) eerdere releases voor oudere [!DNL Experience Cloud] aankondigingen.
+Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 ## Versie 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -53,7 +53,7 @@ Oktober 2016
 
 **Nieuwe en herziene documentatie**
 
-**Nieuw:** Regio en gebruikers-id&#39;s [ophalen van de AMCV-cookie](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**Nieuw:** [Regio en gebruikers-id&#39;s ophalen van de AMCV-cookie](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## Versie 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
@@ -81,7 +81,7 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 
 **Bekende problemen**
 
-Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de DIL-variabele instellen `secureDataCollection= false`. Zie [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html).
+Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de DIL-variabele instellen `secureDataCollection= false`. Zie [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versie 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -89,7 +89,7 @@ juli 2016
 
 >[!IMPORTANT]
 >
->Versie 1.6.0 van de [!DNL Experience Cloud] id-service *vereist* AppMeasurement voor JavaScript versie 1.6.2. Als u aan de dienstversie van identiteitskaart 1.6.0 bevordert, gelieve te controleren u de juiste versie van de Code AppMetings gebruikt.
+>Versie 1.6.0 van de [!DNL Experience Cloud] id-service *vereist* AppMeasurement voor JavaScript versie 1.6.2. Als u aan de dienstversie van identiteitskaart 1.6.0 bevordert, gelieve te zorgen u de juiste versie van de Code AppMetings gebruikt.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -207,7 +207,7 @@ maart 2016
 
 ## Versie 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
-januari 2016
+januari 2017
 
 **Documentatieupdates**
 
