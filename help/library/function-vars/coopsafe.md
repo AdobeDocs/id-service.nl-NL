@@ -6,7 +6,7 @@ seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -30,7 +30,7 @@ Inhoud:
 Als u `isCoopSafe` het volgende wilt gebruiken:
 
 * Gebruik ID-servicecode versie 2.4 of hoger.
-* Neem deel aan de [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/). De perspectiefleden van coop zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke bezorgdheid over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen.
+* Neem deel aan de [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html). De perspectiefleden van coop zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke bezorgdheid over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen.
 
 * Werk samen met uw [!DNL Adobe] consultant om een whitelist- of een blacklist-vlag in te stellen op uw Co-op-account voor apparaten. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
