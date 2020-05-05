@@ -6,7 +6,7 @@ seo-title: Implementeer de Experience Cloud Identity Service voor Analytics, Aud
 title: Implementeer de Experience Cloud Identity Service voor Analytics, Audience Manager en Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -26,7 +26,7 @@ Deze instructies gelden voor Analytics, Audience Manager en Target-klanten die d
 
 ## Stap 1: Plan voor server-kant door:sturen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Naast de hier beschreven stappen, klanten die gebruiken [!DNL Analytics] en aan server-zij door:sturen [!DNL Audience Manager] zouden moeten migreren. Door:sturen aan de serverzijde kunt u DIL (de code van de gegevensinzameling van de Manager van de Audience) verwijderen en het vervangen met de Module [van het Beheer van de](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)Publiek. Zie de [server-kant het door:sturen documentatie](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) voor meer informatie.
+Naast de hier beschreven stappen, klanten die gebruiken [!DNL Analytics] en aan server-zij door:sturen [!DNL Audience Manager] zouden moeten migreren. Door:sturen aan de serverzijde kunt u DIL (de code van de gegevensinzameling van de Manager van de Audience) verwijderen en het vervangen met de Module [van het Beheer van de](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)Publiek. Zie de [server-kant het door:sturen documentatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor meer informatie.
 
 Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit proces omvat externe wijzigingen in uw sitecode en interne stappen die Adobe moet uitvoeren om uw account aan te bieden. Veel van deze migratieprocedures moeten parallel lopen en samen worden vrijgegeven. Het implementatiepad moet deze reeks gebeurtenissen volgen:
 
@@ -40,8 +40,8 @@ Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit pr
 
 Voor de ID-service is de `VisitorAPI.js` codebibliotheek vereist. Deze codebibliotheek downloaden:
 
-1. Ga naar **[!UICONTROL Admin > Code Manager]**.
-1. Klik in Codebeheer op **[!UICONTROL JavaScrpt (New)]** of **[!UICONTROL JavaScript (Legacy)]**. Hiermee worden gecomprimeerde codebibliotheken gedownload.
+1. Ga naar **[!UICONTROL Beheer > Codebeheer]**.
+1. Klik in Codebeheer op **[!UICONTROL JavaScript (Nieuw)]** of **[!UICONTROL JavaScript (Verouderd)]**. Hiermee worden gecomprimeerde codebibliotheken gedownload.
 
 1. Decomprimeer het codebestand en open het `VisitorAPI.js` bestand.
 
@@ -136,7 +136,7 @@ Als u niet zeker bent hoe te om uw het volgen server te vinden [FAQ](../faq-intr
 
 ## Stap 6: Werk het bestand AppMeasurement.js bij {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Deze stap is vereist [!UICONTROL AppMeasurement]. U kunt niet doorgaan als u nog steeds s_code gebruikt.
+Deze stap vereist [!UICONTROL AppMeasurement]. U kunt niet doorgaan als u nog steeds s_code gebruikt.
 
 Voeg de hieronder getoonde `Visitor.getInstance` functie aan uw `AppMeasurement.js` dossier toe. Plaats het in de sectie die configuraties zoals `linkInternalFilters`, `charSet`, `trackDownloads`enz. bevat. :
 
@@ -144,7 +144,7 @@ Voeg de hieronder getoonde `Visitor.getInstance` functie aan uw `AppMeasurement.
 
 >[!IMPORTANT]
 >
->Op dit punt, zou u de code van [!DNL Audience Manager] DIL moeten verwijderen en het met de Module van het Beheer van de Publiek vervangen. Zie [Server-kant doorsturen](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) implementeren voor instructies.
+>Op dit punt, zou u de code van [!DNL Audience Manager] DIL moeten verwijderen en het met de Module van het Beheer van de Publiek vervangen. Zie [Server-kant doorsturen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) implementeren voor instructies.
 
 ***(Optioneel, maar aanbevolen)*Een aangepaste proxy maken **
 
@@ -186,7 +186,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 U kunt de respijtperiode uitschakelen nadat u de kolommen `post_visid_high` en `post_visid_low` kolommen hebt ingevoerd.
 
-Zie ook [de Verwijzing](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)van de Kolom van Gegevens van de Klikstream.
+Zie ook [de Verwijzing](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html)van de Kolom van Gegevens van de Klikstream.
 
 ## Stap 9: Testen en verifiëren {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -194,7 +194,7 @@ De [!DNL Experience Cloud] oplossingen in deze implementatie retourneren IDs in 
 
 >[!TIP]
 >
->U kunt de [Foutopsporing](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) van Adobe of de volmacht [van](https://www.charlesproxy.com/) Charles HTTP gebruiken om deze oplossing-specifieke IDs te controleren. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+>U kunt de [Foutopsporing](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) van Adobe of de volmacht [van](https://www.charlesproxy.com/) Charles HTTP gebruiken om deze oplossing-specifieke IDs te controleren. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
 **Alle oplossingen**
 
@@ -216,12 +216,9 @@ Als uw tests een identiteitskaart terugkeren, wijst dat op één van beiden van 
 
 Wanneer u een HULP ziet, controleer zijn waarde tegen [!DNL Target] mboxMCAVID. Deze waarden zijn identiek wanneer de dienst van identiteitskaart correct is uitgevoerd.
 
-**Auditiebeheer**
+**Audience Manager**
 
-Om server-kant het door:sturen te testen, zie:
-
-* [Hoe te om te bepalen als Uw Rekening bereid is om Door:sturen Gegevens te ontvangen](https://marketing.adobe.com/resources/help/en_US/aam/ssf-success.html)
-* [Hoe te om te bepalen als Uw Rekening niet bereid is om Door:sturen Gegevens te ontvangen](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
+Om server-kant het door:sturen te testen, zie [hoe te uw server-kant het door:sturen implementatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)verifiëren.
 
 **Doel**
 
