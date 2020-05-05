@@ -6,7 +6,7 @@ seo-title: CNAME's voor gegevensverzameling en interdomeintracering
 title: CNAME's voor gegevensverzameling en interdomeintracering
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -23,7 +23,7 @@ Met het cookie demdex.net kan de bezoeker-id-service hetzelfde niveau van interd
 
 ## CNAME&#39;s voor gegevensverzameling {#section-48fd186d376a48079769d12c4bd9f317}
 
-Wanneer het koekje van de Analyse door de server van de gegevensinzameling werd geplaatst, hebben vele klanten CNAME van de server van de gegevensinzameling verslagen als deel van een [eerste-partijkoekjesimplementatie](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) gevormd om kwesties met browsers te vermijden die derdekoekjes verwerpen. Tijdens dit proces wordt het serverdomein van de gegevensverzameling zo geconfigureerd dat het overeenkomt met uw websitedomein, zodat het cookie van de bezoeker-id wordt ingesteld als een cookie van de eerste partij.
+Wanneer het koekje van de Analyse door de server van de gegevensinzameling werd geplaatst, hebben vele klanten CNAME van de server van de gegevensinzameling verslagen als deel van een [eerste-partijkoekjesimplementatie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html) gevormd om kwesties met browsers te vermijden die derdekoekjes verwerpen. Tijdens dit proces wordt het serverdomein van de gegevensverzameling zo geconfigureerd dat het overeenkomt met uw websitedomein, zodat het cookie van de bezoeker-id wordt ingesteld als een cookie van de eerste partij.
 
 Aangezien de bezoekersidentiteitsservice het bezoekerscookie met JavaScript rechtstreeks op het domein van de huidige website instelt, is deze configuratie niet langer nodig om cookies van de eerste partij in te stellen.
 
