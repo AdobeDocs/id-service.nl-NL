@@ -6,7 +6,7 @@ seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 Retourneert de eventuele oudere Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
 
-**Syntaxis**`var analyticsID = visitor.getAnalyticsVisitorID()`
+**Syntaxis** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
 Deze functie wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getAnalyticsVisitorID` werkt ook met callback-functies om [!DNL Analytics] id&#39;s te lezen en deze naar uw systeem of toepassing te brengen.
 
@@ -44,7 +44,7 @@ De `aid` parameter wordt in een queryreeks weergegeven onder 2 verschillende toe
 U zult de `aid` parameter in een vraagkoord zien wanneer:
 
 * De [!DNL Experience Cloud] id-service wordt correct geïmplementeerd.
-* De gebruiker die een site bezoekt, heeft een bestaande [!DNL Analytics] id opgeslagen in zijn [s_vi cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+* De gebruiker die een site bezoekt, heeft een bestaande [!DNL Analytics] id opgeslagen in zijn [s_vi cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Zaak 2**
 
@@ -52,5 +52,5 @@ U zult de `aid` parameter in een vraagkoord zien wanneer uw organisatie een [res
 
 >[!MORELIKETHIS]
 >
->* [Analysecookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analysecookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
 
