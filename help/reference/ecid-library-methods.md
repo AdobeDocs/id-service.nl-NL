@@ -4,7 +4,7 @@ seo-title: ECID-bibliotheekmethoden in een Safari ITP-wereld
 description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 seo-description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 translation-type: tm+mt
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -47,7 +47,7 @@ Zie hieronder voor inspanningen met betrekking tot ITP- en ECID-bibliotheekgebru
 
 ITP 2.1 belemmert de mogelijkheid om cookies aan de clientzijde te schrijven, wat de mogelijkheid om klanten nauwkeurige informatie over het bijhouden van bezoekers te verstrekken, beperkt. Er wordt daarom een wijziging aangebracht in de CNAME-trackingservers van Adobe om de ECID (Experience Cloud ID) van de bezoeker op te slaan in een cookie van de eerste partij.
 
-Deze wijziging is alleen nuttig voor ECID-klanten die een Analytics CNAME gebruiken in de context van de eerste partij. Als u een klant van de Analyse bent die momenteel geen CNAME, of zelfs een klant niet-Analytics gebruikt, bent u nog verkiesbaar voor een verslag CNAME. Neem contact op met de klantenservice of uw accountvertegenwoordiger om het registratieproces voor een [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html)te starten.
+Deze wijziging is alleen nuttig voor ECID-klanten die een Analytics CNAME gebruiken in de context van de eerste partij. Als u een klant van de Analyse bent die momenteel geen CNAME, of zelfs een klant niet-Analytics gebruikt, bent u nog verkiesbaar voor een verslag CNAME. Neem contact op met de klantenservice of uw accountvertegenwoordiger om het registratieproces voor een [CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html)te starten.
 
 Voer een upgrade uit naar de ECID-bibliotheek v.4.3.0 + om deze wijziging te benutten.
 
@@ -57,7 +57,7 @@ Zodra een identiteitskaart- verzoek wordt ingediend aan demdex.net en een ECID w
 
 Dit nieuwe `s_ecid` cookie heeft dezelfde status als de AMCV-cookie. Als de ecid uit het `s_ecid` cookie wordt gelezen, wordt demdex altijd direct aangeroepen om de meest recente status van de opt-out voor die id op te halen en in het AMCV-cookie opgeslagen.
 
-Als uw consument via deze [methode](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html)ervoor heeft gekozen geen Analytics te volgen, wordt dit `s_ecid` cookie verwijderd.
+Als uw consument via deze [methode](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html)ervoor heeft gekozen geen Analytics te volgen, wordt dit `s_ecid` cookie verwijderd.
 
 De naam van de trackingserver moet aan de VisitorJS-bibliotheek worden opgegeven wanneer de bibliotheek wordt geïnitialiseerd met behulp van trackingServer of trackingServerSecure. Dit zou het trackingServer config in Analytics moeten aanpassen vormt.
 
