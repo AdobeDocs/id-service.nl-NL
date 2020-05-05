@@ -6,7 +6,7 @@ seo-title: Veelgestelde vragen over Analytics and Identity Service
 title: Veelgestelde vragen over Analytics and Identity Service
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -35,7 +35,7 @@ Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïden
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het domein [](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) demdex.net tijdens de aanvraag om een bezoeker-id op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud-bezoekersidentiteitskaart retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
+In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het domein [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html) demdex.net tijdens de aanvraag om een bezoeker-id op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud-bezoekersidentiteitskaart retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
 Zelfs wanneer een CNAME wordt gevormd, als de belangrijkste ingangsplaats niet eerst wordt bezocht, worden de bezoekers geïdentificeerd verschillend op de secundaire plaats en de belangrijkste plaats in browsers die derde koekjes niet goedkeuren.
 
