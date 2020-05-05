@@ -6,7 +6,7 @@ seo-title: Directe integratie met de Experience Cloud Identity Service
 title: Directe integratie met de Experience Cloud Identity Service
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -21,7 +21,7 @@ Apparaten die de VisitorAPI.js of SDK codebibliotheken niet kunnen gebruiken kun
 
 ![](assets/directSyntax.png)
 
-In dit syntaxisvoorbeeld, identificeert het `d_` prefix de zeer belangrijk-waardeparen in de vraag als systeem-vlakke variabele. U kunt vrij een paar parameters tot de dienst van identiteitskaart overgaan, maar geconcentreerd blijven op de zeer belangrijke-waardeparen zoals aangetoond in de code hierboven. `d_` Zie [Ondersteunde kenmerken voor DCS API-aanroepen](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)voor meer informatie over andere variabelen.
+In dit syntaxisvoorbeeld, identificeert het `d_` prefix de zeer belangrijk-waardeparen in de vraag als systeem-vlakke variabele. U kunt vrij een paar parameters tot de dienst van identiteitskaart overgaan, maar geconcentreerd blijven op de zeer belangrijke-waardeparen zoals aangetoond in de code hierboven. `d_` Zie [Ondersteunde kenmerken voor DCS API-aanroepen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)voor meer informatie over andere variabelen.
 
 De id-service ondersteunt HTTP- en HTTPS-aanroepen. Gebruik HTTPS om gegevens van een beveiligde pagina door te geven.
 
@@ -58,7 +58,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Een verouderd domein dat door <span class="keyword"> Adobe</span>wordt beheerd. Zie het <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external"> Begrip van Vraag aan het Domein</a>van de Index. </p> </td> 
+   <td colname="col2"> <p>Een verouderd domein dat door <span class="keyword"> Adobe</span>wordt beheerd. Zie het <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrip van Vraag aan het Domein</a>van de Index. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -72,23 +72,23 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
    <td colname="col2"> <p>Een optionele parameter die de Data Provider ID (DPID), de Unique User ID (DPUUID) en een <a href="../reference/authenticated-state.md" format="dita" scope="local"> geverifieerde status-id</a> doorgeeft aan de ID-service. Zoals getoond in de codesteekproef, scheidt DPID en DPUUID met het niet-druk controlekarakter, <span class="codeph"> %01</span>. </p> <p> <b>DPID en DPUUID</b> </p> <p>In de <span class="codeph"> d_cid</span> parameter, wijs elke verwante combinatie DPID en DPUUID aan de zelfde <span class="codeph"> d_cid</span> parameter toe. Hiermee kunt u meerdere id-sets in één aanvraag retourneren. Plaats ook een scheidingsteken tussen DPID, DPUUID en de optionele verificatiemarkering en het niet-afdrukbare besturingsteken, <span class="codeph"> %01</span>. In de onderstaande voorbeelden worden de provider en de gebruikers-id's gemarkeerd in <b>vette</b> tekst. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
-     <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxis: <span class="codeph">..d_cid=DPID%01DPUUID%01authentication state..</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Voorbeeld: <span class="codeph">..d_cid=123%01456%011...</span> </li> 
+     <li id="li_5B94B057654440B99B989BA60E4ED053">Syntaxis: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state..</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Voorbeeld: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>Verificatiestatus</b> </p> <p>Dit is een optionele id in de parameter <span class="codeph"> d_cid</span> . Uitgedrukt als een geheel getal, identificeert het gebruikers op basis van hun verificatiestatus, zoals hieronder wordt weergegeven: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (onbekend) </li> 
      <li id="li_1F125C3879324C2F8EF4613C0ECB5F02"> <span class="codeph"> 1</span> (geverifieerd) </li> 
      <li id="li_EF6792D0115D407485079D5D7480D965"> <span class="codeph"> 2</span> (Afgemeld) </li> 
-    </ul> <p>Als u een verificatiestatus wilt opgeven, stelt u deze markering in na de variabele gebruikersnaam (UUID). Scheid de markering UUID en verificatie met het niet-afdrukbare besturingsteken, <span class="codeph"> %01</span>. In de onderstaande voorbeelden worden de verificatie-id's gemarkeerd in <b>vette</b> tekst. </p> <p>Syntaxis: <span class="codeph">..d_cid=DPID%01DPUUID%01authentication state</span> </p> <p>Voorbeelden: </p> 
+    </ul> <p>Als u een verificatiestatus wilt opgeven, stelt u deze markering in na de variabele gebruikersnaam (UUID). Scheid de markering UUID en verificatie met het niet-afdrukbare besturingsteken, <span class="codeph"> %01</span>. In de onderstaande voorbeelden worden de verificatie-id's gemarkeerd in <b>vette</b> tekst. </p> <p>Syntaxis: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state</span> </p> <p>Voorbeelden: </p> 
     <ul id="ul_4C1054CE860A4D9C8DD85C2A8020C47F"> 
-     <li id="li_AD4000BF3E0146C0BD37B1EC513EC314">Onbekend: <span class="codeph">..d_cid=123%01456%010...</span> </li> 
-     <li id="li_B037D424AADA4D41BF29381A9602AE61">Voor authentiek verklaard: <span class="codeph">..d_cid=123%01456%011...</span> </li> 
-     <li id="li_0410FCB9E60D4DD08E7898D814E1C3C9">Afgemeld: <span class="codeph">..d_cid=123%01456%012...</span> </li> 
+     <li id="li_AD4000BF3E0146C0BD37B1EC513EC314">Onbekend: <span class="codeph">...d_cid=123%01456%010...</span> </li> 
+     <li id="li_B037D424AADA4D41BF29381A9602AE61">Voor authentiek verklaard: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
+     <li id="li_0410FCB9E60D4DD08E7898D814E1C3C9">Afgemeld: <span class="codeph">...d_cid=123%01456%012...</span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> ID's, locaties en hostnamen van DCS-regio's</a>. </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> ID's, locaties en hostnamen van DCS-regio's</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
