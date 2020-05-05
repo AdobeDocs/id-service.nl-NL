@@ -6,7 +6,7 @@ seo-title: Bewerkingsvolgorde voor analytische id's
 title: Bewerkingsvolgorde voor analytische id's
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -28,12 +28,12 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>1<sup>e</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.bezoekerID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.bezoekerID)</a> </p> </td> 
    <td colname="col3"> <p>De <span class="codeph"> s.bezoekerID</span> is ingesteld. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2<sup>de</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
    <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde respijtperiode</a> . </p> </td> 
   </tr> 
   <tr> 
@@ -43,12 +43,12 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4<sup>e</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (fallback-cookie op H.25.3 of hoger, of AppMeasurement voor JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (fallback-cookie op H.25.3 of hoger, of AppMeasurement voor JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Een browser accepteert geen cookies van derden en de Analytics tracking-server is ingesteld als een externe tracingserver. </p> <p> <p>Opmerking: Het bestand <span class="codeph"> Fid</span> is een oudere id en wordt niet gebruikt als u de id-service op uw site hebt geïmplementeerd. In dit geval is het <span class="codeph"> bestand</span> niet nodig omdat het door de eerste partij, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV-cookie</a> , verouderd is. Het is om historische redenen en ter ondersteuning van de oude code gehandhaafd. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup>e</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP Adres, de Agent van de Gebruiker, IP van de Gateway Adres</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP Adres, de Agent van de Gebruiker, IP van de Gateway Adres</a> </p> </td> 
    <td colname="col3"> <p>De browser van de bezoeker accepteert geen cookies. </p> </td> 
   </tr> 
  </tbody> 
