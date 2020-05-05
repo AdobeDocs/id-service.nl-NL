@@ -6,7 +6,7 @@ seo-title: publiekManagerServer en publiekManagerServerSecure
 title: publiekManagerServer en publiekManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -22,14 +22,14 @@ Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit v
 
 **Doel**
 
-Normaal, doet de dienst van [!DNL Experience Cloud] identiteitskaart vraag aan [!DNL Adobe] bij `dpm.demdex.net`. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Om de de dienstvraag van identiteitskaart meer als een eerste vraag te maken kijken, gebruik deze configuraties om uw [!DNL Audience Manager] subdomeinnaam aan `demdex.net` zoals hieronder getoond toe te voegen. Voor meer informatie over de `dpm.demdex.net` vraag, zie het [Begrip van Vraag aan het Domein](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)van de Index.
+Normaal, doet de dienst van [!DNL Experience Cloud] identiteitskaart vraag aan [!DNL Adobe] bij `dpm.demdex.net`. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Om de de dienstvraag van identiteitskaart meer als een eerste vraag te maken kijken, gebruik deze configuraties om uw [!DNL Audience Manager] subdomeinnaam aan `demdex.net` zoals hieronder getoond toe te voegen. Voor meer informatie over de `dpm.demdex.net` vraag, zie het [Begrip van Vraag aan het Domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)van de Index.
 
 **Vereisten**
 
 Deze configuraties vereisen dat u gebruikt:
 
 * De [!DNL Audience Manager] subdomeinnaam van verslag voor uw bedrijf. Verifieer of ontvang deze naam van uw consultant.
-* De subdomeinnaam die aan uw [!UICONTROL Organization ID]bestand is gekoppeld.
+* De subdomeinnaam die aan uw [!UICONTROL organisatie-id]is gekoppeld.
 * *Beide* configuratieparameters met de zelfde subdomeinnaam.
 
 **Codevoorbeeld**
