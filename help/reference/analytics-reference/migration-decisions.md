@@ -6,7 +6,7 @@ seo-title: Ervaar de beslissingspunten voor migratie van de cloudidentiteitsserv
 title: Ervaar de beslissingspunten voor migratie van de cloudidentiteitsservice
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -60,7 +60,7 @@ Als u veelvoudige domeinen hebt die gegevens naar *zelfde rapportreeks* verzende
    <td colname="col1"> <p>Eén domein </p> </td> 
    <td colname="col2"> <p>Als u met één domein werkt, kunt u migreren van een CNAME voor gegevensverzameling als u dit niet meer wilt beheren. Nochtans, is er geen vereiste om te veranderen als uw CNAME werkt. </p> <p>Als u CNAME verwijdert: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Zorg ervoor dat uw nieuwe trackingserver voldoet aan de <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external"> RDC-standaard</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Zorg ervoor dat uw nieuwe trackingserver voldoet aan de <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external"> RDC-standaard</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Ga van CNAME aan een RDC volgende server een paar maanden voorafgaand aan uw migratie naar de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> . </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Gebruik geen</i> trackingserver <span class="codeph"> *.2o7.net</span> . </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Neem contact op met de <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external"> klantenservice</a> om een bezoekersmigratie in te stellen. Hierdoor is het aantal bezoekers consistent. </li> 
