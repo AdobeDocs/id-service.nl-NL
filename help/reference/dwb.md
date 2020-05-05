@@ -6,7 +6,7 @@ seo-title: Data Workbench en Experience Cloud Identity Service
 title: Data Workbench en Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 Volg deze instructies om het veld Experience Cloud ID te integreren in Data Workbench. Met dit proces kunt u de persistente Experience Cloud-id in uw gegevensfeed gebruiken, waarmee u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
 
-U kunt als volgt de [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) bijwerken om de ID-service te gebruiken:
+U kunt als volgt de [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) bijwerken om de ID-service te gebruiken:
 
-1. Zoek het huidige configuratiebestand voor de [decodergroep](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) .
+1. Zoek het huidige configuratiebestand voor de [decodergroep](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) .
 
-   De [!DNL Decoder Group] locatie bevindt zich doorgaans in een [!UICONTROL Profile Manager] pad op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
+   De map [!DNL Decoder Group] bevindt zich doorgaans in een [!UICONTROL profielbeheer] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
 1. Plak de decoderingsindeling onder het origineel.
 1. Open de decoderingsindeling en voeg de volgende nieuwe veldposities toe aan het einde van de lijst:
 
