@@ -6,7 +6,7 @@ seo-title: Implementatie aan de serverzijde gemengd met JavaScript
 title: Implementatie aan de serverzijde gemengd met JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -29,7 +29,7 @@ Neem de bezoeker-id voor Analytics (indien ingesteld) op in het `<visitorID>` el
 
 Neem de Experience Cloud-bezoekersidentiteitskaart op in het `<marketingCloudVisitorID>` element.
 
-Zie [Ondersteunde XML-labels](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Zie [Ondersteunde XML-labels](https://www.adobe.io).
 
 ## AppMeasurement voor Java {#section-d664b94934924d048300d9c2b6560085}
 
