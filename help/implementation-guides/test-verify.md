@@ -6,7 +6,7 @@ seo-title: De Experience Cloud Identity Service testen en verifiëren
 title: De Experience Cloud Identity Service testen en verifiëren
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -27,13 +27,13 @@ U kunt de id-service ook testen in een anonieme of incognito-browsersessie. In e
 
 **Gereedschappen**
 
-De foutopsporing [van](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) Adobe en de proxy [van](https://www.charlesproxy.com/) Charles HTTP kunnen u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie is gebaseerd op de resultaten die zijn geretourneerd door Adobe Debugger en Charles. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+De foutopsporing [van](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) Adobe en de proxy [van](https://www.charlesproxy.com/) Charles HTTP kunnen u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie is gebaseerd op de resultaten die zijn geretourneerd door Adobe Debugger en Charles. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
 ## Testen met Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
 Uw de dienstintegratie wordt gevormd behoorlijk wanneer u een [!DNL Experience Cloud ID] (MID) in de [!DNL Adobe] debugger reactie ziet. Raadpleeg [Cookies en de Experience Cloud Identity Service](../introduction/cookies.md) voor meer informatie over de MID.
 
-Om de status van de dienst van identiteitskaart met [!DNL Adobe] debugger [](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)te verifiëren:
+Om de status van de dienst van identiteitskaart met [!DNL Adobe] debugger [](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)te verifiëren:
 
 1. Wis uw browsercookies of open een anonieme bladersessie.
 1. Laad de testpagina die de de dienstcode van identiteitskaart bevat.
@@ -42,7 +42,7 @@ Om de status van de dienst van identiteitskaart met [!DNL Adobe] debugger [](htt
 
 ## De resultaten van Adobe Debugger {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis gebruikt: Cloud-id `MID= *``*`beleven. De debugger toont deze informatie zoals hieronder getoond.
+MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis gebruikt: `MID= *`Ervaar de cloud-id`*`. De debugger toont deze informatie zoals hieronder getoond.
 
 **Succes**
 
@@ -79,20 +79,20 @@ Verwijs naar deze sectie voor informatie over waar te kijken, en wat te zoeken, 
 
 **Aanvragen voor ID-service met succes in Charles**
 
-De code van uw id-service werkt goed wanneer de `Visitor.getInstance` functie een JavaScript-aanroep uitvoert naar `dpm.demdex.net`. Een succesvol verzoek bevat uw [organisatie-id](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). De organisatie-id wordt doorgegeven als sleutelwaardepaar dat deze syntaxis gebruikt: `d_orgid= *`organisatie-id`*`. Zoek de JavaScript- `dpm.demdex.net` en JavaScript-aanroepen onder het [!UICONTROL Structure] tabblad. Zoek uw organisatie-id onder het [!UICONTROL Request] tabblad.
+De code van uw id-service werkt goed wanneer de `Visitor.getInstance` functie een JavaScript-aanroep uitvoert naar `dpm.demdex.net`. Een succesvol verzoek bevat uw [organisatie-id](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). De organisatie-id wordt doorgegeven als sleutelwaardepaar dat deze syntaxis gebruikt: `d_orgid= *`organisatie-id`*`. Zoek de JavaScript-aanroepen `dpm.demdex.net` en klik op het tabblad [!UICONTROL Structuur] . Zoek uw organisatie-id op het tabblad [!UICONTROL Verzoek] .
 
 ![](assets/charles_request.png)
 
 **Reacties met geslaagde id-service in Charles**
 
-Uw account is correct ingericht voor de id-service wanneer de reactie van de [gegevensverzamelingsservers](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) een MID retourneert. MID is geretourneerd als sleutelwaardepaar dat deze syntaxis gebruikt: De `d_mid: *`bezoeker erservaring Cloud ID`*`. Zoek naar MID in het [!UICONTROL Response] lusje zoals hieronder getoond.
+Uw account is correct ingericht voor de id-service wanneer de reactie van de [gegevensverzamelingsservers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) een MID retourneert. MID is geretourneerd als sleutelwaardepaar dat deze syntaxis gebruikt: `d_mid: *`bezoekers ervaren de cloud-id`*`. Zoek naar MID in het lusje van de [!UICONTROL Reactie] zoals hieronder getoond.
 
 ![](assets/charles_response_success.png)
 
 **Reacties van id-service in Charles zijn mislukt**
 
-Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Een mislukte reactie retourneert een foutcode en een foutbericht op het [!UICONTROL Response] tabblad, zoals hieronder wordt weergegeven. Neem contact op met de klantenservice als dit foutbericht wordt weergegeven in het DCS-antwoord.
+Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Een niet-succesvolle reactie retourneert een foutcode en een bericht op het tabblad [!UICONTROL Reactie] , zoals hieronder wordt weergegeven. Neem contact op met de klantenservice als dit foutbericht wordt weergegeven in het DCS-antwoord.
 
 ![](assets/charles_response_unsuccessful.png)
 
-Zie [DCS-foutcodes, berichten en voorbeelden](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)voor meer informatie over foutcodes.
+Zie [DCS-foutcodes, berichten en voorbeelden](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)voor meer informatie over foutcodes.
