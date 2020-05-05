@@ -6,7 +6,7 @@ seo-title: ID-synchronisatie en overeenkomende snelheden
 title: ID-synchronisatie en overeenkomende snelheden
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -37,9 +37,9 @@ Wanneer een bezoeker naar uw site komt en een pagina laadt, maakt de `Visitor.ge
 
 **Stap 2: iFrame laden**
 
-Terwijl de hoofdtekst van de pagina wordt geladen, laadt de id-service een iFrame met de naam *`Destination Publishing iFrame`*. De [!UICONTROL Destination Publishing iFrame] code wordt in een domein geladen dat los staat van de bovenliggende pagina. Dit ontwerp zorgt voor betere paginaprestaties omdat de iFrame:
+Terwijl de hoofdtekst van de pagina wordt geladen, laadt de id-service een iFrame met de naam *`Destination Publishing iFrame`*. De iFrame voor publiceren [!UICONTROL bestemming] wordt geladen in een domein dat los staat van de bovenliggende pagina. Dit ontwerp zorgt voor betere paginaprestaties omdat de iFrame:
 
-* Hiermee wordt asynchroon geladen ten opzichte van de bovenliggende pagina. Dit betekent dat de bovenliggende pagina onafhankelijk van de [!UICONTROL Destination Publishing iFrame]pagina kan worden geladen. Het laden van de iFrame en het laden van ID synchronisatiepixels vanuit het iFrame heeft geen invloed op de bovenliggende pagina of de gebruikerservaring.
+* Hiermee wordt asynchroon geladen ten opzichte van de bovenliggende pagina. Dit betekent dat de bovenliggende pagina onafhankelijk van de iFrame voor [!UICONTROL doelpublicatie]kan worden geladen. Het laden van de iFrame en het laden van ID synchronisatiepixels vanuit het iFrame heeft geen invloed op de bovenliggende pagina of de gebruikerservaring.
 * Laadt zo snel mogelijk. Als dit te snel is, kunt u het iFrame laden na de gebeurtenis load van het venster (niet aanbevolen). Zie [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) voor meer informatie.
 * Voorkomt dat code in het iFrame toegang krijgt tot de bovenliggende pagina of dit beïnvloedt.
 
@@ -51,11 +51,11 @@ De id-synchronisatie is een URL die wordt geactiveerd in het iFrame voor publice
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Zie ook, de Synchronisatie van [identiteitskaart voor Binnenkomende Overdrachten](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)van Gegevens.
+Zie ook, de Synchronisatie van [identiteitskaart voor Binnenkomende Overdrachten](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html)van Gegevens.
 
 **Stap 4: Winkel-id&#39;s**
 
-Gesynchroniseerde id&#39;s worden opgeslagen op de [Edge- en kerngegevensservers](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
+Gesynchroniseerde id&#39;s worden opgeslagen op de [Edge- en kerngegevensservers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-edge.html).
 
 ## Synchronisatieservices beheren synchronisatie van id&#39;s {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -68,11 +68,11 @@ De term *`Sync Services`* verwijst naar interne [!DNL Experience Cloud] technolo
 * Cookie-id&#39; [!DNL Experience Cloud] s van andere leveranciers naar externe gegevensaanbieder en identificatie van platform-id&#39;s. Dit omvat diensten en platforms zoals gegevensaanbieders, vraag- en/of aanbodplatforms, en netwerken, uitwisselingen, enz.
 * Eerste-partij [!DNL Experience Cloud] koekje IDs aan dwars-apparaat partner IDs.
 
-## ID-synchronisatie met Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
+## ID-synchronisatie met Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] is een uitzondering op het synchronisatieproces van de iFrame-gebaseerde id. Omdat [!DNL Media Optimizer] het een vertrouwd domein is, worden id-synchronisaties uitgevoerd vanaf de bovenliggende pagina in plaats van in de [!UICONTROL Destination Publishing iFrame]bovenliggende pagina. Tijdens synchronisatie, roept de dienst van identiteitskaart bij [!DNL Media Optimizer] , die een erfenis domeinnaam is die door `cm.eversttech.net`[!DNL Media Optimizer] voorafgaand aan zijn aankoop door Adobe wordt gebruikt. Het verzenden van gegevens naar [!DNL Media Optimizer] verbetert de match-snelheden en is automatisch voor klanten van de identiteitskaart die versie 2.0 (of hoger) gebruiken. Zie ook [Media Optimizer Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Advertising Cloud] (eerder geroepen [!DNL Adobe Media Optimizer])is een uitzondering op het op iFrame-Gebaseerde proces van de synchronisatie van identiteitskaart. Omdat [!DNL Advertising Cloud] het een vertrouwd domein is, worden id-synchronisaties uitgevoerd vanaf de bovenliggende pagina in plaats van in het iFrame [!UICONTROL voor publiceren van]bestemming. Tijdens synchronisatie, roept de dienst van identiteitskaart bij [!DNL Advertising Cloud] , die een erfenis domeinnaam is die door `cm.eversttech.net`[!DNL Advertising Cloud] voorafgaand aan zijn aankoop door Adobe wordt gebruikt. Het verzenden van gegevens naar [!DNL Advertising Cloud] verbetert de match-snelheden en is automatisch voor klanten van de identiteitskaart die versie 2.0 (of hoger) gebruiken. Zie ook [Cloud Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-advertising-cloud.html)adverteren.
 
 >[!MORELIKETHIS]
 >
->* [Inzicht krijgen in oproepen van het demdex-domein](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Inzicht krijgen in oproepen van het demdex-domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)
 
