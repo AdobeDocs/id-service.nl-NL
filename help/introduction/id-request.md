@@ -6,7 +6,7 @@ seo-title: Hoe de Experience Cloud Identity Service id's aanvraagt en instelt
 title: Hoe de Experience Cloud Identity Service id's aanvraagt en instelt
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -32,7 +32,7 @@ In de volgende voorbeelden wordt getoond hoe de id-service de Experience Cloud-b
 In dit voorbeeld komt een nieuwe bezoeker naar de pizza-site die wordt beheerd door de Food Company. De Food Company heeft ID-servicecode op de pizza-website. Wanneer de pizza-site wordt geladen, controleert de ID-servicecode of het AMCV-cookie zich in het pizza-domein bevindt.
 
 * Als het AMCV-cookie is ingesteld, heeft de sitebezoeker een Experience Cloud-id. In dit geval houdt het cookie de bezoeker bij en deelt het gegevens met andere Experience Cloud-oplossingen.
-* Als het koekje AMCV niet wordt geplaatst, roept de de dienstcode van identiteitskaart een regionale server [van de](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) gegevensinzameling (DCS) bij `dpm.demdex.net/id` (zie ook, [Begrip Vraag aan het Domein](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)van de Index). De oproep omvat de organisatie-id voor de Food Company. De organisatie-id wordt ingesteld in de `Visitor.getInstance` functie van de ID-servicecode.
+* Als het koekje AMCV niet wordt geplaatst, roept de de dienstcode van identiteitskaart een regionale server [van de](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html) gegevensinzameling (DCS) bij `dpm.demdex.net/id` (zie ook, [Begrip Vraag aan het Domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)van de Index). De oproep omvat de organisatie-id voor de Food Company. De organisatie-id wordt ingesteld in de `Visitor.getInstance` functie van de ID-servicecode.
 
 ![](assets/request1.png)
 
@@ -48,7 +48,7 @@ Zoals u in het volgende voorbeeld zult zien, staat demdex ID en organisatie iden
 
 In dit voorbeeld navigeert onze bezoeker van de Food Company naar de tacos-site vanuit de pizza-site. De Food Company heeft de dienstcode van identiteitskaart op de website van tacos. De bezoeker is nooit geweest bij de tacos-website.
 
-Gezien deze omstandigheden is er geen AMCV-cookie op de tacos-site. De id-service kan de AMCV-cookie die op de pizza-site is ingesteld, niet gebruiken omdat deze specifiek is voor het pizza-domein. Dientengevolge, moet de dienst van identiteitskaart DCS roepen om een bezoekersidentiteitskaart te controleren en te verzoeken. In dit geval bevat de DCS-aanroep de organisatie-id van de Food Company *en* de demdex-id. De demdex-id wordt opgehaald van de pizza-site en opgeslagen als een cookie van een derde onder het domein demdex.net.
+Gezien deze omstandigheden is er geen AMCV-cookie op de tacos-site. De id-service kan de AMCV-cookie die op de pizza-site is ingesteld, niet gebruiken omdat deze specifiek is voor het pizza-domein. Dientengevolge, moet de dienst van identiteitskaart DCS roepen om een bezoekersidentiteitskaart te controleren en te verzoeken. In dit geval bevat de DCS-aanroep de organisatie-id van de Food Company *en* de demdex-id. De demdex-id wordt opgepakt van de pizza-site en opgeslagen als een cookie van een derde onder het domein demdex.net.
 
 ![](assets/request2.png)
 
