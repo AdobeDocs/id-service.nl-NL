@@ -6,7 +6,7 @@ seo-title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Servic
 title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: 7255228470a59a537251c3a3eec686f52a2b76ec
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -59,7 +59,7 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke lijst Experience Clo
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Als u labels implementeert met Adobe Launch, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>Aanroepen naar het <span class="codeph"> domein demdex.net</span> worden gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> cookies en de Experience Cloud Identity Service</a> en voor ID-syncs te genereren. Zie ook, het <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external"> Begrijpen van Vraag aan het Domein</a>van de Index. </p> </td> </tr> 
+   <li>Als u labels implementeert met Adobe Launch, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>Aanroepen naar het <span class="codeph"> domein demdex.net</span> worden gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> cookies en de Experience Cloud Identity Service</a> en voor ID-syncs te genereren. Zie ook, het <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrijpen van Vraag aan het Domein</a>van de Index. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Insteekmodule Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als u Activiteitenkaart al vóór Januari, 2020 had geïnstalleerd, zal uw browser nog een eerste verzoek aan *.omniture.com zien, maar zal aan *.adobe.com worden opnieuw gericht. </p></td> 
