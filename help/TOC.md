@@ -2,10 +2,14 @@
 cloud: platform-cloud
 product: ID Service
 audience: end-user
-user-guide-title: Experience Cloud Identity Service Help
+user-guide-title: Help bij Experience Cloud Identity Service
+user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
+source-git-commit: 238135b08f66a3a10d6439bba558819e4aa5a7e5
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 6%
 
 ---
 
@@ -100,7 +104,7 @@ source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
    + [Videohartslag en de Dienst van identiteitskaart](reference/heartbeat.md)
    + [Data Workbench en de ID-service](reference/dwb.md)
    + [SHA256 Hashing Support for setCustomerIDs](reference/hashing-support.md)
-+ Veelgestelde vragen {#faqs}
++ FAQs {#faqs}
    + [Overzicht van veelgestelde vragen](faq-intro/faq-intro.md)
    + [Veelgestelde vragen over ID-service](faq-intro/faq.md)
    + [Veelgestelde vragen over Analytics en ID Service](faq-intro/analytics-faq.md)
