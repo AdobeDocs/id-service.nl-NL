@@ -6,7 +6,10 @@ seo-title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Servic
 title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 0%
 
 ---
 
@@ -63,6 +66,10 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke lijst Experience Clo
  <tr>
  <td colname="col1"> <p> <b>Insteekmodule Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als u Activiteitenkaart al vóór Januari, 2020 had geïnstalleerd, zal uw browser nog een eerste verzoek aan *.omniture.com zien, maar zal aan *.adobe.com worden opnieuw gericht. </p></td> 
+ </tr>
+ <tr>
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>Als u controles op de parameters van het vraagkoord hebt, ben zeker om de parameters ` s_kwcid ` en ` te whiteliseren ` s_kwcid` en ` ef_id`. Technisch gesproken gebruikt Advertising Analytics alleen 's_kwcid', maar als u Ad Cloud Search of DSP ophaalt, gebruikt het ook 'ef_id'. Deze parameters voor queryreeksen zijn alfanumeriek. De parameter ` s_kwcid ` gebruikt "!" en de parameter ` ef_id' gebruikt het teken ':'. Als u "!" blokkeert in de URL moet u ook een whitelist toevoegen.</p></td> 
  </tr>
  </tbody> 
 </table>
