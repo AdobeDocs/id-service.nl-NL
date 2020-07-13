@@ -1,29 +1,32 @@
 ---
-description: Naast de Experience Cloud-bezoekersidentiteitskaart kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
+description: Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
 keywords: ID Service
-seo-description: Naast de Experience Cloud-bezoekersidentiteitskaart kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
+seo-description: Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
 seo-title: Klant-id's en verificatiestatussen
 title: Klant-id's en verificatiestatussen
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 7%
 
 ---
 
 
 # Klant-id&#39;s en verificatiestatussen {#customer-ids-and-authentication-states}
 
-Naast de Experience Cloud-bezoekersidentiteitskaart kunt u aanvullende klant-id&#39;s en een verificatiestatus aan elke bezoeker koppelen.
+Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s en een verificatiestatus aan elke bezoeker koppelen.
 
 ## Verificatiestatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld als [klantkenmerken](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) uploaden naar de verschillende oplossingen [!DNL Experience Cloud] en deze gegevens benaderen.
+De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) uploaden naar de verschillende oplossingen [!DNL Experience Cloud] en deze gegevens benaderen.
 
 >[!IMPORTANT]
 >
 >`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Core Services - Hoe kan ik uw oplossingen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html) inschakelen voor voorbeelden.
 
-Vanaf Experience Cloud Identity Service v1.5+ `setCustomerIDs` bevat dit optionele `AuthState` object. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
+Vanaf Experience Cloud Identity Service v1.5+ wordt het optionele `setCustomerIDs` object `AuthState` opgenomen. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -42,7 +45,7 @@ Vanaf Experience Cloud Identity Service v1.5+ `setCustomerIDs` bevat dit optione
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> 1 </span> </p> </td> 
-   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor Klantkenmerken voor <span class="keyword"> </span> Target. </p> </p> </td> 
+   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor klantkenmerken voor <span class="keyword"> </span> Target. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
@@ -60,7 +63,7 @@ U kunt verificatiestatussen toewijzen aan uw gebruikers, afhankelijk van de hand
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Verificatiestatus </th> 
-   <th colname="col2" class="entry"> Hoofdletters gebruiken </th> 
+   <th colname="col2" class="entry"> Gebruiksscenario </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -93,8 +96,6 @@ Klant-id&#39;s kunnen combinaties van id&#39;s en geverifieerde statussen bevatt
 >* Gebruik alleen ongecodeerde waarden voor uw id&#39;s.
 >* De klant-id&#39;s en verificatiestatus worden niet opgeslagen in het cookie van de bezoeker-id. Deze instellingen moeten worden ingesteld voor elke pagina- of toepassingscontext.
 >* U zou geen Persoonlijk Identificeerbare Informatie (PII) in klant IDs moeten omvatten. Als u PII gebruikt om een bezoeker (zoals een e-mailadres) te identificeren, adviseren wij in plaats daarvan een gehakte of gecodeerde versie van de informatie op te slaan. De ECID-bibliotheek biedt ondersteuning voor het hashen van gebruikers-id&#39;s. Zie [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
->
-
 
 
 ```js
@@ -215,9 +216,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 De [!DNL Experience Cloud] id-service ondersteunt de klant-id&#39;s en verificatiestatus in onze Android- en iOS SDK-code. Zie de volgende codebibliotheken:
 
-* [Methoden van Android SDK](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [Methoden van iOS SDK](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
+* [Methoden van Android SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html)
+* [Methoden van iOS SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/ios/overview.html)
 
-## Bericht voor Klanten van Analytics en Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
+## Bericht voor klanten van Analytics en van de Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
 Als u gedeclareerde id&#39;s doorgeeft aan [!DNL Audience Manager], moet het `userid` object overeenkomen met de integratiecode die aan een gegevensbron is gekoppeld. Voor meer informatie, zie de [!UICONTROL Visitor ID Service] sectie in de [Configure documentatie van de Code](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code) van de Regels van de Fusie.
