@@ -1,33 +1,34 @@
 ---
-description: Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+description: Deze instructies gelden voor Analytics-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 keywords: ID Service
-seo-description: Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+seo-description: Deze instructies gelden voor Analytics-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 seo-title: Implementeer de Experience Cloud Identity Service voor Analytics
 title: Implementeer de Experience Cloud Identity Service voor Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '1076'
+ht-degree: 1%
 
 ---
 
 
 # Implementeer de Experience Cloud Identity Service voor Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+Deze instructies gelden voor Analytics-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 
 >[!IMPORTANT]
 >
 >* [Lees de vereisten](../reference/requirements.md) voordat u begint.
 >* Vorm en test deze code in een ontwikkelomgeving alvorens het in productie uit te voeren.
->
-
 
 
 Voer de volgende stappen uit om de id-service voor Adobe Analytics te implementeren:
 
 1. [De ID-servicecode downloaden](../implementation-guides/setup-analytics.md#section-ead9403a6b7e45b887f9ac959ef89f7f)
 1. [Voeg de functie Visitor.getInstance aan de Code van de Dienst van identiteitskaart toe](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
-1. [Voeg uw Experience Cloud Organization-id toe aan Visitor.getInstance](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
+1. [Voeg uw Experience Cloud-organisatie-id toe aan Visitor.getInstance](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
 1. [Voeg uw volgende servers aan Visitor.getInstance toe](../implementation-guides/setup-analytics.md#section-70ec9ebff47940d8ab520be5ec4728c5)
 1. [Werk het bestand AppMeturement.js of s_code.js bij](../implementation-guides/setup-analytics.md#section-b53113aea1bd4de896e0e4e9a7edee19)
 1. [API-code van bezoeker toevoegen aan de pagina](../implementation-guides/setup-analytics.md#section-d46d6aa324c842f2931d901e38d6db1d)
@@ -36,10 +37,10 @@ Voer de volgende stappen uit om de id-service voor Adobe Analytics te implemente
 
 ## Stap 1: De ID-servicecode downloaden {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-Voor de [!UICONTROL id-service] is de `VisitorAPI.js` codebibliotheek vereist. Deze codebibliotheek downloaden:
+De [!UICONTROL ID Service] code vereist de `VisitorAPI.js` codebibliotheek. Deze codebibliotheek downloaden:
 
-1. Ga naar **[!UICONTROL Beheer]** > **[!UICONTROL Codebeheer]**.
-1. Klik in [!UICONTROL Codebeheer]op **[!UICONTROL JavaScript (Nieuw)]** of **[!UICONTROL JavaScript (Verouderd)]**.
+1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
+1. Klik [!UICONTROL Code Manager]op **[!UICONTROL JavaScript (New)]** of **[!UICONTROL JavaScript (Legacy)]**.
 
    Hiermee worden gecomprimeerde codebibliotheken gedownload.
 
@@ -51,8 +52,6 @@ Voor de [!UICONTROL id-service] is de `VisitorAPI.js` codebibliotheek vereist. D
 >
 >* Eerdere versies van de id service-API hebben deze functie op een andere locatie geplaatst en een andere syntaxis vereist. Als u migreert vanaf een versie die ouder is dan [versie 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), moet u de nieuwe plaatsing en syntaxis noteren die hier worden beschreven.
 >* Code in ALL CAPS is een plaatsaanduiding voor werkelijke waarden. Vervang deze tekst door uw organisatie-id, URL van trackingserver of een andere benoemde waarde.
->
-
 
 
 **Deel 1: Kopieer de functie Visitor.getInstance hieronder**
@@ -94,9 +93,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## Stap 3: Voeg uw Experience Cloud Organization-id toe aan Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## Stap 3: Voeg uw Experience Cloud-organisatie-id toe aan Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -127,11 +126,10 @@ Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 
 >[!NOTE]
 >
->Wanneer gebruikt, pas de server URL [!DNL Experience Cloud] &#39;s aan hun overeenkomstige het volgen server URLs als dit aan: >
+>Wanneer gebruikt, pas de server URL [!DNL Experience Cloud] &#39;s aan hun overeenkomstige het volgen server URLs als dit aan:
+>
 >* [!DNL Experience Cloud] server-URL = URL van traceringsserver
 >* [!DNL Experience Cloud] server secure URL = tracking server secure URL
->
-
 
 
 Als u niet zeker bent hoe te om uw het volgen server te vinden [FAQ](../faq-intro/faq.md) zien en [Correct bevolken trackingServer en trackingServerSecure variabelen](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
@@ -199,7 +197,7 @@ Als u de implementatie van uw id-service wilt testen, controleert u op het volge
 * [AMCV-cookie](../introduction/cookies.md) in het domein waar uw pagina wordt gehost.
 * MID-waarde in de [!DNL Analytics] afbeeldingsaanvraag met het [Adobe-foutopsporingsprogramma](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html).
 
-Zie, [test en verifieer de Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+Zie, [test en verifieer de Dienst](../implementation-guides/test-verify.md)van de Identiteit van Experience Cloud.
 
 **Code implementeren**
 
