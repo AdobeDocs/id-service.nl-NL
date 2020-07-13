@@ -6,7 +6,7 @@ seo-title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Servic
 title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
@@ -28,16 +28,16 @@ CSPs gebruikt de kopbal van HTTP `Content-Security-Policy` om het type van midde
 * Aanvallen op verval van de site.
 * Distributie van malware.
 
-Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Belangrijk is dat u begrijpt welke Adobe-domeinnamen u aan een CSP moet toevoegen als u deze gebruikt en een strak beveiligingsbeleid hebt. Als u deze domeinen toevoegt, kunnen bezoekersbrowsers die toegang hebben tot uw site die belangrijke aanroepen naar de bronnen van de Experience Cloud die u gebruikt.
+Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Belangrijk is dat u begrijpt welke Adobe-domeinnamen u aan een CSP moet toevoegen als u deze gebruikt en een strak beveiligingsbeleid hebt. Als u deze domeinen toevoegt, kunnen bezoekerbrowsers die toegang krijgen tot uw site, die belangrijke aanroepen uitvoeren naar Experience Cloud-bronnen die u gebruikt.
 
-## Ervaar Cloud Domains voor whitelisting {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Experience Cloud-domeinen voor whitelisting {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke lijst Experience Cloud-oplossing of -service die u gebruikt.
+Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke Experience Cloud-oplossing of -service die u gebruikt.
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Ervaar Cloud-oplossing of -service </th> 
+   <th colname="col1" class="entry"> Experience Cloud-oplossing of -service </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -51,7 +51,7 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke lijst Experience Clo
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Doel</b> </p> </td> 
+   <td colname="col1"> <p> <b>Target</b> </p> </td> 
    <td colname="col2"> <p>Wijzig uw CSP om <span class="codeph"> *.tt.omtr dc.net</span>op te nemen. </p> </td> 
   </tr> 
   <tr> 
@@ -62,19 +62,20 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke lijst Experience Clo
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Als u labels implementeert met Adobe Launch, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>Aanroepen naar het <span class="codeph"> domein demdex.net</span> worden gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> cookies en de Experience Cloud Identity Service</a> en voor ID-syncs te genereren. Zie ook, het <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrijpen van Vraag aan het Domein</a>van de Index. </p> </td> </tr> 
+   <li>Als u labels implementeert met Adobe Launch, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>Aanroepen naar het <span class="codeph"> domein demdex.net</span> worden gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> cookies en de Experience Cloud Identity Service</a> en voor ID-syncs te genereren. See also, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Understanding Calls to the Demdex Domain</a>. </p> </td> </tr> 
  <tr>
- <td colname="col1"> <p> <b>Insteekmodule Activity Map</b> </p> </td> 
- <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als u Activiteitenkaart al vóór Januari, 2020 had geïnstalleerd, zal uw browser nog een eerste verzoek aan *.omniture.com zien, maar zal aan *.adobe.com worden opnieuw gericht. </p></td> 
+ <td colname="col1"> <p> <b>Activity Map-insteekmodule</b> </p> </td> 
+ <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als er al Activity Map is geïnstalleerd vóór januari 2020, wordt er een eerste aanvraag voor *.omniture.com weergegeven in uw browser, maar wordt deze omgeleid naar *.adobe.com. </p></td> 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Als u controles op de parameters van het vraagkoord hebt, ben zeker om de parameters ` s_kwcid ` en ` te whiteliseren ` s_kwcid` en ` ef_id`. Technisch gesproken gebruikt Advertising Analytics alleen 's_kwcid', maar als u Ad Cloud Search of DSP ophaalt, gebruikt het ook 'ef_id'. Deze parameters voor queryreeksen zijn alfanumeriek. De parameter ` s_kwcid ` gebruikt "!" en de parameter ` ef_id' gebruikt het teken ':'. Als u "!" blokkeert in de URL moet u ook een whitelist toevoegen.</p></td> 
+ <td colname="col2"> <p>Als u controles op de parameters van het vraagkoord hebt, ben zeker om de parameters ` s_kwcid ` en ` te whiteliseren ` s_kwcid` en ` ef_id`. Technisch gesproken gebruikt Advertising Analytics alleen 's_kwcid', maar als je Ad Cloud Search of DSP ophaalt, gebruikt het ook 'ef_id'. Deze parameters voor queryreeksen zijn alfanumeriek. De parameter ` s_kwcid ` gebruikt "!" en de parameter ` ef_id' gebruikt het teken ':'. Als u "!" blokkeert in de URL moet u ook een whitelist toevoegen.</p></td> 
  </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
+>
 >* [Content Security Policy Reference](https://content-security-policy.com/)
 >* [MDN: Beveiligingsbeleid voor inhoud](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia: Beveiligingsbeleid voor inhoud](https://en.wikipedia.org/wiki/Content_Security_Policy)
