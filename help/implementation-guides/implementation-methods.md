@@ -6,7 +6,10 @@ seo-title: Implementatiemethoden
 title: Implementatiemethoden
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: 6c1ff82104bc021d047bb066829328d5fd9eedbf
+source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -21,8 +24,8 @@ U kunt een standaard [!DNL Experience Cloud ID Service] implementatiemethode kie
 
 ## Standaardimplementatie {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe raadt u ten zeerste aan de id-service te implementeren. [!DNL Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
+Adobe raadt u ten zeerste aan [[!DNL-Experience Platform Launch]](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) te gebruiken om de id-service te implementeren. Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
 
 ## Niet-standaardimplementaties {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
-De procedures en codesteekproeven in deze gids kunnen u helpen de dienst van [!DNL Experience Cloud] identiteitskaart op een handboek, of niet-standaardmanier plaatsen. Deze implementaties zijn vaak technisch lastig en complex. Ze kunnen schaarse technische middelen van uw kant nodig hebben of contractueel vastgelegde supporttijd in beslag nemen met uw Adobe-consultant.
+De procedures en codesteekproeven in deze gids kunnen u helpen de dienst van [!DNL Experience Cloud] identiteitskaart op een handboek, of niet-standaardmanier plaatsen. Deze implementaties zijn vaak technisch lastig en complex. Zij kunnen schaarse technische middelen van uw deel vereisen of gecontracteerde steuntijd met uw consultant van de Adobe verbruiken.
