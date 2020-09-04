@@ -1,19 +1,22 @@
 ---
-description: Controleer deze sectie om te controleren of u de juiste oplossingen, services en codeversies gebruikt die zijn vereist door de Experience Cloud Identity Service.
+description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
 keywords: ID Service
-seo-description: Controleer deze sectie om te controleren of u de juiste oplossingen, services en codeversies gebruikt die zijn vereist door de Experience Cloud Identity Service.
+seo-description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
 seo-title: Vereisten voor de Experience Cloud Identity Service
 title: Vereisten voor de Experience Cloud Identity Service
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 5%
 
 ---
 
 
 # Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Controleer deze sectie om te controleren of u de juiste oplossingen, services en codeversies gebruikt die zijn vereist door de Experience Cloud Identity Service.
+Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
 
 ## Vereisten zorgen voor een succesvolle implementatie en ondersteuning {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -47,7 +50,7 @@ Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codev
  </tbody> 
 </table>
 
-## Vereisten voor de cloud: Organisatie-id {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud-eisen: Organisatie-id {#section-a02f537129a64ffbb690d5738d360c26}
 
 Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Experience Cloud] en een identiteitskaart van de Organisatie worden toegelaten. Controleer de volgende lijst als u niet zeker bent van de [!DNL Experience Cloud] status van uw bedrijf en uw organisatie-id moet vinden.
 
@@ -58,22 +61,22 @@ Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Exper
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Cloudstatus ervaren </th> 
+   <th colname="col1" class="entry"> Experience Cloud-status </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Ingeschakeld</b> </p> </td> 
-   <td colname="col2"> <p>Als uw bedrijf is ingeschakeld voor de <span class="keyword"> Experience Cloud</span> maar u beschikt niet over uw organisatie-id, raadpleegt u <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisatorische id's</a> (schuif omlaag naar de sectie <i>Zoek uw organisatie-id</i>). </p> </td> 
+   <td colname="col2"> <p>Als uw bedrijf voor de <span class="keyword"> Experience Cloud</span> wordt toegelaten maar u hebt uw identiteitskaart van de Organisatie niet, zie <a href="https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisatie IDs</a> (scrol neer aan de sectie <i>vind uw identiteitskaart</i>van de Organisatie). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet zeker</b> </p> </td> 
-   <td colname="col2"> <p> Als u de <span class="keyword"> Experience Cloud</span> van uw bedrijf niet kent, vraag dan aan wie uw Adobe-account wordt beheerd of leden van uw bedrijf zich met een Adobe-id kunnen aanmelden op <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> . Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Zie de sectie "Beheerpagina" in <a href="https://docs.adobe.com/help/en/core-services/interface/experience-cloud.html" format="https" scope="external"> Experience Cloud Administration</a>voor informatie over de organisatie-id. </p> </td> 
+   <td colname="col2"> <p> Als u de <span class="keyword"> Experience Cloud</span> status van uw bedrijf niet kent, vraag dan aan wie uw Adobe-account beheert of leden van uw bedrijf zich via een Adobe ID kunnen aanmelden op <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> . Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Zie de sectie "Beheerpagina" in Beheer <a href="https://docs.adobe.com/help/nl-NL/core-services/interface/experience-cloud.html" format="https" scope="external"> van</a>Experience Cloud om de organisatie-id te zoeken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet ingeschakeld</b> </p> </td> 
-   <td colname="col2"> <p> Als uw bedrijf niet geschikt is voor Experience Cloud, raadpleegt u <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html" format="https" scope="external"> Core Services - Uw oplossingen</a> inschakelen om aan de slag te gaan. </p> </td> 
+   <td colname="col2"> <p> Als uw bedrijf niet voor Experience Cloud wordt toegelaten, zie de Diensten van de <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html" format="https" scope="external"> Kern - toelatend Uw Oplossingen</a> om aan de slag te gaan. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,7 +98,7 @@ De volgende secties maken een lijst van de minimumcodeversies die worden vereist
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud Solution </th> 
+   <th colname="col1" class="entry"> Experience Cloud-oplossing </th> 
    <th colname="col3" class="entry"> Codebibliotheek </th> 
    <th colname="col4" class="entry"> Vereisten voor versie </th> 
   </tr> 
@@ -107,7 +110,7 @@ De volgende secties maken een lijst van de minimumcodeversies die worden vereist
    <td colname="col4"> <p>2,0 of hoger </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analyse </span> </b> </p> </td> 
+   <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> AppMeturement.js</span> </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html" format="https" scope="external"> AppMeasurement voor JavaScript </a>. </p> </td> 
    <td colname="col4"> <p>1.6.4 of hoger. </p> </td> 
   </tr> 
@@ -116,19 +119,16 @@ De volgende secties maken een lijst van de minimumcodeversies die worden vereist
    <td colname="col4"> <p>H.27 </p> <p> <p>Opmerking:  <span class="keyword"> Analytics</span> s_code version H.27 wordt niet meer ondersteund met de release van de ID service version 1.6.0. Voer een upgrade van uw code uit naar de nieuwste versie van AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html" format="https" scope="external"> Videohartslag 2.x voor JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html" format="https" scope="external"> Videohartslag 2.x voor JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library</a> (DIL). </p> </td> 
-   <td colname="col4"> <p>5.0 </p> <p> 
-     <draft-comment>
-       bijgewerkt vanaf 4.9 
-     </draft-comment> </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> See <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library</a> (DIL). </p> </td> 
+   <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Doel </span> </b> </p> </td> 
+   <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external"> postcode</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
@@ -150,7 +150,7 @@ De id-service vereist minimaal de hieronder vermelde SDK-versies.
 >
 >Wij adviseren dat u de recentste codeversies eerder dan de vereiste minimumversies gebruikt.
 
-De SDK-code moet zijn ingeschakeld voor de ID-service. Schakel de nieuwste SDK-code voor elke toepassing in en download deze vanaf uw [Adobe Mobile Services](https://mobilemarketing.adobe.com/) -account. Zie ook:
+De SDK-code moet zijn ingeschakeld voor de ID-service. Schakel de nieuwste SDK-code voor elke app in en download deze vanaf uw [Adobe Mobile Services](https://mobilemarketing.adobe.com/) -account. Zie ook:
 
 * [Serviceopties voor SDK-bezoeker-id configureren](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
 * [Methoden van Android SDK](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
