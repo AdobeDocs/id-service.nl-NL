@@ -6,7 +6,10 @@ seo-title: Id-synchronisatie op URL of databron
 title: Id-synchronisatie op URL of databron
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 10%
 
 ---
 
@@ -29,19 +32,16 @@ Met de ID-servicefuncties idSyncByURL en idSyncByDataSource kunt u handmatig een
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>Tussen verschillende gegevenspartners en de Manager van het <span class="keyword"> Publiek </span> door een de synchronisatie URL van identiteitskaart te gebruiken. </p> </td> 
+   <td colname="col2"> <p>Tussen verschillende gegevenspartners en <span class="keyword"> Audience Manager </span> door een synchronisatie-URL van douaneID te gebruiken. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Als u de DPID en DPUUID al kent en u deze naar <span class="keyword"> Audience Manager wilt verzenden </span> in de standaard-id-sync-URL-indeling. </p> <p> 
-     <draft-comment>
-       Wanneer u de gebruikersnaam al kent en wilt verzenden naar Audience Manager. 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>Als u de DPID en DPUUID al kent en deze naar de <span class="keyword"> Audience Manager wilt verzenden </span> in de standaard-id-sync-URL-indeling. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Eigenschappen**
+**Properties**
 
 In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voor beide functies beschikbaar zijn.
 
@@ -56,12 +56,12 @@ In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voo
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
-   <td colname="col2"> String </td> 
-   <td colname="col3"> <p>Id van gegevensaanbieder die is toegewezen door Audience Manager. </p> </td> 
+   <td colname="col2"> Tekenreeks </td> 
+   <td colname="col3"> <p>ID gegevensaanbieder toegewezen door Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
-   <td colname="col2"> String </td> 
+   <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>De unieke id van de gegevensaanbieder voor de gebruiker. </p> </td> 
   </tr> 
   <tr valign="top"> 
@@ -71,7 +71,7 @@ In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voo
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
-   <td colname="col2"> String </td> 
+   <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>Doel-URL. </p> </td> 
   </tr> 
  </tbody> 
@@ -82,14 +82,14 @@ In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voo
 Beide functies accepteren de volgende macro&#39;s:
 
 * `%TIMESTAMP%`: Genereert een tijdstempel (in milliseconden). Wordt gebruikt voor het busten van cache.
-* `%DID%`: Voegt de Manager-id voor het publiek in voor de gebruiker.
+* `%DID%`: Voegt de Audience Manager-id voor de gebruiker in.
 * `%HTTP_PROTO%`: Hiermee stelt u het communicatieprotocol (`http` of `https`) in.
 
 ## Voorbeeldcode en uitvoer {#section-0115615c37584a19a2ab11e917c4e7e9}
 
 Beide functies worden geretourneerd `Successfully queued` als dit lukt. Ze retourneren een foutbericht als dat niet het geval is.
 
-### bezoeker.idSyncByURL
+### visitor.idSyncByURL
 
 **Voorbeeldcode**
 
@@ -111,7 +111,7 @@ Beide functies worden geretourneerd `Successfully queued` als dit lukt. Ze retou
 http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
 ```
 
-### bezoeker.idSyncByDataSource
+### visitor.idSyncByDataSource
 
 **Voorbeeldcode**
 
