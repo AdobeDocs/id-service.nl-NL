@@ -1,19 +1,22 @@
 ---
-description: Met deze functie kunt u de Experience Cloud-id van een bezoeker delen over verschillende domeinen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
+description: Met deze functie kunt u de Experience Cloud-id van een bezoeker in verschillende domeinen delen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
 keywords: ID Service
-seo-description: Met deze functie kunt u de Experience Cloud-id van een bezoeker delen over verschillende domeinen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
+seo-description: Met deze functie kunt u de Experience Cloud-id van een bezoeker in verschillende domeinen delen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
 seo-title: appendVisitorIDsTo (Cross-Domain Tracking)
 title: appendVisitorIDsTo (Cross-Domain Tracking)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
 
 # appendVisitorIDsTo (Cross-Domain Tracking){#appendvisitoridsto-cross-domain-tracking}
 
-Met deze functie kunt u de Experience Cloud-id van een bezoeker delen over verschillende domeinen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
+Met deze functie kunt u de Experience Cloud-id van een bezoeker in verschillende domeinen delen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
 
 Inhoud:
 
@@ -25,7 +28,7 @@ Inhoud:
 
 ## Bezoekers bijhouden op verschillende domeinen wanneer browsers cookies van derden blokkeren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-De id-service schrijft een cookie van de eerste en de andere leverancier naar de browser wanneer een persoon uw site bezoekt (zie [Cookies en de Experience Cloud Identity Service](../../introduction/cookies.md) ). Het cookie van de eerste partij bevat de MID, een unieke id voor die bezoeker. Het cookie van de andere fabrikant bevat een andere id die door de ID-service wordt gebruikt om de id te genereren. Wanneer een browser dit cookie van derden blokkeert, kan de id-service het volgende niet:
+De dienst van identiteitskaart schrijft een eerste en derdekoekje aan browser wanneer een persoon uw plaats bezoekt (zie [Cookies en de Dienst](../../introduction/cookies.md) van de Identiteit van de Experience Cloud). Het cookie van de eerste partij bevat de MID, een unieke id voor die bezoeker. Het cookie van de andere fabrikant bevat een andere id die door de ID-service wordt gebruikt om de id te genereren. Wanneer een browser dit cookie van derden blokkeert, kan de id-service het volgende niet:
 
 * Regenereer de unieke id voor die sitebezoeker wanneer deze naar een ander domein navigeert.
 * Bezoekers bijhouden in verschillende domeinen die eigendom zijn van uw organisatie.
@@ -33,7 +36,7 @@ De id-service schrijft een cookie van de eerste en de andere leverancier naar de
 Implementeer ` Visitor.appendVisitorIDsTo( *`URL om dit probleem op te lossen`*)`. Met deze eigenschap kunnen bezoekers van sites in meerdere domeinen door de ID-service worden getraceerd, zelfs als hun browsers cookies van derden blokkeren. Het werkt als volgt:
 
 * Wanneer een bezoeker naar andere domeinen bladert, voegt de ` Visitor.appendVisitorIDsTo( *`URL`*)` de MID toe als een queryparameter in de URL die van het oorspronkelijke domein naar het doeldomein wordt omgeleid.
-* De ID-servicecode op het doeldomein extraheert de MID uit de URL in plaats van een aanvraag naar Adobe voor de id van die bezoeker te verzenden. Deze aanvraag bevat de cookie-id van een andere fabrikant, die in dit geval niet beschikbaar is.
+* De de dienstcode van identiteitskaart op het bestemmingsdomein haalt MID uit URL in plaats van het verzenden van een verzoek naar Adobe voor identiteitskaart van die bezoeker. Deze aanvraag bevat de cookie-id van een andere fabrikant, die in dit geval niet beschikbaar is.
 * De de dienstcode van identiteitskaart op de bestemmingspagina gebruikt overgegaan MID om de bezoeker te volgen.
 
 Zie het codevoorbeeld voor meer informatie.
@@ -52,11 +55,7 @@ var visitor = Visitor.getInstance(...);
 //Append visitor IDs to the destination URL 
 var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL); 
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
-     "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678 
-<draft-comment>
-  |TS=123675879 
-</draft-comment>" 
- 
+     "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
 ```
 
