@@ -3,13 +3,14 @@ cloud: platform-cloud
 product: ID Service
 audience: end-user
 user-guide-title: Help bij Experience Cloud Identity Service
+breadcrumb-title: Identity Service Guide
 user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 238135b08f66a3a10d6439bba558819e4aa5a7e5
+source-git-commit: 8c84d217219e76e0635bbfe9d73d11612643e8e2
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -26,11 +27,11 @@ ht-degree: 6%
 + Implementatie {#implementation}
    + [Implementatiemethoden](implementation-guides/implementation-methods.md)
    + [Implementatiehandleidingen](implementation-guides/implementation-guides.md)
-   + [Implementeren met de introductie van het Experience Platform](implementation-guides/ecid-implement-with-launch.md)
+   + [Implementeren met Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementatie met DTM](implementation-guides/standard.md)
    + [Implementeren voor analyse](implementation-guides/setup-analytics.md)
    + [Implementeren voor doel](implementation-guides/setup-target.md)
-   + [Implementeren voor Analytics en Audience Manager](implementation-guides/setup-aam-analytics.md)
+   + [Implementeren voor analyse en Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementeren voor Analytics, Audience Manager en Target](implementation-guides/setup-aam-analytics-target.md)
    + [Het gebruiken van de Dienst van identiteitskaart met A4T en een Server-zijImplementatie van Doel](implementation-guides/ecid-a4t-target.md)
    + [Directe integratie met de Dienst van identiteitskaart](implementation-guides/direct-integration.md)
@@ -40,7 +41,7 @@ ht-degree: 6%
       + [Overzicht van de OpenService](implementation-guides/opt-in-service/optin-overview.md)
       + [Opt-in-service instellen](implementation-guides/opt-in-service/getting-started.md)
       + [Opt-in-service valideren](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Opt-in configureren met de introductie van Experience Platform](implementation-guides/opt-in-service/launch.md)
+      + [Opt-in configureren met Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Opt-in configureren met DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Gebruiksscenario&#39;s openen](implementation-guides/opt-in-service/use-cases.md)
       + [Inschakelen-verwijzing](implementation-guides/opt-in-service/api.md)
@@ -81,10 +82,10 @@ ht-degree: 6%
       + [getVisitorValues](library/get-set/getvisitorvalues.md)
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
-+ Referentie {#reference}
-   + [Overzicht van verwijzingen](reference/reference.md)
++ Referenties {#reference}
+   + [Overzicht van referenties](reference/reference.md)
    + Referentie voor analyse {#analytics-reference}
-      + [Overzicht van de naslaggids voor analyses](reference/analytics-reference/analytics-reference.md)
+      + [Overzicht van de analysehandleiding](reference/analytics-reference/analytics-reference.md)
       + [Analytics en Experience Cloud ID&#39;s instellen](reference/analytics-reference/analytics-ids.md)
       + [Bewerkingsvolgorde voor analytische id&#39;s](reference/analytics-reference/analytics-order-of-operations.md)
       + [Beslissingspunten voor migratie van id-service](reference/analytics-reference/migration-decisions.md)
@@ -102,13 +103,13 @@ ht-degree: 6%
    + [Regio en gebruikers-id&#39;s ophalen van de AMCV-cookie of de ID-service](reference/regions.md)
    + [Vereisten voor de id-service](reference/requirements.md)
    + [Videohartslag en de Dienst van identiteitskaart](reference/heartbeat.md)
-   + [Data Workbench en de ID-service](reference/dwb.md)
+   + [Data Workbench en de Dienst van identiteitskaart](reference/dwb.md)
    + [SHA256 Hashing Support for setCustomerIDs](reference/hashing-support.md)
-+ FAQs {#faqs}
++ Veelgestelde vragen {#faqs}
    + [Overzicht van veelgestelde vragen](faq-intro/faq-intro.md)
    + [Veelgestelde vragen over ID-service](faq-intro/faq.md)
    + [Veelgestelde vragen over Analytics en ID Service](faq-intro/analytics-faq.md)
-   + [Veelgestelde vragen over andere oplossingen voor de cloud](faq-intro/other-faq.md)
+   + [Veelgestelde vragen over andere Experience Cloud-oplossingen](faq-intro/other-faq.md)
 + Release-aantekeningen voor id-service {#release-notes}
    + [Opmerkingen bij de release 2020](release-notes/release-notes.md)
    + [Opmerkingen bij de release 2019](release-notes/notes-2019.md)
