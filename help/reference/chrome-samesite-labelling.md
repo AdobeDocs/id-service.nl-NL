@@ -4,7 +4,7 @@ seo-title: Wijzigingen in de Google Chrome SameSite-labels
 description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 seo-description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 translation-type: tm+mt
-source-git-commit: f74a028532e95ab17f5d2e64697d69eb64e03391
+source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 1%
@@ -64,7 +64,9 @@ Als de nieuwe standaard SameSite-instelling in Chrome wordt, is de CNAME niet me
 
 Om de verandering aan te passen, stelt de Analytics nu uitdrukkelijk de waarde SameSite van `s_vi` koekje aan `lax`. Als u dit cookie wilt gebruiken in een vriendelijke context van derden, stelt u de waarde SameSite in op `none`, wat betekent dat u altijd HTTPS moet gebruiken. Neem contact op met de klantenservice om de SameSite-waarde voor uw veilige CNAME&#39;s te wijzigen.
 
-> [!IMPORTANT] Deze actie wordt niet vereist voor klanten Analytics die ECID gebruiken, klanten die een afzonderlijke CNAME voor elk van hun domeinen gebruiken, of klanten die slechts de gegevensinzameling van de Analytics van de derde gebruiken.
+>[!IMPORTANT]
+>
+>Deze actie wordt niet vereist voor klanten Analytics die ECID gebruiken, klanten die een afzonderlijke CNAME voor elk van hun domeinen gebruiken, of klanten die slechts de gegevensinzameling van de Analytics van de derde gebruiken.
 
 ## Cookies met standaardbezoeker Adobe
 
