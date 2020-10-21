@@ -1,13 +1,20 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
+source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 20%
 
 ---
 # Contribute-artikel
 
-Wij verwelkomen de bijdragen van onze gemeenschap en medewerkers van Adobe buiten de documentatieteams.
+| EXL-PR | EXL | Voorvertoning | Activeren | Gepubliceerd | Help |
+|--- |--- |--- |--- |--- |--- |
+| [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [Voorbeeld-URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Ontwerphandleiding](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
-## Adobe Open Source Code of Conduct
+Wij verwelkomen de bijdragen van onze gemeenschap en Adobe werknemers buiten de documentatieteams.
+
+## Adobe Open-Source-gedragscode
 
 Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
@@ -21,9 +28,9 @@ Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderinge
 
 Om een verzoek voor te leggen, klik het **Logboek een kwestie** verbinding in een artikel, dat een kwestie in GitHub opent. Geef een titel en een beschrijving op en klik op **Nieuwe uitgave** verzenden.
 
-Om minder belangrijke updates te verzoeken, klik **geef deze paginakoppeling** in een artikel uit, dat het bronartikel in GitHub opent. Gebruik GitHub UI om uw updates te maken. Zie de algemene handleiding voor [Adobe Docs-medewerkers](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Om minder belangrijke updates te verzoeken, klik **geef deze paginakoppeling** in een artikel uit, dat het bronartikel in GitHub opent. Gebruik GitHub UI om uw updates te maken. Raadpleeg de algemene handleiding voor [Adobe Docs-contribuanten](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
 
-Kleine correcties of verduidelijkingen die u voor documentatie en codevoorbeelden in dit antwoord opgeeft, worden behandeld in de gebruiksvoorwaarden van Adobe.
+Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van de Adobe.
 
 ### Belangrijke wijzigingen of nieuwe artikelen van leden van de gemeenschap
 
