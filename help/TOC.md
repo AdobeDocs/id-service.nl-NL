@@ -7,7 +7,7 @@ breadcrumb-title: Identiteitsservicehandleiding
 user-guide-description: De id-service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het kan de generatiecode van identiteitskaart voor de diensten zoals Analytics, Audience Manager, Doel, en andere oplossingen of eigenschappen van Experience Cloud vervangen.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
+source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 7%
@@ -43,7 +43,7 @@ ht-degree: 7%
       + [Opt-in-service valideren](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Opt-in configureren met Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Opt-in configureren met DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Experience Cloud-activiteiten beheren op basis van toestemming van gebruiker](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent)
+      + [Experience Cloud-activiteiten beheren op basis van toestemming van gebruiker](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [Gebruiksscenario&#39;s openen](implementation-guides/opt-in-service/use-cases.md)
       + [Inschakelen-verwijzing](implementation-guides/opt-in-service/api.md)
       + [Het gebruiken van Opt-in de Diensten met IAB Kader](implementation-guides/opt-in-service/iab.md)
