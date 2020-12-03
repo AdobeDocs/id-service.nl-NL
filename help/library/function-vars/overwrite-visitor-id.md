@@ -1,19 +1,22 @@
 ---
-description: Deze eigenschap overschrijft de Cloud- en analytische id's van een bezoeker op het moment dat deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id's overschrijven in domeinen die u niet beheert.
+description: Deze eigenschap overschrijft de Experience Cloud- en analytische id's van een bezoeker wanneer deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id's overschrijven in domeinen die u niet beheert.
 keywords: ID Service
-seo-description: Deze eigenschap overschrijft de Cloud- en analytische id's van een bezoeker op het moment dat deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id's overschrijven in domeinen die u niet beheert.
+seo-description: Deze eigenschap overschrijft de Experience Cloud- en analytische id's van een bezoeker wanneer deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id's overschrijven in domeinen die u niet beheert.
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
 uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-Deze eigenschap overschrijft de Cloud- en analytische id&#39;s van een bezoeker op het moment dat deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id&#39;s overschrijven in domeinen die u niet beheert.
+Deze eigenschap overschrijft de Experience Cloud- en analytische id&#39;s van een bezoeker wanneer deze van het ene domein naar het andere navigeren. Als u een id wilt overschrijven, moet u eigenaar zijn van de id-service en deze service op elk domein hebben geïmplementeerd. Met deze code kunt u geen id&#39;s overschrijven in domeinen die u niet beheert.
 
 **Syntaxis:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (standaardwaarde is `false`)
 
@@ -38,7 +41,7 @@ Als u sitebezoekers wilt bijhouden, schrijft de id-service een [!DNL Experience 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Hoofdletters gebruiken </th> 
+   <th colname="col1" class="entry"> Gebruiksscenario </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -58,7 +61,7 @@ Als u sitebezoekers wilt bijhouden, schrijft de id-service een [!DNL Experience 
     <ul id="ul_7BEBFD523A2F47AFB6963536E43692D0"> 
      <li id="li_71586080489340E2A6C0B263F231E3DE">Domein A is een openingspagina. </li> 
      <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">Domein B is een afzonderlijke conversie-, boekings- of andere end-of-workflow-pagina. </li> 
-     <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Een bezoeker heeft reeds een koekje (en een MID) die van een vorig bezoek aan Domein B wordt geplaatst en u weet deze minder wenselijke cliënt-kant MIDs eerder dan server-kant MIDs zijn. </li> 
+     <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Een bezoeker heeft reeds een koekje (en een MID) die van een vorig bezoek aan Domein B wordt geplaatst en u weet dat deze minder wenselijke cliënt-kant MIDs eerder dan server-kant MIDs zijn. </li> 
      <li id="li_36FC138530A4476A995C0F9FD73C41DE">U wilt een bezoeker constant identificeren als zij bij Domein B van Domein A komen. </li> 
     </ul> </td> 
   </tr> 
