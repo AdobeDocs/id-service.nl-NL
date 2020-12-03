@@ -1,19 +1,22 @@
 ---
-description: Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Wolk van de Ervaring in uw eigen subdomeinnaam met deze configuraties wordt gebruikt.
+description: Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Experience Cloud wordt gebruikt in uw eigen subdomeinnaam met deze configuraties die.
 keywords: ID Service
-seo-description: Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Wolk van de Ervaring in uw eigen subdomeinnaam met deze configuraties wordt gebruikt.
+seo-description: Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Experience Cloud wordt gebruikt in uw eigen subdomeinnaam met deze configuraties die.
 seo-title: publiekManagerServer en publiekManagerServerSecure
 title: publiekManagerServer en publiekManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 1%
 
 ---
 
 
 # publiekManagerServer en publiekManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Wolk van de Ervaring in uw eigen subdomeinnaam met deze configuraties wordt gebruikt.
+Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit van de Experience Cloud wordt gebruikt in uw eigen subdomeinnaam met deze configuraties die.
 
 **Syntaxis:**
 
@@ -29,7 +32,7 @@ Normaal, doet de dienst van [!DNL Experience Cloud] identiteitskaart vraag aan [
 Deze configuraties vereisen dat u gebruikt:
 
 * De [!DNL Audience Manager] subdomeinnaam van verslag voor uw bedrijf. Verifieer of ontvang deze naam van uw consultant.
-* De subdomeinnaam die aan uw [!UICONTROL organisatie-id]is gekoppeld.
+* De subdomeinnaam die aan uw [!UICONTROL Organization ID]bestand is gekoppeld.
 * *Beide* configuratieparameters met de zelfde subdomeinnaam.
 
 **Codevoorbeeld**
