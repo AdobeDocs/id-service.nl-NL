@@ -1,23 +1,26 @@
 ---
-description: Een overzicht van de processen en overeenkomsten voor id-synchronisatie in de Experience Cloud Identity Service, inclusief Adobe Media Optimizer en de ID-service.
+description: Een overzicht van de processen van de synchronisatie van identiteitskaart en gelijke tarieven in de Dienst van de Identiteit van de Experience Cloud, met inbegrip van Adobe Media Optimizer en de dienst van identiteitskaart
 keywords: ID Service
-seo-description: Een overzicht van de processen en overeenkomsten voor id-synchronisatie in de Experience Cloud Identity Service, inclusief Adobe Media Optimizer en de ID-service.
-seo-title: ID-synchronisatie en overeenkomende snelheden
-title: ID-synchronisatie en overeenkomende snelheden
+seo-description: Een overzicht van de processen van de synchronisatie van identiteitskaart en gelijke tarieven in de Dienst van de Identiteit van de Experience Cloud, met inbegrip van Adobe Media Optimizer en de dienst van identiteitskaart
+seo-title: ID-synchronisatie en overeenkomsten
+title: ID-synchronisatie en overeenkomsten
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 0%
 
 ---
 
 
-# ID-synchronisatie en overeenkomende snelheden{#understanding-id-synchronization-and-match-rates}
+# ID-synchronisatie en overeenkomsten{#understanding-id-synchronization-and-match-rates}
 
-Een overzicht van de processen en overeenkomsten voor id-synchronisatie in de Experience Cloud Identity Service, inclusief Adobe Media Optimizer en de ID-service.
+Een overzicht van de processen van de synchronisatie van identiteitskaart en gelijke tarieven in de Dienst van de Identiteit van de Experience Cloud, met inbegrip van Adobe Media Optimizer en de dienst van identiteitskaart
 
 ## ID-synchronisatie en overeenkomstige snelheden {#section-f652aae7234945e89d26dd833c5215fb}
 
-Identiteitssynchronisatie komt overeen met id&#39;s die door de id-service zijn toegewezen aan id&#39;s die door onze klanten aan sitebezoekers zijn toegewezen. Stel dat de id-service een bezoeker-id 1234 heeft toegewezen. Een ander platform kent deze bezoeker op ID 4321. De dienst van identiteitskaart brengt deze IDs samen tijdens het synchronisatieproces in kaart. De resultaten voegen nieuwe gegevenspunten toe aan wat onze klanten over hun plaatsbezoekers weten. En, als de dienst van identiteitskaart geen identiteitskaart kan aanpassen, leidt het tot nieuwe en gebruikt die identiteitskaart voor toekomstige synchronisatie.
+Identiteitssynchronisatie komt overeen met IDs die door de dienst van identiteitskaart aan IDs wordt toegewezen aan plaatsbezoekers door onze klanten. Stel dat de id-service een bezoeker-id 1234 heeft toegewezen. Een ander platform kent deze bezoeker op ID 4321. De dienst van identiteitskaart brengt deze IDs samen tijdens het synchronisatieproces in kaart. De resultaten voegen nieuwe gegevenspunten toe aan wat onze klanten over hun plaatsbezoekers weten. En, als de dienst van identiteitskaart geen identiteitskaart kan aanpassen, leidt het tot nieuwe en gebruikt die identiteitskaart voor toekomstige synchronisatie.
 
 Met Identieke snelheden wordt de doeltreffendheid van het synchronisatieproces van de id gemeten en gevalideerd. De hoge gelijke tarieven wijzen erop dat een bepaalde dienst effectiever zal zijn en toegang tot een groter online publiek dan de dienst met lage gelijke tarieven zal verlenen. Het vergelijken van gelijke tarieven is een kwantificeerbare manier om verschillende geïntegreerde ad technologieplatforms te evalueren.
 
@@ -37,13 +40,13 @@ Wanneer een bezoeker naar uw site komt en een pagina laadt, maakt de `Visitor.ge
 
 **Stap 2: iFrame laden**
 
-Terwijl de hoofdtekst van de pagina wordt geladen, laadt de id-service een iFrame met de naam *`Destination Publishing iFrame`*. De iFrame voor publiceren [!UICONTROL bestemming] wordt geladen in een domein dat los staat van de bovenliggende pagina. Dit ontwerp zorgt voor betere paginaprestaties omdat de iFrame:
+Terwijl de hoofdtekst van de pagina wordt geladen, laadt de id-service een iFrame met de naam *`Destination Publishing iFrame`*. De [!UICONTROL Destination Publishing iFrame] code wordt in een domein geladen dat los staat van de bovenliggende pagina. Dit ontwerp zorgt voor betere paginaprestaties omdat de iFrame:
 
-* Hiermee wordt asynchroon geladen ten opzichte van de bovenliggende pagina. Dit betekent dat de bovenliggende pagina onafhankelijk van de iFrame voor [!UICONTROL doelpublicatie]kan worden geladen. Het laden van de iFrame en het laden van ID synchronisatiepixels vanuit het iFrame heeft geen invloed op de bovenliggende pagina of de gebruikerservaring.
+* Hiermee wordt asynchroon geladen ten opzichte van de bovenliggende pagina. Dit betekent dat de bovenliggende pagina onafhankelijk van de [!UICONTROL Destination Publishing iFrame]pagina kan worden geladen. Het laden van de iFrame en het laden van ID synchronisatiepixels vanuit het iFrame heeft geen invloed op de bovenliggende pagina of de gebruikerservaring.
 * Laadt zo snel mogelijk. Als dit te snel is, kunt u het iFrame laden na de gebeurtenis load van het venster (niet aanbevolen). Zie [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) voor meer informatie.
 * Voorkomt dat code in het iFrame toegang krijgt tot de bovenliggende pagina of dit beïnvloedt.
 
-Zie ook [Hoe de Experience Cloud Identity Service id&#39;s aanvraagt en instelt...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Zie ook, [hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en IDs plaatst...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **Stap 3: Vuurwerk-id-syncs**
 
@@ -51,7 +54,7 @@ De id-synchronisatie is een URL die wordt geactiveerd in het iFrame voor publice
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Zie ook, de Synchronisatie van [identiteitskaart voor Binnenkomende Overdrachten](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html)van Gegevens.
+See also, [ID Synchronization for Inbound Data Transfers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html).
 
 **Stap 4: Winkel-id&#39;s**
 
@@ -70,9 +73,9 @@ De term *`Sync Services`* verwijst naar interne [!DNL Experience Cloud] technolo
 
 ## ID-synchronisatie met Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (eerder geroepen [!DNL Adobe Media Optimizer])is een uitzondering op het op iFrame-Gebaseerde proces van de synchronisatie van identiteitskaart. Omdat [!DNL Advertising Cloud] het een vertrouwd domein is, worden id-synchronisaties uitgevoerd vanaf de bovenliggende pagina in plaats van in het iFrame [!UICONTROL voor publiceren van]bestemming. Tijdens synchronisatie, roept de dienst van identiteitskaart bij [!DNL Advertising Cloud] , die een erfenis domeinnaam is die door `cm.eversttech.net`[!DNL Advertising Cloud] voorafgaand aan zijn aankoop door Adobe wordt gebruikt. Het verzenden van gegevens naar [!DNL Advertising Cloud] verbetert de match-snelheden en is automatisch voor klanten van de identiteitskaart die versie 2.0 (of hoger) gebruiken. Zie ook [Cloud Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-advertising-cloud.html)adverteren.
+[!DNL Adobe Advertising Cloud] (eerder geroepen [!DNL Adobe Media Optimizer])is een uitzondering op het op iFrame-Gebaseerde proces van de synchronisatie van identiteitskaart. Omdat [!DNL Advertising Cloud] het een vertrouwd domein is, worden id-synchronisaties uitgevoerd vanaf de bovenliggende pagina in plaats van in de [!UICONTROL Destination Publishing iFrame]bovenliggende pagina. Tijdens synchronisatie, roept de dienst van identiteitskaart [!DNL Advertising Cloud] bij `cm.eversttech.net`, die een naam van het erfenisdomein is die door [!DNL Advertising Cloud] voorafgaand aan zijn verwerving door Adobe wordt gebruikt. Het verzenden van gegevens naar [!DNL Advertising Cloud] verbetert de match-snelheden en is automatisch voor klanten van de identiteitskaart die versie 2.0 (of hoger) gebruiken. Zie ook [Advertising Cloud Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
 
 >[!MORELIKETHIS]
 >
->* [Inzicht krijgen in oproepen van het demdex-domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)
+>* [Inzicht in calls naar het Demdex-domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)
 
