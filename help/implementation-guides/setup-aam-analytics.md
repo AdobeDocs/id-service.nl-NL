@@ -1,7 +1,7 @@
 ---
-description: Deze instructies gelden voor Analytics- en Audience Manager-klanten die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+description: Deze instructies gelden voor klanten van Analytics en Audience Managers die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 keywords: ID Service
-seo-description: Deze instructies gelden voor Analytics- en Audience Manager-klanten die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+seo-description: Deze instructies gelden voor klanten van Analytics en Audience Managers die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 seo-title: Implementeer de Experience Cloud Identity Service voor Analytics en Audience Manager
 title: Implementeer de Experience Cloud Identity Service voor Analytics en Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Implementeer de Experience Cloud Identity Service voor Analytics en Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Deze instructies gelden voor Analytics- en Audience Manager-klanten die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+Deze instructies gelden voor klanten van Analytics en Audience Managers die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ Deze instructies gelden voor Analytics- en Audience Manager-klanten die de Exper
 
 Naast de hier beschreven stappen, klanten die gebruiken [!DNL Analytics] en aan server-zij door:sturen [!DNL Audience Manager] zouden moeten migreren. Door:sturen aan de serverzijde kunt u DIL (de code van de de gegevensinzameling van de Audience Manager) verwijderen en het vervangen met de Module [van het Beheer van de](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)Publiek. Zie de [server-kant het door:sturen documentatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor meer informatie.
 
-Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit proces omvat externe wijzigingen in uw sitecode en interne stappen die Adobe moet uitvoeren om uw account aan te bieden. Veel van deze migratieprocedures moeten parallel lopen en samen worden vrijgegeven. Het implementatiepad moet deze reeks gebeurtenissen volgen:
+Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit proces omvat externe wijzigingen in uw sitecode en interne stappen die Adobe moet uitvoeren om uw account te kunnen instellen. Veel van deze migratieprocedures moeten parallel lopen en samen worden vrijgegeven. Het implementatiepad moet deze reeks gebeurtenissen volgen:
 
 1. Werk met uw [!DNL Analytics] en [!DNL Audience Manager] contacten om uw dienst van identiteitskaart en server-kant het door:sturen migratie te plannen. Maak het selecteren van een volgende server een belangrijk deel van dit plan.
 
@@ -41,7 +41,7 @@ Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit pr
 
 Voor de ID-service is de `VisitorAPI.js` codebibliotheek vereist. Deze codebibliotheek downloaden:
 
-1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
+1. Ga naar **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
 
 1. Klik in Codebeheer op **[!UICONTROL JavaScrpt (New)]** of **[!UICONTROL JavaScript (Legacy)]**. Hiermee worden gecomprimeerde codebibliotheken gedownload.
 
@@ -94,9 +94,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Stap 4: Voeg uw Experience Cloud-organisatie-id toe aan Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Stap 4: Voeg uw Experience Cloud Organisatie-id toe aan Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
-Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door de Experience Cloud-organisatie-id. Als u uw organisatie-id niet kent, kunt u deze vinden op de pagina Experience Cloud Administration. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw Experience Cloud-organisatie-id. Als u uw organisatie-id niet kent, kunt u deze vinden op de pagina voor beheer van de Experience Cloud. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -121,15 +121,15 @@ Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 
 1. Beantwoord de vragen in de onderstaande beslissingsmatrix. Gebruik de variabelen die overeenkomen met uw antwoorden.
 1. Vervang de plaatsaanduidingen van de trackingserver door de URL&#39;s van de trackingserver.
-1. Verwijder ongebruikte trackingserver- en Experience Cloud-servervariabelen uit de code.
+1. Verwijder ongebruikte het volgen server en de servervariabelen van de Experience Cloud uit de code.
 
 ![](assets/tracking-server-matrix.png)
 
 >[!NOTE]
 >
->Wanneer gebruikt, pas de server URLs van Experience Cloud aan hun overeenkomstige het volgen server URLs als dit aan:
+>Wanneer gebruikt, pas de server URLs van de Experience Cloud aan hun overeenkomstige volgende server URLs als dit aan:
 
-* URL Experience Cloud-server = URL van trackingsserver
+* Experience Cloud server-URL = URL van trackingsserver
 * Beveiligde URL van Experience Cloud-server = beveiligde URL van server bijhouden
 
 Als u niet zeker bent hoe te om uw het volgen server te vinden [FAQ](../faq-intro/faq.md) zien en [Correct bevolken trackingServer en trackingServerSecure variabelen](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
@@ -146,7 +146,7 @@ Voeg de hieronder getoonde `Visitor.getInstance` functie aan uw `AppMeasurement.
 >
 >Op dit punt, zou u de code van [!DNL Audience Manager] DIL moeten verwijderen en het met de Module van het Beheer van de Publiek vervangen. Zie [Server-kant doorsturen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) implementeren voor instructies.
 
-***(Optioneel, maar aanbevolen)*Een aangepaste proxy maken **
+***(Optioneel, maar aanbevolen)* Een aangepaste proxy maken **
 
 Stel een aangepaste proxy in `AppMeasurement.js` om de dekking te meten. Voeg deze aangepaste proxy toe aan de `doPlugins` functie van het `AppMeasurement.js` bestand:
 
@@ -168,7 +168,7 @@ Als een van deze gebruiksgevallen op uw situatie van toepassing is, vraagt u de 
 
 **Gedeeltelijke implementatie**
 
-U hebt een respijtperiode nodig als u sommige pagina&#39;s gebruikt die de id-service gebruiken en sommige pagina&#39;s die dat niet doen, en deze allemaal in dezelfde Analytics-rapportsuite rapporteren. Dit komt vaak voor als u een algemene rapportsuite hebt die rapporten opstelt in verschillende domeinen.
+U hebt een respijtperiode nodig als u sommige pagina&#39;s hebt die de id-service gebruiken en sommige pagina&#39;s die dat niet doen, en deze allemaal in dezelfde analytische rapportsuite rapporteren. Dit komt vaak voor als u een algemene rapportsuite hebt die rapporten opstelt in verschillende domeinen.
 
 Sluit de respijtperiode af nadat de id-service is geïmplementeerd op al uw webpagina&#39;s die in dezelfde rapportsuite rapporteren.
 
@@ -197,8 +197,8 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [AMCV-cookie](../introduction/cookies.md) in het domein waar u pagina&#39;s ontvangt.
-* MID-waarde in de Analytics-afbeeldingsaanvraag met [Adobe Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html).
-* Zie ook: [Test en Verifieer de Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+* MID-waarde in de afbeeldingsaanvraag Analytics met [Adobe debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html).
+* Zie ook, [Test en verifieer de Dienst](../implementation-guides/test-verify.md)van de Identiteit van de Experience Cloud.
 
 Om server-kant het door:sturen te verifiëren, zie [hoe te uw server-kant het Door:sturen Implementatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)verifiëren.
 
@@ -208,6 +208,6 @@ Implementeer de code nadat deze voor het testen is geslaagd.
 
 Als u een respijtperiode hebt ingeschakeld:
 
-* Controleer of de Analytics-id (AID) en de MID in de aanvraag voor de afbeelding staan.
+* Zorg ervoor dat de opties Analytics ID (AID) en MID in de afbeeldingsaanvraag staan.
 * Vergeet niet de respijtperiode uit te schakelen wanneer u voldoet aan de criteria voor stopzetting.
 
