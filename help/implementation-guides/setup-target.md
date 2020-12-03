@@ -1,9 +1,9 @@
 ---
-description: Deze instructies gelden voor Target-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+description: Deze instructies zijn bedoeld voor klanten van het type Target die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 keywords: ID Service
-seo-description: Deze instructies gelden voor Target-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
-seo-title: Implementeer de Experience Cloud Identity Service voor Target
-title: Implementeer de Experience Cloud Identity Service voor Target
+seo-description: Deze instructies zijn bedoeld voor klanten van het type Target die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+seo-title: Voer de Dienst van de Identiteit Experience Cloud voor Doel uit
+title: Voer de Dienst van de Identiteit Experience Cloud voor Doel uit
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
@@ -14,9 +14,9 @@ ht-degree: 2%
 ---
 
 
-# Implementeer de Experience Cloud Identity Service voor Target{#implement-the-experience-cloud-id-service-for-target}
+# Voer de Dienst van de Identiteit Experience Cloud voor Doel uit{#implement-the-experience-cloud-id-service-for-target}
 
-Deze instructies gelden voor Target-klanten die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+Deze instructies zijn bedoeld voor klanten van het type Target die de Experience Cloud Identity Service willen gebruiken en geen gebruik maken van Dynamic Tag Management (DTM). Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 
 >[!IMPORTANT]
 >
@@ -53,7 +53,7 @@ Version and copyright section
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");
 ```
 
-## Stap 3: Voeg uw Experience Cloud-organisatie-id toe aan Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
+## Stap 3: Voeg uw Experience Cloud Organisatie-id toe aan Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
 Vervang in de `Visitor.getInstance` functie `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de [!DNL Experience Cloud] beheerpagina. Zie ook, [Beleid - de Diensten](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html)van de Kern. Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
@@ -78,7 +78,7 @@ U kunt als volgt de implementatie van uw id-service testen:
 * Controleer of de AMCV-cookie zich in het domein bevindt waar de pagina wordt gehost.
 * Controleer of `mboxMCGVID` deze optie in uw [!DNL Target] verzoek wordt weergegeven en of deze de [!DNL Experience Cloud] id (MID) bevat.
 
-Zie [Cookies en de Experience Cloud Identity Service](../introduction/cookies.md) voor meer informatie over de AMCV cookie en de MID.
+Zie [Cookies en de Experience Cloud Identity Service](../introduction/cookies.md) voor informatie over de cookie AMCV en de MID.
 
 **Implementeren**
 
