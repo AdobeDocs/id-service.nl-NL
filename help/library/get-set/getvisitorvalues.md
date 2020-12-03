@@ -7,6 +7,9 @@ title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +65,7 @@ In de standaardvoorbeeldreactie zijn sommige waarden voor demonstratiedoeleinden
 
 ## Hoofdlettergebruik 2: Een aangepaste gegevensset aanvragen {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Deze code gebruikt een optionele array om een specifieke set id&#39;s te retourneren met behulp van de `visitor.FIELDS` enum. In dit geval willen we alleen de Experience Cloud ID (MCID) en Analytics ID (MCAID) van de bezoeker. Uw verzoek en antwoord kunnen er ongeveer als volgt uitzien.
+Deze code gebruikt een optionele array om een specifieke set id&#39;s te retourneren met behulp van de `visitor.FIELDS` enum. In dit geval willen we alleen de Experience Cloud-id (MCID) en de Analytics ID (MCAID) van de bezoeker. Uw verzoek en antwoord kunnen er ongeveer als volgt uitzien.
 
 ```js
 //Call the ID service 
@@ -96,7 +99,7 @@ In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Di
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMB </span> </p> </td> 
-   <td colname="col2"> <p>De gecodeerde <span class="keyword"> </span> meta-gegevens van de Manager van de Publiek die als "blob."worden bekend </p> </td> 
+   <td colname="col2"> <p>De gecodeerde metagegevens van de <span class="keyword"> Audience Manager worden </span> de blob genoemd. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
@@ -108,7 +111,7 @@ In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>De Cloud-id van Experience van de bezoeker. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>De Experience Cloud-id van de bezoeker. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
