@@ -1,19 +1,22 @@
 ---
-description: Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor synchronisatie van id laadt.
+description: Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
 keywords: ID Service
-seo-description: Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor synchronisatie van id laadt.
+seo-description: Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 2%
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor synchronisatie van id laadt.
+Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
 
 **Syntaxis:** ` `idSyncAttachIframeOnWindowLoad= true|false&quot;(standaardwaarde is `false`.)
 
