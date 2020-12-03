@@ -1,7 +1,7 @@
 ---
-description: Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
+description: Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
 keywords: ID Service
-seo-description: Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
+seo-description: Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
 seo-title: Klant-id's en verificatiestatussen
 title: Klant-id's en verificatiestatussen
 uuid: 643df363-224a-463e-a332-be59926b47e7
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # Klant-id&#39;s en verificatiestatussen {#customer-ids-and-authentication-states}
 
-Naast de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s en een verificatiestatus aan elke bezoeker koppelen.
+Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id&#39;s en een verificatiestatus aan elke bezoeker koppelen.
 
 ## Verificatiestatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
@@ -26,7 +26,7 @@ De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bez
 >
 >`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Core Services - Hoe kan ik uw oplossingen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html) inschakelen voor voorbeelden.
 
-Vanaf Experience Cloud Identity Service v1.5+ wordt het optionele `setCustomerIDs` object `AuthState` opgenomen. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
+Vanaf Experience Cloud Identity Service v1.5+ wordt `setCustomerIDs` het optionele `AuthState` object opgenomen. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -45,7 +45,7 @@ Vanaf Experience Cloud Identity Service v1.5+ wordt het optionele `setCustomerID
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> 1 </span> </p> </td> 
-   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor klantkenmerken voor <span class="keyword"> </span> Target. </p> </p> </td> 
+   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor Klantkenmerken voor <span class="keyword"> </span> Target. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
