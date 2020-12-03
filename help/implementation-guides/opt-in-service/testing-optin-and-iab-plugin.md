@@ -6,6 +6,9 @@ title: Opt-in-service valideren
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 0%
 
 ---
 
@@ -26,13 +29,13 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Wis voordat u de pagina laadt de cache en cookies.
 
-Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspecteren. Zoals in het scherm hierboven, selecteer het lusje van het *Netwerk* om de verzoeken te bekijken die van browser worden gemaakt.
+Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspect. Zoals in het scherm hierboven, selecteer het lusje van het *Netwerk* om de verzoeken te bekijken die van browser worden gemaakt.
 
-In het bovenstaande voorbeeld zijn de volgende Adobe JS-tags geïnstalleerd op de pagina: ECID, AAM, Analytics en Target.
+In het bovenstaande voorbeeld zijn de volgende Adobe JS-tags op de pagina geïnstalleerd: ECID, AAM, Analytics en Target.
 
 **Hoe kan worden aangetoond dat Opt-in werkt zoals u verwacht:**
 
-Aanvragen naar Adobe-servers worden niet weergegeven:
+U zou geen verzoeken aan de servers van Adobe moeten zien:
 
 * demdex.net/id
 * demdex.net/event
@@ -73,7 +76,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Aangezien Adobe Analytics vooraf is goedgekeurd voor aanmelding, worden op het tabblad Netwerk aanvragen weergegeven voor de volgende server:
+Aangezien Adobe Analytics vooraf is goedgekeurd voor aanmelding, worden op het tabblad Netwerk aanvragen weergegeven voor uw traceringsserver:
 
 ![](assets/use_case_3_1.png)
 
@@ -102,15 +105,15 @@ Open de ontwikkelaarsgereedschappen en selecteer het tabblad *Console* . Plak he
   
 ```
 
-Hier is een voorbeeldoutput wanneer de doelstellingen 1, 2, en 5 worden goedgekeurd, en de de verkopersidentiteitskaart van de Manager van de Audience wordt goedgekeurd:
+Hier is een voorbeeldoutput wanneer de doeleinden 1, 2, en 5 worden goedgekeurd, en identiteitskaart van de verkoper van de Audience Manager wordt goedgekeurd:
 
 * demdex.net/id: De aanwezigheid van deze oproep bewijst dat ECID een id heeft aangevraagd bij demdex.net
-* demdex.net/event: De aanwezigheid van deze vraag toont aan dat de vraag van de gegevensinzameling DIL zoals verwacht werkt.
+* demdex.net/event: De aanwezigheid van deze vraag toont aan dat de de gegevensverzamelingsvraag van de DIL zoals verwacht werkt.
 * demdex.net/dest5.html: De aanwezigheid van deze vraag toont aan dat de Syncs van identiteitskaart worden teweeggebracht.
 
 ![](assets/use_case_4_1.png)
 
-Als een van de volgende opties niet geldig is, worden geen aanvragen bij Adobe-servers en geen Adobe-cookies weergegeven:
+Als één van het volgende ongeldig is, zult u geen verzoeken aan Adobe servers, en geen koekjes van de Adobe zien:
 
 * De doelstellingen 1, 2 of 5 worden niet goedgekeurd.
-* De leverancier-id van Audience Manager is niet goedgekeurd.
+* De leverancier-id van de Audience Manager is niet goedgekeurd.
