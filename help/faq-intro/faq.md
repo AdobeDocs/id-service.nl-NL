@@ -7,6 +7,9 @@ title: Veelgestelde vragen over ID-service
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Veelgestelde vragen over functies, functionaliteit en problemen met betrekking t
 
 Zie het [overzicht](../introduction/overview.md).
 
-**Waarom roept de dienst van identiteitskaart geen vraag om identiteitskaart van de Wolk van de Ervaring terug te winnen?**
+**Waarom doet de dienst van identiteitskaart geen vraag om identiteitskaart van de Experience Cloud terug te winnen?**
 
 Dit kan moeilijk te diagnosticeren zijn. Eén ding dat u kunt controleren, zijn de kopteksten voor inhoudsbeveiligingsbeleid op uw site. Als u een strikt veiligheidsbeleid hebt, kunnen die montages de derdevraag blokkeren die door de dienst van identiteitskaart wordt gemaakt. Zie Beleid voor [inhoudsbeveiliging en de Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
