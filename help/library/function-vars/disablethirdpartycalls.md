@@ -7,6 +7,9 @@ title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 2%
 
 ---
 
@@ -24,12 +27,12 @@ Wanneer `disableThirdPartyCalls: true`, zal de dienst van identiteitskaart geen 
 Deze variabele is ontworpen voor klanten die:
 
 * Om de dienst van identiteitskaart te verhinderen vraag van hun veilige, voor authentiek verklaarde pagina&#39;s te maken.
-* Sitebezoekers krijgen een Experience Cloud ID (MID).
-* Hun andere oplossingen van de Ervaring Cloud om behoorlijk te werken.
+* Site-bezoekers moeten een Experience Cloud-id (MID) hebben.
+* Hun andere Experience Cloud oplossingen werken naar behoren.
 
 **Uitvoeringsstrategie**
 
-Omdat andere Experience Cloud-oplossingen afhankelijk zijn van de MID, roept de id-service Adobe aan om deze id te retourneren en in te stellen. Als u de dienst van identiteitskaart van het maken van vraag van voor authentiek verklaarde gedeelten van uw website moet tegenhouden, dan laat het deze vereiste vraag van pagina&#39;s maken die eerst geen authentificatie vereisen. Nadat de bezoeker van uw site een id heeft, kunt u `disableThirdPartyCalls= true` in de code voor de id-service de geverifieerde gedeelten van uw site instellen. De veronderstelling hier is dat de meeste, zo niet alle, van uw klanten aan een authentificatiepagina zullen navigeren alvorens zij toegang tot de veilige delen van uw plaats krijgen.
+Omdat andere Experience Cloud oplossingen zich op MID baseren, roept de dienst van identiteitskaart Adobe om deze identiteitskaart terug te keren en te plaatsen. Als u de dienst van identiteitskaart van het maken van vraag van voor authentiek verklaarde gedeelten van uw website moet tegenhouden, dan laat het deze vereiste vraag van pagina&#39;s maken die eerst geen authentificatie vereisen. Nadat de bezoeker van uw site een id heeft, kunt u `disableThirdPartyCalls= true` in de code voor de id-service de geverifieerde gedeelten van uw site instellen. De veronderstelling hier is dat de meeste, zo niet alle, van uw klanten aan een authentificatiepagina zullen navigeren alvorens zij toegang tot de veilige delen van uw plaats krijgen.
 
 **Codevoorbeeld**
 
