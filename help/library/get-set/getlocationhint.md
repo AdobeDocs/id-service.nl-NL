@@ -1,19 +1,22 @@
 ---
-description: Retourneert de Experience Cloud Identity Service region ID. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar Audience Manager te kunnen uitvoeren.
+description: Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
 keywords: ID Service
-seo-description: Retourneert de Experience Cloud Identity Service region ID. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar Audience Manager te kunnen uitvoeren.
+seo-description: Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-Retourneert de Experience Cloud Identity Service region ID. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar Audience Manager te kunnen uitvoeren.
+Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
 
 **Syntaxis:** ` var *`variabelenaam`* = visitor.getLocationHint()`
 
