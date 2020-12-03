@@ -21,14 +21,14 @@ ht-degree: 5%
 
 Verbind het Platform van het Beheer van de Toestemming (CMP) met de stop van het Kader van de Transparantie en van de Toestemming van de Opt-binnen (TCF).
 
-Klanten die [IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) gebruiken, kunnen hun CMP (Consent Management Platform) verbinden met de TCF-plug-in van Opt-in. Inschakelen is een functie die is ingesloten in de ECID JavaScript-bibliotheek en die afzonderlijke Adobe-oplossingsbibliotheken kan uitschakelen, afhankelijk van de voorkeuren van de bezoeker die in een CMP zijn ingesteld. Wanneer de TCF-plug-in van Opt-in is geïmplementeerd met de ECID-bibliotheek, worden de voorkeuren van de bezoeker van uw CMP die IAB TCF ondersteunt automatisch toegewezen aan Opt-in. Deze voorkeur zal op Audience Manager gebaseerde bibliotheken (DIL en ECID) en bijbehorende vraag toelaten wanneer de toestemming wordt ontvangen.
+Adobe Audience Manager-klanten die [IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) gebruiken, kunnen hun CMP (Consent Management Platform) verbinden met de TCF-plug-in van Opt-in. Inschakelen is een functie die is ingesloten in de ECID JavaScript-bibliotheek en die individuele Adobe-oplossingsbibliotheken kan uitschakelen afhankelijk van de voorkeuren van de bezoeker die zijn ingesteld in een CMP. Wanneer de TCF-plug-in van Opt-in is geïmplementeerd met de ECID-bibliotheek, worden de voorkeuren van de bezoeker van uw CMP die IAB TCF ondersteunt automatisch toegewezen aan Opt-in. Deze voorkeur zal op Audience Manager gebaseerde bibliotheken (DIL en ECID) en bijbehorende vraag toelaten wanneer de toestemming wordt ontvangen.
 
 ## Voer CMP uit die IAB steunt {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
 Opt-In kan alleen worden geïntegreerd met IAB TCF als u het volgende invult:
 
 1. Voer CMP uit die IAB steunt en als IAB verkoper [wordt](https://vendorlist.consensu.org/vendorlist.json) geregistreerd of ontwikkelt binnen-huis CMP die IAB TCF specificatie uitvoert, en als CMP met IAB TCF registreert.
-1. Definieer/laad de URL `__tcfapi` voordat u de Adobe JS laadt.
+1. Definieer/laad de URL `__tcfapi` voordat u de JS Adobe laadt.
 
 Lees voor meer informatie de documenten van het [Interactive Advertising Bureau](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md).
 
@@ -38,7 +38,7 @@ Lees voor meer informatie de documenten van het [Interactive Advertising Bureau]
 >
 >Inschakelen is alleen beschikbaar in ECID 4.0+.
 
-Gebruik Adobe Experience Platform starten om de TCF-plug-in van Opt-in voor uw site te implementeren. Wanneer het toelaten van IAB voor Opt-binnen manueel, controleer om ervoor te zorgen de volgende montages aan waar binnen het voorwerp van de Bezoeker worden geplaatst:
+Gebruik Adobe Experience Platform Launch om de TCF-plug-in van Opt-in voor uw site te implementeren. Wanneer het toelaten van IAB voor Opt-binnen manueel, controleer om ervoor te zorgen de volgende montages aan waar binnen het voorwerp van de Bezoeker worden geplaatst:
 
 ```javascript
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -47,7 +47,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-Nadat de instellingen correct zijn geconfigureerd, worden ECID- en DIL-bibliotheken in-/uitgeschakeld, afhankelijk van de toestemmingscriteria van de CMP en IAB TCF.
+Nadat de instellingen correct zijn geconfigureerd, worden ECID- en DIL-bibliotheken ingeschakeld/uitgeschakeld, afhankelijk van de toestemmingscriteria van de CMP en IAB TCF.
 
 >[!IMPORTANT]
 >
@@ -60,4 +60,4 @@ Voor meer informatie over het valideren van de TCF-plug-in van Opt-in raadpleegt
 * [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - Voor meer informatie over de IAB-standaard
 * [Adobe Opt-In](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - Voor meer informatie over Opt-In, een vereiste component voor toestemmingsbeheer in Platform oplossingen
 * De Steun van het Kader van de Transparantie en van de Toestemming van IAB (TCF) [in Audience Manager](https://docs.adobe.com/content/help/nl-NL/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
-* [Uw privacyopties](https://www.adobe.com/nl/privacy/opt-out.html#customeruse) - Een andere privacyoptie waarover uw gebruikers beschikken, is de mogelijkheid om af te zien van alle gegevensverzameling met andere wereldwijde opt-outprogramma&#39;s. Globale Opt-Out neemt belangrijkheid over de Opt-binnen en IAB TCF controle
+* [Uw privacyopties](https://www.adobe.com/nl/privacy/opt-out.html#customeruse) - Een andere privacyoptie waarover uw gebruikers beschikken, is de mogelijkheid om zich af te melden bij het verzamelen van gegevens met andere wereldwijde opt-outprogramma&#39;s. Globale Opt-Out neemt belangrijkheid over de Opt-binnen en IAB TCF controle
