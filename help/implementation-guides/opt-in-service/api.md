@@ -6,6 +6,9 @@ title: Inschakelen-verwijzing
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '897'
+ht-degree: 0%
 
 ---
 
@@ -27,13 +30,13 @@ adobe.OptInCategories = {
 
 ## Parameters van de Opt-in-configuratie {#section-d66018342baf401389f248bb381becbf}
 
-In deze sectie wordt het gebruik van de API voor het configureren van Inschakelen besproken. Veel van de configuratie en implementatie kan worden gedaan gebruikend de uitbreiding van de Lancering van het Platform van de Ervaring.
+In deze sectie wordt het gebruik van de API voor het configureren van Inschakelen besproken. Veel van de configuratie en de implementatie kan worden gedaan gebruikend de uitbreiding van het Experience Platform Launch.
 
 Opt-in configuraties worden verstrekt in de functie van JavaScript van de Bezoeker, die het globale `getInstance()` `adobe` voorwerp concretiseert. De volgende lijst maakt een lijst van de configuraties van JS van de Bezoeker met betrekking tot de open-in dienst.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
-Indien onwaar, geeft dit aan dat bezoekers niet hoeven aan te melden. Resultaten in Experience Cloud die cookies maken, ongeacht de categorieën die u hebt in- of uitgeschakeld. Met deze configuratie kunt u de optie Inschakelen in- of uitschakelen.
+Indien onwaar, geeft dit aan dat bezoekers niet hoeven aan te melden. Dit resulteert in het maken van Experience Cloud-cookies, ongeacht de categorieën die worden in- of uitgeschakeld. Met deze configuratie kunt u de optie Inschakelen in- of uitschakelen.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -41,7 +44,7 @@ Bepaal welke categorieën worden goedgekeurd of ontkend wanneer nog geen voorkeu
 
 **`previousPermissions (Object<adobe.OptInCategories enum: boolean>)`**
 
-De expliciet ingestelde voorkeuren van de bezoeker. De toestemmingen in dit config beschrijven organisatiegebreken ( `previousPermissions` beschrijft `preOptInApprovals`).
+Voorkeuren worden expliciet ingesteld door de bezoeker. De toestemmingen in dit config beschrijven organisatiegebreken ( `previousPermissions` beschrijft `preOptInApprovals`).
 
 **`isOptInStorageEnabled (boolean)`**
 
@@ -109,7 +112,7 @@ Haal de lijst met machtigingen asynchroon op. De callback wordt geroepen met de 
 
 **`permissions`**
 
-Een object met alle Experience Cloud-oplossingen, als categorieën, die door het bezoekersvoorbeeld zijn verleend of geweigerd: `{ aa: true, ecid: false, aam: true... }`
+Een object waarin alle Experience Cloud-oplossingen, als categorieën, worden vermeld die door het voorbeeld van de bezoeker zijn verleend of geweigerd: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
@@ -133,7 +136,8 @@ Waar of onwaar afhankelijk van statuswaarde. Inschakelen kan false voor deze eig
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: Een of meer categorieën die moeten worden goedgekeurd. Bijvoorbeeld: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`**`shouldWaitForComplete`**: (optioneel) booleaanse parameter, standaard false. Als u waar doorgeeft, voltooit Opt-binnen niet het goedkeuringsproces tot u roept `adobe.optIn.complete()`. Dit proces is vergelijkbaar met een workflow.
+**`categories`**: Een of meer categorieën die moeten worden goedgekeurd. Bijvoorbeeld: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**: (optioneel) booleaanse parameter, standaard false. Als u waar doorgeeft, voltooit Opt-binnen niet het goedkeuringsproces tot u roept `adobe.optIn.complete()`. Dit proces is vergelijkbaar met een workflow.
 
 ```
 <codeblock>
@@ -158,7 +162,7 @@ Controleer of een of meer categorieën vooraf zijn goedgekeurd door de klant. (A
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-Async API om de lijst met machtigingen op te halen. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. **`shouldAutoSubscribe`:**Een helpernut, zal automatisch deze callback aan alle toekomstige gebeurtenissen intekenen. Betekenis callback zal worden geroepen telkens als een goedkeuring of ontkenning trekker in Opt binnen. Op deze manier wordt u altijd bijgewerkt, zonder zelf een abonnement op de gebeurtenissen te nemen.
+Async API om de lijst met machtigingen op te halen. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. **`shouldAutoSubscribe`:** Een helpernut, zal automatisch deze callback aan alle toekomstige gebeurtenissen intekenen. Betekenis callback zal worden geroepen telkens als een goedkeuring of ontkenning trekker in Opt binnen. Op deze manier wordt u altijd bijgewerkt, zonder zelf een abonnement op de gebeurtenissen te nemen.
 
 **Voorbeeld**
 
