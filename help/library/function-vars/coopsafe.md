@@ -1,19 +1,22 @@
 ---
-description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens verzendt (of niet verzendt) naar de Adobe Experience Cloud Device Co-op.
+description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt).
 keywords: ID Service
-seo-description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens verzendt (of niet verzendt) naar de Adobe Experience Cloud Device Co-op.
+seo-description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt).
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 2%
 
 ---
 
 
 # isCoopSafe{#iscoopsafe}
 
-Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens verzendt (of niet verzendt) naar de Adobe Experience Cloud Device Co-op.
+Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt).
 
 Inhoud:
 
@@ -21,7 +24,7 @@ Inhoud:
  <li> <a href="../../library/function-vars/coopsafe.md#section-4883eda6beb8437182bcc82bb58fae41" format="dita" scope="local"> Vereisten </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> Gevallen gebruiken </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-952f56724a2b4d349340e26fbaf33ddd" format="dita" scope="local"> Syntaxis en codevoorbeeld </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> POST-parameters voor gebeurtenisaanroep </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> Parameters POST gebeurtenisaanroep </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> Post-Instantiatie-API's </a> </li> 
 </ul>
 
@@ -34,14 +37,14 @@ Als u `isCoopSafe` het volgende wilt gebruiken:
 
 * Werk samen met uw [!DNL Adobe] consultant om een whitelist- of een blacklist-vlag in te stellen op uw Co-op-account voor apparaten. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
-## Gevallen gebruiken {#section-d18af2b903f248e18ae8108aaf0a8ebb}
+## Use Cases {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
 `isCoopSafe` helpt twee gebruiksgevallen oplossen die verband houden met gegevensverzameling door huidige of toekomstige leden van de Device Co-op. Deze gebruiksgevallen hebben betrekking op de manier waarop bezoekersgegevens van de site worden doorgegeven aan de copop van het apparaat om de apparaatgrafiek samen te stellen. In de volgende tabel wordt beschreven hoe u met deze gebruiksgevallen gegevens kunt blokkeren of verzenden naar de apparaatgrafiek `isCoopSafe`
 
 <table id="table_A24C63D2A21F47EDBAC8FA5E7BE888D8"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Hoofdletters gebruiken </th> 
+   <th colname="col1" class="entry"> Gebruiksscenario </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -82,20 +85,20 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## POST-parameters voor gebeurtenisaanroep {#section-fcd441933506493faefaa6b51f194a17}
+## Parameters POST gebeurtenisaanroep {#section-fcd441933506493faefaa6b51f194a17}
 
-Afhankelijk van de vlag u ( `true` of `false`) plaatst, vertaalt de dienst van identiteitskaart `isCoopSafe` in deze POST parameters en verzendt hen naar [!DNL Adobe] in een gebeurtenisvraag:
+Afhankelijk van de vlag u ( `true` of `false`) plaatst, vertaalt de dienst van identiteitskaart `isCoopSafe` in deze parameters van de POST en verzendt hen naar [!DNL Adobe] in een gebeurtenisvraag:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-De POST-parameters vertellen de [!DNL Experience Cloud] apparaatcoop of er gebruikersgegevens kunnen of kunnen worden opgenomen in de apparaatgrafiek. In de onderstaande tabel wordt de relatie gedefinieerd tussen de `isCoopSafe` Booleaanse markeringen en de POST-parameters die bij een gebeurtenisaanroep worden doorgegeven. Als u niet gebruikt `isCoopSafe`, worden geen van beide overgegaan in een gebeurtenisvraag.
+De parameters van de POST vertellen de Co-op van het [!DNL Experience Cloud] Apparaat als het gebruikersgegevens in de apparatengrafiek kan of kan omvatten. In de onderstaande tabel wordt de relatie gedefinieerd tussen de `isCoopSafe` Booleaanse markeringen en de parameters van de POST die bij een gebeurtenisaanroep worden doorgegeven. Als u niet gebruikt `isCoopSafe`, worden geen van beide overgegaan in een gebeurtenisvraag.
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Configuratiestatus </th> 
-   <th colname="col2" class="entry"> POST-parameter </th> 
+   <th colname="col2" class="entry"> Parameter POST </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -124,11 +127,11 @@ Met deze API&#39;s kunt u de `isCoopSafe` status overschrijven. Deze zijn nodig 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopSafe(); </span> </p> </td> 
-   <td colname="col2"> <p>Stelt POST-parameter <span class="codeph"> d_coop_safe=1 </span> in alle volgende gebeurtenisaanroepen in. </p> </td> 
+   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_safe=1 </span> in alle volgende gebeurtenisaanroepen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopUnsafe(); </span> </p> </td> 
-   <td colname="col2"> <p>Stelt POST-parameter <span class="codeph"> d_coop_unsafe=1 in </span> alle volgende gebeurtenisaanroepen. </p> </td> 
+   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_unsafe=1 </span> in alle volgende gebeurtenisaanroepen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
