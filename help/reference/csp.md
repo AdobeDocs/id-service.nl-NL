@@ -1,9 +1,9 @@
 ---
-description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de Adobe-domeinen die hier worden vermeld, toevoegen aan uw CSP-whitelist.
+description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
 keywords: ID Service
-seo-description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de Adobe-domeinen die hier worden vermeld, toevoegen aan uw CSP-whitelist.
-seo-title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service
-title: Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service
+seo-description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
+seo-title: Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud
+title: Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
@@ -14,9 +14,9 @@ ht-degree: 0%
 ---
 
 
-# Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
 
-Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de Adobe-domeinen die hier worden vermeld, toevoegen aan uw CSP-whitelist.
+Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
 
 ## CSP-revisie {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -28,11 +28,11 @@ CSPs gebruikt de kopbal van HTTP `Content-Security-Policy` om het type van midde
 * Aanvallen op verval van de site.
 * Distributie van malware.
 
-Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Belangrijk is dat u begrijpt welke Adobe-domeinnamen u aan een CSP moet toevoegen als u deze gebruikt en een strak beveiligingsbeleid hebt. Als u deze domeinen toevoegt, kunnen bezoekerbrowsers die toegang krijgen tot uw site, die belangrijke aanroepen uitvoeren naar Experience Cloud-bronnen die u gebruikt.
+Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Wat belangrijk is, is dat u begrijpt welke Adobe domeinnamen u aan CSP zou moeten toevoegen als u deze gebruikt en strak veiligheidsbeleid hebt. Door deze domeinen toe te voegen, kunnen bezoekersbrowsers die toegang hebben tot uw site, die belangrijke aanroepen uitvoeren naar Experience Cloud-bronnen die u gebruikt.
 
-## Experience Cloud-domeinen voor whitelisting {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Experience Cloud Domeinen voor wittekentabel {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke Experience Cloud-oplossing of -service die u gebruikt.
+Voeg deze domeinnamen of URLs aan uw CSP voor elke Experience Cloud oplossing of de dienst toe van de lijst die u gebruikt.
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
@@ -55,21 +55,21 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke Experience Cloud-opl
    <td colname="col2"> <p>Wijzig uw CSP om <span class="codeph"> *.tt.omtr dc.net</span>op te nemen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Experience Cloud ID Service en Audience Manager</b> </p> </td> 
+   <td colname="col1"> <p> <b>Experience Cloud ID-service en Audience Manager</b> </p> </td> 
    <td colname="col2"> <p>Wijzig uw CSP om de hieronder domeinen te omvatten.</p> 
    <p><ul>
    <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Als u labels implementeert met Adobe Launch, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>Aanroepen naar het <span class="codeph"> domein demdex.net</span> worden gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> cookies en de Experience Cloud Identity Service</a> en voor ID-syncs te genereren. See also, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Understanding Calls to the Demdex Domain</a>. </p> </td> </tr> 
+   <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>De vraag aan het <span class="codeph"> demdex.net</span> domein wordt gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> Koekjes en de Dienst</a> van de Identiteit van de Experience Cloud en voor de syncs van identiteitskaart te produceren. See also, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Understanding Calls to the Demdex Domain</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-insteekmodule</b> </p> </td> 
  <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als er al Activity Map is geïnstalleerd vóór januari 2020, wordt er een eerste aanvraag voor *.omniture.com weergegeven in uw browser, maar wordt deze omgeleid naar *.adobe.com. </p></td> 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Als u controles op de parameters van het vraagkoord hebt, ben zeker om de parameters ` s_kwcid ` en ` te whiteliseren ` s_kwcid` en ` ef_id`. Technisch gesproken gebruikt Advertising Analytics alleen 's_kwcid', maar als je Ad Cloud Search of DSP ophaalt, gebruikt het ook 'ef_id'. Deze parameters voor queryreeksen zijn alfanumeriek. De parameter ` s_kwcid ` gebruikt "!" en de parameter ` ef_id' gebruikt het teken ':'. Als u "!" blokkeert in de URL moet u ook een whitelist toevoegen.</p></td> 
+ <td colname="col2"> <p>Als u controles op de parameters van het vraagkoord hebt, ben zeker om de parameters ` s_kwcid ` en ` te whiteliseren ` s_kwcid` en ` ef_id`. Technisch gezien gebruikt Advertising Analytics alleen 's_kwcid', maar als je Ad Cloud Search of DSP ophaalt, gebruikt het ook 'ef_id'. Deze parameters voor queryreeksen zijn alfanumeriek. De parameter ` s_kwcid ` gebruikt "!" en de parameter ` ef_id' gebruikt het teken ':'. Als u "!" blokkeert in de URL moet u ook een whitelist toevoegen.</p></td> 
  </tr>
  </tbody> 
 </table>
