@@ -7,6 +7,9 @@ title: whitelistParentDomain en whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +53,7 @@ Beide configuratieelementen worden vereist wanneer u deze code gebruikt.
 
 ## Codevoorbeeld {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-De geconfigureerde [!UICONTROL id-servicecode] kan er ongeveer hetzelfde uitzien als dit voorbeeld.
+Uw gevormde [!UICONTROL ID service] code kon aan dit voorbeeld gelijkaardig kijken.
 
 ```js
 //Instantiate Visitor 
@@ -64,7 +67,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Gevallen gebruiken {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Use Cases {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 Deze configuraties helpen het probleem op te lossen van het plaatsen van een de dienstkoekje van identiteitskaart en het toewijzen van een bezoekersidentiteitskaart wanneer browsers derdekoekjes blokkeren en als één van beiden van deze voorwaarden van toepassing is:
 
@@ -73,14 +76,14 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
 
 >[!TIP]
 >
->U kunt deze configuraties ook willen implementeren wanneer u video in een iFrame met [videorecart](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)bedient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
+>U kunt deze configuraties ook willen implementeren wanneer u video in een iFrame met [videorecart](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)bedient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
 
 **Hoofdlettergebruik 1: Browser blokkeert de Koekjes van de Derde en de Dienst van identiteitskaart wordt uitgevoerd op iFrame en de Pagina van de Ouder**
 
 <table id="table_B479AA96DBE64685A253A6DF98D81B31"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Hoofdelement gebruiken </th> 
+   <th colname="col1" class="entry"> Gebruiksscenario-element </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -115,7 +118,7 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Hoofdelement gebruiken </th> 
+   <th colname="col1" class="entry"> Gebruiksscenario-element </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -159,7 +162,7 @@ De dienst van identiteitskaart steunt een beperkte reeks openbare API methodes w
 <table id="table_0FF9E529FD1C43A8A3B2B0D789C8E83C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Hoofdletters gebruiken </th> 
+   <th colname="col1" class="entry"> Gebruiksscenario </th> 
    <th colname="col2" class="entry"> Ondersteunde methoden </th> 
   </tr> 
  </thead>
