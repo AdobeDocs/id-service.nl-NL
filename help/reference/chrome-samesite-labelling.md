@@ -56,7 +56,7 @@ De meeste Adobe-producten beschikken al over de juiste vlaggen voor cookies. De 
 
 Hoewel Adobe controle heeft over het bijwerken van de cookies, kan Adobe partners niet dwingen de benodigde wijzigingen aan te brengen. De gelijke van het cookie kan voor Audience Manager klanten verminderen gebruikend bestemmingspartners of marktplaatspartners die deze updates niet hebben gemaakt.
 
-**Analytics Friendly third-party Cookies (alleen`s_vi`cookies voor analysemogelijkheden)**
+**Analytics Friendly third-party Cookies (alleen `s_vi` cookies voor analysemogelijkheden)**
 
 Sommige implementaties van Analytics gebruiken een alias van de NAAM van Analytics om het creëren van het `s_vi` koekje in het domein van dat CNAME toe te laten. Als de CNAME zich in hetzelfde domein bevindt als uw website, wordt dit toegewezen als een cookie van de eerste partij. Nochtans, als u veelvoudige domeinen bezit en zelfde CNAME voor gegevensinzameling over al uw domeinen gebruikt, dan zal het als derdekoekje op die andere domeinen worden aangewezen.
 
