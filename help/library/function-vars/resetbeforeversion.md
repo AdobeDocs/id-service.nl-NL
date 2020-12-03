@@ -1,19 +1,22 @@
 ---
-description: Met deze configuratie kunt u de cloud-id's (ECID's) voor weesse of oudere beleving wissen op basis van de versie van de id-service die wordt bijgewerkt.
+description: Met deze configuratie kunt u Experience Cloud-id's (ECID's) die als weeshuis of als een andere zijn gebruikt, wissen op basis van de versie van de ID-service die wordt bijgewerkt.
 keywords: ID Service
-seo-description: Met deze configuratie kunt u de cloud-id's (ECID's) voor weesse of oudere beleving wissen op basis van de versie van de id-service die wordt bijgewerkt.
+seo-description: Met deze configuratie kunt u Experience Cloud-id's (ECID's) die als weeshuis of als een andere zijn gebruikt, wissen op basis van de versie van de ID-service die wordt bijgewerkt.
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
 uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
 
 # resetBeforeVersion{#resetbeforeversion}
 
-Met deze configuratie kunt u de cloud-id&#39;s (ECID&#39;s) voor weesse of oudere beleving wissen op basis van de versie van de id-service die wordt bijgewerkt.
+Met deze configuratie kunt u Experience Cloud-id&#39;s (ECID&#39;s) die als weeshuis of als een andere zijn gebruikt, wissen op basis van de versie van de ID-service die wordt bijgewerkt.
 
 Het verstrekken van uw versie van de Dienst van identiteitskaart als waarde van de `resetBeforeVersion` variabele zal ervoor zorgen dat verouderde ECIDs van cliënt-kant IDs wordt ontruimd.
 
