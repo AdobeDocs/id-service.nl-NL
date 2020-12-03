@@ -1,19 +1,22 @@
 ---
-description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens verzamelt met verschillende methoden of via JavaScript-bestanden.
+description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens met verschillende methoden of via JavaScript-bestanden verzamelt.
 keywords: ID Service
-seo-description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens verzamelt met verschillende methoden of via JavaScript-bestanden.
-seo-title: Ervaar de beslissingspunten voor migratie van de cloudidentiteitsservice
-title: Ervaar de beslissingspunten voor migratie van de cloudidentiteitsservice
+seo-description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens met verschillende methoden of via JavaScript-bestanden verzamelt.
+seo-title: Experience Cloud-beslissingspunten voor identiteitsservicemigratie
+title: Experience Cloud-beslissingspunten voor identiteitsservicemigratie
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 1%
 
 ---
 
 
-# Ervaar de beslissingspunten voor migratie van de cloudidentiteitsservice
+# Experience Cloud-beslissingspunten voor identiteitsservicemigratie
 
-Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens verzamelt met verschillende methoden of via JavaScript-bestanden.
+Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens met verschillende methoden of via JavaScript-bestanden verzamelt.
 
 Op basis van antwoorden op de vragen in deze sectie kunt u bepalen welke aanvullende migratiestappen u moet uitvoeren.
 
@@ -61,7 +64,7 @@ Als u veelvoudige domeinen hebt die gegevens naar *zelfde rapportreeks* verzende
    <td colname="col2"> <p>Als u met één domein werkt, kunt u migreren van een CNAME voor gegevensverzameling als u dit niet meer wilt beheren. Nochtans, is er geen vereiste om te veranderen als uw CNAME werkt. </p> <p>Als u CNAME verwijdert: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">Zorg ervoor dat uw nieuwe trackingserver voldoet aan de <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external"> RDC-standaard</a>. </li> 
-     <li id="li_865BB6DAA3594EBBAB688E73C8343762">Ga van CNAME aan een RDC volgende server een paar maanden voorafgaand aan uw migratie naar de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> . </li> 
+     <li id="li_865BB6DAA3594EBBAB688E73C8343762">Ga van CNAME aan een RDC volgende server een paar maanden vóór uw migratie naar de dienst van <span class="keyword"> Experience Cloud</span> identiteitskaart over. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Gebruik geen</i> trackingserver <span class="codeph"> *.2o7.net</span> . </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Neem contact op met de <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external"> klantenservice</a> om een bezoekersmigratie in te stellen. Hierdoor is het aantal bezoekers consistent. </li> 
     </ul> </td> 
@@ -69,9 +72,9 @@ Als u veelvoudige domeinen hebt die gegevens naar *zelfde rapportreeks* verzende
  </tbody> 
 </table>
 
-## Hebt u meerdere JavaScript-analysebestanden of volgt u Flash-toepassingen of -video&#39;s?
+## Hebt u meerdere Analytics JavaScript-bestanden of volgt u Flash-toepassingen of video&#39;s?
 
-Als u meerdere Analytics JavaScript-bestanden of Flash-toepassingen of -video&#39;s op uw site hebt die gegevens naar *dezelfde rapportsuite* verzenden, moet u een respijtperiode zodanig configureren dat bezoekers door een Analytics-id worden geïdentificeerd terwijl u de [!DNL Experience Cloud] id-service uitvoert.
+Als u meerdere Analytics JavaScript-bestanden of Flash-toepassingen of video&#39;s op uw site hebt die gegevens naar *dezelfde rapportsuite* verzenden, moet u een respijtperiode configureren zodat bezoekers door een Analytics-id worden geïdentificeerd terwijl u de [!DNL Experience Cloud] id-service uitvoert.
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
@@ -110,11 +113,11 @@ Mogelijk moet u de manier bijwerken waarop u koppelingen bijhoudt of een migrati
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript en/of Flash </p> </td> 
-   <td colname="col2"> <p>Geen. De service <span class="keyword"> Experience Cloud</span> ID ondersteunt deze methoden voor gegevensverzameling. </p> </td> 
+   <td colname="col2"> <p>Geen. De dienst van identiteitskaart <span class="keyword"> Experience Cloud</span> steunt deze methodes van de gegevensinzameling. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>U moet weg van Silverlight migreren als bezoekers tot inhoud Silverlight en andere secties van uw plaats kunnen toegang hebben die de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> gebruiken. Silverlight wordt niet ondersteund door de id-service. </p> <p> Als u een op Silverlight gebaseerde videospeler bijhoudt, biedt de leverancier waarschijnlijk JavaScript-API's die u in plaats daarvan kunt gebruiken. </p> </td> 
+   <td colname="col2"> <p>U moet weg van Silverlight migreren als de bezoekers tot inhoud Silverlight en andere secties van uw plaats kunnen toegang hebben die de dienst van identiteitskaart <span class="keyword"> Experience Cloud</span> gebruiken. Silverlight wordt niet ondersteund door de id-service. </p> <p> Als u een op Silverlight gebaseerde videospeler bijhoudt, biedt de leverancier waarschijnlijk JavaScript-API's die u in plaats daarvan kunt gebruiken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gecodeerde afbeeldingstags </p> </td> 
