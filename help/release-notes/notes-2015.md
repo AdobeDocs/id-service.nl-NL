@@ -7,11 +7,14 @@ title: Opmerkingen bij de release 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release 2015 {#release-notes}
+# 2015 Release Notes {#release-notes}
 
 Opmerkingen bij de release en updates voor 2015.
 
@@ -25,27 +28,27 @@ De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt onlin
 
 september 2015
 
-* Probleem verholpen in de Safari-browser die ervoor zorgde dat synchronisatieservices niet werkten wanneer gebruikers cookies van derden blokkeerden. (AM-20764)
-* De vraag aan de dienst van identiteitskaart omvat nu versie ID in de `d_visid_ver=` parameter. De teruggekeerde identiteitskaart helpt interne teams met het oplossen van problemen en steunkwesties. (AM-20824)
+* Probleem verholpen in de Safari-browser die ervoor zorgde dat synchronisatieservices niet werkten wanneer gebruikers cookies van derden blokkeerden. (AAM-20764)
+* De vraag aan de dienst van identiteitskaart omvat nu versie ID in de `d_visid_ver=` parameter. De teruggekeerde identiteitskaart helpt interne teams met het oplossen van problemen en steunkwesties. (AAM-20824)
 
 ## Versie 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 augustus 2015
 
-* Het probleem waarbij er geen gegevens werden gesynchroniseerd of geactiveerd, is opgelost door een ID-service. (AM-2016)
+* Het probleem waarbij er geen gegevens werden gesynchroniseerd of geactiveerd, is opgelost door een ID-service. (AAM-20164)
 * Het probleem waarbij de id-service een meerdelig domeincookie op hoofdniveau niet correct kon instellen, is opgelost. Bijvoorbeeld, als u een domein zoals hebt, `my_company.co.uk`in sommige omstandigheden, zou de dienst van identiteitskaart een koekje in `co.uk` slechts plaatsen. (AN-104683)
 
    Dit betrof slechts een paar cliënten die aan *alle* volgende criteria voldeden:
 
    * De id-service gebruiken.
-   * Een [respijtperiode ingeschakeld](../reference/analytics-reference/grace-period.md)*of *worden cookies van andere leveranciers gebruikt en gebruikers blokkeren cookies van andere leveranciers.
+   * Een [respijtperiode ingeschakeld ](../reference/analytics-reference/grace-period.md)*of* worden cookies van andere leveranciers gebruikt en gebruikers blokkeren cookies van andere leveranciers.
 
    * Pagina&#39;s hebben met uit meerdere delen bestaande domeinen op hoofdniveau.
 
 Documentatieherzieningen in deze release zijn onder meer:
 
 * [API-methoden en codebibliotheek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Inhoud en tekst zijn opnieuw ingedeeld. In de meeste gevallen krijgt elke methode een eigen pagina.
-* [Vereisten voor de Experience Cloud Identity Service](../reference/requirements.md): Gereviseerde inhoud en opnieuw geordende tekst.
+* [Eisen voor de Experience Cloud Identity Service](../reference/requirements.md): Gereviseerde inhoud en opnieuw geordende tekst.
 
 ## Versie 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
@@ -73,7 +76,7 @@ Zie [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbe
 
 februari 2015
 
-Oplossing voor de afhandeling van time-out bij aanvragen voor AAM Blob en Location Hint. Nu, op een onderbreking, zal het systeem correct die gebieden leeg voor de huidige pagina verlaten en alle callbacks maken. De time-out wordt beschouwd als een foutvoorwaarde, dus probeert deze opnieuw op de volgende pagina. (AN-94473, AN-94474)
+Oplossing voor de afhandeling van time-out bij aanvragen voor AAM blob en Locatiehint. Nu, op een onderbreking, zal het systeem correct die gebieden leeg voor de huidige pagina verlaten en alle callbacks maken. De time-out wordt beschouwd als een foutvoorwaarde, dus probeert deze opnieuw op de volgende pagina. (AN-94473, AN-94474)
 
 ## Versie 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
