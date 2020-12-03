@@ -1,18 +1,21 @@
 ---
-description: Ervaar de Dienst van de Wolk ID (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van hashed-id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
+description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 keywords: ID Service
-seo-description: Ervaar de Dienst van de Wolk ID (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van hashed-id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
+seo-description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 seo-title: SHA256 Hashing Support for setCustomerIDs
 title: SHA256 Hashing Support for setCustomerIDs
 translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 4%
 
 ---
 
 
-# SHA256 Hashing-ondersteuning voor `setCustomerIDs`{#hashing-support}
+# SHA256 Hashing-ondersteuning voor `setCustomerIDs` {#hashing-support}
 
-Ervaar de Dienst van de Wolk ID (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van hashed-id&#39;s naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
+De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id&#39;s naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 Er zijn twee manieren om hashing-ondersteuning te implementeren met setCustomerID&#39;s, zoals beschreven in de volgende secties:
 
 * [De methode setCustomerIDs in ECID gebruiken](/help/reference/hashing-support.md#use-setcustomerids-method)
@@ -33,9 +36,9 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 <br> 
 
-Samen met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s, verificatiestatus en hashtype (SHA-256) koppelen aan elke bezoeker. Als u geen hashtype verstrekt, zal het als geen hash worden beschouwd.
+Samen met de Experience Cloud bezoekersidentiteitskaart, kunt u extra klant IDs, authentificatiestatus en knoeiboeltype (SHA-256) met elke bezoeker associëren. Als u geen hashtype verstrekt, zal het als geen hash worden beschouwd.
 
-De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld als [klantkenmerken](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) uploaden naar de Experience Cloud en deze gegevens openen voor de verschillende oplossingen.
+De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar de Experience Cloud en deze gegevens benaderen via de verschillende oplossingen.
 
 ID&#39;s van de klant, geverifieerde statussen en hashtype *worden niet* opgeslagen in een cookie die later moet worden gebruikt. In plaats daarvan, zouden identiteitskaart van de Klant, voor authentiek verklaarde staten en knoeiboeltype in een instantievariabele moeten worden opgeslagen, die moeten worden teruggewonnen gebruikend, [`getCustomerIDs`](/help/library/get-set/getcustomerids.md)zoals hieronder getoond:
 
@@ -48,7 +51,7 @@ ID&#39;s van de klant, geverifieerde statussen en hashtype *worden niet* opgesla
 
 <br> 
 
-Het gebruiken van de `setCustomerIDs` methode resulteert in een vraag aan de Dienst van identiteitskaart van de Wolk van de Ervaring, aan `dpm.demdex.net`, met de toevoeging van de `d_cid_ic` vraagparameter, die hashed klantenidentiteitskaart bevat. Een voorbeeldvraag zou als hieronder kunnen kijken. Voor de duidelijkheid zijn regeleinden toegevoegd.
+Het gebruiken van de `setCustomerIDs` methode resulteert in een vraag aan de Dienst van identiteitskaart van Experience Cloud, aan `dpm.demdex.net`, met de toevoeging van de `d_cid_ic` vraagparameter, die gehakt klantenidentiteitskaart bevat. Een voorbeeldvraag zou als hieronder kunnen kijken. Voor de duidelijkheid zijn regeleinden toegevoegd.
 
 ```
 http://dpm.demdex.net/id?d_visid_ver=4.4.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&
@@ -70,7 +73,7 @@ Zie de tabel hieronder voor een beschrijving van de `d_cid_ic` parameter en de v
 
 Experience Platform Launch is de volgende generatie mogelijkheden voor tagbeheer van Adobe. Meer informatie over Starten vindt u in de documentatie [van het product](https://docs.adobe.com/content/help/en/launch/using/overview.html)Launch.
 
-Als u een handeling wilt toevoegen in Launch, leest u de documentatie over de [regels](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch en raadpleegt u de onderstaande schermvastlegging:
+Als u een handeling wilt toevoegen in Launch, leest u de documentatie over [regels](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch en raadpleegt u de onderstaande schermvastlegging:
 
 ![](/help/reference/assets/hashing-support.png)
 
@@ -99,4 +102,4 @@ setCustomerIDs(Ingeration code: {
 });
 ```
 
-Op dezelfde manier als de methode die in de eerste sectie wordt beschreven, resulteert dit in een vraag aan de Dienst van identiteitskaart van de Wolk van de Ervaring, met de toevoeging van de `setCustomerIDs` `d_cid_ic` vraagparameter.
+Op dezelfde manier als de methode die in de eerste sectie wordt beschreven, resulteert dit in een vraag aan de Dienst van identiteitskaart van Experience Cloud, met de toevoeging van de `setCustomerIDs` `d_cid_ic` vraagparameter.
