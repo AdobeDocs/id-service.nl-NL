@@ -1,29 +1,32 @@
 ---
-description: Een overzicht van het proces voor het aanvragen en beantwoorden van id's. Deze voorbeelden hebben betrekking op id-toewijzing op afzonderlijke sites, op verschillende sites en voor sites die worden beheerd door verschillende Experience Cloud-klanten met hun eigen organisatie-id's.
+description: Een overzicht van het proces voor het aanvragen en beantwoorden van id's. Deze voorbeelden behandelen identiteitskaart taak op individuele plaatsen, over verschillende plaatsen, en voor plaatsen die door verschillende klanten van Experience Cloud met hun eigen organisatie IDs worden beheerd.
 keywords: ID Service
-seo-description: Een overzicht van het proces voor het aanvragen en beantwoorden van id's. Deze voorbeelden hebben betrekking op id-toewijzing op afzonderlijke sites, op verschillende sites en voor sites die worden beheerd door verschillende Experience Cloud-klanten met hun eigen organisatie-id's.
-seo-title: Hoe de Experience Cloud Identity Service id's aanvraagt en instelt
-title: Hoe de Experience Cloud Identity Service id's aanvraagt en instelt
+seo-description: Een overzicht van het proces voor het aanvragen en beantwoorden van id's. Deze voorbeelden behandelen identiteitskaart taak op individuele plaatsen, over verschillende plaatsen, en voor plaatsen die door verschillende klanten van Experience Cloud met hun eigen organisatie IDs worden beheerd.
+seo-title: Hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en identiteitskaart plaatst
+title: Hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en identiteitskaart plaatst
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 0%
 
 ---
 
 
-# Hoe de Experience Cloud Identity Service id&#39;s aanvraagt en instelt{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en identiteitskaart plaatst{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
-Een overzicht van het proces voor het aanvragen en beantwoorden van id&#39;s. Deze voorbeelden hebben betrekking op id-toewijzing op afzonderlijke sites, op verschillende sites en voor sites die worden beheerd door verschillende Experience Cloud-klanten met hun eigen organisatie-id&#39;s.
+Een overzicht van het proces voor het aanvragen en beantwoorden van id&#39;s. Deze voorbeelden behandelen identiteitskaart taak op individuele plaatsen, over verschillende plaatsen, en voor plaatsen die door verschillende klanten van Experience Cloud met hun eigen organisatie IDs worden beheerd.
 
 >[!NOTE]
 >
->Als u niet bekend bent met de manier waarop de Experience Cloud Identity Service de bezoeker-id maakt, bekijkt u even de [Experience Cloud](../introduction/cookies.md).
+>Als u niet bekend bent met de manier waarop de Experience Cloud Identity Service de bezoeker-id maakt, neemt u even de tijd om [Experience Cloud](../introduction/cookies.md)te controleren.
 
 **Tip:** Zie ook onze [ID service video over interdomeintracering](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Een Experience Cloud-id aanvragen {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
-In de volgende voorbeelden wordt getoond hoe de id-service de Experience Cloud-bezoekersidentiteitskaart aanvraagt en ontvangt. In deze voorbeelden worden twee fictieve bedrijven, de Food Company en de Sports Company, gebruikt om gegevensstromen voor identiteitsverzoeken en reacties aan te tonen. Elk bedrijf heeft een unieke organisatie-id voor Experience Cloud en heeft de code voor de id-service geïmplementeerd op al zijn sites. Deze gebruiksgevallen vertegenwoordigen gegevensstromen voor een generische de dienstimplementatie van identiteitskaart zonder Analytics, erfenis IDs, of browsers die derdekoekjes blokkeren.
+In de volgende voorbeelden wordt getoond hoe de id-service de Experience Cloud-bezoeker-id aanvraagt en ontvangt. In deze voorbeelden worden twee fictieve bedrijven, de Food Company en de Sports Company, gebruikt om gegevensstromen voor identiteitsverzoeken en reacties aan te tonen. Elk bedrijf heeft een unieke Experience Cloud organisatie-id en heeft de ID-servicecode op al hun sites geïmplementeerd. Deze gebruiksgevallen vertegenwoordigen gegevensstromen voor een generische de dienstimplementatie van identiteitskaart zonder Analytics, erfenis IDs, of browsers die derdekoekjes blokkeren.
 
 ![](assets/sample_sites.png)
 
