@@ -1,19 +1,22 @@
 ---
-description: Browsers gebruiken het Delen van bronnen van oorsprong over verschillende bronnen (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De Experience Cloud Identity Service ondersteunt CORS-standaarden die deze bronverzoeken aan de clientzijde en van de andere oorsprong mogelijk maken. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
+description: Browsers gebruiken het Delen van bronnen van oorsprong over de hele wereld (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De dienst van de Identiteit van de Experience Cloud steunt normen CORS die deze cliënt-kant, dwars-oorsprong middelverzoeken toelaten. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
 keywords: ID Service
-seo-description: Browsers gebruiken het Delen van bronnen van oorsprong over de hele wereld (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De Experience Cloud Identity Service ondersteunt CORS-standaarden die deze bronverzoeken aan de clientzijde en van de andere oorsprong mogelijk maken. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
-seo-title: Ondersteuning voor CORS in de Experience Cloud Identity Service
-title: Ondersteuning voor CORS in de Experience Cloud Identity Service
+seo-description: Browsers gebruiken het Delen van bronnen van oorsprong over de hele wereld (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De dienst van de Identiteit van de Experience Cloud steunt normen CORS die deze cliënt-kant, dwars-oorsprong middelverzoeken toelaten. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
+seo-title: CORS-ondersteuning in de Experience Cloud Identity Service
+title: CORS-ondersteuning in de Experience Cloud Identity Service
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 
 # CORS Support in the Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-Browsers gebruiken het Delen van bronnen van oorsprong over de hele wereld (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De Experience Cloud Identity Service ondersteunt CORS-standaarden die deze bronverzoeken aan de clientzijde en van de andere oorsprong mogelijk maken. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
+Browsers gebruiken het Delen van bronnen van oorsprong over de hele wereld (CORS) om bronnen van een ander domein dan het huidige domein aan te vragen. De dienst van de Identiteit van de Experience Cloud steunt normen CORS die deze cliënt-kant, dwars-oorsprong middelverzoeken toelaten. De dienst van identiteitskaart keert aan JSONP- verzoeken op oudere browsers terug of browsers die geen CORS steunen.
 
 ## Problemen met Beleid van zelfde-Oorsprong en de Verzoeken van de Dienst van identiteitskaart {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
