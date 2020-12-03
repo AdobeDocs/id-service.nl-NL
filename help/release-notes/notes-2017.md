@@ -1,21 +1,24 @@
 ---
-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2017.
+description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 keywords: ID Service
-seo-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2017.
+seo-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 seo-title: Opmerkingen bij de release 2017
 title: Opmerkingen bij de release 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 3%
 
 ---
 
 
 # 2017 Release Notes {#release-notes}
 
-Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2017.
+De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 
-Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Oplossing voor een Chrome-gerelateerde fout die ervoor zorgde dat de id-service een fout genereerde wanneer op de knop Vorige in die browser werd geklikt.
 * De dienst van identiteitskaart hervat nu de syncs van identiteitskaart wanneer gebied identiteitskaart in de reactie van de gebeurtenisvraag verandert.
-* Er is nieuwe documentatie toegevoegd, het beveiligingsbeleid voor [inhoud en de Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), waarin wordt uitgelegd hoe u aanroepen naar Adobe-domeinen die door de id-service worden gebruikt, kunt whitelist.
+* Toegevoegde nieuwe documentatie, het Beleid van de Veiligheid van de [Inhoud en de Dienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)van de Identiteit van de Experience Cloud, die verklaart hoe te whitelist vraag aan Adobe domeinen die door de dienst van identiteitskaart worden gebruikt.
 
 ## Versie 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -67,7 +70,7 @@ augustus 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens verzendt (of niet verzendt) naar de Adobe Experience Cloud Device Co-op. Zie <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> CoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt). Zie <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> CoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -152,7 +155,7 @@ Releasedatum: Juni 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md#reference-8ad017b3e5d24d34b3da25e8f8a56196" format="dita" scope="local"> publiekManagerServer en publiekManagerServerSecure </a> </p> </td> 
-   <td colname="col2"> <p>Toegevoegde verbindingen aan de documentatie van de Manager <span class="keyword"> van de Audience die vraag aan het</span> demdex.net <span class="codeph"></span> domein beschrijft. </p> </td> 
+   <td colname="col2"> <p>Toegevoegde verbindingen aan de documentatie van de <span class="keyword"> Audience Manager</span> die vraag aan het <span class="codeph"> demdex.net</span> domein beschrijft. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Identiteitssynchronisatie en gelijke Tarieven begrijpen </a> </p> </td> 
@@ -177,7 +180,7 @@ Releasedatum: februari 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> ID service-API-eigenschap, <span class="codeph"> idSyncContainerID</span></p> </td> 
-   <td colname="col2"> <p>Deze eigenschap stelt de container-id in die door Audience Manager <span class="keyword"></span> wordt gebruikt voor id-syncs. Zie <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
+   <td colname="col2"> <p>Met deze eigenschap wordt de container-id ingesteld die door de <span class="keyword"> Audience Manager</span> voor id-syncs wordt gebruikt. Zie <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID-service-API-methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
@@ -192,7 +195,7 @@ Oplossing voor een probleem dat ertoe leidde dat de id-service redundante server
 
 **Nieuwe documentatie**
 
-[DNS Prefetch gebruiken met de Verschillende Oplossingen en de Diensten van de Wolk van de Ervaring](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[Het gebruiken van DNS Prefetch met Verschillende Oplossingen en de Diensten van Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versie 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
