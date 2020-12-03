@@ -1,21 +1,24 @@
 ---
-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2016.
+description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2016.
 keywords: ID Service
-seo-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2016.
+seo-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2016.
 seo-title: Opmerkingen bij de release 2016
 title: Opmerkingen bij de release 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 2%
 
 ---
 
 
 # 2016 Release Notes {#release-notes}
 
-Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2016.
+De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2016.
 
-Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de opmerkingen bij de release [Experience Cloud](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
 
 ## Versie 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -24,13 +27,13 @@ november 2016
 >[!IMPORTANT]
 >
 >* Versie 1.10 vereist [!UICONTROL AppMeasurement] 1.8.0.
->* Met Experience Cloud Identity Service Library 2.0.0+ wordt de synchronisatie van id&#39;s standaard gestart voor Adobe Media Optimizer. Zie [Id-synchronisatie en Identieke snelheden](/help/introduction/match-rates.md)begrijpen.
+>* Met Experience Cloud Identity Service Library 2.0.0+, wordt de synchronisatie van id&#39;s standaard gestart voor Adobe Media Optimizer. Zie [Id-synchronisatie en Identieke snelheden](/help/introduction/match-rates.md)begrijpen.
 
 
 **Oplossingen en verbeteringen**
 
 * Toegevoegde instructies op hoe te om de dienst van identiteitskaart in een server-zijmilieu uit te voeren.
-* Toegevoegd `Visitor.overwriteCrossDomainMCIDAndAID`, een booleaanse functie waarmee u de Experience Cloud en Analytics ID&#39;s kunt overschrijven op andere domeinen die u bezit. Zie [Bezoeker-id](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)overschrijven.
+* Toegevoegd `Visitor.overwriteCrossDomainMCIDAndAID`, een booleaanse functie waarmee u de Experience Cloud en Analytics IDs op andere domeinen kunt overschrijven die u bezit. Zie [Bezoeker-id](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)overschrijven.
 
 * Tijdstempel toegevoegd `TS = UTC` als een eigenschap van de `visitor.appendVisitorIDsTo`functie. De dienst van identiteitskaart gebruikt timestamp om te bepalen of het IDs in opnieuw richt URL zou moeten gebruiken die op een 5 minieme verouderingsinterval wordt gebaseerd. Zie Functie [voor bezoekersidentiteitskaart](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)toevoegen.
 
@@ -39,7 +42,7 @@ november 2016
 * Toegevoegde `idSyncByURL` en `idSyncByDataSource`twee functies waarmee u handmatig een id-synchronisatie kunt implementeren in het iFrame voor publiceren van bestemming. See [ID Synchronization by URL or Data Source](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48).
 
 * Oplossing voor een probleem dat de aanroep van de functie AppMeasurement heeft geblokkeerd indien `disableThirdPartyCalls:true`.
-* Oplossing voor een probleem dat ervoor zorgde dat de id-service geen Cloud-id (MID) voor verschillende domeinen kon doorgeven.
+* Oplossing voor een probleem dat ervoor zorgde dat de id-service de Experience Cloud-id (MID) niet kon doorgeven over verschillende domeinen.
 
 ## Versie 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
@@ -47,9 +50,9 @@ Oktober 2016
 
 **Oplossingen en verbeteringen**
 
-* Het probleem waarbij unieke gebruikers-id&#39;s (AAMUUID&#39;s) van Audience Manager als Experience Cloud-id&#39;s werden doorgegeven aan de id-service, is opgelost.
-* Als de time-to-live (TTL) voor een AMCV-cookie is verlopen, retourneert de id-service deze informatie nog steeds naar de server zolang het cookie een Experience Cloud-id bevat. Na deze vraag, doet de dienst van identiteitskaart een asynchrone vraag om het koekje bij te werken. Dit helpt de prestaties te verbeteren omdat de id-service niet hoeft te wachten op een serverreactie. De toepassing kan bestaande AMCV-cookiewaarden gebruiken en vervolgens een update aanvragen.
-* De id-service synchroniseert Experience Cloud ID&#39;s (MID&#39;s) automatisch met Adobe Media Optimizer en andere interne Adobe-domeinen rechtstreeks op de pagina. Automatische synchronisatie is ingeschakeld voor alle bestaande en nieuwe accounts. Hierdoor worden de overeenkomende snelheden voor Media Optimizer verbeterd. Is van toepassing op VisitorAPI.js versie 1.8 of hoger. Zie ook, [Begrijpend de Synchronisatie van identiteitskaart en Gelijke Tarieven](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Het probleem waarbij unieke gebruikers-id&#39;s (AAMUUID&#39;s) van de Audience Manager als Experience Cloud-id&#39;s werden doorgegeven aan de id-service, is opgelost.
+* Als time-to-live (TTL) voor een AMCV-cookie is verlopen, zal de id-service deze informatie nog steeds aan de server retourneren zolang het cookie een Experience Cloud-id bevat. Na deze vraag, doet de dienst van identiteitskaart een asynchrone vraag om het koekje bij te werken. Dit helpt de prestaties te verbeteren omdat de id-service niet hoeft te wachten op een serverreactie. De toepassing kan bestaande AMCV-cookiewaarden gebruiken en vervolgens een update aanvragen.
+* De dienst van identiteitskaart synchroniseert Experience Cloud IDs (MIDs) met Adobe Media Optimizer en andere interne domeinen van Adobe direct op de pagina automatisch. Automatische synchronisatie is ingeschakeld voor alle bestaande en nieuwe accounts. Hierdoor worden de overeenkomende snelheden voor Media Optimizer verbeterd. Is van toepassing op VisitorAPI.js versie 1.8 of hoger. Zie ook, [Begrijpend de Synchronisatie van identiteitskaart en Gelijke Tarieven](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Nieuwe en herziene documentatie**
 
@@ -81,7 +84,7 @@ Revised: [Requirements for the Experience Cloud Identity Service](../reference/r
 
 **Bekende problemen**
 
-Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de DIL-variabele instellen `secureDataCollection= false`. Zie [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
+Klanten die [!DNL Audience Manager] DIL code en bezoekerAPI.js code op de zelfde pagina gebruiken zouden de DIL variabele moeten plaatsen `secureDataCollection= false`. Zie [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versie 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -101,9 +104,9 @@ juli 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Delen van bronnen tussen verschillende bronnen (CORS) </p> </td> 
-   <td colname="col2"> <p>Met CORS kunnen browsers bronnen aanvragen van een ander domein dan het huidige domein. De Experience Cloud Identity Service ondersteunt CORS-standaarden om bronaanvragen voor bronnen van verschillende oorsprong aan de clientzijde mogelijk te maken. De dienst van identiteitskaart keert aan JSONP- verzoeken op browsers terug die geen CORS steunen. </p> <p>Zie: </p> 
+   <td colname="col2"> <p>Met CORS kunnen browsers bronnen aanvragen van een ander domein dan het huidige domein. De dienst van de Identiteit van de Experience Cloud steunt normen CORS om cliëntkant, dwars-oorsprong middelverzoeken toe te laten. De dienst van identiteitskaart keert aan JSONP- verzoeken op browsers terug die geen CORS steunen. </p> <p>Zie: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Ondersteuning voor CORS in de Experience Cloud Identity Service </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> CORS-ondersteuning in de Experience Cloud Identity Service </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -124,7 +127,7 @@ juli 2016
 **Nieuw**
 
 * [Implementeer de Experience Cloud Identity Service voor Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Implementeer de Experience Cloud Identity Service voor Analytics, Audience Manager en Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Voer de Dienst van de Identiteit van Experience Cloud voor Analytics, Audience Manager, en Doel uit](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Gereviseerd**
 
@@ -148,7 +151,7 @@ Juni 2016
    <td colname="col2"> <p>De iFrame is nu zo ingesteld dat <span class="codeph"> iframe.sandbox='allow-scripts allow-same-origin'; </span>. </p> <p>Het toestaan van slechts deze 2 tokens helpt veiligheid verbeteren en verleent de dienst van identiteitskaart de basisfunctionaliteit die voor de synchronisatie van identiteitskaart wordt vereist. </p> <p>Het kenmerk sandbox wordt niet ondersteund in Internet Explorer versie 9 of lager. Zie de sectie Kenmerken in deze <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external"> iFrame-documentatie voor meer informatie </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>De Experience Cloud ID (MID) coderen </p> </td> 
+   <td colname="col1"> <p>De Experience Cloud-id (MID) coderen </p> </td> 
    <td colname="col2"> <p>De id-service codeert de MID-waarde die door de server wordt geretourneerd of wanneer deze door de <span class="codeph"> functie bezoeker.setMarketingCloudVisitorID() </span> wordt ingesteld. Zie <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies en de Experience Cloud-id voor meer informatie over de MID </a>. </p> </td> 
   </tr> 
  </tbody> 
@@ -162,7 +165,7 @@ De bezoeker-API forceert niet langer een extra hersynchronisatieaanroep met Audi
 
 Mei 2016
 
-**Documentatieupdates**
+**Documentatie-updates**
 
 * [SDK-vereisten voor Android en iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
 * [Data Workbench en Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
@@ -172,9 +175,9 @@ Mei 2016
 
 april 2016
 
-**Documentatieupdates**
+**Documentatie-updates**
 
-[Implementeer de Experience Cloud Identity Service voor Doel](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Voer de Dienst van de Identiteit Experience Cloud voor Doel uit](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Versie 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -190,26 +193,26 @@ maart 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Ondersteuning voor uitschakelen </p> </td> 
-   <td colname="col2"> <p>De service <span class="keyword"> Experience Cloud </span> ID biedt ondersteuning voor bezoekersverzoeken om te weigeren. </p> </td> 
+   <td colname="col2"> <p>De <span class="keyword"> Experience Cloud- </span> id-service ondersteunt aanvragen om te weigeren door bezoekers. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Synchronisatie-interval van id wijzigen </p> </td> 
-   <td colname="col2"> <p>De <span class="keyword"> </span> dienst van identiteitskaart van de Wolk van de Ervaring maakt nu de synchronisatievraag van identiteitskaart op elke vraag aan de servers van de gegevensinzameling. Eerder heeft de id-service slechts 1 aanvraag gedaan bij de eerste oproep om een <span class="keyword"> Experience Cloud- </span> id op te halen. </p> </td> 
+   <td colname="col2"> <p>De <span class="keyword"> Experience Cloud ID </span> dienst doet nu de synchronisatievraag van identiteitskaart op elke vraag aan de servers van de gegevensinzameling. Eerder, deed de dienst van identiteitskaart slechts 1 verzoek op de eerste vraag om een <span class="keyword"> Experience Cloud identiteitskaart </span> te krijgen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Documentatieupdates**
+**Documentatie-updates**
 
-* [Implementeer de Experience Cloud Identity Service voor Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Nieuwe procedure die beschrijft hoe te opstelling de dienst van identiteitskaart met [!DNL Analytics].
+* [Implementeer de Experience Cloud Identity Service for Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Nieuwe procedure die beschrijft hoe te opstelling de dienst van identiteitskaart met [!DNL Analytics].
 
-* [Ervaar zelf de beslissingspunten](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) voor migratie van de cloud-identiteitsservice: Herziene tekst voor de duidelijkheid. Als u met één domein werkt, kunt u migreren van een CNAME voor gegevensverzameling als u dit niet meer wilt beheren. Nochtans, is er geen vereiste om te veranderen als uw CNAME werkt.
+* [Experience Cloud Identity Service Migration Decision Points](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : Herziene tekst voor de duidelijkheid. Als u met één domein werkt, kunt u migreren van een CNAME voor gegevensverzameling als u dit niet meer wilt beheren. Nochtans, is er geen vereiste om te veranderen als uw CNAME werkt.
 
 ## Versie 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
-januari 2017
+januari 2016
 
-**Documentatieupdates**
+**Documentatie-updates**
 
 <table id="table_C1A5DBED6B104C0FBA54EC663D3B0E86"> 
  <thead> 
