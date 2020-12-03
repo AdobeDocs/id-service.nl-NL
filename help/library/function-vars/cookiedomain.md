@@ -7,6 +7,9 @@ title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laats
 
 **Syntaxis:** ` cookieDomain: " *`URL`*"` (Het `www` voorvoegsel is niet vereist.)
 
-**Hoofdletters gebruiken**
+**Gebruiksscenario**
 
 * Vereist: `www.example.com.uk`
 * Niet vereist: `www.example.co.uk`
