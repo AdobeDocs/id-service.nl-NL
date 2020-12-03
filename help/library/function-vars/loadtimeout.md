@@ -1,19 +1,22 @@
 ---
-description: Stelt een time-outinterval in milliseconden in. Wordt gebruikt om andere oplossingen te vertellen (bijvoorbeeld Analytics, Audience Manager, Target, enz.) hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
+description: Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (b.v. Analytics, Audience Manager, Target, enz.) te vertellen hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
 keywords: ID Service
-seo-description: Stelt een time-outinterval in milliseconden in. Wordt gebruikt om andere oplossingen te vertellen (bijvoorbeeld Analytics, Audience Manager, Target, enz.) hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
+seo-description: Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (b.v. Analytics, Audience Manager, Target, enz.) te vertellen hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 1%
 
 ---
 
 
 # loadTimeout{#loadtimeout}
 
-Stelt een time-outinterval in milliseconden in. Wordt gebruikt om andere oplossingen te vertellen (bijvoorbeeld Analytics, Audience Manager, Target, enz.) hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
+Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (b.v. Analytics, Audience Manager, Target, enz.) te vertellen hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
 
 **Syntaxis:** ` loadTimeout: *`interval in milliseconden`*`
 
@@ -21,7 +24,7 @@ De standaardwaarde is 30.000 milliseconden (30 seconden). We raden u ten zeerste
 
 >[!NOTE]
 >
->Oproepen aan de dienst van identiteitskaart zijn asynchroon met betrekking tot andere, niet code van Adobe op de pagina. Als u het time-outinterval verhoogt of verlaagt, verandert de snelheid waarmee de pagina inhoud weergeeft niet. Lange time-outintervallen kunnen echter wel van invloed zijn op de laadtijden van de pagina, zoals wordt gemeten met de algemene netwerkbewakingstools, maar dit heeft geen invloed op de rendertijd.
+>De vraag aan de dienst van identiteitskaart is asynchroon met betrekking tot andere, niet-Adobe code op de pagina. Als u het time-outinterval verhoogt of verlaagt, verandert de snelheid waarmee de pagina inhoud weergeeft niet. Lange time-outintervallen kunnen echter wel van invloed zijn op de laadtijden van de pagina, zoals wordt gemeten met de algemene netwerkbewakingstools, maar dit heeft geen invloed op de rendertijd.
 
 **Codevoorbeeld**
 
