@@ -7,6 +7,9 @@ title: Directe integratie met de Experience Cloud Identity Service
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Een verouderd domein dat door <span class="keyword"> Adobe</span>wordt beheerd. Zie het <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrip van Vraag aan het Domein</a>van de Index. </p> </td> 
+   <td colname="col2"> <p>Een verouderd domein dat wordt beheerd door <span class="keyword"> Adobe</span>. Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Inzicht in calls naar het Demdex-domein</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -66,7 +69,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Uw Experience Cloud Organization ID. Zie <a href="../reference/requirements.md" format="dita" scope="local"> Vereisten voor de Experience Cloud Identity Service</a>voor hulp bij het zoeken naar deze id. </p> </td> 
+   <td colname="col2"> <p>Je Experience Cloud Organisatie-id. Zie <a href="../reference/requirements.md" format="dita" scope="local"> Vereisten voor de Experience Cloud Identity Service</a>voor hulp bij het zoeken naar deze id. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +91,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> ID's, locaties en hostnamen van DCS-regio's</a>. </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. See <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,7 +99,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Een gecodeerd segment JavaScript-metagegevens. Met groottebeperkingen beperkt u de blob tot 512 bytes of minder. </p> </td> 
+   <td colname="col2"> <p>Een gecodeerd segment JavaScript-metagegevens. De groottebeperkingen beperken de blob tot 512 bytes of minder. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
