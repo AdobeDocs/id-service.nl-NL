@@ -1,19 +1,22 @@
 ---
-description: Retourneert de eventuele oudere Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
+description: Retourneert de (eventuele) bestaande Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
 keywords: ID Service
-seo-description: Retourneert de eventuele oudere Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
+seo-description: Retourneert de (eventuele) bestaande Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Retourneert de eventuele oudere Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
+Retourneert de (eventuele) bestaande Analytics-id die in het s_vi-cookie is opgeslagen voordat de Experience Cloud Identity Service werd geïmplementeerd. Er wordt een lege tekenreeks geretourneerd als aan een bezoeker nooit een Analytics-id is toegewezen.
 
 **Syntaxis** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -52,5 +55,5 @@ U zult de `aid` parameter in een vraagkoord zien wanneer uw organisatie een [res
 
 >[!MORELIKETHIS]
 >
->* [Analysecookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analysecookies](https://docs.adobe.com/content/help/nl-NL/core-services/interface/ec-cookies/cookies-privacy.html)
 
