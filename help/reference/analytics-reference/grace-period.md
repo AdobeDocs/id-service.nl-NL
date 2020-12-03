@@ -1,19 +1,22 @@
 ---
-description: Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden we u aan een respijtperiode te configureren.
+description: Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden wij u aan een respijtperiode te configureren.
 keywords: ID Service
-seo-description: Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden we u aan een respijtperiode te configureren.
+seo-description: Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden wij u aan een respijtperiode te configureren.
 seo-title: De uitstelperiode voor de id-service
 title: De uitstelperiode voor de id-service
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
 
 # De uitstelperiode voor de id-service {#the-id-service-grace-period}
 
-Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden we u aan een respijtperiode te configureren.
+Als u meerdere JavaScript-bestanden hebt die gegevens naar dezelfde rapportsuite verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden wij u aan een respijtperiode te configureren.
 
 Nadat u de [!DNL Experience Cloud] id-service hebt geïmplementeerd, ontvangen nieuwe bezoekers geen Analytics-bezoeker-id meer van uw gegevensverzamelingsserver. Als gedeelten van uw site de [!DNL Experience Cloud] ID-service nog niet hebben geïmplementeerd en bezoekers naar deze secties bladeren, wordt de Experience Cloud-id niet herkend en krijgen bezoekers een oudere Analytics-bezoekersidentiteitskaart toegewezen. Hierdoor kunnen dubbele aantallen bezoekers en een onjuiste toewijzing worden gemaakt.
 
@@ -29,8 +32,8 @@ Het implementeren van de [!DNL Experience Cloud] id-service op sites die meerder
 
 Als u één JavaScript-bestand voor Analytics hebt en geen andere AppMeasurement-bibliotheken gebruikt, hebt u geen respijtperiode nodig. U kunt de update uitvoeren in het enige JavaScript-bestand en nieuwe bezoekers worden tijdens het bezoek op consistente wijze geïdentificeerd met de marketingcloud-id.
 
-Als u meerdere JavaScript-bestanden hebt die gegevens naar *dezelfde rapportsuite* verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden we u aan een respijtperiode te configureren.
+Als u meerdere JavaScript-bestanden hebt die gegevens naar *dezelfde rapportsuite* verzenden of als u andere technologieën op uw site gebruikt, zoals Flash-videometing, raden wij u aan een respijtperiode te configureren.
 
 ## Hoe kan ik een respijtperiode toestaan? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
