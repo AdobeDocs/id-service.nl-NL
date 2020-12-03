@@ -1,19 +1,22 @@
 ---
-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2018.
+description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
 keywords: ID Service
-seo-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2018.
+seo-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
 seo-title: Opmerkingen bij de release 2018
 title: Opmerkingen bij de release 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release 2018 {#release-notes}
+# 2018 Release Notes {#release-notes}
 
-Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service voor 2018.
+De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
 
 ## Versie 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -52,7 +55,7 @@ Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Iden
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS is beschikbaar in Public Git repo </td> 
-   <td colname="col2"> ECID JS is nu beschikbaar in Public Git repo voor alle Experience Cloud-klanten op https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
+   <td colname="col2"> ECID JS is nu beschikbaar in Public Git repo voor alle klanten van Experience Cloud op https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -69,7 +72,7 @@ Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Iden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Onrealistische spiraal in het unieke aantal bezoekers </p> </td> 
-   <td colname="col2"> <p>Met de release van Experience Cloud Identity Service 3.1.0 hebben we een probleem gevonden dat een onrealistische spike creëerde in het aantal unieke bezoekers toen deze versie werd geïmplementeerd. Dit gedrag wordt alleen getoond met de nieuwste versie van ECID, v3.1.0, en als een gebruiker de optie "Alleen huidige website toestaan" heeft geselecteerd in de privacy-instellingen van een Safari-browser. Versie 3.1.2 verhelpt dit probleem. </p> </td> 
+   <td colname="col2"> <p>Met de release van Experience Cloud Identity Service 3.1.0 hebben we een probleem gevonden dat een onrealistisch beeld creëerde van het aantal unieke bezoekers toen deze versie werd geïmplementeerd. Dit gedrag wordt alleen getoond met de nieuwste versie van ECID, v3.1.0, en als een gebruiker de optie "Alleen huidige website toestaan" heeft geselecteerd in de privacy-instellingen van een Safari-browser. Versie 3.1.2 verhelpt dit probleem. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +114,7 @@ Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Iden
   </tr> 
   <tr> 
    <td colname="col1"> Toegevoegde de capaciteit om derdevraag onbruikbaar te maken </td> 
-   <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>Adobe heeft de naam van de volgende configuraties gewijzigd om synchronisatieaanroepen van derden uit te schakelen. </p> <p>idSyncDisableSyncs to disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing omThirdPartyCookies uit te schakelen </p> </td> 
+   <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>Adobe noemde de volgende configuraties anders om voor het onbruikbaar maken van vraag van de derdesynchronisatie toe te staan. </p> <p>idSyncDisableSyncs to disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing omThirdPartyCookies uit te schakelen </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ondersteuning voor Internet Explorer </p> </td> 
