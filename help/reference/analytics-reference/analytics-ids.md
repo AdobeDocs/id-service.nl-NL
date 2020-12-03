@@ -7,6 +7,9 @@ title: Analytics en Experience Cloud ID's instellen
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 1%
 
 ---
 
@@ -15,9 +18,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 De Experience Cloud Identity Service vervangt de oude ID-methoden van Analytics-bezoekers.
 
-Nadat de id-service is geïmplementeerd, wordt deze code uitgevoerd vóór AppMeasurement. De id-service haalt de ID&#39;s van Experience Cloud en Analytics op, zodat deze waarden gereed zijn wanneer AppMeasurement wordt geladen.
+Nadat de id-service is geïmplementeerd, wordt deze code uitgevoerd vóór AppMeasurement. De dienst van identiteitskaart wint Experience Cloud en Analytics IDs terug zodat zijn deze waarden klaar wanneer AppMeasurement laadt.
 
-Wanneer AppMeasurement laadt, worden de waarden van de Cloud van de Ervaring en van Analytics IDs gevraagd van de dienst van identiteitskaart en verzonden naar gegevensinzameling met elke servervraag. Aangezien de id-service de bezoeker-id bepaalt en deze gewoon doorgeeft aan AppMeasurement, moet de id-service op elke pagina worden opgenomen en geïmplementeerd voordat het JavaScript-bestand voor AppMeasurement wordt gestart.
+Wanneer AppMeasurement laadt, worden de waarden van Experience Cloud en Analytics IDs gevraagd van de dienst van identiteitskaart en verzonden naar gegevensinzameling met elke servervraag. Aangezien de id-service de bezoeker-id bepaalt en deze gewoon doorgeeft aan AppMeasurement, moet de id-service op elke pagina worden opgenomen en geïmplementeerd voordat het JavaScript-bestand voor AppMeasurement wordt gestart.
 
 ## Wijzigingen in het proces Analytics ID {#section-79bb86ae63f546419bb1a7ef5e710462}
 
@@ -27,7 +30,7 @@ De belangrijkste wijziging bij het migreren naar de [!DNL Experience Cloud] id-s
 
 Een HTTP-reactie van een webserver stelt cookies in een browser in. Zo wordt het `s_vi` cookie ingesteld. Het `s_vi` cookie identificeert bezoekers van Analytics. Nadat een cookie is ingesteld, wordt deze met alle volgende HTTP-aanvragen naar die server verzonden.
 
-Wanneer een aanvraag naar de Adobe-gegevensverzamelingsserver wordt verzonden, wordt de header gecontroleerd op de `s_vi` cookie. Als deze cookie in de aanvraag staat, wordt deze gebruikt om de bezoeker te identificeren. Als het cookie zich niet in de aanvraag bevindt, genereert de server een unieke [!DNL Experience Cloud] id, stelt deze in als een cookie in de HTTP-antwoordheader en stuurt deze terug met de aanvraag. Het cookie wordt opgeslagen in de browser en wordt teruggestuurd naar de server voor gegevensverzameling tijdens volgende bezoeken aan de site. Hierdoor kan de bezoeker worden geïdentificeerd bij verschillende bezoeken.
+Wanneer een verzoek naar de server van de de gegevensinzameling van de Adobe wordt verzonden, wordt de kopbal gecontroleerd voor het `s_vi` koekje. Als deze cookie in de aanvraag staat, wordt deze gebruikt om de bezoeker te identificeren. Als het cookie zich niet in de aanvraag bevindt, genereert de server een unieke [!DNL Experience Cloud] id, stelt deze in als een cookie in de HTTP-antwoordheader en stuurt deze terug met de aanvraag. Het cookie wordt opgeslagen in de browser en wordt teruggestuurd naar de server voor gegevensverzameling tijdens volgende bezoeken aan de site. Hierdoor kan de bezoeker worden geïdentificeerd bij verschillende bezoeken.
 
 Sommige browsers, zoals Apple Safari, accepteren cookies van andere bedrijven echter niet. Dit zijn cookies die in de browser zijn ingesteld vanuit andere domeinen dan de huidige website. Bovendien blokkeert Safari cookies op domeinen van derden als een bezoeker niet eerder naar dat domein is geweest. Bijvoorbeeld, als u bent `mysite.com` en uw server van de gegevensinzameling is `mysite.omtrdc.net`, zou het koekje dat in de kopbal van HTTP van is teruggekeerd door browser `mysite.omtrdc.net` kunnen worden verworpen.
 
@@ -66,11 +69,11 @@ Nadat u de bezoeker-id-service hebt geïmplementeerd, zijn er vijf manieren waar
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
-   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde respijtperiode</a> . </p> </td> 
+   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Experience Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde graadperiode</a> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
-   <td colname="col2"> <p>mid (AMCV_ cookie ingesteld door Experience Cloud-bezoekersidentiteitsservice) </p> </td> 
+   <td colname="col2"> <p>mid (AMCV_ cookie ingesteld door Experience Cloud bezoeker ID service) </p> </td> 
    <td colname="col3"> <p>Browser van de bezoeker keurt eerste-partijkoekjes goed </p> </td> 
   </tr> 
   <tr> 
