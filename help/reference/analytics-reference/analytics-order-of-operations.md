@@ -7,6 +7,9 @@ title: Bewerkingsvolgorde voor analytische id's
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Nadat u de bezoekersidentiteitsservice hebt geïmplementeerd, zijn er vijf manieren waarop een bezoeker kan worden geïdentificeerd in Analytics.
 
-In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, maar de Analytics zal eerste identiteitskaart gebruiken huidig van die lijst als officiële [!DNL Experience Cloud] identiteitskaart. Als u bijvoorbeeld een aangepaste bezoeker-id instelt (die in de `vid` queryparameter is opgenomen), wordt die id gebruikt vóór andere id&#39;s die op dezelfde hit aanwezig kunnen zijn. Zie [Analytics instellen en Cloud-id&#39;s](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) voor meer informatie instellen.
+In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, maar de Analytics zal eerste identiteitskaart gebruiken huidig van die lijst als officiële [!DNL Experience Cloud] identiteitskaart. Als u bijvoorbeeld een aangepaste bezoeker-id instelt (die in de `vid` queryparameter is opgenomen), wordt die id gebruikt vóór andere id&#39;s die op dezelfde hit aanwezig kunnen zijn. Zie Analyses en Experience Cloud-id&#39;s [instellen](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) voor meer informatie.
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
@@ -34,11 +37,11 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
   <tr> 
    <td colname="col1"> <p> <b>2<sup>de</sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
-   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Ervaring Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde respijtperiode</a> . </p> </td> 
+   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Experience Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde graadperiode</a> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>3<sup>de</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="../../introduction/cookies.md#section-7ff7d96d6e4141b08a84a75a63d7814c" format="dita" scope="local"> Experience Cloud ID (MID) </a> </p> </td> 
+   <td colname="col2"> <p> <a href="../../introduction/cookies.md#section-7ff7d96d6e4141b08a84a75a63d7814c" format="dita" scope="local"> Experience Cloud-id (MID) </a> </p> </td> 
    <td colname="col3"> <p>De browser van de bezoeker accepteert cookies van de eerste partij. Dit wordt ingesteld door het AMCV-cookie. </p> </td> 
   </tr> 
   <tr> 
