@@ -7,6 +7,9 @@ title: Configuraties
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ Vorm de dienst van identiteitskaart door deze eigenschappen tot de statische met
 
 >[!NOTE]
 >
->De Javascript-bibliotheken *voor de Javascript-id van de* Experience Cloud zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>De JavaScript-bibliotheken *voor* Experience Cloud-id zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwante artikelen:
 
