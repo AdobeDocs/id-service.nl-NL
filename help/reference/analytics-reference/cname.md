@@ -7,6 +7,9 @@ title: CNAME's voor gegevensverzameling en interdomeintracering
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
 source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die cookies van derden accepteren, wordt een cookie door de server voor gegevensverzameling ingesteld tijdens de aanvraag voor een bezoeker-id. Met dit cookie kan de bezoekersidentiteitsservice dezelfde Experience Cloud-bezoekersidentiteitskaart retourneren op alle domeinen die zijn geconfigureerd met dezelfde Experience Cloud Org-id.
+In browsers die cookies van derden accepteren, wordt een cookie door de server voor gegevensverzameling ingesteld tijdens de aanvraag voor een bezoeker-id. Met dit cookie kan de bezoekersidentiteitsservice dezelfde Experience Cloud bezoekersidentiteitskaart retourneren op alle domeinen die zijn geconfigureerd met dezelfde Experience Cloud Org-id.
 
 In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
