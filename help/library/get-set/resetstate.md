@@ -7,6 +7,9 @@ title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Deze functie is vooral ontworpen voor klanten van A4T om problemen op te lossen die verband houden met het werken met id&#39;s op sites/schermen of apps van één pagina.
 
-## Gebruik hoofdletters {#section-840b88a5cdb042488b340cad5d7b22a5}
+## Gebruiksscenario’s {#section-840b88a5cdb042488b340cad5d7b22a5}
 
 Als klant A4T die de dienst van identiteitskaart gebruikt, kunt u de `visitor.resetState()` functie willen gebruiken wanneer u moet:
 
@@ -26,7 +29,7 @@ Zie de onderstaande codevoorbeelden.
 
 ## Syntaxis {#section-9e63503e178f4be28ac850abf44d6d91}
 
-**Syntaxis:** ` visitor.resetState( *`status`*);`
+**Syntaxis:** ` visitor.resetState( *`state`*);`
 
 ## Codevoorbeelden {#section-d75b211bb4ea473887eb284de2ad838b}
 
