@@ -7,6 +7,9 @@ title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
 translation-type: tm+mt
 source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
 
 getMarketingCloudVisitorID retourneert de Experience Cloud-bezoeker-id.
 
-**Syntaxis:** naam ` var *`variabele`* = visitor.getMarketingCloudVisitorID()`
+**Syntaxis:** ` var *`variabelenaam`* = visitor.getMarketingCloudVisitorID()`
 
 Deze methode wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getMarketingCloudVisitorID` werkt ook met callback-functies om [!DNL Analytics] id&#39;s te lezen en deze naar uw systeem of toepassing te brengen.
 
