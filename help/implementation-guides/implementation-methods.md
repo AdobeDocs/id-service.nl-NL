@@ -8,7 +8,7 @@ uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
 source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ U kunt een standaard [!DNL Experience Cloud ID Service] implementatiemethode kie
 
 ## Standaardimplementatie {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe raadt u ten zeerste aan [[!DNL-Experience Platform Launch]](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) te gebruiken om de id-service te implementeren. Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
+Adobe raadt u ten zeerste aan de id-service te gebruiken [[!DNL Experience Platform Launch]](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) om deze te implementeren. Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
 
 ## Niet-standaardimplementaties {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
