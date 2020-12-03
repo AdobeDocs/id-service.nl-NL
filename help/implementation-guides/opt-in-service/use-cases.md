@@ -6,6 +6,9 @@ title: Gebruiksscenario's openen
 uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -41,12 +44,12 @@ Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Optio
   <tr> 
    <td colname="col1"> <p>De meting van de eerste partij is oké om in pre-toestemmingsstaat te verzamelen. Alle andere soorten gegevensgebruik zijn voorkomen totdat de toestemming is ontvangen. </p> </td> 
    <td colname="col2"> <p>Gebruik Inschakelen om de status Analytics + ECID-bibliotheken in te schakelen voordat toestemming wordt verleend. </p> <p>Voeg het config-bestand "disablethirdpartycookies" toe aan de ECID-bibliotheek om cookie + ID-syncs van derden in de pre-toestemmingsstatus te blokkeren </p> </td> 
-   <td colname="col3"> <p>De aanroep van Adobe Demdex wordt geactiveerd voor het ophalen van ECID, maar er zijn geen demdex-cookie, cookie van andere derden of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor Analytics. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex-aanroep wordt geactiveerd voor ECID-ophaling, maar er zijn geen demdex-cookie, andere cookie van derden of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor Analytics. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metingen van de eerste partij plus het richten is aanvaardbaar in een staat van de pre-instemming. Alle andere soorten gegevensgebruik zijn voorkomen totdat de toestemming is ontvangen. </p> </td> 
    <td colname="col2"> <p>Gebruik Opt-in om Analytics + ECID + Target libraries in de pre-toestemmingsstaat toe te laten. </p> <p>Voeg de <span class="codeph"> configuratie van isablethirdpartycookies</span> toe aan de ECID-bibliotheek om cookie + ID-syncs van derden te blokkeren in de status vóór de toestemming. Markering verwijderen in toestand na toestemming. </p> </td> 
-   <td colname="col3"> <p>De aanroep van Adobe Demdex wordt geactiveerd voor het ophalen van ECID, maar er zijn geen demdex-cookie, cookie van andere leveranciers of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor eerste-partijoplossingen. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex-aanroep wordt geactiveerd voor ECID-ophaling, maar er zijn geen Demdex-cookie, cookie van andere leveranciers of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor eerste-partijoplossingen. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Er mogen geen cookies worden ingesteld in een status voorafgaand aan de toestemming </p> </td> 
