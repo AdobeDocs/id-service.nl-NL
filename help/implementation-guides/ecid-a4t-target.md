@@ -7,6 +7,9 @@ title: Het gebruiken van de Dienst van identiteitskaart met A4T en een server-zi
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Deze instructies gelden voor A4T-klanten met gemengde server- en client-side imp
 
 A4T (en andere klanten) kan deze versie van de dienst van identiteitskaart gebruiken wanneer zij moeten:
 
-* Inhoud van webpagina&#39;s op de servers renderen en doorgeven aan een browser voor definitieve weergave.
+* De inhoud van webpagina&#39;s op de servers weergeven en deze doorgeven aan een browser voor de uiteindelijke weergave.
 * Maak server-kant [!DNL Target] vraag.
 * Maak cliënt-kant (in browser) vraag aan [!DNL Analytics].
 * Synchroniseer afzonderlijke [!DNL Target] en [!DNL Analytics] id&#39;s om te bepalen of een bezoeker die door een oplossing wordt gezien dezelfde persoon is als de andere oplossing.
@@ -166,7 +169,7 @@ Uw geconfigureerde instellingen moeten er als volgt uitzien:
 
 ![](assets/server_side_dtm.png)
 
-Zie ook: [Experience Cloud Identity Service Settings voor DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Zie ook [Experience Cloud Identity Service Settings voor DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Serverstatus ophalen zonder DTM**
 
@@ -189,7 +192,7 @@ Response.send("
 ...
 ```
 
-## Stap 5: Een pagina bedienen en Cloud-gegevens retourneren {#section-4b5631a0d75a41febd6f43f8c214c263}
+## Stap 5: Pagina&#39;s weergeven en Experience Cloud-gegevens retourneren {#section-4b5631a0d75a41febd6f43f8c214c263}
 
 Op dit punt verzendt de webserver pagina-inhoud naar de browser van de bezoeker. Van dit punt op, browser (niet de server) maakt alle resterende dienst van identiteitskaart en [!DNL Analytics] vraag. Bijvoorbeeld in de browser:
 
