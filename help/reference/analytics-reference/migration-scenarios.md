@@ -2,16 +2,19 @@
 description: Bevat configuraties van servervoorbeelden en de vereiste migratiestappen.
 keywords: ID Service
 seo-description: Bevat configuraties van servervoorbeelden en de vereiste migratiestappen.
-seo-title: Experience Cloud Identity Service Migration Scenario's
-title: Experience Cloud Identity Service Migration Scenario's
+seo-title: Experience Cloud Identiteitsservicemigratiescenario's
+title: Experience Cloud Identiteitsservicemigratiescenario's
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
 
-# Experience Cloud Identity Service Migration Scenario&#39;s {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identiteitsservicemigratiescenario&#39;s {#experience-cloud-id-service-migration-scenarios}
 
 Bevat configuraties van servervoorbeelden en de vereiste migratiestappen.
 
@@ -23,7 +26,7 @@ Bevat configuraties van servervoorbeelden en de vereiste migratiestappen.
 * **Servers** voor gegevensverzameling: metrics.example.com, metrics.example.com
 * **JavaScript-analysebestand**: Eén bestand voor alle sitepagina&#39;s
 
-Ten eerste moet deze klant ingeschakeld zijn voor de Experience Cloud (zie de [vereisten](../../reference/requirements.md)). En omdat ze één JavaScript-bestand hebben, heeft deze klant geen respijtperiode nodig. Deze klant zal ook de migratie van de opsteller en dan vanaf hun gegevensinzameling CNAME migreren, wat niet noodzakelijk is.
+Eerst, zou deze klant voor de Experience Cloud moeten worden toegelaten (zie de [vereisten](../../reference/requirements.md)). En omdat ze één JavaScript-bestand hebben, heeft deze klant geen respijtperiode nodig. Deze klant zal ook de migratie van de opsteller en dan vanaf hun gegevensinzameling CNAME migreren, wat niet noodzakelijk is.
 
 ## Meerdere JavaScript-bestanden, hardgecodeerde afbeeldingstags {#section-a665f6ee202940449198e4e7a5dcac54}
 
@@ -34,11 +37,11 @@ Ten eerste moet deze klant ingeschakeld zijn voor de Experience Cloud (zie de [v
 * **JavaScript-analysebestand**: Meerdere JavaScript-bestanden. Eén bestand voor de hoofdsite, een ander bestand voor de ondersteuningssectie dat in een aparte CMS wordt bijgehouden.
 * **Andere methoden** voor gegevensverzameling: Hard gecodeerde afbeeldingstags op één sitesectie
 
-Eerst moet deze klant zijn Adobe Experience Cloud Organization-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant stelt ook de migratie van bezoekers in en migreert vervolgens van `*.2o7.net` naar `*.sc.omtrdc.net`.
+Eerst moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant stelt ook de migratie van bezoekers in en migreert vervolgens van `*.2o7.net` naar `*.sc.omtrdc.net`.
 
 Wanneer deze klant de nieuwste JavaScript-code Analytics bijwerkt ter voorbereiding op de implementatie van de [!DNL Experience Cloud] ID-service, worden ook alle vasteschijfcodes voor afbeeldingen bijgewerkt zodat deze in plaats daarvan JavaScript kunnen gebruiken.
 
-## Meerdere wegeigenschappen, meerdere JavaScript-bestanden en een op Flash gebaseerde videospeler {#section-34647995ff3740b999fdee22d885e515}
+## Meerdere webeigenschappen, meerdere JavaScript-bestanden en een op Flash gebaseerde videospeler {#section-34647995ff3740b999fdee22d885e515}
 
 * **Klant**: Een goede LLC voor klanten
 * **Experience Cloud ingeschakeld**: Ja
@@ -47,6 +50,6 @@ Wanneer deze klant de nieuwste JavaScript-code Analytics bijwerkt ter voorbereid
 * **JavaScript-analysebestand**: Meerdere JavaScript-bestanden. Eén bestand voor elke webeigenschap.
 * **Andere methoden** voor gegevensverzameling: Een op Flash gebaseerde videospeler
 
-Eerst moet deze klant zijn Adobe Experience Cloud Organization-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant volgt bezoekers tussen hun primair domein en hun subdomeinen, zodat zullen zij hun gegevensinzameling CNAME met de dienst van bezoekersidentiteitskaart blijven gebruiken.
+Eerst moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant volgt bezoekers tussen hun primair domein en hun subdomeinen, zodat zullen zij hun gegevensinzameling CNAME met de dienst van bezoekersidentiteitskaart blijven gebruiken.
 
-Wanneer deze klant de nieuwste JavaScript-code Analytics bijwerkt ter voorbereiding op de implementatie van de [!DNL Experience Cloud] ID-service, wordt ook de op Flash gebaseerde videospeler bijgewerkt naar de nieuwste versie van AppMeasurement voor Flash.
+Wanneer deze klant de meest recente JavaScript-code voor Analytics bijwerkt ter voorbereiding op de uitrol van de [!DNL Experience Cloud] ID-service, wordt ook de op Flash gebaseerde videospeler bijgewerkt naar de meest recente versie van AppMeasurement voor Flash.
