@@ -1,19 +1,22 @@
 ---
-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service.
+description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud.
 keywords: ID Service
-seo-description: Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service.
+seo-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud.
 seo-title: Opmerkingen bij de release 2019
 title: Opmerkingen bij de release 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Experience Cloud - 2019 {#release-notes}
+# Experience Cloud release notes - 2019 {#release-notes}
 
-Functies worden vrijgegeven, bijgewerkt of gewijzigd in de Experience Cloud Identity Service.
+De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud.
 
 ## Versie 4.4.1
 
@@ -28,7 +31,7 @@ Schakel het selectievakje Goedkeuring vóór aanmelding voor mediacontrole in de
 
 **Nieuwe functie**
 
-[SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md). Ervaar de Dienst van de Wolk ID (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven.
+[SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md). De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven.
 
 **Oplossingen, verbeteringen, verbeteringen**
 
@@ -48,7 +51,7 @@ Schakel het selectievakje Goedkeuring vóór aanmelding voor mediacontrole in de
 
 Bijwerken `publishDestinations` per nieuwe API-wijziging. Met deze update kan de referentie-informatie van de pagina desgewenst worden weergegeven tijdens de id - synchronisatie.
 
-## Versie 4.2
+## Versie 2.2
 
 Ondersteuning voor de plug-in Audience Manager voor IAB TCF, beschikbaar via het ECID Opt-in-object.
 
@@ -56,11 +59,11 @@ Ondersteuning voor de plug-in Audience Manager voor IAB TCF, beschikbaar via het
 
 * IAB + OptIn krijgt geen MID voor het reviseren van klanten.
 * Correctie van bug met betrekking tot de plug-in-configuratie OptInApply in DTM.
-* De ECID-optie om te weigeren schakelt id-syncs uit.
+* De optie ECID-uitschakelt ID-syncs.
 
 ## Versie 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Inschakelen**. Inschakelen is een uitbreiding van de Experience Cloud ID (ECID) waarmee u kunt bepalen of (en welke) Cloud-bibliotheken cookies kunnen maken op webpagina&#39;s voor bezoekers. Met de Launch [van het](https://docs.adobelaunch.com/)Experience Platform kunt u het verzamelen van bezoekers met de optie Instemmen voor Ervaring Cloud-oplossing vereenvoudigen door Analytics, Target, Audience Manager en andere of alle geselecteerde Experience Cloud-oplossingen in te schakelen om u aan te melden bij uw systeem voor het beheer van toestemming.
+**Inschakelen**. Inschakelen is een uitbreiding van de Experience Cloud-id (ECID) waarmee u kunt bepalen of (en welke) Experience Cloud-bibliotheken cookies kunnen maken op webpagina&#39;s voor bezoekers. Gebruikend [Experience Platform Launch](https://docs.adobelaunch.com/), kunt u het verzamelen van bezoekersopt-in toestemmingen voor de oplossing van de Experience Cloud vereenvoudigen door Analytics, Doel, Audience Manager, en andere of alle uitgezochte oplossingen van Experience Cloud toe te laten om aan uw systeem van het toestemmingsbeheer te kiezen.
 
 ## Versie 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
