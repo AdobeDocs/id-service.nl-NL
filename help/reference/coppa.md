@@ -1,19 +1,22 @@
 ---
-description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun Code Experience Cloud Identity Service, waardoor deze geen cookies kan instellen in het domein van derden van een browser.
+description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
 keywords: ID Service
-seo-description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun Code Experience Cloud Identity Service, waardoor deze geen cookies kan instellen in het domein van derden van een browser.
-seo-title: Ondersteuning voor COPPA in de Experience Cloud Identity Service
-title: Ondersteuning voor COPPA in de Experience Cloud Identity Service
+seo-description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
+seo-title: COPPA-ondersteuning in de Experience Cloud Identity Service
+title: COPPA-ondersteuning in de Experience Cloud Identity Service
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
 
 # COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
 
-De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun Code Experience Cloud Identity Service, waardoor deze geen cookies kan instellen in het domein van derden van een browser.
+De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
 
 >[!NOTE]
 >
@@ -21,9 +24,9 @@ De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het o
 
 **Cookies en reeksspatiëring**
 
-Wanneer een Web-pagina laadt, roept de dienst van [!DNL Experience Cloud] identiteitskaart een server van de [!DNL Adobe] gegevensinzameling (DCS). De DCS-reactie bevat een Experience Cloud-cookie en een demdex.net-cookie.
+Wanneer een Web-pagina laadt, roept de dienst van [!DNL Experience Cloud] identiteitskaart een server van de [!DNL Adobe] gegevensinzameling (DCS). De DCS-reactie bevat een Experience Cloud cookie en een demdex.net cookie.
 
-* Het cookie van de Experience Cloud wordt ingesteld in het domein van de eerste partij. Het kan niet worden gebruikt om bezoekers over verschillende domeinen te volgen, tenzij die domeinen samenwerken om toegang toe te staan.
+* Het Experience Cloud-cookie wordt ingesteld in het eerste partijdomein. Het kan niet worden gebruikt om bezoekers over verschillende domeinen te volgen, tenzij die domeinen samenwerken om toegang toe te staan.
 * Het cookie demdex.net wordt ingesteld in het domein van derden. Het bevat een unieke id die kan worden gebruikt om bezoekers in verschillende domeinen te volgen.
 
 **Cookies en COPPA-compatibiliteit**
