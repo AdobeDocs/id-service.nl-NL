@@ -7,6 +7,9 @@ title: Veelgestelde vragen over Analytics and Identity Service
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 1%
 
 ---
 
@@ -35,11 +38,11 @@ Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïden
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het domein [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html) demdex.net tijdens de aanvraag om een bezoeker-id op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud-bezoekersidentiteitskaart retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
+In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het domein [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html) demdex.net tijdens de aanvraag om een bezoeker-id op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud bezoeker-id retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
 Zelfs wanneer een CNAME wordt gevormd, als de belangrijkste ingangsplaats niet eerst wordt bezocht, worden de bezoekers geïdentificeerd verschillend op de secundaire plaats en de belangrijkste plaats in browsers die derde koekjes niet goedkeuren.
 
-**Waarom bevindt de parameter Experience Cloud ID (MID) zich niet in de Analytics-aanvraag?**
+**Waarom is de parameter van Experience Cloud ID (MID) niet in het verzoek Analytics?**
 
 Als de Dienst van de Identiteit correct informatie terugkeert maar u ziet niet de `MID` parameter, zorg ervoor dat u aan een gesteunde versie van AppMeturement hebt bevorderd.
 
@@ -55,11 +58,11 @@ Raadpleeg [de respijtperiode](../reference/analytics-reference/grace-period.md) 
 
 **Waarom moet ik naar de Inzameling van Gegevens in real time (RDC) migreren om de Dienst van de Identiteit te gebruiken?**
 
-De RDC biedt wereldwijd prestatievoordelen en is vereist om ervoor te zorgen dat uw implementatie gereed is voor toekomstige functies die gebruikmaken van het wereldwijde netwerk van Edge Notes van Adobe. Zie [Analysevereisten: Regionale gegevensverzameling (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
+De RDC biedt prestatievoordelen en is vereist om ervoor te zorgen dat uw implementatie gereed is voor de volgende functies die wereldwijd Adobe van randnotities kunnen benutten. Zie [Analysevereisten: Regionale gegevensverzameling (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
 
 ## Rapportage {#section-123cd55a32e54a45a23beb140becfa8f}
 
-**Wat zijn enkele mogelijke oorzaken van verschillen wanneer Analytics met de Dienst van de Identiteit wordt gebruikt?**
+**Wat zijn enkele mogelijke oorzaken van discrepanties wanneer Analytics met de Dienst van de Identiteit wordt gebruikt?**
 
 Veelvoorkomende oorzaken van verschillen bij het gebruik van de identiteitsdienst zijn:
 
