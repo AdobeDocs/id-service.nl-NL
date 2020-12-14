@@ -4,9 +4,9 @@ seo-title: ECID-bibliotheekmethoden in een Safari ITP-wereld
 description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 seo-description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -14,29 +14,13 @@ ht-degree: 0%
 
 # ECID-bibliotheekmethoden in een Safari ITP-wereld
 
+>[!NOTE]
+>
+>Er zijn updates aangebracht die de meest recente wijzigingen in ITP weerspiegelen die op 12 november 2020 zijn gepubliceerd als onderdeel van de Big Sur OS-release.
+
 Aangezien Safari het grensoverschrijdende volgen via ITP aanscherpt, moet Adobe beste praktijken voor bibliotheken handhaven die klanten evenals de privacy en de keus van de consument steunen.
 
-Op 21 februari 2019 heeft Apple zijn laatste update voor ITP (Intelligent Tracking Prevention) bekendgemaakt. In tegenstelling tot eerdere versies die vooral op cookies van derden waren gericht, bevat deze versie nieuwe voorzorgsmaatregelen ter voorkoming van het bijhouden van cookies van andere bedrijven. Voor alle permanente cookies van de eerste partij die via de document.cookie-API zijn ingesteld, vaak ook wel &#39;client-side&#39; cookies genoemd, geldt een limiet van 7 dagen. Cookies van derden blijven geblokkeerd, zoals in eerdere versies van ITP is aangegeven. Lees voor meer informatie over ITP 2.1 en de impact van Adobe-oplossingen [Safari ITP 2.1 Impact op klanten](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)van Adobe Experience Cloud en Experience Platform.
-
-## Adobe ECID voor Veelgestelde vragen over Safari ITP
-
-**Waarom wordt het koekje AMCV, dat door de Experience Cloud ID bibliotheek (ECID) in het 1st partijdomein van een klant wordt geplaatst, beïnvloed door ITP 2.1?**
-
-Het AMCV-cookie is momenteel gebaseerd op de document.cookie-API en wordt ingesteld via &quot;client-side&quot;. Safari geeft de voorkeur aan cookies die op de server van de klant zijn ingesteld.
-
-**Waarom is een cookie ingesteld via een CNAME-trackingserver een betere optie voor tracering in Safari?**
-
-De regels van ITP richten zich op het geven van controle terug aan de ontwikkelaars. Implementaties via CNAME-certificaten kunnen niet alleen via JavaScript worden uitgevoerd. Adobe-zijcertificatie programma (server-tracking) is in overeenstemming met ITP en maakt al jaren deel uit van de strategie voor Adobe. De ECID-bibliotheek geeft methoden vrij die gericht zijn op het verplaatsen van de functionaliteit van de ECID-bibliotheek naar een CNAME-implementatie.
-
-**Waarom wordt Adobe geconcentreerd op de ECID-bibliotheek wanneer andere methoden voor het bijhouden van analysebezoekers worden gebruikt met CNAME&#39;s?**
-
-De ECID-bibliotheek, AMCV-cookie en ECID (ook bekend als MID) zijn gestart als de methode voor het integreren van alle Adobe-oplossingen onder één id. Deze id zal de prioritaire cookie-level identiteitskaart in het product van de Adobe roadmap blijven en is standaardkoekjesidentiteitskaart voor Adobe Experience Platform.
-
-**Helpen CNAMEs klanten multi-domein het volgen toelaten?**
-
-De zelfde regels en de bedenkingen die eerder met CNAMEs bestonden bestaan nog. In sommige gevallen, kan CNAMEs in een multi-domeinscenario helpen. Als u een hoofdinvoersite hebt waarop gebruikers kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van meerdere domeinen inschakelen in browsers die cookies van derden niet accepteren. Nochtans, terwijl CNAMEs met multi-domein in sommige scenario&#39;s kan helpen, is de reden voor de verschuiving van implementatie ECID naar implementatie CNAME voor blijvende bezoekersidentificatie, niet multi-domein het volgen. Voor meer op CNAME en multi-domain, zie CNAMEs van de Inzameling van [Gegevens en het Volgen](/help/reference/analytics-reference/cname.md)van dwars-Domein.
-
-Hier worden meer veelgestelde vragen toegevoegd als er aanvullende ITP-wijzigingen worden vrijgegeven. Ga voor meer informatie naar [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
+Vanaf 10 november 2020 is de vervaldatum van alle ononderbroken cookies van de eerste partij die via de document.cookie-API zijn ingesteld, vaak ook wel &#39;client-side&#39; cookies genoemd, en van cookies die via CNAME-implementaties van de eerste partij in Safari en mobiele iOS-browsers zijn ingesteld, beperkt tot zeven dagen. Cookies van andere bedrijven blijven geblokkeerd, zoals in eerdere versies van ITP is aangegeven. Lees voor meer informatie over ITP 2.1 en de impact van Adobe-oplossingen [Safari ITP 2.1 Impact op klanten](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)van Adobe Experience Cloud en Experience Platform.
 
 ## Aan ITP gerelateerde wijzigingen, methoden en configuraties
 
@@ -48,25 +32,31 @@ Aangezien er extra methoden voor tekstspatiëring in Safari zijn gemaakt, worden
 
 Zie hieronder voor inspanningen met betrekking tot ITP- en ECID-bibliotheekgebruik.
 
-## Gebruik de ECID-bibliotheek en CNAME-tracking om de vervaldatum van de bezoekersidentiteitskaart te verlengen
+## Huidig gedrag van ECID-bibliotheek met ITP en WebKit van Apple
 
-ITP 2.1 belemmert de mogelijkheid om cookies aan de clientzijde te schrijven, wat de mogelijkheid om klanten nauwkeurige informatie over het bijhouden van bezoekers te verstrekken, beperkt. Als dusdanig, wordt de verandering geïntroduceerd in Adobe NAAM die servers controleert om Experience Cloud identiteitskaart van de bezoeker (ECID) op te slaan in een eerstepartijkoekje.
+ITP 2.1 belemmert de mogelijkheid om cookies aan de clientzijde te schrijven, wat de mogelijkheid om klanten nauwkeurige informatie over het bijhouden van bezoekers te verstrekken, beperkt. Als dusdanig, wordt de verandering geïntroduceerd in Adobe NAAM die servers controleert om Experience Cloud identiteitskaart (ECID) van de bezoeker op te slaan van een eerstepartijkoekje.
 
 Deze wijziging is alleen nuttig voor ECID-klanten die een Analytics CNAME gebruiken in de context van de eerste partij. Als u een klant van de Analyse bent die momenteel geen CNAME, of zelfs een klant niet-Analytics gebruikt, bent u nog verkiesbaar voor een verslag CNAME. Neem contact op met de klantenservice of uw accountvertegenwoordiger om het registratieproces voor een [CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html)te starten.
 
 Voer een upgrade uit naar de ECID-bibliotheek v.4.3.0 + om deze wijziging te benutten.
 
+Hieronder wordt beschreven hoe de ECID-bibliotheek zich gedraagt met ITP 2.1 en de laatste wijzigingen die Apple heeft aangebracht als onderdeel van de Big Sur-release
+
 **Ontwerp**
 
 Zodra een identiteitskaart- verzoek wordt ingediend aan demdex.net en een ECID wordt teruggewonnen, als een het volgen server in uw ECID bibliotheek wordt geplaatst, wordt een identiteitskaart- verzoek gemaakt aan het domein van de klant. Dit eindpunt leest de ecid param van het vraagkoord, en plaatst een nieuw [koekje](/help/introduction/cookies.md) dat slechts ECID en een vervaldatum twee jaar in de toekomst omvat. Telkens als dit eindpunt op deze manier wordt geroepen, wordt het `s_ecid` koekje herschreven met een vervaldatum twee jaar van de tijd van die vraag. De ECID-bibliotheek moet worden bijgewerkt naar versie 4.3.0, zodat de waarde van dit cookie kan worden opgehaald.
+
+>[!IMPORTANT]
+>
+>Als onderdeel van de Big Sur-updates wordt een via CNAME ingestelde `s_ecid` cookie ook bewaard bij een vervaldatum van zeven dagen.
 
 Dit nieuwe `s_ecid` cookie heeft dezelfde status als de AMCV-cookie. Als de ecid uit het `s_ecid` cookie wordt gelezen, wordt demdex altijd direct aangeroepen om de meest recente status van de opt-out voor die id op te halen en in het AMCV-cookie opgeslagen.
 
 Als uw consument via deze [methode](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html)ervoor heeft gekozen geen Analytics te volgen, wordt dit `s_ecid` cookie verwijderd.
 
-De naam van de trackingserver moet aan de VisitorJS-bibliotheek worden opgegeven wanneer de bibliotheek wordt geïnitialiseerd met behulp van trackingServer of trackingServerSecure. Dit zou het trackingServer config in Analytics moeten aanpassen vormt.
+De naam van de trackingserver moet worden opgegeven bij het initialiseren van de bibliotheek met `trackingServer` of `trackingServerSecure`. Dit zou `trackingServer` config in Analytics moeten aanpassen vormt.
 
-Als u ervoor kiest om deze methode niet te gebruiken, voegt u de volgende config toe aan uw ECID-bibliotheekimplementatie: discardtrackingServerECID. Wanneer deze config aan waar wordt geplaatst, leest de bibliotheek van de Bezoeker MID niet die door de eerste partij volgende server wordt geplaatst.
+Als u ervoor kiest om deze methode niet te gebruiken, voegt u de volgende config toe aan uw ECID-bibliotheekimplementatie: `discardtrackingServerECID`. Wanneer deze config aan waar wordt geplaatst, leest de bibliotheek van de Bezoeker MID niet die door de eerste partij volgende server wordt geplaatst.
 
 ![](assets/itp-proposal-v1.png)
 
