@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 
-# Help bij Experience Cloud Identity Service {#using}
+# Help bij Experience Cloud-identiteitsservice {#using}
 
 + [Help bij ID-service](home.md)
 + Overzicht {#intro}
@@ -37,7 +37,7 @@ ht-degree: 7%
    + [Directe integratie met de Dienst van identiteitskaart](implementation-guides/direct-integration.md)
    + [Gebruiksscenario&#39;s voor directe integratie](implementation-guides/direct-integration-examples.md)
    + [De Dienst van identiteitskaart testen en verifiëren](implementation-guides/test-verify.md)
-   + Opt-in-service {#opt-in-service}
+   + Opt-in service {#opt-in-service}
       + [Overzicht van de OpenService](implementation-guides/opt-in-service/optin-overview.md)
       + [Opt-in-service instellen](implementation-guides/opt-in-service/getting-started.md)
       + [Opt-in-service valideren](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
@@ -68,8 +68,8 @@ ht-degree: 7%
       + [secureCookie](library/function-vars/securecookie.md)
       + [useCORSOnly](library/function-vars/use-cors-only.md)
       + [whitelistParentDomain en whitelistIframeDomains](library/function-vars/whitelistdomain.md)
-   + Methoden {#methods}
-      + [Methoden](library/get-set/get-set.md)
+   + Methods {#methods}
+      + [Methods](library/get-set/get-set.md)
       + [appendSupplementalDataIDTo](library/get-set/appendsupplementaldataidto.md)
       + [appendVisitorIDsTo (Cross-Domain Tracking)](library/get-set/appendvisitorid.md)
       + [callTimeOut Methods](library/get-set/timeout-functions.md)
