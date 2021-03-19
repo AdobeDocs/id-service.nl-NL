@@ -1,14 +1,14 @@
 ---
 description: ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
-keywords: ID Service
+keywords: ID-service
 seo-description: ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
 seo-title: Referentie voor analyse
 title: Referentie voor analyse
 uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 73465dcdab8b8316e0e9d41c5780ff0231270058
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '76'
 ht-degree: 7%
 
 ---
@@ -23,6 +23,6 @@ ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
 + [Experience Cloud-beslissingspunten voor identiteitsservicemigratie](migration-decisions.md)
 + [Experience Cloud Identiteitsservicemigratiescenario&#39;s](migration-scenarios.md)
 + [Analyses en Experience Cloud-id-verzoeken](legacy-analytics.md)
-+ [CNAME&#39;s voor gegevensverzameling en interdomeintracering](cname.md)
 + [Implementatie aan de serverzijde gemengd met JavaScript](server-side.md)
 + [De uitstelperiode voor de id-service](grace-period.md)
+<!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
