@@ -6,9 +6,9 @@ breadcrumb-title: Identiteitsservicehandleiding
 user-guide-description: De id-service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het kan de generatiecode van identiteitskaart voor de diensten zoals Analytics, Audience Manager, Doel, en andere oplossingen of eigenschappen van Experience Cloud vervangen.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
+source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '397'
 ht-degree: 8%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 8%
    + [Overzicht van referenties](reference/reference.md)
    + Referentie voor analyse {#analytics-reference}
       + [Overzicht van de analysehandleiding](reference/analytics-reference/analytics-reference.md)
+      + [Overzicht van CNAME-implementatie](reference/analytics-reference/cname.md)
       + [Analytics en Experience Cloud ID&#39;s instellen](reference/analytics-reference/analytics-ids.md)
       + [Bewerkingsvolgorde voor analytische id&#39;s](reference/analytics-reference/analytics-order-of-operations.md)
       + [Beslissingspunten voor migratie van id-service](reference/analytics-reference/migration-decisions.md)
