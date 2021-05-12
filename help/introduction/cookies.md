@@ -1,24 +1,23 @@
 ---
 description: De id-service gebruikt uw organisatie-id, de Experience Cloud AMCV-cookie en een demdex-cookie om unieke, permanente id's voor uw sitebezoekers te maken en op te slaan. Deze koekjes laten de dienst van identiteitskaart bezoekers over uw verschillende domeinen volgen en gegevens toelaten delend onder verschillende oplossingen van Experience Cloud.
-keywords: playstation;ID Service
+keywords: afspeelstation;ID-service
 seo-description: De id-service gebruikt uw organisatie-id, de Experience Cloud AMCV-cookie en een demdex-cookie om unieke, permanente id's voor uw sitebezoekers te maken en op te slaan. Deze koekjes laten de dienst van identiteitskaart bezoekers over uw verschillende domeinen volgen en gegevens toelaten delend onder verschillende oplossingen van Experience Cloud.
 seo-title: Cookies en de Experience Cloud Identity Service
 title: Cookies en de Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 727c6381-56b9-44b8-8e59-355d072769be
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
-
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies en de Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 De id-service gebruikt uw organisatie-id, de Experience Cloud AMCV-cookie en een demdex-cookie om unieke, permanente id&#39;s voor uw sitebezoekers te maken en op te slaan. Deze koekjes laten de dienst van identiteitskaart bezoekers over uw verschillende domeinen volgen en gegevens toelaten delend onder verschillende oplossingen van Experience Cloud.
 
-## Cookies van ID-service {#section-f438168beaec409ab8b2cc58bd021e26}
+## Inzicht in cookies van ID-service {#section-f438168beaec409ab8b2cc58bd021e26}
 
 De id-service is afhankelijk van de cookies AMCV, AMCVS en demdex voor een correcte werking. Deze cookies zijn alleen bestanden waarin gegevens worden opgeslagen die door de id-service worden gebruikt. Deze ID-servicecookies zijn niet gevaarlijk, kwaadaardig of verschillen van andere cookies van een website of service in een browser die van andere leveranciers afkomstig zijn, volgens dezelfde regels die van toepassing zijn op andere cookies van andere leveranciers. Raadpleeg de volgende secties voor meer informatie over cookies die door de ID-service worden gebruikt.
 
@@ -42,7 +41,7 @@ De volgende kenmerken van het cookie die door de ID-service is ingesteld.
 
 **Naam**
 
-De naam van het AMCV-cookie volgt de syntaxis `AMCV_<variable name>@AdobeOrg`. In de naam zijn de `<variable name>` elementen plaatsaanduidingen voor een deel van de organisatie-id van Experience Cloud. Deze id wordt doorgegeven aan de DCS door de `Visitor.getInstance` functie in de ID-servicecode.
+De naam van het AMCV-cookie volgt de syntaxis `AMCV_<variable name>@AdobeOrg`. In de naam, zijn de `<variable name>` elementen placeholders voor een deel van uw Experience Cloud organisatie ID. Deze id wordt doorgegeven aan de DCS door de functie `Visitor.getInstance` in de ID-servicecode.
 
 Een volledig gevormde cookienaam zou gelijkaardig aan dit kijken:
 
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhoud**
 
-Het AMCV-cookie bevat de Experience Cloud-bezoeker-id of MID. MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis volgt, `mid|<Experience Cloud ID>`.
+Het AMCV-cookie bevat de Experience Cloud-bezoeker-id of MID. MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis, `MCMID|<Experience Cloud ID>` volgt.
 
 Een volledig gevormd zeer belangrijk-waardepaar zou gelijkaardig aan dit kijken:
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 Deze permanente id maakt het delen van gegevens tussen oplossingen mogelijk.
@@ -72,7 +71,7 @@ Omdat het AMCV-cookie echter is ingesteld in het domein van de eerste partij, ka
 
 **Naam**
 
-De naam van het AMCVS-cookie volgt de syntaxis `AMCVS_####@AdobeOrg`. In de naam, zijn de ### elementen placeholders voor een deel van uw Experience Cloud organisatie ID. Deze id wordt doorgegeven aan de DCS door `theVisitor.getInstance` functie in de ID-servicecode.
+De naam van het AMCVS-cookie volgt de syntaxis `AMCVS_####@AdobeOrg`. In de naam, zijn de ### elementen placeholders voor een deel van uw Experience Cloud organisatie ID. Deze id wordt doorgegeven aan de DCS door de functie `theVisitor.getInstance` in de ID-servicecode.
 
 Een volledig gevormde cookienaam zou gelijkaardig aan dit kijken:
 
@@ -82,7 +81,7 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhoud**
 
-Het cookie van AMCVS fungeert als een vlag die aangeeft dat de sessie is geïnitialiseerd. De waarde is altijd `1` en wordt beëindigd wanneer de sessie is beëindigd.
+Het cookie van AMCVS fungeert als een vlag die aangeeft dat de sessie is geïnitialiseerd. De waarde ervan is altijd `1` en wordt beëindigd wanneer de sessie is beëindigd.
 
 **Domein**
 
@@ -90,14 +89,14 @@ Het cookie van AMCVS wordt ingesteld in het domein van de eerste fabrikant van e
 
 ![](assets/AMCVS-cookie.png)
 
-## Demdex cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
+## Demdex-cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
 In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie weergegeven en gedefinieerd.
 
 <table id="table_18E3CAF3550E4BB6A199736AACE39202"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Kenmerk </th> 
+   <th colname="col1" class="entry"> Attribute </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -117,13 +116,13 @@ In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie w
  </tbody> 
 </table>
 
-Voor verwante informatie, zie het [Begrip van Vraag aan het Domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)van de Index.
+Voor verwante informatie, zie [Begrijpen Vraag aan het Domein van de Index](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html).
 
-## Generating the Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
+## De Experience Cloud-id {#section-15f69c0bac394b4b9966a23fbc586d17} genereren
 
 De Experience Cloud-id (MID) wordt wiskundig afgeleid van uw organisatie-id en de demdex-id. Zolang deze IDs constant blijft, is het produceren van juiste MID voor een specifieke gebruiker eenvoudig een wiskundeprobleem. Met dezelfde organisatie-id en dezelfde demdex-id krijgt u telkens dezelfde MID-waarde. Dit staat de dienst van identiteitskaart toe om bezoekers over domeinen te volgen die u controleert en met de dienstcode van identiteitskaart hebt gevormd.
 
-De id-service maakt een id terwijl de pagina wordt geladen. Tijdens dit proces, verzendt de code door de `visitorAPI.js` codebibliotheek wordt verstrekt uw organisatieidentiteitskaart in een gebeurtenisvraag naar de dienst van identiteitskaart die. De id-service maakt en retourneert de MID en een demdex-id in respectievelijk de cookies AMCV en demdex.
+De id-service maakt een id terwijl de pagina wordt geladen. Tijdens dit proces verzendt de code die door de `visitorAPI.js` codebibliotheek wordt verstrekt uw organisatie-id in een gebeurtenisvraag naar de dienst van identiteitskaart. De id-service maakt en retourneert de MID en een demdex-id in respectievelijk de cookies AMCV en demdex.
 
 ## Markeringen
 
@@ -135,8 +134,8 @@ In de volgende tabel worden markeringen voor Experience Cloud Cookies beschreven
 | AMCV (JavaScript) | Nee | Configureerbaar | Unset (standaard ingesteld op Lax) |
 | AMCVS (JavaScript) | Nee | Configureerbaar | Unset (standaard ingesteld op Lax) |
 
-*Opmerking: Voor informatie bij het vormen van het koekje AMCV en AMCVS met veilige attributen, zie het onderwerp voor [secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
+*Opmerking: Voor informatie bij het vormen van het koekje AMCV en AMCVS met veilige attributen, zie het onderwerp voor  [secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
 
 ## Volgende stappen {#section-8db1727a63bc4ff68b495f270315d453}
 
-Zie [hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en IDs plaatst...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Zie [Hoe de Dienst van de Identiteit van de Experience Cloud verzoekt en plaatst IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
