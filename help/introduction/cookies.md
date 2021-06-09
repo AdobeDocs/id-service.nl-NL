@@ -6,9 +6,9 @@ seo-title: Cookies en de Experience Cloud Identity Service
 title: Cookies en de Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie w
 <table id="table_18E3CAF3550E4BB6A199736AACE39202"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Attribute </th> 
+   <th colname="col1" class="entry"> Kenmerk </th> 
    <th colname="col2" class="entry"> Beschrijving </th> 
   </tr> 
  </thead>
@@ -116,7 +116,7 @@ In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie w
  </tbody> 
 </table>
 
-Voor verwante informatie, zie [Begrijpen Vraag aan het Domein van de Index](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html).
+Voor verwante informatie, zie [Begrijpen Vraag aan het Domein van de Index](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en).
 
 ## De Experience Cloud-id {#section-15f69c0bac394b4b9966a23fbc586d17} genereren
 
@@ -134,7 +134,7 @@ In de volgende tabel worden markeringen voor Experience Cloud Cookies beschreven
 | AMCV (JavaScript) | Nee | Configureerbaar | Unset (standaard ingesteld op Lax) |
 | AMCVS (JavaScript) | Nee | Configureerbaar | Unset (standaard ingesteld op Lax) |
 
-*Opmerking: Voor informatie bij het vormen van het koekje AMCV en AMCVS met veilige attributen, zie het onderwerp voor  [secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
+*Opmerking: Voor informatie bij het vormen van het koekje AMCV en AMCVS met veilige attributen, zie het onderwerp voor  [secureCookie](../library/function-vars/securecookie.md).*
 
 ## Volgende stappen {#section-8db1727a63bc4ff68b495f270315d453}
 
