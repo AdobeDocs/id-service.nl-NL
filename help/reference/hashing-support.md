@@ -1,19 +1,18 @@
 ---
 description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
-keywords: ID Service
+keywords: ID-service
 seo-description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 seo-title: SHA256 Hashing Support for setCustomerIDs
 title: SHA256 Hashing Support for setCustomerIDs
-translation-type: tm+mt
-source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
+exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '667'
+ht-degree: 2%
 
 ---
 
-
-# SHA256 Hashing-ondersteuning voor `setCustomerIDs` {#hashing-support}
+# SHA256 Hash-ondersteuning voor `setCustomerIDs` {#hashing-support}
 
 De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id&#39;s naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 Er zijn twee manieren om hashing-ondersteuning te implementeren met setCustomerID&#39;s, zoals beschreven in de volgende secties:
@@ -21,9 +20,9 @@ Er zijn twee manieren om hashing-ondersteuning te implementeren met setCustomerI
 * [De methode setCustomerIDs in ECID gebruiken](/help/reference/hashing-support.md#use-setcustomerids-method)
 * [Een handeling toevoegen in Adobe Experience Platform Launch](/help/reference/hashing-support.md#add-action-launch)
 
-## De `setCustomerIDs` methode in ECID gebruiken {#use-setcustomerids-method}
+## De methode `setCustomerIDs` in ECID {#use-setcustomerids-method} gebruiken
 
-De eerste methode gebruikt de methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
+De eerste methode gebruikt de [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) methode.
 
 Voordat u hasht, voert de ECID-bibliotheek gegevensnormalisatie uit op de clientID&#39;s. Dit proces maakt de whitespaces van klantIDs op beide einden weg, en zet alle karakters in kleine letters om. Bijvoorbeeld in het geval van e-mailadressen: &quot; ecid@adobe.com &quot; wordt &quot;ecid@adobe.com&quot;
 
@@ -38,9 +37,9 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Samen met de Experience Cloud bezoekersidentiteitskaart, kunt u extra klant IDs, authentificatiestatus en knoeiboeltype (SHA-256) met elke bezoeker associëren. Als u geen hashtype verstrekt, zal het als geen hash worden beschouwd.
 
-De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar de Experience Cloud en deze gegevens benaderen via de verschillende oplossingen.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar de Experience Cloud en deze gegevens openen voor de verschillende oplossingen.
 
-ID&#39;s van de klant, geverifieerde statussen en hashtype *worden niet* opgeslagen in een cookie die later moet worden gebruikt. In plaats daarvan, zouden identiteitskaart van de Klant, voor authentiek verklaarde staten en knoeiboeltype in een instantievariabele moeten worden opgeslagen, die moeten worden teruggewonnen gebruikend, [`getCustomerIDs`](/help/library/get-set/getcustomerids.md)zoals hieronder getoond:
+Klant-id&#39;s, geverifieerde statussen en hashtype *worden niet* opgeslagen in een cookie die later moet worden gebruikt. In plaats daarvan, zouden de identiteitskaart van de Klant, voor authentiek verklaarde staten en knoeiboeltype in een instantievariabele moeten worden opgeslagen, die moeten worden teruggewonnen gebruikend [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), zoals hieronder getoond:
 
 ```
 > visitor.getCustomerIDs();
@@ -51,7 +50,7 @@ ID&#39;s van de klant, geverifieerde statussen en hashtype *worden niet* opgesla
 
 <br> 
 
-Het gebruiken van de `setCustomerIDs` methode resulteert in een vraag aan de Dienst van identiteitskaart van Experience Cloud, aan `dpm.demdex.net`, met de toevoeging van de `d_cid_ic` vraagparameter, die gehakt klantenidentiteitskaart bevat. Een voorbeeldvraag zou als hieronder kunnen kijken. Voor de duidelijkheid zijn regeleinden toegevoegd.
+Het gebruiken van de `setCustomerIDs` methode resulteert in een vraag aan de Dienst van identiteitskaart van de Experience Cloud, aan `dpm.demdex.net`, met toevoeging van de `d_cid_ic` vraagparameter, die gehakt klant ID bevat. Een voorbeeldvraag zou als hieronder kunnen kijken. Voor de duidelijkheid zijn regeleinden toegevoegd.
 
 ```
 http://dpm.demdex.net/id?d_visid_ver=4.4.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&
@@ -63,17 +62,17 @@ ts=1563299964843
 
 <br> 
 
-Zie de tabel hieronder voor een beschrijving van de `d_cid_ic` parameter en de verificatiestatus.
+Zie de tabel hieronder voor een beschrijving van de parameter- en verificatiestatus `d_cid_ic`.
 
 | Parameter | Beschrijving |
 |------------|----------|
-| `d_cid_ic` | Geeft de integratiecode, de unieke gebruikersnaam (DPUUID) en een geverifieerde statusid door aan de id-service. Scheid de Code van de Integratie en DPUUID met het niet-druk controlekarakter, %01</code>: <br> Voorbeeld: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Verificatiestatus</b> <br> Dit is een optionele id in de parameter d_cid_ic. Uitgedrukt als een geheel getal, identificeert het gebruikers op basis van hun verificatiestatus, zoals hieronder wordt weergegeven: <br> <ul><li>0 (onbekend of nooit geverifieerd)</li><li>1 (momenteel geverifieerd voor deze instantie/pagina/toepassingscontext)</li><li>2 (Afgemeld)</li></ul> <br> Voorbeelden: <br> <ul><li>Onbekend: ...d_cid=123%01456%01<b>0</b></li><li>Voor authentiek verklaard: ...d_cid=123%01456%01<b>1</b></li><li>Afgemeld: ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Geeft de integratiecode, de unieke gebruikersnaam (DPUUID) en een geverifieerde statusid door aan de id-service. Scheid de Code van de Integratie en DPUUID met het non-printing controlekarakter, %01</code>: <br> Voorbeeld: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Verificatiestatus</b> <br> Dit is een optionele id in de parameter d_cid_ic. Uitgedrukt als een geheel getal, identificeert het gebruikers op basis van hun verificatiestatus, zoals hieronder wordt weergegeven: <br> <ul><li>0 (onbekend of nooit geverifieerd)</li><li>1 (momenteel geverifieerd voor deze instantie/pagina/toepassingscontext)</li><li>2 (Afgemeld)</li></ul> <br> Voorbeelden: <br> <ul><li>Onbekend: ...d_cid=123%01456%01<b>0</b></li><li>Voor authentiek verklaard: ...d_cid=123%01456%01<b>1</b></li><li>Afgemeld: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Een handeling toevoegen in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch is de volgende generatie mogelijkheden voor tagbeheer van Adobe. Meer informatie over Starten vindt u in de documentatie [van het product](https://docs.adobe.com/content/help/en/launch/using/overview.html)Launch.
+Experience Platform Launch is de volgende generatie mogelijkheden voor tagbeheer van Adobe. Meer informatie over Platform launch vindt u in de [Productdocumentatie starten](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
 
-Als u een handeling wilt toevoegen in Launch, leest u de documentatie over [regels](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch en raadpleegt u de onderstaande schermvastlegging:
+Als u een handeling wilt toevoegen in Launch, leest u de [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch en raadpleegt u de schermvastlegging hieronder:
 
 ![](/help/reference/assets/hashing-support.png)
 
@@ -102,4 +101,4 @@ setCustomerIDs(Ingeration code: {
 });
 ```
 
-Op dezelfde manier als de methode die in de eerste sectie wordt beschreven, resulteert dit in een vraag aan de Dienst van identiteitskaart van Experience Cloud, met de toevoeging van de `setCustomerIDs` `d_cid_ic` vraagparameter.
+Op dezelfde manier als de `setCustomerIDs` methode die in de eerste sectie wordt beschreven, resulteert dit in een vraag aan de Dienst van identiteitskaart van de Experience Cloud, met de toevoeging van de `d_cid_ic` vraagparameter.
