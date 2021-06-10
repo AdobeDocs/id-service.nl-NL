@@ -1,18 +1,14 @@
 ---
 description: getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van de Experience Cloud wordt geplaatst.
-keywords: ID Service
-seo-description: getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van de Experience Cloud wordt geplaatst.
-seo-title: getCustomerIDs
+keywords: ID-service
 title: getCustomerIDs
-uuid: 4eb6ff00-2a92-46b6-b9a6-8e0c6e2e73d1
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: 4a05509b-99f6-42c8-a539-0784f5b9fabc
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '30'
 ht-degree: 0%
 
 ---
-
 
 # getCustomerIDs{#getcustomerids}
 
