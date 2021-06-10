@@ -1,18 +1,14 @@
 ---
 description: Een optionele, Booleaanse markering die id-synchronisatie uitschakelt.
-keywords: ID Service
-seo-description: Een optionele, Booleaanse markering die id-synchronisatie uitschakelt.
-seo-title: disableIdSyncs
+keywords: ID-service
 title: disableIdSyncs
-uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 4%
+source-wordcount: '37'
+ht-degree: 5%
 
 ---
-
 
 # disableIdSyncs{#disableidsyncs}
 
@@ -20,9 +16,9 @@ Een optionele, Booleaanse markering die id-synchronisatie uitschakelt.
 
 >[!NOTE]
 >
->Aan deze configuratie is `idSyncDisableSyncs` en de naam is gewijzigd `disableIdSyncs` in de release van 18 januari 2018 van v3.0.
+>Deze configuratie was `idSyncDisableSyncs` en hernoemd naar `disableIdSyncs` in de release van 18 januari 2018 van v3.0.
 
-**Syntaxis:** `disableIdSyncs: true|false` (standaardwaarde is `false`.)
+**Syntaxis:** `disableIdSyncs: true|false` (standaardwaarde is  `false`.)
 
 **Codevoorbeeld**
 
@@ -39,4 +35,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableIdSyncs: true 
 });
 ```
-
