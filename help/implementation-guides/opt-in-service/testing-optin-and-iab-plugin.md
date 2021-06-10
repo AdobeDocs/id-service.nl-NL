@@ -1,23 +1,19 @@
 ---
 description: Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
-seo-description: Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
-seo-title: Opt-in-service valideren
 title: Opt-in-service valideren
-uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-
-# Opt-in-service valideren{#validating-opt-in-service}
+# Opt-in service valideren{#validating-opt-in-service}
 
 Zodra u Opt-in op uw website hebt toegelaten, gebruik de bevestigingsmethodes om te testen dat de dienst zoals verwacht gebruikend de ontwikkelaarshulpmiddelen in uw browser werkt.
 
-## Hoofdlettergebruik 1: Inschakelen inschakelen {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Hoofdlettergebruik 1: Inschakelen {#section-c8fe1ee3711b420c8186c7057abbecb3} inschakelen
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -29,7 +25,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Wis voordat u de pagina laadt de cache en cookies.
 
-Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspect. Zoals in het scherm hierboven, selecteer het lusje van het *Netwerk* om de verzoeken te bekijken die van browser worden gemaakt.
+Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspect. Zoals in het scherm hierboven, selecteer *Netwerk* lusje om de verzoeken te bekijken die van browser worden gemaakt.
 
 In het bovenstaande voorbeeld zijn de volgende Adobe JS-tags op de pagina geïnstalleerd: ECID, AAM, Analytics en Target.
 
@@ -45,15 +41,15 @@ U zou geen verzoeken aan de servers van Adobe moeten zien:
 
 >[!NOTE]
 >
->U zou een vraag aan kunnen zien, `http://dpm.demdex.net/optOutStatus`die een ALLEEN LEZEN eindpunt is dat wordt gebruikt om de status van de bezoeker Opt-out terug te winnen. Dit eindpunt zal niet in derdekoekjes resulteren die worden gecreeerd, en zal geen informatie van de pagina verzamelen.
+>U zou een vraag aan `http://dpm.demdex.net/optOutStatus` kunnen zien, die een ALLEEN-LEZEN eindpunt is dat wordt gebruikt om de status van de bezoeker uit op te halen. Dit eindpunt zal niet in derdekoekjes resulteren die worden gecreeerd, en zal geen informatie van de pagina verzamelen.
 
 Er worden geen cookies weergegeven die met de Adobe-tags zijn gemaakt: (AMCV_{{UW_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
-Ga in Chrome naar het tabblad *Toepassing* , vouw de sectie *Cookies* onder *Opslag* uit en selecteer de domeinnaam van uw website:
+Ga in Chrome naar het tabblad *Toepassing*, vouw de sectie *Cookies* onder *Storage* uit en selecteer de domeinnaam van uw website:
 
 ![](assets/use_case_1_2.png)
 
-## Hoofdlettergebruik 2: Opt-in en opslag inschakelen {#section-bd28326f52474fa09a2addca23ccdc0f}
+## Hoofdlettergebruik 2: Inschakelen en opslaan {#section-bd28326f52474fa09a2addca23ccdc0f} inschakelen
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -62,9 +58,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Het enige verschil in gebruikscase 2 is dat u *een nieuw cookie* ziet dat de opt-in-machtigingen bevat die door uw bezoeker worden verschaft: **adobeujs-optin**
+Het enige verschil in gebruikscase 2 is dat u *een nieuw koekje* zult zien dat de Opt-in toestemmingen zal bevatten die door uw bezoeker worden verstrekt: **adobeujs-optin**
 
-## Hoofdlettergebruik 3: Inschakelen en vooraf goedkeuren van Adobe Analytics inschakelen {#section-257fe582b425496cbf986d0ec12d3692}
+## Hoofdlettergebruik 3: Inschakelen en vooraf goedkeuren van Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692} inschakelen
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +80,7 @@ en op het tabblad Toepassing ziet u de cookies Analytics:
 
 ![](assets/use_case_3_2.png)
 
-## Hoofdlettergebruik 4: Inschakelen en IAB inschakelen {#section-64331998954d4892960dcecd744a6d88}
+## Hoofdlettergebruik 4: Inschakelen en IAB {#section-64331998954d4892960dcecd744a6d88} inschakelen
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -95,7 +91,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **Hoe te om uw huidige toestemming IAB op de pagina te bekijken:**
 
-Open de ontwikkelaarsgereedschappen en selecteer het tabblad *Console* . Plak het volgende codefragment en druk op Enter:
+Open de ontwikkelaarsgereedschappen en selecteer het tabblad *Console*. Plak het volgende codefragment en druk op Enter:
 
 ```
 <codeblock>
