@@ -3,9 +3,9 @@ description: Verander de standaarddomeinnaam die door vraag aan de Dienst van de
 keywords: ID-service
 title: publiekManagerServer en publiekManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit v
 
 **Doel**
 
-Normaal, doet de [!DNL Experience Cloud] dienst van identiteitskaart vraag aan [!DNL Adobe] bij `dpm.demdex.net`. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Om de de dienstvraag van identiteitskaart meer als een vraag van de eerste partij te maken, gebruik deze configuraties om uw [!DNL Audience Manager] subdomeinnaam aan `demdex.net` zoals hieronder getoond toe te voegen. Voor meer informatie over de `dpm.demdex.net` vraag, zie [Begrijpende Vraag aan het Domein van de Index](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html).
+Normaal, doet de [!DNL Experience Cloud] dienst van identiteitskaart vraag aan [!DNL Adobe] bij `dpm.demdex.net`. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Om de de dienstvraag van identiteitskaart meer als een vraag van de eerste partij te maken, gebruik deze configuraties om uw [!DNL Audience Manager] subdomeinnaam aan `demdex.net` zoals hieronder getoond toe te voegen. Voor meer informatie over de `dpm.demdex.net` vraag, zie [Begrijpende Vraag aan het Domein van de Index](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html).
 
 **Vereisten**
 
