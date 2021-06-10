@@ -1,24 +1,20 @@
 ---
 description: Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laatste twee delen van de URL groter is dan 2 tekens.
-keywords: ID Service
-seo-description: Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laatste twee delen van de URL groter is dan 2 tekens.
-seo-title: cookieDomain
+keywords: ID-service
 title: cookieDomain
-uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 9%
+source-wordcount: '56'
+ht-degree: 10%
 
 ---
-
 
 # cookieDomain{#cookiedomain}
 
 Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laatste twee delen van de URL groter is dan 2 tekens.
 
-**Syntaxis:** ` cookieDomain: " *`URL`*"` (Het `www` voorvoegsel is niet vereist.)
+**Syntaxis:** ` cookieDomain: " *`URL`*"`  (Het  `www` voorvoegsel is niet vereist.)
 
 **Gebruiksscenario**
 
@@ -40,4 +36,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieDomain:"example.com.uk" 
 });
 ```
-
