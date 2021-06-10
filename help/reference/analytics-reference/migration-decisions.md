@@ -1,18 +1,14 @@
 ---
 description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens met verschillende methoden of via JavaScript-bestanden verzamelt.
 keywords: ID-service
-seo-description: Voordat u de Experience Cloud Identity Service gaat implementeren, moet u begrijpen hoe deze service het bijhouden van bezoekers op meerdere domeinen en mogelijke problemen beïnvloedt als u gegevens met verschillende methoden of via JavaScript-bestanden verzamelt.
-seo-title: Experience Cloud-beslissingspunten voor identiteitsservicemigratie
 title: Experience Cloud-beslissingspunten voor identiteitsservicemigratie
-uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # Experience Cloud-beslissingspunten voor identiteitsservicemigratie
 
@@ -125,4 +121,3 @@ Mogelijk moet u de manier bijwerken waarop u koppelingen bijhoudt of een migrati
   </tr> 
  </tbody> 
 </table>
-
