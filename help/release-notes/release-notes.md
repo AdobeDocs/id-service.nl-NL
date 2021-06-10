@@ -3,10 +3,10 @@ description: De versies van de eigenschap, updates, of veranderingen in de Diens
 keywords: ID-service
 title: Opmerkingen bij de release 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 5%
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
@@ -25,4 +25,4 @@ Oplossen voor prestatieprobleem op `Internet-Explorer (IE) 11` wanneer ECID `pre
 * Vanaf versie 4.5 worden lege id&#39;s die naar de methode `setCustomerIDs` zijn verzonden, door ECID afgewezen.
 * Probleem verholpen die zich voordeed wanneer de optie-in is geconfigureerd als `doesOptInApply=false` en `isIabContext=true`.
 
-Zie [Opmerkingen bij de release van Experience Cloud](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html) voor maandelijkse opmerkingen bij de release voor alle producten.
+Zie [Opmerkingen bij de release van Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html) voor maandelijkse opmerkingen bij de release voor alle producten.
