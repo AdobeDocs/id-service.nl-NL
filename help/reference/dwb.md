@@ -3,10 +3,10 @@ description: Volg deze instructies om het gebied van identiteitskaart van de Exp
 keywords: ID-service
 title: Data Workbench en Experience Cloud Identity Service
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 3%
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 3%
 
 Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
 
-[Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) bijwerken om de id-service te gebruiken:
+[Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) bijwerken om de id-service te gebruiken:
 
-1. Zoek het huidige [Decoderingsbestand](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html).
+1. Zoek het huidige [Decoderingsbestand](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html).
 
    De [!DNL Decoder Group] bevindt zich gewoonlijk in een [!UICONTROL Profile Manager] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
 1. Plak de decoderingsindeling onder het origineel.
