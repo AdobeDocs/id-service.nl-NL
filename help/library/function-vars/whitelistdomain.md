@@ -1,18 +1,14 @@
 ---
 description: Deze configuraties laten verschillende instanties van de de dienstcode van identiteitskaart die in een iFrame en op de ouderpagina wordt uitgevoerd met elkaar communiceren. Zij worden ontworpen helpen problemen met 2 specifieke gebruiksgevallen oplossen waar u of niet de ouderpagina/het domein kunt controleren en u hebt de dienstcode van identiteitskaart die in iFrame van een domein laadt dat u controle hebt. Ze zijn beschikbaar in VisitorAPI.js code versie 2.2 of hoger.
-keywords: ID Service
-seo-description: Deze configuraties laten verschillende instanties van de de dienstcode van identiteitskaart die in een iFrame en op de ouderpagina wordt uitgevoerd met elkaar communiceren. Zij worden ontworpen helpen problemen met 2 specifieke gebruiksgevallen oplossen waar u of niet de ouderpagina/het domein kunt controleren en u hebt de dienstcode van identiteitskaart die in iFrame van een domein laadt dat u controle hebt. Ze zijn beschikbaar in VisitorAPI.js code versie 2.2 of hoger.
-seo-title: whitelistParentDomain en whitelistIframeDomains
+keywords: ID-service
 title: whitelistParentDomain en whitelistIframeDomains
-uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '860'
 ht-degree: 3%
 
 ---
-
 
 # whitelistParentDomain en whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
@@ -23,9 +19,9 @@ Inhoud:
 <ul class="simplelist"> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-f645198bbaba4fba8961acb6e88d1470" format="dita" scope="local"> Syntaxis </a> </li> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-09d0049fe88a473baa69d404c50bf8ae" format="dita" scope="local"> Codevoorbeeld </a> </li> 
- <li> <a href="../../library/function-vars/whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> Gevallen gebruiken </a> </li> 
- <li> <a href="../../library/function-vars/whitelistdomain.md#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2" format="dita" scope="local"> Configuratieveiligheid en -beveiliging </a> </li> 
- <li> <a href="../../library/function-vars/whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> Ondersteunde API-methoden voor bezoekers </a> </li> 
+ <li> <a href="../../library/function-vars/whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> Gevallen gebruiken  </a> </li> 
+ <li> <a href="../../library/function-vars/whitelistdomain.md#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2" format="dita" scope="local"> Configuratieveiligheid en -beveiliging  </a> </li> 
+ <li> <a href="../../library/function-vars/whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> Ondersteunde API-methoden voor bezoekers  </a> </li> 
 </ul>
 
 ## Syntaxis {#section-f645198bbaba4fba8961acb6e88d1470}
@@ -41,11 +37,11 @@ Beide configuratieelementen worden vereist wanneer u deze code gebruikt.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: "" <span class="varname"> Domeinnaam van bovenliggende pagina </span>" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: "  <span class="varname"> Domeinnaam van bovenliggende pagina  </span>"  </span> </p> </td> 
    <td colname="col2"> <p>Accepteert één domeinnaam die als tekenreeks wordt doorgegeven. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "iFrame domain","iFrame domain","iFrame domain" </span>] </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [  <span class="varname"> "iFrame domain","iFrame domain","iFrame domain"  </span>]  </span> </p> </td> 
    <td colname="col2"> <p>Accepteert een of meer iFrame-domeinnamen die worden doorgegeven als een array. </p> </td> 
   </tr> 
  </tbody> 
@@ -53,7 +49,7 @@ Beide configuratieelementen worden vereist wanneer u deze code gebruikt.
 
 ## Codevoorbeeld {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-Uw gevormde [!UICONTROL ID service] code kon aan dit voorbeeld gelijkaardig kijken.
+Uw geconfigureerde [!UICONTROL ID service]-code zou er ongeveer hetzelfde uitzien als dit voorbeeld.
 
 ```js
 //Instantiate Visitor 
@@ -67,7 +63,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Use Cases {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Gevallen {#section-fc2eeb93546b406fae3b102dbcd11de7} gebruiken
 
 Deze configuraties helpen het probleem op te lossen van het plaatsen van een de dienstkoekje van identiteitskaart en het toewijzen van een bezoekersidentiteitskaart wanneer browsers derdekoekjes blokkeren en als één van beiden van deze voorwaarden van toepassing is:
 
@@ -76,7 +72,7 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
 
 >[!TIP]
 >
->U kunt deze configuraties ook willen implementeren wanneer u video in een iFrame met [videorecart](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)bedient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
+>U kunt deze configuraties ook willen uitvoeren wanneer u video in een iFrame met [Videohartslag](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) dient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
 
 **Hoofdlettergebruik 1: Browser blokkeert de Koekjes van de Derde en de Dienst van identiteitskaart wordt uitgevoerd op iFrame en de Pagina van de Ouder**
 
@@ -108,7 +104,7 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Oplossing</b> </p> </td> 
-   <td colname="col2"> <p>Wijzig de de dienstVisitor.getInstance van identiteitskaart <span class="codeph"> </span> functie in iFrame met deze witte lijstconfiguraties. Geef de bovenliggende en onderliggende domeinen in de code op. Met deze configuraties kan de ID-servicecode in het iFrame de ID-servicecode op de bovenliggende pagina controleren op een bezoeker-id. </p> <p>Als de ID-servicecode in het iFrame geen bovenliggende pagina voor reacties ontvangt, genereren deze configuraties een lokale bezoeker-id. </p> </td> 
+   <td colname="col2"> <p>Wijzig de id-service <span class="codeph"> Visitor.getInstance </span> in het iFrame met deze whitelandconfiguraties. Geef de bovenliggende en onderliggende domeinen in de code op. Met deze configuraties kan de ID-servicecode in het iFrame de ID-servicecode op de bovenliggende pagina controleren op een bezoeker-id. </p> <p>Als de ID-servicecode in het iFrame geen bovenliggende pagina voor reacties ontvangt, genereren deze configuraties een lokale bezoeker-id. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -142,12 +138,12 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Oplossing</b> </p> </td> 
-   <td colname="col2"> <p>Wijzig de de dienstVisitor.getInstance van identiteitskaart <span class="codeph"> </span> functie in iFrame met deze witte lijstconfiguraties. Geef de bovenliggende en onderliggende domeinen in de code op. Met deze configuraties kan de ID-servicecode in het iFrame de ID-servicecode op de bovenliggende pagina controleren op een bezoeker-id. </p> <p>Als de ID-servicecode in het iFrame geen bovenliggende pagina voor reacties ontvangt, genereren deze configuraties een lokale bezoeker-id. </p> </td> 
+   <td colname="col2"> <p>Wijzig de id-service <span class="codeph"> Visitor.getInstance </span> in het iFrame met deze whitelandconfiguraties. Geef de bovenliggende en onderliggende domeinen in de code op. Met deze configuraties kan de ID-servicecode in het iFrame de ID-servicecode op de bovenliggende pagina controleren op een bezoeker-id. </p> <p>Als de ID-servicecode in het iFrame geen bovenliggende pagina voor reacties ontvangt, genereren deze configuraties een lokale bezoeker-id. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Configuratieveiligheid en -beveiliging {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Configuratiebeveiliging {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 U kunt deze configuraties veilig implementeren omdat:
 
@@ -171,21 +167,20 @@ De dienst van identiteitskaart steunt een beperkte reeks openbare API methodes w
    <td colname="col1"> <p> <b>Zaak 1</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_99FAC8608F4C4B39805EEAA6297DB771"> 
-      <li id="li_B13F6C4119F44F17963794B1E2046B1F"> <span class="codeph"> getMarketingCloudID </span> </li> 
-      <li id="li_9C1B5C00A17F467CAB7EFE5F0D040777"> <span class="codeph"> getAudienceManagerLocationHint </span> </li> 
-      <li id="li_30D4608F4C3849659FCBA97D88A10F0C"> <span class="codeph"> getAudienceManagerBlob </span> </li> 
-      <li id="li_BA359596C80147EEA89CABCE83F123CA"> <span class="codeph"> getSupplementalDataID </span> </li> 
-      <li id="li_26774089B6854CD6A3216043B6EEA01B"> <span class="codeph"> getCustomerIDs </span> </li> 
+      <li id="li_B13F6C4119F44F17963794B1E2046B1F"> <span class="codeph"> getMarketingCloudID  </span> </li> 
+      <li id="li_9C1B5C00A17F467CAB7EFE5F0D040777"> <span class="codeph"> getAudienceManagerLocationHint  </span> </li> 
+      <li id="li_30D4608F4C3849659FCBA97D88A10F0C"> <span class="codeph"> getAudienceManagerBlob  </span> </li> 
+      <li id="li_BA359596C80147EEA89CABCE83F123CA"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_26774089B6854CD6A3216043B6EEA01B"> <span class="codeph"> getCustomerIDs  </span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Zaak 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
-      <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID  </span> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
