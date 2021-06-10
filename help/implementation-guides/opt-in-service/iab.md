@@ -2,10 +2,10 @@
 description: Sluit hun Platform van het Beheer van de Toestemming (CMP) met de stop van de Audience Manager van Opt-binnen voor de Transparantie en van de Toestemming van IAB Kader (TCF) aan.
 title: Het gebruiken van Opt-in de Diensten met IAB Kader
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '468'
+ht-degree: 3%
 
 ---
 
@@ -55,5 +55,5 @@ Voor meer informatie over het valideren van de TCF-plug-in van de plug-in IAB va
 
 * [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)  - Voor meer informatie over de IAB-standaard
 * [Adobe Opt-In](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360)  - Voor meer informatie over Opt-In, een vereiste component voor toestemmingsbeheer in oplossingen van Platforms
-* Ondersteuning voor IAB-transparantie en TCF (Accsent Framework) [in Audience Manager](https://docs.adobe.com/content/help/nl-NL/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* Ondersteuning voor IAB-transparantie en TCF (Accsent Framework) [in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
 * [Uw privacyopties](https://www.adobe.com/nl/privacy/opt-out.html#customeruse)  - Een andere privacyoptie waarover uw gebruikers beschikken, is de mogelijkheid om zich af te melden bij het verzamelen van gegevens met behulp van andere wereldwijde opt-outprogramma&#39;s. Globale Opt-Out neemt belangrijkheid over de Opt-binnen en IAB TCF controle
