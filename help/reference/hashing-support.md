@@ -3,10 +3,10 @@ description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steun
 keywords: ID-service
 title: SHA256 Hashing Support for setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 3%
+source-wordcount: '606'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Samen met de Experience Cloud bezoekersidentiteitskaart, kunt u extra klant IDs, authentificatiestatus en knoeiboeltype (SHA-256) met elke bezoeker associëren. Als u geen hashtype verstrekt, zal het als geen hash worden beschouwd.
 
-De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar de Experience Cloud en deze gegevens openen voor de verschillende oplossingen.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) naar de Experience Cloud en deze gegevens openen voor de verschillende oplossingen.
 
 Klant-id&#39;s, geverifieerde statussen en hashtype *worden niet* opgeslagen in een cookie die later moet worden gebruikt. In plaats daarvan, zouden de identiteitskaart van de Klant, voor authentiek verklaarde staten en knoeiboeltype in een instantievariabele moeten worden opgeslagen, die moeten worden teruggewonnen gebruikend [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), zoals hieronder getoond:
 
