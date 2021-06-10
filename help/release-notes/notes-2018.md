@@ -1,20 +1,16 @@
 ---
 description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
-keywords: ID Service
-seo-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
-seo-title: Opmerkingen bij de release 2018
+keywords: ID-service
 title: Opmerkingen bij de release 2018
-uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-
-# 2018 Release Notes {#release-notes}
+# Opmerkingen bij de release van 2018 {#release-notes}
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
 
@@ -30,7 +26,7 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Meer beveiliging voor AMCV-cookies </p> </td> 
-   <td colname="col2"> <p>Tijdens een interne beveiligingsscan werd ontdekt dat bij gebruik van de DTM-bibliotheek cookies die voor sessiebeheer worden gebruikt, geen juiste kenmerken kunnen opgeven. Dit kan ertoe leiden dat cookie-informatie onbedoeld wordt gedeeld. Om dit op te lossen, hebben wij een configuratie geïntroduceerd die de Klant toestaat om het koekje van AMCV als veilig te plaatsen. Zie <a href="/help/library/function-vars/securecookie.md" format="https" scope="external"> SecureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Tijdens een interne beveiligingsscan werd ontdekt dat bij gebruik van de DTM-bibliotheek cookies die voor sessiebeheer worden gebruikt, geen juiste kenmerken kunnen opgeven. Dit kan ertoe leiden dat cookie-informatie onbedoeld wordt gedeeld. Om dit op te lossen, hebben wij een configuratie geïntroduceerd die de Klant toestaat om het koekje van AMCV als veilig te plaatsen. Zie <a href="/help/library/function-vars/securecookie.md" format="https" scope="external"> secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,4 +122,3 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
   </tr> 
  </tbody> 
 </table>
-
