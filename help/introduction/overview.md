@@ -1,12 +1,10 @@
 ---
 description: De rol van de Experience Cloud Identity Service in de Adobe Experience Cloud.
-seo-description: De dienst van de Identiteit van de Experience Cloud (vroeger de dienst van Bezoeker identiteitskaart of de dienst van identiteitskaart van de Marketing Cloud) laat het gemeenschappelijke identiteitskader voor de diensten van de Experience Cloud zoals klantenattributen en publiek toe.
-seo-title: Overzicht van Experience Cloud ID-service
 title: Overzicht van Experience Cloud ID-service
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
