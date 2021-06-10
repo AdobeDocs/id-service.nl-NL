@@ -3,10 +3,10 @@ description: Retourneert de (eventuele) bestaande Analytics-id die in het s_vi-c
 keywords: ID-service
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 3%
+source-wordcount: '298'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ De parameter `aid` verschijnt in een vraagkoord onder 2 verschillende reeksen vo
 U zult de `aid` parameter in een vraagkoord zien wanneer:
 
 * De [!DNL Experience Cloud] ID-service wordt op de juiste wijze geïmplementeerd.
-* De gebruiker die een site bezoekt, heeft een bestaande [!DNL Analytics]-id opgeslagen in het [s_vi-cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
+* De gebruiker die een site bezoekt, heeft een bestaande [!DNL Analytics]-id opgeslagen in het [s_vi-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Zaak 2**
 
@@ -51,5 +51,5 @@ U zult de `aid` parameter in een vraagkoord zien wanneer uw organisatie [respijt
 
 >[!MORELIKETHIS]
 >
->* [Analysecookies](https://docs.adobe.com/content/help/nl-NL/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analysecookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
 
