@@ -3,9 +3,9 @@ description: Veelgestelde vragen over functies, functionaliteit en problemen met
 keywords: ID-service
 title: Veelgestelde vragen over ID-service
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Er kunnen problemen optreden als u de BezoekerAPI.js host als een lokaal bestand
 
 Plaats de bibliotheek VisitorAPI.js boven aan de pagina in de sectie `<head>` van uw code. Zo weet u zeker dat de aanroep naar een id wordt uitgevoerd voordat de hoofdtekst van de pagina begint te laden en is de kans groot dat een id met succes wordt geretourneerd.
 
-De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan [demdex.net domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
+De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan [demdex.net domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
 
 Voor [!DNL Target] klanten, die de dienstcode van identiteitskaart in `<body>` van de pagina plaatsen kan de kansen verhogen dat het een [!DNL Target] vraag kon blokkeren. Als u id-servicecode in de hoofdtekst van de pagina moet plaatsen, moet deze na de open `<body>`-tag worden geplaatst.
 
