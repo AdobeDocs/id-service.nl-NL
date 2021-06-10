@@ -1,18 +1,14 @@
 ---
 description: Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (b.v. Analytics, Audience Manager, Target, enz.) te vertellen hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
-keywords: ID Service
-seo-description: Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (b.v. Analytics, Audience Manager, Target, enz.) te vertellen hoe lang om op een reactie van de dienst van identiteitskaart te wachten.
-seo-title: loadTimeout
+keywords: ID-service
 title: loadTimeout
-uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: 485264f4-ee24-4042-8be3-259e70462110
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '140'
 ht-degree: 1%
 
 ---
-
 
 # loadTimeout{#loadtimeout}
 
@@ -20,7 +16,7 @@ Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (
 
 **Syntaxis:** ` loadTimeout: *`interval in milliseconden`*`
 
-De standaardwaarde is 30.000 milliseconden (30 seconden). We raden u ten zeerste aan de standaardwaarde *niet* te wijzigen.
+De standaardwaarde is 30.000 milliseconden (30 seconden). Wij adviseren sterk dat u *niet* de standaardwaarde verandert.
 
 >[!NOTE]
 >
@@ -41,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    loadTimeout:10000 
 });
 ```
-
