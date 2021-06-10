@@ -1,18 +1,14 @@
 ---
 description: Hiermee wordt opgegeven of de doelpublicatiesjabloon Akamai moet gebruiken voor HTTPS-verbindingen.
-keywords: ID Service
-seo-description: Hiermee wordt opgegeven of de doelpublicatiesjabloon Akamai moet gebruiken voor HTTPS-verbindingen.
-seo-title: idSyncSSLUseAkamai
+keywords: ID-service
 title: idSyncSSLUseAkamai
-uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: 74c24eb5-bf3d-4e6b-ac7d-1a37d940d77f
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 6%
+source-wordcount: '39'
+ht-degree: 7%
 
 ---
-
 
 # idSyncSSLUseAkamai{#idsyncssluseakamai}
 
@@ -34,4 +30,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
     ... 
 });
 ```
-
