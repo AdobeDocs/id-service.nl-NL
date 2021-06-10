@@ -3,9 +3,9 @@ description: Deze instructies gelden voor klanten met Analytics, Audience Manage
 keywords: ID-service
 title: Voer de Dienst van de Identiteit van Experience Cloud voor Analytics, Audience Manager, en Doel uit
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Deze instructies gelden voor klanten met Analytics, Audience Manager en Target d
 
 ## Stap 1: Plan voor server-side door:sturen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Naast de hier beschreven stappen, zouden klanten die [!DNL Analytics] en [!DNL Audience Manager] gebruiken aan server-zijdoor:sturen moeten migreren. Door:sturen aan de serverzijde kunt u DIL (de code van de de gegevensinzameling van de Audience Manager) verwijderen en het vervangen met [de Module van het Beheer van de Publiek](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Zie [server-kant het door:sturen documentatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor meer informatie.
+Naast de hier beschreven stappen, zouden klanten die [!DNL Analytics] en [!DNL Audience Manager] gebruiken aan server-zijdoor:sturen moeten migreren. Door:sturen aan de serverzijde kunt u DIL (de code van de de gegevensinzameling van de Audience Manager) verwijderen en het vervangen met [de Module van het Beheer van de Publiek](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Zie [server-kant het door:sturen documentatie](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor meer informatie.
 
 Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit proces omvat externe wijzigingen in uw sitecode en interne stappen die Adobe moet uitvoeren om uw account te kunnen instellen. Veel van deze migratieprocedures moeten parallel lopen en samen worden vrijgegeven. Het implementatiepad moet deze reeks gebeurtenissen volgen:
 
@@ -140,7 +140,7 @@ Voeg de hieronder getoonde functie `Visitor.getInstance` aan uw `AppMeasurement.
 
 >[!IMPORTANT]
 >
->Op dit punt, zou u [!DNL Audience Manager] DIL code moeten verwijderen en het met de Module van het Beheer van de Publiek vervangen. Zie [Server-Side Forwarding implementeren](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor instructies.
+>Op dit punt, zou u [!DNL Audience Manager] DIL code moeten verwijderen en het met de Module van het Beheer van de Publiek vervangen. Zie [Server-Side Forwarding implementeren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor instructies.
 
 ***(Optioneel, maar aanbevolen)* Een aangepaste proxy maken **
 
@@ -182,7 +182,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 Sluit de respijtperiode af nadat uw gegevensinvoer de kolommen `post_visid_high` en `post_visid_low` kan gebruiken.
 
-Zie ook [Referentie van de Kolom van Gegevens Klikstream](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html).
+Zie ook [Referentie van de Kolom van Gegevens Klikstream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 ## Stap 9: {#section-f857542bfc70496dbb9f318d6b3ae110} testen en controleren
 
@@ -190,7 +190,7 @@ De [!DNL Experience Cloud] oplossingen in deze implementatie retourneren IDs in 
 
 >[!TIP]
 >
->U kunt [Adobe Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) of [de volmacht van HTTP van Charles gebruiken ](https://www.charlesproxy.com/) om deze oplossing-specifieke IDs te controleren. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+>U kunt [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) of [de volmacht van HTTP van Charles gebruiken ](https://www.charlesproxy.com/) om deze oplossing-specifieke IDs te controleren. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
 **Alle oplossingen**
 
@@ -214,7 +214,7 @@ Wanneer u een identiteitskaart ziet, controleer zijn waarde tegen [!DNL Target] 
 
 **Audience Manager**
 
-Om server-kant het door:sturen te testen, zie [hoe te om uw server-kant het door:sturen implementatie ](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html) te verifiëren.
+Om server-kant het door:sturen te testen, zie [hoe te om uw server-kant het door:sturen implementatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html) te verifiëren.
 
 **Target**
 
