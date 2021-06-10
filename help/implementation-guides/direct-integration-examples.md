@@ -1,18 +1,14 @@
 ---
 description: Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die verband houden met een directe integratie en de Experience Cloud-id (MID). De id is een unieke, permanente id voor bezoekers van uw site.
-keywords: ID Service
-seo-description: Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die verband houden met een directe integratie en de Experience Cloud-id (MID). De id is een unieke, permanente id voor bezoekers van uw site.
-seo-title: Gebruiksscenario's voor directe integratie
+keywords: ID-service
 title: Gebruiksscenario's voor directe integratie
-uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
-source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
+exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '443'
 ht-degree: 2%
 
 ---
-
 
 # Gebruiksscenario&#39;s voor directe integratie {#direct-integration-use-cases}
 
@@ -20,14 +16,14 @@ Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die 
 
 >[!TIP]
 >
->* U kunt de [syntaxis en variabelen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) van de code controleren en begrijpen voordat u naar de gebruiksgevallen gaat.
->* Voor meer informatie over MID, zie [Cookies en de Dienst](../introduction/cookies.md)van de Identiteit van de Experience Cloud.
+>* Bekijk en begrijp de [codesyntaxis en variabelen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) alvorens in de gebruiksgevallen te duiken.
+>* Voor meer informatie over MID, zie [Cookies en de Dienst van de Identiteit van de Experience Cloud](../introduction/cookies.md).
 
 >
 
 
 
-## Hoofdlettergebruik 1: Ik heb een Experience Cloud-id (MID) maar wil mijn bezoeker-id&#39;s doorgeven en een verificatiestatus instellen {#section-a67d89a343754d1286d03cf08d34b806}
+## Hoofdlettergebruik 1: Ik heb een Experience Cloud-id (MID) maar wil mijn bezoeker-id&#39;s doorgeven en een verificatiestatus {#section-a67d89a343754d1286d03cf08d34b806} instellen
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -55,7 +51,7 @@ Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">Uw gegevensaanbieder-id. Dit is een unieke id die aan uw bedrijf is toegewezen. Laten we deze ID 4444 noemen. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Uw id voor de bezoeker (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optioneel)</i> Een status-id om de verificatiestatus voor deze bezoeker te definiëren. </li> 
-    </ul> <p>En, als u toevallig om het even welke andere parameters die in de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> directe integratiegids</a> (b.v.,<span class="codeph"> d_blob</span> of <span class="codeph"> dcs_region</span>, etc.) worden vermeld het is goed om die ook binnen te laten . </p> </td> 
+    </ul> <p>En, als u toevallig om het even welke andere parameters die in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> directe integratiegids</a> (b.v.,<span class="codeph"> d_blob</span> of <span class="codeph"> dcs_region</span>, enz.) worden vermeld het is goed om die ook binnen te laten . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Oplossing en codevoorbeeld</b> </p> </td> 
@@ -63,13 +59,13 @@ Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID is gekoppeld aan uw unieke id voor de bezoeker: <span class="codeph">d_mid=1234&amp;d_cid=444%019876%011</span> </li> 
-     <li id="li_D428DBF765234DD78DDF152C5EE8AB69">ID verificatiestatus: <span class="codeph">...d_cid=4444%019876%011</span> (tip: het is dat laatste cijfer). </li> 
+     <li id="li_D428DBF765234DD78DDF152C5EE8AB69">ID verificatiestatus: <span class="codeph">..d_cid=4444%019876%011</span> (tip: het is dat laatste cijfer). </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Hoofdlettergebruik 2: Ik heb geen MID en moet er een genereren {#section-8e81291f8b684de8b88fae4002ae0029}
+## Hoofdlettergebruik 2: Ik heb geen MID en moet {#section-8e81291f8b684de8b88fae4002ae0029} produceren
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
@@ -90,12 +86,11 @@ Deze voorbeelden hebben betrekking op twee veelvoorkomende gebruiksgevallen die 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Acties</b> </p> </td> 
-   <td colname="col2"> <p>Gezien deze voorwaarden, doe een vraag aan de dienst van identiteitskaart die uw identiteitskaart van de Organisatie omvat. </p> <p>En, als u toevallig om het even welke andere parameters die in de <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> directe integratiegids</a> (b.v.,<span class="codeph"> d_blob</span> of <span class="codeph"> dcs_region</span>, etc.) worden vermeld het is goed om die ook binnen te laten . </p> </td> 
+   <td colname="col2"> <p>Gezien deze voorwaarden, doe een vraag aan de dienst van identiteitskaart die uw identiteitskaart van de Organisatie omvat. </p> <p>En, als u toevallig om het even welke andere parameters die in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> directe integratiegids</a> (b.v.,<span class="codeph"> d_blob</span> of <span class="codeph"> dcs_region</span>, enz.) worden vermeld het is goed om die ook binnen te laten . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Oplossing en codevoorbeeld</b> </p> </td> 
-   <td colname="col2"> <p>Maak uw vraag aan de dienst van identiteitskaart als dit op: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Merk op hoe de steekproefvraag uw identiteitskaart van de Organisatie, <span class="codeph">d_orgid=5555</span>bevat. Er wordt een <span class="keyword"> Experience Cloud</span> -id voor deze bezoeker geretourneerd. </p> </td> 
+   <td colname="col2"> <p>Maak uw vraag aan de dienst van identiteitskaart als dit op: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Merk op hoe de steekproefvraag uw identiteitskaart van de Organisatie, <span class="codeph">d_orgid=555</span> bevat. Het zou een <span class="keyword"> Experience Cloud</span> identiteitskaart voor deze bezoeker terugkeren. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
