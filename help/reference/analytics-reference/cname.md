@@ -1,14 +1,10 @@
 ---
 description: Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 keywords: volgorde van activiteiten;ID-service
-seo-description: Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
-seo-title: Overzicht van CNAME-implementatie
 title: Overzicht van CNAME-implementatie
-uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
-source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
