@@ -3,9 +3,9 @@ description: Een overzicht van hoe de dienst van de Identiteit van de Experience
 keywords: ID-service
 title: Analyses en Experience Cloud-id-verzoeken
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '444'
 ht-degree: 13%
 
 ---
@@ -20,7 +20,7 @@ Historisch gezien is de Experience Cloud Identity Service nauw geïntegreerd in 
 
 ## De AMCV-cookie wordt niet ingesteld in de browser {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-Als de cookie [!DNL Experience Cloud] (AMCV) niet aanwezig is, dan genereert een aanroep van een id-service aan [!DNL Adobe] een reactie die varieert afhankelijk van de aanwezigheid of afwezigheid van een oudere Analytics-id. De oudere [!DNL Analytics]-id wordt opgeslagen in de cookie [s_vi](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html). In de onderstaande tabel wordt beschreven hoe id&#39;s naar de cookie AMCV worden geschreven op basis van de status van de cookie s_vi.
+Als de cookie [!DNL Experience Cloud] (AMCV) niet aanwezig is, dan genereert een aanroep van een id-service aan [!DNL Adobe] een reactie die varieert afhankelijk van de aanwezigheid of afwezigheid van een oudere Analytics-id. De oudere [!DNL Analytics]-id wordt opgeslagen in de cookie [s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html). In de onderstaande tabel wordt beschreven hoe id&#39;s naar de cookie AMCV worden geschreven op basis van de status van de cookie s_vi.
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -47,7 +47,7 @@ Als de cookie [!DNL Experience Cloud] (AMCV) niet aanwezig is, dan genereert een
 
 >[!NOTE]
 >
->Gebruikers die door het s_fid-cookie worden geïdentificeerd, krijgen hun oudere FID-waarde niet gemigreerd naar het AMCV-cookie. Met een s_fid-cookie worden gebruikers gemigreerd alsof er geen s_vi-cookie aanwezig is (zie boven) en worden ze weergegeven als nieuwe bezoekers van uw site. Zie [Analytics Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) voor meer informatie.
+>Gebruikers die door het s_fid-cookie worden geïdentificeerd, krijgen hun oudere FID-waarde niet gemigreerd naar het AMCV-cookie. Met een s_fid-cookie worden gebruikers gemigreerd alsof er geen s_vi-cookie aanwezig is (zie boven) en worden ze weergegeven als nieuwe bezoekers van uw site. Zie [Analytics Cookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) voor meer informatie.
 
 ## De AMCV-cookie wordt ingesteld in de browser {#section-01c088fc565c4b24ba1722c7cc240310}
 
