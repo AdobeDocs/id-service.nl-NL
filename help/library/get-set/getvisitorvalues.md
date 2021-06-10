@@ -3,9 +3,9 @@ description: Dit is een asynchrone API die herkenningstekens voor Analytics, de 
 keywords: ID-service
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH  </span> </p> </td> 
-   <td colname="col2"> <p>The data collection region ID. Dit is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names </a> en <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>The data collection region ID. Dit is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names </a> en <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID  </span> </p> </td> 
