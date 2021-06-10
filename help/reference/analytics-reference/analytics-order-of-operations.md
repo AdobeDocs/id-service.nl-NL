@@ -1,24 +1,20 @@
 ---
 description: Nadat u de bezoekersidentiteitsservice hebt geïmplementeerd, zijn er vijf manieren waarop een bezoeker kan worden geïdentificeerd in Analytics.
-keywords: ID Service
-seo-description: Nadat u de bezoekersidentiteitsservice hebt geïmplementeerd, zijn er vijf manieren waarop een bezoeker kan worden geïdentificeerd in Analytics.
-seo-title: Bewerkingsvolgorde voor analytische id's
+keywords: ID-service
 title: Bewerkingsvolgorde voor analytische id's
-uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
-
-# Bewerkingsvolgorde voor analytische id&#39;s{#order-of-operations-for-analytics-ids}
+# Volgorde van bewerkingen voor analytische id&#39;s{#order-of-operations-for-analytics-ids}
 
 Nadat u de bezoekersidentiteitsservice hebt geïmplementeerd, zijn er vijf manieren waarop een bezoeker kan worden geïdentificeerd in Analytics.
 
-In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, maar de Analytics zal eerste identiteitskaart gebruiken huidig van die lijst als officiële [!DNL Experience Cloud] identiteitskaart. Als u bijvoorbeeld een aangepaste bezoeker-id instelt (die in de `vid` queryparameter is opgenomen), wordt die id gebruikt vóór andere id&#39;s die op dezelfde hit aanwezig kunnen zijn. Zie Analyses en Experience Cloud-id&#39;s [instellen](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) voor meer informatie.
+In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, maar de Analytics zal eerste identiteitskaart gebruiken aanwezig van die lijst als officiële [!DNL Experience Cloud] identiteitskaart. Als u bijvoorbeeld een aangepaste bezoeker-id instelt (opgenomen in de query-parameter `vid`), wordt die id gebruikt vóór andere id&#39;s die op dezelfde hit aanwezig kunnen zijn. Zie [Analytics en Experience Cloud IDs](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) plaatsen voor meer informatie.
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
@@ -32,22 +28,22 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
   <tr> 
    <td colname="col1"> <p> <b>1<sup>e</sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.bezoekerID)</a> </p> </td> 
-   <td colname="col3"> <p>De <span class="codeph"> s.bezoekerID</span> is ingesteld. </p> </td> 
+   <td colname="col3"> <p>De <span class="codeph"> s.bezoekerID</span> wordt geplaatst. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>2<sup>de</sup></b> </p> </td> 
+   <td colname="col1"> <p> <b>2 <sup>de</sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie)</a> </p> </td> 
-   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de dienst van identiteitskaart van de <span class="keyword"> Experience Cloud</span> opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde graadperiode</a> . </p> </td> 
+   <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de <span class="keyword"> Experience Cloud </span> de dienst van identiteitskaart opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde reserveperiode</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>3<sup>de</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="../../introduction/cookies.md#section-7ff7d96d6e4141b08a84a75a63d7814c" format="dita" scope="local"> Experience Cloud-id (MID) </a> </p> </td> 
+   <td colname="col2"> <p> <a href="../../introduction/cookies.md#section-7ff7d96d6e4141b08a84a75a63d7814c" format="dita" scope="local"> Experience Cloud-id (MID)  </a> </p> </td> 
    <td colname="col3"> <p>De browser van de bezoeker accepteert cookies van de eerste partij. Dit wordt ingesteld door het AMCV-cookie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4<sup>e</sup></b> </p> </td> 
    <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (fallback-cookie op H.25.3 of hoger, of AppMeasurement voor JavaScript)</a> </p> </td> 
-   <td colname="col3"> <p>Een browser accepteert geen cookies van derden en de Analytics tracking-server is ingesteld als een externe tracingserver. </p> <p> <p>Opmerking: Het bestand <span class="codeph"> Fid</span> is een oudere id en wordt niet gebruikt als u de id-service op uw site hebt geïmplementeerd. In dit geval is het <span class="codeph"> bestand</span> niet nodig omdat het door de eerste partij, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV-cookie</a> , verouderd is. Het is om historische redenen en ter ondersteuning van de oude code gehandhaafd. </p> </p> </td> 
+   <td colname="col3"> <p>Een browser accepteert geen cookies van derden en de Analytics tracking-server is ingesteld als een externe tracingserver. </p> <p> <p>Opmerking: De <span class="codeph"> fid</span> is een oudere id en wordt niet gebruikt als u de id-service op uw site hebt geïmplementeerd. In dit geval is de <span class="codeph"> fid</span> niet nodig omdat de cookie<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> van de eerste partij deze verouderd maakt. Het is om historische redenen en ter ondersteuning van de oude code gehandhaafd. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup>e</sup></b> </p> </td> 
@@ -56,4 +52,3 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
   </tr> 
  </tbody> 
 </table>
-
