@@ -1,19 +1,16 @@
 ---
 description: Instructies en codevoorbeelden voor standaard en niet-standaard implementaties van de Experience Cloud Identity Service.
-keywords: ID Service
-seo-description: Instructies en codevoorbeelden voor standaard en niet-standaard implementaties van de Experience Cloud Identity Service.
-seo-title: Implementatiehandleidingen voor de id-service
+keywords: ID-service
 solution: Experience Cloud
 title: Implementatiehandleidingen
 uuid: null
-translation-type: tm+mt
-source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # Implementatiehandleidingen
 
@@ -21,11 +18,11 @@ Instructies en codevoorbeelden voor standaard en niet-standaard implementaties v
 
 >[!IMPORTANT]
 >
->Lees en begrijp de [id-servicevereisten](../reference/requirements.md) voordat u aan de slag gaat met deze procedures.
+>Lees en begrijp de [ID-servicevereisten](../reference/requirements.md) voordat u aan de slag gaat met deze procedures.
 
 ## Standaardimplementatie
 
-Een standaardimplementatie gebruikt de Lancering [van het Platform van de Ervaring van](https://docs.adobelaunch.com/) Adobe om u te helpen begonnen met de dienst van identiteitskaart en het met andere oplossingen van Experience Cloud te integreren. Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
+Een standaardimplementatie gebruikt [de Platform launch van de Ervaring van de Adobe ](https://experienceleague.adobe.com/docs/launch/using/home.html) om u te helpen met de dienst van identiteitskaart beginnen en het integreren met andere oplossingen van Experience Cloud. Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
 
 ## Implementatiebronnen
 
