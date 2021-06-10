@@ -1,20 +1,16 @@
 ---
 description: Voor videohartslag is de Experience Cloud Identity Service vereist. Wanneer u video meet op JavaScript of Flash, zorgt het implementeren van de id-service op uw sitepagina's en in het afspelen van video's ervoor dat bezoekers niet afzonderlijk worden geteld bij het bekijken van video.
-keywords: ID Service
-seo-description: Voor videohartslag is de Experience Cloud Identity Service vereist. Wanneer u video meet op JavaScript of Flash, zorgt het implementeren van de id-service op uw sitepagina's en in het afspelen van video's ervoor dat bezoekers niet afzonderlijk worden geteld bij het bekijken van video.
-seo-title: Videohartslag en de Experience Cloud Identiteitsdienst
+keywords: ID-service
 title: Videohartslag en de Experience Cloud Identiteitsdienst
-uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 10%
+source-wordcount: '107'
+ht-degree: 14%
 
 ---
 
-
-# Videohartslag en de Experience Cloud Identiteitsdienst {#video-heartbeat-and-the-experience-cloud-id-service}
+# Videohartslag en de Experience Cloud Identiteitsservice {#video-heartbeat-and-the-experience-cloud-id-service}
 
 Voor videohartslag is de Experience Cloud Identity Service vereist. Wanneer u video meet op JavaScript of Flash, zorgt het implementeren van de id-service op uw sitepagina&#39;s en in het afspelen van video&#39;s ervoor dat bezoekers niet afzonderlijk worden geteld bij het bekijken van video.
 
