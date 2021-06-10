@@ -1,20 +1,16 @@
 ---
 description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
-keywords: ID Service
-seo-description: De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
-seo-title: COPPA-ondersteuning in de Experience Cloud Identity Service
+keywords: ID-service
 title: COPPA-ondersteuning in de Experience Cloud Identity Service
-uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
-# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA-ondersteuning in de Experience Cloud Identity-service {#coppa-support-in-the-experience-cloud-id-service}
 
 De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het online verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA, kunnen een optionele variabele toevoegen aan hun code voor identiteitsservice van Experience Cloud, waardoor het niet mogelijk is cookies in het domein van derden van een browser in te stellen.
 
@@ -24,14 +20,14 @@ De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt het o
 
 **Cookies en reeksspatiëring**
 
-Wanneer een Web-pagina laadt, roept de dienst van [!DNL Experience Cloud] identiteitskaart een server van de [!DNL Adobe] gegevensinzameling (DCS). De DCS-reactie bevat een Experience Cloud cookie en een demdex.net cookie.
+Wanneer een webpagina wordt geladen, roept de [!DNL Experience Cloud]-id-service een [!DNL Adobe]-gegevensverzamelingsserver (DCS) aan. De DCS-reactie bevat een Experience Cloud cookie en een demdex.net cookie.
 
 * Het Experience Cloud-cookie wordt ingesteld in het eerste partijdomein. Het kan niet worden gebruikt om bezoekers over verschillende domeinen te volgen, tenzij die domeinen samenwerken om toegang toe te staan.
 * Het cookie demdex.net wordt ingesteld in het domein van derden. Het bevat een unieke id die kan worden gebruikt om bezoekers in verschillende domeinen te volgen.
 
 **Cookies en COPPA-compatibiliteit**
 
-Cookies van derden die bezoekers in verschillende domeinen volgen op websites die naar (of primair voor) kinderen zijn gericht, activeren de vereisten voor toestemming door de ouders van de COPPA. Als u gemakkelijker wilt voldoen aan COPPA voor interne websiteanalyse, voegt u de variabele `disableThirdPartyCookies:true` aan de `Visitor.getInstance` functie toe, zoals hieronder wordt weergegeven.
+Cookies van derden die bezoekers in verschillende domeinen volgen op websites die naar (of primair voor) kinderen zijn gericht, activeren de vereisten voor toestemming door de ouders van de COPPA. Als u gemakkelijker wilt voldoen aan COPPA voor interne websiteanalyse, voegt u de variabele `disableThirdPartyCookies:true` toe aan de functie `Visitor.getInstance`, zoals hieronder wordt weergegeven.
 
 ```js
 //Call the ID service 
@@ -44,7 +40,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 });
 ```
 
-Wanneer ingesteld op `true`, stopt het `disableThirdPartyCookies` object de DCS van het retourneren van het cookie demdex.net van derden. Als een sitebezoeker deze cookie al in zijn browser heeft, gebruikt de id-service deze niet om een nieuwe [!DNL Experience Cloud] id te maken of een bestaande id te retourneren. In plaats daarvan maakt de [!DNL Experience Cloud] id-service een nieuwe, willekeurige id in het cookie van de eerste partij. Zodra toegelaten, kunt u gegevens met de dienst van identiteitskaart verzamelen en het over verschillende [!DNL Experience Cloud] oplossingen, met inbegrip van andere interne verrichtingen delen die door COPPA worden toegestaan.
+Wanneer ingesteld op `true`, stopt het object `disableThirdPartyCookies` de DCS van het retourneren van het cookie demdex.net van derden. Als een sitebezoeker dit cookie al in zijn browser heeft, gebruikt de id-service dit niet om een nieuwe [!DNL Experience Cloud]-id te maken of een bestaande id te retourneren. In plaats daarvan maakt de [!DNL Experience Cloud] ID-service een nieuwe, willekeurige id in het cookie van de eerste partij. Zodra toegelaten, kunt u gegevens met de dienst van identiteitskaart verzamelen en het over verschillende [!DNL Experience Cloud] oplossingen, met inbegrip van andere interne verrichtingen delen die door COPPA worden toegestaan.
 
 >[!MORELIKETHIS]
 >
