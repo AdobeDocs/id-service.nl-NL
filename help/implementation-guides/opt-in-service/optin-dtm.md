@@ -1,17 +1,13 @@
 ---
 description: Schakel Inschakelen-services in met Dynamic Tag Management (DTM).
-seo-description: Schakel Inschakelen-services in met Dynamic Tag Management (DTM).
-seo-title: Opt-in configureren met DTM
 title: Opt-in configureren met DTM
-uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
-translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 7%
+source-wordcount: '52'
+ht-degree: 9%
 
 ---
-
 
 # Opt-in configureren met DTM{#configuring-opt-in-with-dtm}
 
@@ -21,7 +17,7 @@ Opt-in services instellen met DTM.
 
 Vereist:
 
-* Upgrade naar ECID 4.0.0 of hoger. Zie [ECID downloaden](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+* Upgrade naar ECID 4.0.0 of hoger. Zie [ECID Download](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Voer [configuratievelden](/help/implementation-guides/opt-in-service/api.md) in op de pagina General DTM.
 
