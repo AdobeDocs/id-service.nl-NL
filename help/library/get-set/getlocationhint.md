@@ -1,26 +1,22 @@
 ---
 description: Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
-keywords: ID Service
-seo-description: Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
-seo-title: getLocationHint
+keywords: ID-service
 title: getLocationHint
-uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '187'
+ht-degree: 1%
 
 ---
-
 
 # getLocationHint{#getlocationhint}
 
 Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
 
-**Syntaxis:** ` var *`variabelenaam`* = visitor.getLocationHint()`
+**Syntaxis:naam** ` var *`variabele`* = visitor.getLocationHint()`
 
-Voor een lijst van gebied IDs en overeenkomstige plaatsen, zie [DCS Gebied IDs, Locaties, en de Namen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)van de Gastheer.
+Zie [DCS-regio-id&#39;s, -locaties en hostnamen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html) voor een lijst met regio-id&#39;s en bijbehorende locaties.
 
 **Codevoorbeeld**
 
@@ -36,4 +32,3 @@ var callback = function (
 //Get the region ID 
 visitor.getLocationHint(callback, true); 
 ```
-
