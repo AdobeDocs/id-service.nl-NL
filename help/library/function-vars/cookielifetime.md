@@ -1,18 +1,14 @@
 ---
 description: Met deze variabele kunt u het standaardleveninterval voor het AMCV-cookie overschrijven.
-keywords: ID Service
-seo-description: Met deze variabele kunt u het standaardleveninterval voor het AMCV-cookie overschrijven.
-seo-title: cookieLifetime
+keywords: ID-service
 title: cookieLifetime
-uuid: cd945db3-429a-4625-ac3f-69ac259377a3
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '50'
 ht-degree: 8%
 
 ---
-
 
 # cookieLifetime{#cookielifetime}
 
@@ -37,4 +33,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieLifetime:31536000 
 });
 ```
-
