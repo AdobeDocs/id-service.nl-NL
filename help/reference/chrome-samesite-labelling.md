@@ -2,9 +2,9 @@
 title: Wijzigingen in de Google Chrome SameSite-labels
 description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 1%
 
 ---
@@ -119,4 +119,4 @@ Alleen de algemene cookies van de bezoekersstandaard worden in de onderstaande t
 
 > !![IMPORTANT] Cookies van derden Adobe worden ingesteld op de server
 
-Zie het document over het Google Chrome SameSite-beleid van het doel](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html) voor meer informatie.[
+Zie het document over het Google Chrome SameSite-beleid van het doel](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html) voor meer informatie.[
