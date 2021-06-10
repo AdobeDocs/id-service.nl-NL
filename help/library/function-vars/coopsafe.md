@@ -1,18 +1,14 @@
 ---
 description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt).
-keywords: ID Service
-seo-description: Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt).
-seo-title: isCoopSafe
+keywords: ID-service
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
-
 
 # isCoopSafe{#iscoopsafe}
 
@@ -22,24 +18,24 @@ Inhoud:
 
 <ul class="simplelist"> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-4883eda6beb8437182bcc82bb58fae41" format="dita" scope="local"> Vereisten </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> Gevallen gebruiken </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-952f56724a2b4d349340e26fbaf33ddd" format="dita" scope="local"> Syntaxis en codevoorbeeld </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> Parameters POST gebeurtenisaanroep </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> Post-Instantiatie-API's </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> Gevallen gebruiken  </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-952f56724a2b4d349340e26fbaf33ddd" format="dita" scope="local"> Syntaxis en codevoorbeeld  </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> Parameters POST gebeurtenisaanroep  </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> Post-Instantiatie-API's  </a> </li> 
 </ul>
 
 ## Vereisten {#section-4883eda6beb8437182bcc82bb58fae41}
 
-Als u `isCoopSafe` het volgende wilt gebruiken:
+Als u `isCoopSafe` wilt gebruiken, moet u:
 
 * Gebruik ID-servicecode versie 2.4 of hoger.
-* Neem deel aan de [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html). De perspectiefleden van coop zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke bezorgdheid over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen.
+* Neem deel aan [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html). De perspectiefleden van coop zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke zorgen over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen richt.
 
-* Werk samen met uw [!DNL Adobe] consultant om een whitelist- of een blacklist-vlag in te stellen op uw Co-op-account voor apparaten. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
+* Werk samen met uw [!DNL Adobe]-consultant om een whitelist- of een blacklist-vlag in te stellen op uw Device Co-op-account. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 
-## Use Cases {#section-d18af2b903f248e18ae8108aaf0a8ebb}
+## Gevallen {#section-d18af2b903f248e18ae8108aaf0a8ebb} gebruiken
 
-`isCoopSafe` helpt twee gebruiksgevallen oplossen die verband houden met gegevensverzameling door huidige of toekomstige leden van de Device Co-op. Deze gebruiksgevallen hebben betrekking op de manier waarop bezoekersgegevens van de site worden doorgegeven aan de copop van het apparaat om de apparaatgrafiek samen te stellen. In de volgende tabel wordt beschreven hoe u met deze gebruiksgevallen gegevens kunt blokkeren of verzenden naar de apparaatgrafiek `isCoopSafe`
+`isCoopSafe` helpt twee gebruiksgevallen oplossen die verband houden met gegevensverzameling door huidige of toekomstige leden van de Device Co-op. Deze gebruiksgevallen hebben betrekking op de manier waarop bezoekersgegevens van de site worden doorgegeven aan de copop van het apparaat om de apparaatgrafiek samen te stellen. In de volgende tabel wordt beschreven hoe `isCoopSafe` met deze gebruiksgevallen werkt om gegevens te blokkeren of naar de apparaatgrafiek te verzenden
 
 <table id="table_A24C63D2A21F47EDBAC8FA5E7BE888D8"> 
  <thead> 
@@ -51,7 +47,7 @@ Als u `isCoopSafe` het volgende wilt gebruiken:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Geverifieerde bezoekers</b> </p> </td> 
-   <td colname="col2"> <p>Voeg <span class="codeph"> isCoopSafe </span> aan uw de dienstcode van identiteitskaart toe om te controleren hoe de gegevens voor voor authentiek verklaarde bezoekers die termijn-van-gebruikovereenkomsten hebben of niet hebben goedgekeurd door Co-op van het Apparaat wordt gebruikt om de apparatengrafiek te bouwen. </p> </td> 
+   <td colname="col2"> <p>Voeg <span class="codeph"> isCoopSafe </span> aan uw de dienstcode van identiteitskaart toe om te controleren hoe de gegevens voor voor authentiek verklaarde bezoekers die termijn-van-gebruikovereenkomsten hebben of niet hebben goedgekeurd door de Co-op van het Apparaat wordt gebruikt om de apparatengrafiek te bouwen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>DIL op sites van derden</b> </p> </td> 
@@ -70,9 +66,9 @@ Als u `isCoopSafe` het volgende wilt gebruiken:
 
 De opties Van Boole bepalen hoe de klantengegevens door Co-op van het Apparaat worden gebruikt of niet.
 
-* `isCoopSafe: true`: De door een mobiele SDK of website verzamelde bezoekersgegevens *kunnen* worden gebruikt om de apparaatgrafiek te maken.
+* `isCoopSafe: true`: De door een mobiele SDK of website verzamelde bezoekersgegevens  ** kunnen worden gebruikt om de apparaatgrafiek te maken.
 
-* `isCoopSafe: false`: Bezoekersgegevens die zijn verzameld door een mobiele SDK of website *kunnen niet* worden gebruikt om de apparaatgrafiek samen te stellen.
+* `isCoopSafe: false`: De door een mobiele SDK of website verzamelde bezoekersgegevens  ** kunnen niet worden gebruikt om de apparaatgrafiek te maken.
 
 **Codevoorbeeld**
 
@@ -85,14 +81,14 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Parameters POST gebeurtenisaanroep {#section-fcd441933506493faefaa6b51f194a17}
+## Parameters {#section-fcd441933506493faefaa6b51f194a17} van de POST van de Gebeurtenis
 
-Afhankelijk van de vlag u ( `true` of `false`) plaatst, vertaalt de dienst van identiteitskaart `isCoopSafe` in deze parameters van de POST en verzendt hen naar [!DNL Adobe] in een gebeurtenisvraag:
+Afhankelijk van de vlag u ( `true` of `false`) plaatst, vertaalt de dienst van identiteitskaart `isCoopSafe` in deze POST parameters en verzendt hen naar [!DNL Adobe] in een gebeurtenisvraag:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-De parameters van de POST vertellen de Co-op van het [!DNL Experience Cloud] Apparaat als het gebruikersgegevens in de apparatengrafiek kan of kan omvatten. In de onderstaande tabel wordt de relatie gedefinieerd tussen de `isCoopSafe` Booleaanse markeringen en de parameters van de POST die bij een gebeurtenisaanroep worden doorgegeven. Als u niet gebruikt `isCoopSafe`, worden geen van beide overgegaan in een gebeurtenisvraag.
+De parameters van de POST vertellen [!DNL Experience Cloud] Apparaatcoop als het gebruikersgegevens in de apparatengrafiek kan of niet kan omvatten. In de onderstaande tabel wordt de relatie gedefinieerd tussen de Booleaanse markeringen `isCoopSafe` en de parameters van de POST die worden doorgegeven aan een gebeurtenisaanroep. Als u `isCoopSafe` niet gebruikt, worden geen van beide overgegaan in een gebeurtenisvraag.
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
@@ -103,19 +99,19 @@ De parameters van de POST vertellen de Co-op van het [!DNL Experience Cloud] App
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: true </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> d_coop_safe=1 </span> </p> <p>De interface van het Apparaat kan bezoekersgegevens gebruiken helpen de apparatengrafiek bouwen. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: true  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> d_coop_safe=1  </span> </p> <p>De interface van het Apparaat kan bezoekersgegevens gebruiken helpen de apparatengrafiek bouwen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: false </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> d_coop_unsafe=1 </span> </p> <p>De interface van het Apparaat kan bezoekersgegevens niet gebruiken helpen de apparatengrafiek bouwen. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: false  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> d_coop_unsafe=1  </span> </p> <p>De interface van het Apparaat kan bezoekersgegevens niet gebruiken helpen de apparatengrafiek bouwen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Post-Instantiatie-API&#39;s {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## API&#39;s voor nainstantiëring {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-Met deze API&#39;s kunt u de `isCoopSafe` status overschrijven. Deze zijn nodig omdat u hiermee de postinstantiërings- of postaanmeldingsstatus van een bezoeker kunt wijzigen op een site of in een app van één pagina waar de pagina niet wordt vernieuwd. U moet deze API&#39;s bijvoorbeeld aanroepen als een gebruiker zich op uw site of app aanmeldt en later een gebruiksbeleid accepteert waarmee de Device Co-op hun gegevens kan gebruiken.
+Met deze API&#39;s kunt u de status `isCoopSafe` overschrijven. Deze zijn nodig omdat u hiermee de postinstantiërings- of postaanmeldingsstatus van een bezoeker kunt wijzigen op een site of in een app van één pagina waar de pagina niet wordt vernieuwd. U moet deze API&#39;s bijvoorbeeld aanroepen als een gebruiker zich op uw site of app aanmeldt en later een gebruiksbeleid accepteert waarmee de Device Co-op hun gegevens kan gebruiken.
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -126,12 +122,12 @@ Met deze API&#39;s kunt u de `isCoopSafe` status overschrijven. Deze zijn nodig 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopSafe(); </span> </p> </td> 
-   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_safe=1 </span> in alle volgende gebeurtenisaanroepen. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopSafe();  </span> </p> </td> 
+   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_safe=1 </span> in alle volgende gebeurtenisaanroepen in. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopUnsafe(); </span> </p> </td> 
-   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_unsafe=1 </span> in alle volgende gebeurtenisaanroepen. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.setAsCoopUnsafe();  </span> </p> </td> 
+   <td colname="col2"> <p>Stelt de parameter POST <span class="codeph"> d_coop_unsafe=1 </span> in alle volgende gebeurtenisaanroepen in. </p> </td> 
   </tr> 
  </tbody> 
 </table>
