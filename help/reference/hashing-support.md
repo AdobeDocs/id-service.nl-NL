@@ -1,14 +1,12 @@
 ---
 description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
 keywords: ID-service
-seo-description: De Dienst van identiteitskaart van de Experience Cloud (ECID) steunt het shashing algoritme SHA-256 dat u toestaat om klant IDs of e-mailadressen over te gaan, en gehakt IDs door te geven. Dit is een optionele Javascript-methode voor het verzenden van onderbroken id's naar Experience Cloud. U kunt uw eigen methodes blijven gebruiken om te hakken alvorens klanten IDs te verzenden.
-seo-title: SHA256 Hashing Support for setCustomerIDs
 title: SHA256 Hashing Support for setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 2%
+source-wordcount: '608'
+ht-degree: 3%
 
 ---
 
