@@ -1,18 +1,14 @@
 ---
 description: Openbare methoden waarmee u kunt communiceren met de id-service.
-keywords: ID Service
-seo-description: Openbare methoden waarmee u kunt communiceren met de id-service.
-seo-title: Methoden
+keywords: ID-service
 title: Methoden
-uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 13%
+source-wordcount: '79'
+ht-degree: 17%
 
 ---
-
 
 # Methoden{#methods}
 
@@ -20,7 +16,7 @@ Openbare methoden waarmee u kunt communiceren met de id-service.
 
 >[!NOTE]
 >
->De JavaScript-bibliotheken *voor* Experience Cloud-id zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>De *Javascript-bibliotheken met Javascript-id voor Experience Cloud zijn onlangs verplaatst.* De meest recente versie van de ECID JS-bibliotheken vindt u op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwante artikelen:
 
@@ -37,4 +33,3 @@ Verwante artikelen:
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
-
