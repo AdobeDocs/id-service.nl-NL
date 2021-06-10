@@ -1,19 +1,15 @@
 ---
 description: Met de Inschakelen-service kunt u protocollen voor de bezoeker instellen om te bepalen of u een cookie kunt instellen op het apparaat of de browser van de gebruiker wanneer deze uw site bezoekt.
-seo-description: Met de Inschakelen-service kunt u protocollen voor de bezoeker instellen om te bepalen of u een cookie kunt instellen op het apparaat of de browser van de gebruiker wanneer deze uw site bezoekt.
-seo-title: Opt-in-service
 title: Opt-in-service
-uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
 
-
-# Opt-in-service{#opt-in-service}
+# Inschakelen van service{#opt-in-service}
 
 Met de Inschakelen-service kunt u protocollen voor de bezoeker instellen om te bepalen of u een cookie kunt instellen op het apparaat of de browser van de gebruiker wanneer deze uw site bezoekt.
 
@@ -21,9 +17,9 @@ De Inschakelen-service is een uitbreiding van de Experience Cloud-id (ECID) waar
 
 Met de Option-in-service kunt u opgeven of een bezoeker zich kan aanmelden bij een Adobe-oplossing in één keer of oplossingen in één keer kan presenteren voor machtigingen. Zodra het goedkeuringsproces volledig is en door de klant wordt geregistreerd, kunt u de CMP bezoekersgoedkeuringen van alle oplossingen van de Adobe terugwinnen.
 
-De opt-in dienst wordt uitgevoerd en gevormd gemakkelijk gebruikend [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) met de [Opt-in uitbreiding](../../implementation-guides/opt-in-service/launch.md). Het kan ook worden uitgevoerd en worden gevormd gebruikend [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+De opt-in dienst wordt uitgevoerd en gevormd gemakkelijk gebruikend [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) met [Opt-in uitbreiding](../../implementation-guides/opt-in-service/launch.md). Het kan ook worden uitgevoerd en worden gevormd gebruikend [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
-Raadpleeg de [Instellingenservice](../../implementation-guides/opt-in-service/getting-started.md) om aan de slag te gaan.
+Zie [Opt-in Service instellen](../../implementation-guides/opt-in-service/getting-started.md) om aan de slag te gaan.
 
 >[!NOTE]
 >
@@ -33,7 +29,7 @@ Raadpleeg de [Instellingenservice](../../implementation-guides/opt-in-service/ge
 >
 >De inhoud van dit document is geen juridisch advies en is niet bedoeld ter vervanging van juridisch advies. Raadpleeg de juridische afdeling van uw bedrijf voor advies over toestemming en praktijken bij het instellen van uw aanmeldingsprocedure.
 
-## Opt-in voor alle Experience Cloud-oplossingen {#section-053e6224505542cf961896f0ca869e52}
+## Opt-in over de Oplossingen van Experience Cloud {#section-053e6224505542cf961896f0ca869e52}
 
 De open-binnen dienst is een hulpmiddel om een toestemmings het kiezen binnen werkschema volgens uw eigen behoeften te bouwen, die u toestaan om een werkschema te ontwerpen om (brandmarkeringen) te reageren alvorens en nadat de toestemming van de gebruiker of uw toestemmingscontrolemechanisme wordt gegeven.
 
