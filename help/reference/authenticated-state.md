@@ -3,10 +3,10 @@ description: Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id's
 keywords: ID-service
 title: Klant-id's en verificatiestatussen
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 6%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -16,11 +16,11 @@ Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id&#39;s en een v
 
 ## Verificatiestatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar [!DNL Experience Cloud] en deze gegevens openen voor de verschillende oplossingen.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) naar [!DNL Experience Cloud] en deze gegevens openen voor de verschillende oplossingen.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist  `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Kernservices - Uw oplossingen inschakelen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html) voor voorbeelden.
+>`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist  `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Kernservices - Uw oplossingen inschakelen](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html) voor voorbeelden.
 
 Vanaf Experience Cloud Identity Service v1.5+ bevat `setCustomerIDs` het optionele `AuthState`-object. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
 
@@ -40,7 +40,7 @@ Vanaf Experience Cloud Identity Service v1.5+ bevat `setCustomerIDs` het optione
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 3  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 1  </span> </p> </td> 
    <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor Klantkenmerken voor <span class="keyword"> Doel </span>. </p> </p> </td> 
   </tr> 
   <tr> 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 De [!DNL Experience Cloud] ID-service ondersteunt de klant-id&#39;s en verificatiestatus in onze Android- en iOS SDK-code. Zie de volgende codebibliotheken:
 
-* [Methoden van Android SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html)
-* [Methoden van iOS SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/ios/overview.html)
+* [Methoden van Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+* [Methoden van iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
 ## Bericht voor klanten van Analytics en van de Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
