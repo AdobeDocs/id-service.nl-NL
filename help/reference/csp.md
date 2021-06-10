@@ -1,20 +1,16 @@
 ---
 description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
-keywords: ID Service
-seo-description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
-seo-title: Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud
+keywords: ID-service
 title: Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud
-uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
-
-# Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud {#content-security-policies-and-the-experience-cloud-id-service}
+# Het Beleid van de Veiligheid van de inhoud en de Dienst {#content-security-policies-and-the-experience-cloud-id-service} van de Identiteit van de Experience Cloud
 
 Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en veiligheidseigenschap van HTTP die browsers controle over geeft welk type van middelen op een Web-pagina worden geladen. Herzie deze sectie als u de dienst van identiteitskaart gebruikt en strikte CSPs hebt die whitelists gebruiken om middelen van vertrouwde op domeinen goed te keuren. U moet de hier vermelde Adobe-domeinen toevoegen aan uw CSP-whitelist.
 
@@ -28,9 +24,9 @@ CSPs gebruikt de kopbal van HTTP `Content-Security-Policy` om het type van midde
 * Aanvallen op verval van de site.
 * Distributie van malware.
 
-Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Wat belangrijk is, is dat u begrijpt welke Adobe domeinnamen u aan CSP zou moeten toevoegen als u deze gebruikt en strak veiligheidsbeleid hebt. Door deze domeinen toe te voegen, kunnen bezoekersbrowsers die toegang hebben tot uw site, die belangrijke aanroepen uitvoeren naar Experience Cloud-bronnen die u gebruikt.
+Het gebruik van CDV’s is gebruikelijk en goed begrepen. Het is niet de bedoeling van deze documentatie om CDV&#39;s in detail uit te leggen (zie de gerelateerde informatiekoppelingen hieronder voor meer informatie). Wat belangrijk is, is dat u begrijpt welke Adobe domeinnamen u aan CSP zou moeten toevoegen als u deze gebruikt en strak veiligheidsbeleid hebt. Door deze domeinen toe te voegen, kunnen bezoekersbrowsers die toegang hebben tot uw site die belangrijke aanroepen maken naar Experience Cloud-bronnen die u gebruikt.
 
-## Experience Cloud Domeinen voor wittekentabel {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Experience Cloud Domeinen voor whitelisting {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Voeg deze domeinnamen of URLs aan uw CSP voor elke Experience Cloud oplossing of de dienst toe van de lijst die u gebruikt.
 
@@ -52,7 +48,7 @@ Voeg deze domeinnamen of URLs aan uw CSP voor elke Experience Cloud oplossing of
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Target</b> </p> </td> 
-   <td colname="col2"> <p>Wijzig uw CSP om <span class="codeph"> *.tt.omtr dc.net</span>op te nemen. </p> </td> 
+   <td colname="col2"> <p>Wijzig uw CSP om <span class="codeph"> *.tt.omtr dc.net</span> te omvatten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Experience Cloud ID-service en Audience Manager</b> </p> </td> 
@@ -62,7 +58,7 @@ Voeg deze domeinnamen of URLs aan uw CSP voor elke Experience Cloud oplossing of
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u deze ook toevoegen <code>https://assets.adobedtm.com</code> aan de lijst met domeinen.</li></ul></p> <p>De vraag aan het <span class="codeph"> demdex.net</span> domein wordt gebruikt om de <a href="../introduction/cookies.md" format="dita" scope="local"> Koekjes en de Dienst</a> van de Identiteit van de Experience Cloud en voor de syncs van identiteitskaart te produceren. See also, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Understanding Calls to the Demdex Domain</a>. </p> </td> </tr> 
+   <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u ook <code>https://assets.adobedtm.com</code> toevoegen aan de lijst met domeinen.</li></ul></p> <p>De vraag aan <span class="codeph"> demdex.net</span> domein wordt gebruikt om <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies en de Dienst van de Identiteit van de Experience Cloud te produceren </a> en voor de syncs van identiteitskaart. Zie ook, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> het Begrijpen Vraag aan het Domein van de Index</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-insteekmodule</b> </p> </td> 
  <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als er al Activity Map is geïnstalleerd vóór januari 2020, wordt er een eerste aanvraag voor *.omniture.com weergegeven in uw browser, maar wordt deze omgeleid naar *.adobe.com. </p></td> 
