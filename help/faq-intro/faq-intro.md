@@ -1,20 +1,16 @@
 ---
 description: Veelgestelde vragen over de Dienst van de Identiteit van de Experience Cloud zelf samen met secties over de dienst van identiteitskaart en andere de oplossingscombinaties van de Experience Cloud.
-keywords: ID Service
-seo-description: Veelgestelde vragen over de Dienst van de Identiteit van de Experience Cloud zelf samen met secties over de dienst van identiteitskaart en andere de oplossingscombinaties van de Experience Cloud.
-seo-title: 'Veelgestelde vragen '
+keywords: ID-service
 title: 'Veelgestelde vragen '
-uuid: b075957b-165f-4087-99ad-bf608b4d4967
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: 930c0849-1d88-408e-a385-214b4d0ffd96
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
 
-
-# Veelgestelde vragen {#faqs}
+# Veelgestelde vragen  {#faqs}
 
 Veelgestelde vragen over de Dienst van de Identiteit van de Experience Cloud zelf samen met secties over de dienst van identiteitskaart en andere de oplossingscombinaties van de Experience Cloud.
 
