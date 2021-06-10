@@ -1,29 +1,25 @@
 ---
 description: Steekproef gebruiksgevallen en oplossingen om de Opt-in dienst te beheren.
-seo-description: Steekproef gebruiksgevallen en oplossingen om de Opt-in dienst te beheren.
-seo-title: Gebruiksscenario's openen
 title: Gebruiksscenario's openen
-uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
-translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
-
-# Gebruiksscenario&#39;s openen {#opt-in-use-cases}
+# Gevallen {#opt-in-use-cases} van het Inschakelen
 
 Steekproef gebruiksgevallen en oplossingen om de Opt-in dienst te beheren.
 
 ## Tips en probleemoplossing {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* Bezoeker JS initialiseert is synchroon en wordt uitgevoerd tijdens het laden van de pagina. Als u met een CMP of toestemmingenpersistentie omzet die een hoge latentie heeft, zou het verkieslijk kunnen zijn om de asynchrone die functies te gebruiken in [Opt-in Opstelling](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)worden beschreven.
+* Bezoeker JS initialiseert is synchroon en wordt uitgevoerd tijdens het laden van de pagina. Als u met een CMP of toestemmingenpersistentie omzet die een hoge latentie heeft, zou het verkieslijk kunnen zijn om de asynchrone die functies te gebruiken in [Opt-in Opstelling](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047) worden beschreven.
 * Inschakelen is een implementatie per domein. Het zal geen interdomeinimplementaties behandelen.
 * Als u aanroepen van derden voor een specifieke bibliotheek wilt uitschakelen, moet u die voorkeur in elke bibliotheek afzonderlijk configureren.
 
-## Opt-in-scenario&#39;s {#section-1178053c065c430bba26f82ef383a71c}
+## Opt-in scenario&#39;s {#section-1178053c065c430bba26f82ef383a71c}
 
 Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Option-in-service.
 
@@ -48,7 +44,7 @@ Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Optio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metingen van de eerste partij plus het richten is aanvaardbaar in een staat van de pre-instemming. Alle andere soorten gegevensgebruik zijn voorkomen totdat de toestemming is ontvangen. </p> </td> 
-   <td colname="col2"> <p>Gebruik Opt-in om Analytics + ECID + Target libraries in de pre-toestemmingsstaat toe te laten. </p> <p>Voeg de <span class="codeph"> configuratie van isablethirdpartycookies</span> toe aan de ECID-bibliotheek om cookie + ID-syncs van derden te blokkeren in de status vóór de toestemming. Markering verwijderen in toestand na toestemming. </p> </td> 
+   <td colname="col2"> <p>Gebruik Opt-in om Analytics + ECID + Target libraries in de pre-toestemmingsstaat toe te laten. </p> <p>Voeg de <span class="codeph"> isablethirdpartycookies</span> config aan de bibliotheek van ECID toe om derdekoekjes + de syncs van identiteitskaart in pre-toestemmingsstaat te blokkeren. Markering verwijderen in toestand na toestemming. </p> </td> 
    <td colname="col3"> <p>Adobe Demdex-aanroep wordt geactiveerd voor ECID-ophaling, maar er zijn geen Demdex-cookie, cookie van andere leveranciers of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor eerste-partijoplossingen. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
   </tr> 
   <tr> 
@@ -58,4 +54,3 @@ Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Optio
   </tr> 
  </tbody> 
 </table>
-
