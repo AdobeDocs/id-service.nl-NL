@@ -3,10 +3,10 @@ description: Deze configuraties laten verschillende instanties van de de dienstc
 keywords: ID-service
 title: whitelistParentDomain en whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 3%
+source-wordcount: '858'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
 
 >[!TIP]
 >
->U kunt deze configuraties ook willen uitvoeren wanneer u video in een iFrame met [Videohartslag](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) dient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
+>U kunt deze configuraties ook willen uitvoeren wanneer u video in een iFrame met [Videohartslag](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) dient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
 
 **Hoofdlettergebruik 1: Browser blokkeert de Koekjes van de Derde en de Dienst van identiteitskaart wordt uitgevoerd op iFrame en de Pagina van de Ouder**
 
