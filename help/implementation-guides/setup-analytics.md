@@ -3,10 +3,10 @@ description: Deze instructies gelden voor klanten van Analytics die de Experienc
 keywords: ID-service
 title: Implementeer de Experience Cloud Identity Service voor Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 1%
+source-wordcount: '1014'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +91,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Stap 3: Voeg uw Experience Cloud Organisatie-id toe aan Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie `Visitor.getInstance` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina [!DNL Experience Cloud]. Zie ook [Beheer - Core Services](https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/admin-getting-started.html). Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie `Visitor.getInstance` door uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina [!DNL Experience Cloud]. Zie ook [Beheer - Core Services](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -178,7 +178,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 Sluit de respijtperiode af nadat uw gegevensinvoer de kolommen `post_visid_high` en `post_visid_low` kan gebruiken.
 
-Zie [Referentie van gegevenskolom klikken](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html).
+Zie [Referentie van gegevenskolom klikken](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Clickstream-gegevensinsluiting**
 
@@ -191,7 +191,7 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [AMCV ](../introduction/cookies.md) zorgt ervoor dat de pagina wordt gehost.
-* MID-waarde in de [!DNL Analytics] afbeeldingsaanvraag met het [Adobe foutopsporingsprogramma](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html).
+* MID-waarde in de [!DNL Analytics] afbeeldingsaanvraag met het [Adobe foutopsporingsprogramma](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 
 Zie [De Experience Cloud Identity Service](../implementation-guides/test-verify.md) testen en verifiëren.
 
