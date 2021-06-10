@@ -3,9 +3,9 @@ description: Deze instructies, hulpmiddelen, en procedures helpen u bepalen als 
 keywords: ID-service
 title: De Experience Cloud Identity Service testen en verifiëren
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ U kunt de id-service ook testen in een anonieme of incognito-browsersessie. In e
 
 **Tools**
 
-Met [Adobe debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) en [Charles HTTP proxy](https://www.charlesproxy.com/) kunt u bepalen of de id-service is geconfigureerd om correct te werken met Analytics. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+Met [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) en [Charles HTTP proxy](https://www.charlesproxy.com/) kunt u bepalen of de id-service is geconfigureerd om correct te werken met Analytics. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
 ## Testen met Adobe-foutopsporing {#section-861365abc24b498e925b3837ea81d469}
 
 Uw de dienstintegratie wordt gevormd behoorlijk wanneer u [!DNL Experience Cloud ID] (MID) in [!DNL Adobe] debugger reactie ziet. Zie [Cookies en de Dienst van de Identiteit van de Experience Cloud](../introduction/cookies.md) voor meer informatie over MID.
 
-De status van de id-service controleren met [!DNL Adobe] [foutopsporing](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
+De status van de id-service controleren met [!DNL Adobe] [foutopsporing](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html):
 
 1. Wis uw browsercookies of open een anonieme bladersessie.
 1. Laad de testpagina die de de dienstcode van identiteitskaart bevat.
@@ -84,7 +84,7 @@ De code van uw id-service werkt correct wanneer de functie `Visitor.getInstance`
 
 **Reacties met geslaagde id-service in Charles**
 
-Uw account is correct ingericht voor de id-service wanneer de reactie van de [Gegevensverzamelingsservers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) een MID retourneert. MID is geretourneerd als sleutelwaardepaar dat deze syntaxis gebruikt: `d_mid: *`Experience Cloud-id van bezoeker`*`. Zoek naar MID op het [!UICONTROL Response] lusje zoals hieronder getoond.
+Uw account is correct ingericht voor de id-service wanneer de reactie van de [Gegevensverzamelingsservers](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) een MID retourneert. MID is geretourneerd als sleutelwaardepaar dat deze syntaxis gebruikt: `d_mid: *`Experience Cloud-id van bezoeker`*`. Zoek naar MID op het [!UICONTROL Response] lusje zoals hieronder getoond.
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Ee
 
 ![](assets/charles_response_unsuccessful.png)
 
-Zie [DCS-foutcodes, -berichten en -voorbeelden](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html) voor meer informatie over foutcodes.
+Zie [DCS-foutcodes, -berichten en -voorbeelden](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html) voor meer informatie over foutcodes.
