@@ -1,18 +1,14 @@
 ---
 description: Roep deze de dienstfunctie van identiteitskaart aan om te bepalen als de dienst van identiteitskaart een cliënt-kant, Experience Cloud bezoekersidentiteitskaart (MID) produceerde. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
-keywords: ID Service
-seo-description: Roep deze de dienstfunctie van identiteitskaart aan om te bepalen als de dienst van identiteitskaart een cliënt-kant, Experience Cloud bezoekersidentiteitskaart (MID) produceerde. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
-seo-title: isClientSideMarketingCloudVisitorID
+keywords: ID-service
 title: isClientSideMarketingCloudVisitorID
-uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 3%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
-
 
 # isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
 
@@ -34,16 +30,15 @@ De volgende tabel bevat een overzicht en beschrijving van de reacties die door d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> true</span> </p> </td> 
-   <td colname="col2"> <p>De id-service kan geen id van de <span class="keyword"> Experience Cloud</span> -server ontvangen of heeft deze niet ontvangen. Het leidde tot lokale MID, in browser (cliënt-kant). </p> </td> 
+   <td colname="col2"> <p>De id-service kan geen id ontvangen van de Experience Cloud<span class="keyword">-server. </span> Het leidde tot lokale MID, in browser (cliënt-kant). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> false</span> </p> </td> 
-   <td colname="col2"> <p>De id-service heeft een id ontvangen van de <span class="keyword"> Experience Cloud</span> -server. </p> </td> 
+   <td colname="col2"> <p>De id-service heeft een id ontvangen van de Experience Cloud<span class="keyword">-server.</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> null</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart deed geen vraag aan de server van <span class="keyword"> Experience Cloud</span> . </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart deed geen vraag aan de <span class="keyword"> Experience Cloud</span> server. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
