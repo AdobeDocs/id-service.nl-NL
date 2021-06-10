@@ -1,18 +1,14 @@
 ---
 description: setCustomerIDs plaatst 1 of meer zeer belangrijk-waardeparen die klant IDs en hun authentificatiestatus bepalen.
-keywords: ID Service
-seo-description: setCustomerIDs plaatst 1 of meer zeer belangrijk-waardeparen die klant IDs en hun authentificatiestatus bepalen.
-seo-title: setCustomerIDs
+keywords: ID-service
 title: setCustomerIDs
-uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
-translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+exl-id: 8fc549d3-2a6f-4214-bb0d-3e0bc1501ce2
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '58'
 ht-degree: 1%
 
 ---
-
 
 # setCustomerIDs{#setcustomerids}
 
@@ -20,7 +16,7 @@ setCustomerIDs plaatst 1 of meer zeer belangrijk-waardeparen die klant IDs en hu
 
 **Syntaxis:** `visitor.setCustomerIDs()`
 
-U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [Klantnamen en Verificatiestatus](../../reference/authenticated-state.md) voor meer informatie en voorbeelden.
+U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [Klantnamen en verificatiestatus](../../reference/authenticated-state.md) voor meer informatie en voorbeelden.
 
 ```js
 // Single ID with a single authentication state 
@@ -40,4 +36,3 @@ visitor.setCustomerIDs({
     "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 });
 ```
-
