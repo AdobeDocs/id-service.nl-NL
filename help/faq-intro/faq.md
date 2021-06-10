@@ -1,18 +1,14 @@
 ---
 description: Veelgestelde vragen over functies, functionaliteit en problemen met betrekking tot het gebruik van de id-service.
-keywords: ID Service
-seo-description: Veelgestelde vragen over functies, functionaliteit en problemen met betrekking tot het gebruik van de id-service.
-seo-title: Veelgestelde vragen over ID-service
+keywords: ID-service
 title: Veelgestelde vragen over ID-service
-uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 0%
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
-
 
 # Veelgestelde vragen over ID-service{#id-service-faqs}
 
@@ -22,25 +18,25 @@ Veelgestelde vragen over functies, functionaliteit en problemen met betrekking t
 
 **Welk soort functionaliteit of mogelijkheden verstrekt de dienst van identiteitskaart?**
 
-Zie het [overzicht](../introduction/overview.md).
+Zie [Overzicht](../introduction/overview.md).
 
 **Waarom doet de dienst van identiteitskaart geen vraag om identiteitskaart van de Experience Cloud terug te winnen?**
 
-Dit kan moeilijk te diagnosticeren zijn. Eén ding dat u kunt controleren, zijn de kopteksten voor inhoudsbeveiligingsbeleid op uw site. Als u een strikt veiligheidsbeleid hebt, kunnen die montages de derdevraag blokkeren die door de dienst van identiteitskaart wordt gemaakt. Zie Beleid voor [inhoudsbeveiliging en de Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Dit kan moeilijk te diagnosticeren zijn. Eén ding dat u kunt controleren, zijn de kopteksten voor inhoudsbeveiligingsbeleid op uw site. Als u een strikt veiligheidsbeleid hebt, kunnen die montages de derdevraag blokkeren die door de dienst van identiteitskaart wordt gemaakt. Zie [Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **BezoekerAPI.js, bestandsopslag**
 
 Er kunnen problemen optreden als u de BezoekerAPI.js host als een lokaal bestand in mobiele apps. We raden u aan het bestand op een webserver te hosten.
 
-## Duur en vertraging bij laden van pagina {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Tijdstippen en latentie {#section-c78e148d8dbe4c77a436ef0f2af5434b} voor laden van pagina
 
 **Hoe beïnvloedt de plaatsing van de bibliotheek van BezoekerAPI.js van de dienst van identiteitskaart paginaladingstijden?**
 
-Plaats de bibliotheek VisitorAPI.js boven aan de pagina in de `<head>` sectie van uw code. Zo weet u zeker dat de aanroep naar een id wordt uitgevoerd voordat de hoofdtekst van de pagina begint te laden en is de kans groot dat een id met succes wordt geretourneerd.
+Plaats de bibliotheek VisitorAPI.js boven aan de pagina in de sectie `<head>` van uw code. Zo weet u zeker dat de aanroep naar een id wordt uitgevoerd voordat de hoofdtekst van de pagina begint te laden en is de kans groot dat een id met succes wordt geretourneerd.
 
-De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan het [demdex.net domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
+De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan [demdex.net domein](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
 
-Voor [!DNL Target] klanten, kan het plaatsen van de de dienstcode van identiteitskaart in de `<body>` pagina de kansen verhogen dat het een [!DNL Target] vraag kon blokkeren. Als u id-servicecode in de hoofdtekst van de pagina moet plaatsen, moet u deze na de open `<body>` tag plaatsen.
+Voor [!DNL Target] klanten, die de dienstcode van identiteitskaart in `<body>` van de pagina plaatsen kan de kansen verhogen dat het een [!DNL Target] vraag kon blokkeren. Als u id-servicecode in de hoofdtekst van de pagina moet plaatsen, moet deze na de open `<body>`-tag worden geplaatst.
 
 **Maakt de dienst van identiteitskaart een servervraag met elke paginading?**
 
@@ -70,13 +66,13 @@ Deze wijziging verbetert de prestaties voor klanten die Visitor 2.3.0+ en DIL 6.
 
 De verzoeken van het middel met CORS zijn over het algemeen geschikter dan met JSONP. Met JSONP, plaatsen sommige browsers en de-rangschikt verzoeken met betrekking tot andere synchrone en asynchrone vraag op de pagina in rij. De hulp van CORS zorgt ervoor dat deze verzoeken met een hogere prioriteit in de browser vraagstapel worden behandeld.
 
-See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Zie [CORS-ondersteuning in de Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Beveiliging {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Steunt de dienst van identiteitskaart CORS?**
 
-Ja. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. Zie [CORS-ondersteuning in de Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Wat is CORS?**
 
@@ -84,7 +80,7 @@ Ja. See [CORS Support in the Experience Cloud Identity Service](../reference/cor
 
 **Wat als mijn veiligheidsvereisten zo strikt zijn dat ik nooit JSONP wil gebruiken?**
 
-Als u strenge veiligheidsvereisten hebt, plaats de dienst API config van identiteitskaart `useCORSOnly: true`. Schakel deze modus alleen in als u zeker weet dat bezoekers van de site browsers gebruiken die ondersteuning bieden voor CORS.
+Als u strenge veiligheidsvereisten hebt, plaats de dienst API config `useCORSOnly: true` van identiteitskaart. Schakel deze modus alleen in als u zeker weet dat bezoekers van de site browsers gebruiken die ondersteuning bieden voor CORS.
 
 Zie [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) en [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
