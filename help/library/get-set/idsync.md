@@ -1,18 +1,14 @@
 ---
 description: Met de ID-servicefuncties idSyncByURL en idSyncByDataSource kunt u handmatig een id-synchronisatie implementeren in de iFrame voor doelpublicatie. Deze zijn beschikbaar in VisitorAPI.js versies 1.10, of hoger.
-keywords: ID Service
-seo-description: Met de ID-servicefuncties idSyncByURL en idSyncByDataSource kunt u handmatig een id-synchronisatie implementeren in de iFrame voor doelpublicatie. Deze zijn beschikbaar in VisitorAPI.js versies 1.10, of hoger.
-seo-title: Id-synchronisatie op URL of databron
+keywords: ID-service
 title: Id-synchronisatie op URL of databron
-uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 10%
+source-wordcount: '241'
+ht-degree: 9%
 
 ---
-
 
 # Id-synchronisatie op URL of databron{#id-synchronization-by-url-or-data-source}
 
@@ -31,12 +27,12 @@ Met de ID-servicefuncties idSyncByURL en idSyncByDataSource kunt u handmatig een
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByURL(); </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByURL();  </span> </p> </td> 
    <td colname="col2"> <p>Tussen verschillende gegevenspartners en <span class="keyword"> Audience Manager </span> door een synchronisatie-URL van douaneID te gebruiken. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Als u de DPID en DPUUID al kent en deze naar de <span class="keyword"> Audience Manager wilt verzenden </span> in de standaard-id-sync-URL-indeling. </p> <p></p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByDataSource();  </span> </p> </td> 
+   <td colname="col2"> <p>Als u de DPID en DPUUID al kent en u deze naar <span class="keyword"> Audience Manager </span> in de standaard-id synchronisatie-URL-indeling wilt verzenden. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,22 +51,22 @@ In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voo
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> dpid </span> </td> 
+   <td colname="col1"> <span class="codeph"> dpid  </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>ID gegevensaanbieder toegewezen door Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
+   <td colname="col1"> <span class="codeph"> dpuuid  </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>De unieke id van de gegevensaanbieder voor de gebruiker. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
+   <td colname="col1"> <span class="codeph"> minutesToLive  </span> </td> 
    <td colname="col2"> Getal </td> 
-   <td colname="col3"> <p> <i>(Optioneel)</i> Hiermee stelt u de vervaltijd van het cookie in. Moet een geheel getal zijn. De standaardwaarde is 20160 minuten (14 dagen). </p> </td> 
+   <td colname="col3"> <p> <i>(Optioneel) </i> Hiermee stelt u de vervaltijd van het cookie in. Moet een geheel getal zijn. De standaardwaarde is 20160 minuten (14 dagen). </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> url </span> </td> 
+   <td colname="col1"> <span class="codeph"> url  </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>Doel-URL. </p> </td> 
   </tr> 
@@ -83,11 +79,11 @@ Beide functies accepteren de volgende macro&#39;s:
 
 * `%TIMESTAMP%`: Genereert een tijdstempel (in milliseconden). Wordt gebruikt voor het busten van cache.
 * `%DID%`: Voegt de Audience Manager-id voor de gebruiker in.
-* `%HTTP_PROTO%`: Hiermee stelt u het communicatieprotocol (`http` of `https`) in.
+* `%HTTP_PROTO%`: Hiermee stelt u het communicatieprotocol (`http` of  `https`) in.
 
 ## Voorbeeldcode en uitvoer {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Beide functies worden geretourneerd `Successfully queued` als dit lukt. Ze retourneren een foutbericht als dat niet het geval is.
+Beide functies retourneren `Successfully queued` als dit lukt. Ze retourneren een foutbericht als dat niet het geval is.
 
 ### visitor.idSyncByURL
 
@@ -122,8 +118,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
   // Fires 'http:/https:' + '//dpm.demdex.net/ibs:dpid=&dpuuid='
    visitor.idSyncByDataSource({ 
      dpid: '24', // must be a string
-     dpuuid: '98765', // must be a string 
-     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+     dp     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
 ```
 
 **Voorbeelduitvoer**
