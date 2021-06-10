@@ -1,26 +1,22 @@
 ---
 description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
-keywords: ID Service
-seo-description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
-seo-title: Vereisten voor de Experience Cloud Identity Service
+keywords: ID-service
 title: Vereisten voor de Experience Cloud Identity Service
-uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '754'
 ht-degree: 5%
 
 ---
 
-
-# Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Vereisten voor de Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
 Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
 
-## Vereisten zorgen voor een succesvolle implementatie en ondersteuning {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
+## Vereisten zorgen ervoor dat de implementatie is gelukt en ondersteuning {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codevereisten en volgt de instructies zoals deze in de [!DNL Adobe] Help worden weergegeven. Een niet-ondersteunde implementatie levert onverwachte resultaten op en voorkomt dat de klantenservice en onze technische teams u helpen bij het oplossen van problemen met de id-service.
+Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codevereisten en volgt de instructies zoals deze worden weergegeven in de [!DNL Adobe] Help. Een niet-ondersteunde implementatie levert onverwachte resultaten op en voorkomt dat de klantenservice en onze technische teams u helpen bij het oplossen van problemen met de id-service.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -34,17 +30,17 @@ Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codev
    <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Standaard</a> </p> </td> 
    <td colname="col2"> <p>Voor een standaardimplementatie met Dynamic Tag Management (DTM) moet u: </p> 
     <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Plaats de code van de ingesloten kop in de sectie <span class="codeph"> &lt;head&gt;</span> van de pagina. </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">Plaats de insluitcode voor de voettekst vóór de afsluitende <span class="codeph"> &lt;/body&gt;</span> -tag. </li> 
+     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Plaats de insluitkopcode in de sectie <span class="codeph"> &lt;head&gt;</span> van uw pagina. </li> 
+     <li id="li_13962F2CB1764091A84863BE499675A2">Plaats de insluitcode voor de voettekst vóór de afsluitende tag <span class="codeph"> &lt;/body&gt;</span>. </li> 
     </ul> <p>Een standaardimplementatie wordt niet ondersteund wanneer u: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
      <li id="li_1F16C6D412944197BEA56BC24730782C"> Plaats een van deze DTM-insluitcodes elders in de markering en/of de paginacode. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> Voeg, voeg, of ladingsDTM code met asynchrone methodes, vraag/callback methodes, of omslag toe. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">Meerdere versies van insluitcode op dezelfde pagina opnemen. </li> 
-    </ul> <p>Zie ook <a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/deployment.html" format="https" scope="external"> Code insluiten en Hosting Options</a>. </p> </td> 
+    </ul> <p>Zie ook <a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/deployment.html" format="https" scope="external"> Code- en hostingopties insluiten</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Niet-standaardimplementaties </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Niet-standaardimplementaties  </a> </p> </td> 
    <td colname="col2"> <p>Voor niet-standaard, of handmatige implementaties, moet u de dienst van identiteitskaart opstelling zoals die door de procedures wordt beschreven deze gids. Net als bij de bovenstaande DTM-richtlijnen leidt onjuiste plaatsing en laden van code tot een niet-ondersteunde implementatie. </p> </td> 
   </tr> 
  </tbody> 
@@ -52,7 +48,7 @@ Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codev
 
 ## Experience Cloud-eisen: Organisatie-id {#section-a02f537129a64ffbb690d5738d360c26}
 
-Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Experience Cloud] en een identiteitskaart van de Organisatie worden toegelaten. Controleer de volgende lijst als u niet zeker bent van de [!DNL Experience Cloud] status van uw bedrijf en uw organisatie-id moet vinden.
+Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Experience Cloud] worden toegelaten en een identiteitskaart van de Organisatie hebben. Controleer de volgende lijst als u niet zeker van de status [!DNL Experience Cloud] van uw bedrijf bent en uw identiteitskaart van de Organisatie moet vinden.
 
 >[!IMPORTANT]
 >
@@ -68,15 +64,15 @@ Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Exper
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Ingeschakeld</b> </p> </td> 
-   <td colname="col2"> <p>Als uw bedrijf voor de <span class="keyword"> Experience Cloud</span> wordt toegelaten maar u hebt uw identiteitskaart van de Organisatie niet, zie <a href="https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisatie IDs</a> (scrol neer aan de sectie <i>vind uw identiteitskaart</i>van de Organisatie). </p> </td> 
+   <td colname="col2"> <p>Als uw bedrijf is ingeschakeld voor de <span class="keyword"> Experience Cloud</span> maar u hebt uw organisatie-id niet, raadpleegt u <a href="https://docs.adobe.com/content/help/nl-NL/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisatie-id's</a> (schuif omlaag naar de sectie <i>Zoek uw organisatie-id</i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet zeker</b> </p> </td> 
-   <td colname="col2"> <p> Als u de <span class="keyword"> Experience Cloud</span> status van uw bedrijf niet kent, vraag dan aan wie uw Adobe-account beheert of leden van uw bedrijf zich via een Adobe ID kunnen aanmelden op <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> . Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Zie de sectie "Beheerpagina" in Beheer <a href="https://docs.adobe.com/help/nl-NL/core-services/interface/experience-cloud.html" format="https" scope="external"> van</a>Experience Cloud om de organisatie-id te zoeken. </p> </td> 
+   <td colname="col2"> <p> Als u de status <span class="keyword"> Experience Cloud</span> van uw bedrijf niet kent, vraag wie uw Adobe-account beheert of de leden van uw bedrijf zich via een Adobe ID kunnen aanmelden bij <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a>. Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Raadpleeg de sectie "Beheerpagina" in <a href="https://docs.adobe.com/help/nl-NL/core-services/interface/experience-cloud.html" format="https" scope="external"> Beheer Experience Cloud in </a> voor informatie over de organisatie-id. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet ingeschakeld</b> </p> </td> 
-   <td colname="col2"> <p> Als uw bedrijf niet voor Experience Cloud wordt toegelaten, zie de Diensten van de <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html" format="https" scope="external"> Kern - toelatend Uw Oplossingen</a> om aan de slag te gaan. </p> </td> 
+   <td colname="col2"> <p> Als uw bedrijf niet voor Experience Cloud wordt toegelaten, zie <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html" format="https" scope="external"> de Diensten van de Kern - toelatend Uw Oplossingen</a> om aan de slag te gaan. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -87,7 +83,7 @@ Alle trackingservers zijn omgezet in RDC, zodat de Analytics tracking-server nie
 
 ## Codebibliotheken en versievereisten {#section-ad7542a4317d430fa79fc6b095beb84d}
 
-De volgende secties maken een lijst van de minimumcodeversies die worden vereist om de dienst van [!DNL Experience Cloud] identiteitskaart te gebruiken.
+De volgende secties geven een overzicht van de minimale codeversies die vereist zijn om de [!DNL Experience Cloud] ID-service te gebruiken.
 
 >[!TIP]
 >
@@ -105,7 +101,7 @@ De volgende secties maken een lijst van de minimumcodeversies die worden vereist
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b> <span class="keyword"> Experience Cloud</span> ID-service</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Experience </span> CloudID-service</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2,0 of hoger </p> </td> 
   </tr> 
@@ -120,21 +116,21 @@ De volgende secties maken een lijst van de minimumcodeversies die worden vereist
   </tr> 
   <tr> 
    <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html" format="https" scope="external"> Videohartslag 2.x voor JavaScript</a>. </p> </td> 
-   <td colname="col4"> <p>2.0 </p> </td> 
+   <td colname="col4"> <p>2,0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> See <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library</a> (DIL). </p> </td> 
-   <td colname="col4"> <p>5.0 </p></td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library</a> (DIL). </p> </td> 
+   <td colname="col4"> <p>5,0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external"> postcode</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external"> mbox Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Zie <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external"> at.js Implementation</a>. </p> </td> 
-   <td colname="col4"> <p>0.9.1 </p> </td> 
+   <td colname="col4"> <p>0,9,1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,7 +146,7 @@ De id-service vereist minimaal de hieronder vermelde SDK-versies.
 >
 >Wij adviseren dat u de recentste codeversies eerder dan de vereiste minimumversies gebruikt.
 
-De SDK-code moet zijn ingeschakeld voor de ID-service. Schakel de nieuwste SDK-code voor elke app in en download deze vanaf uw [Adobe Mobile Services](https://mobilemarketing.adobe.com/) -account. Zie ook:
+De SDK-code moet zijn ingeschakeld voor de ID-service. Schakel de nieuwste SDK-code voor elke toepassing in en download deze vanaf uw [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-account. Zie ook:
 
 * [Serviceopties voor SDK-bezoeker-id configureren](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
 * [Methoden van Android SDK](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
