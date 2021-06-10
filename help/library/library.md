@@ -1,18 +1,14 @@
 ---
 description: Eigenschappen, methodes, en configuraties die u programmatically met de Dienst van de Identiteit van de Experience Cloud laten werken.
-keywords: ID Service
-seo-description: Eigenschappen, methodes, en configuraties die u programmatically met de Dienst van de Identiteit van de Experience Cloud laten werken.
-seo-title: ID-service-API
+keywords: ID-service
 title: ID-service-API
-uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 5%
+source-wordcount: '73'
+ht-degree: 6%
 
 ---
-
 
 # ID-service-API{#id-service-api}
 
@@ -23,5 +19,4 @@ Eigenschappen, methodes, en configuraties die u programmatically met de Dienst v
 
 >[!NOTE]
 >
->De JavaScript-bibliotheken *voor* Experience Cloud-id zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
-
+>De *Javascript-bibliotheken met Javascript-id voor Experience Cloud zijn onlangs verplaatst.* De meest recente versie van de ECID JS-bibliotheken vindt u op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
