@@ -1,32 +1,28 @@
 ---
 description: Een optionele, Booleaanse vlag die bepaalt hoe de browser bronnen van de Experience Cloud Identity Service opvraagt.
-keywords: ID Service
-seo-description: Een optionele, Booleaanse vlag die bepaalt hoe de browser bronnen van de Experience Cloud Identity Service opvraagt.
-seo-title: useCORSOnly
+keywords: ID-service
 title: useCORSOnly
-uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 1%
+source-wordcount: '145'
+ht-degree: 2%
 
 ---
-
 
 # useCORSOnly{#usecorsonly}
 
 Een optionele, Booleaanse vlag die bepaalt hoe de browser bronnen van de Experience Cloud Identity Service opvraagt.
 
-**Syntaxis:** `useCORSOnly: true|false` (standaardwaarde is `false`.)
+**Syntaxis:** `useCORSOnly: true|false` (standaardwaarde is  `false`.)
 
 **Overzicht**
 
-Wanneer geplaatst aan `false`, voert browser middelcontroles met CORS of JSONP uit. Nochtans, probeert de dienst van identiteitskaart altijd om middelen met CORS eerst te verzoeken. Het keert aan JSONP op oudere browsers terug die geen CORS steunen. Als u de browser wilt dwingen alleen CORS te gebruiken, stelt u deze in `useCORSOnly:true` de `Visitor.getInstance` functieaanroep in.
+Wanneer geplaatst aan `false`, voert browser middelcontroles met CORS of JSONP uit. Nochtans, probeert de dienst van identiteitskaart altijd om middelen met CORS eerst te verzoeken. Het keert aan JSONP op oudere browsers terug die geen CORS steunen. Als u browser moet dwingen om CORS slechts te gebruiken, plaats `useCORSOnly:true` in `Visitor.getInstance` functievraag.
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` als u strikte beveiligingsvereisten hebt. Schakel deze modus alleen in als u zeker weet dat alle bezoekers browsers gebruiken die ondersteuning bieden voor CORS. De gebruikerservaring wordt niet beïnvloed door browsers die geen ondersteuning bieden voor CORS. Browsers zonder CORS-ondersteuning kunnen echter geen bronnen aanvragen of gegevens uitwisselen met de [!DNL Adobe Experience Cloud]server.
+>`Set useCORSOnly: true` als u strikte beveiligingsvereisten hebt. Schakel deze modus alleen in als u zeker weet dat alle bezoekers browsers gebruiken die ondersteuning bieden voor CORS. De gebruikerservaring wordt niet beïnvloed door browsers die geen ondersteuning bieden voor CORS. Browsers zonder CORS-ondersteuning kunnen echter geen bronnen aanvragen of gegevens uitwisselen met de [!DNL Adobe Experience Cloud].
 
 **Codevoorbeeld**
 
@@ -43,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    useCORSOnly: true 
 });
 ```
-
