@@ -1,18 +1,14 @@
 ---
 description: Roep deze de dienstfuncties van identiteitskaart aan om de onderbrekingsstatus voor de Dienst van de Identiteit van Experience Cloud, Analytics, of het verzoek van identiteitskaart van de Audience Manager te bepalen. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
-keywords: ID Service
-seo-description: Roep deze de dienstfuncties van identiteitskaart aan om de onderbrekingsstatus voor de Dienst van de Identiteit van Experience Cloud, Analytics, of het verzoek van identiteitskaart van de Audience Manager te bepalen. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
-seo-title: callTimeOut Methods
+keywords: ID-service
 title: callTimeOut Methods
-uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 2%
+source-wordcount: '125'
+ht-degree: 3%
 
 ---
-
 
 # callTimeOut Methods{#calltimeout-methods}
 
@@ -30,15 +26,15 @@ Roep deze de dienstfuncties van identiteitskaart aan om de onderbrekingsstatus v
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.MCIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.AnalyticsIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.AAMIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -67,4 +63,3 @@ Roep deze de dienstfuncties van identiteitskaart aan om de onderbrekingsstatus v
   </tr> 
  </tbody> 
 </table>
-
