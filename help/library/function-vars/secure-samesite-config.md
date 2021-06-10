@@ -1,17 +1,14 @@
 ---
 description: Een configuratie binnen ECID die kan worden gebruikt voor de ondersteuning van AMCV-cookies op Google AMP-pagina's.
 keywords: ID-service
-seo-description: Een configuratie binnen ECID die kan worden gebruikt voor de ondersteuning van AMCV-cookies op Google AMP-pagina's.
-seo-title: Beveiligde en SameSite-configuraties
 title: Beveiligde en SameSite-configuraties
-translation-type: tm+mt
-source-git-commit: 702d20f3989f7749fb173496765d94c3a5af46dc
+exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '154'
 ht-degree: 1%
 
 ---
-
 
 # Beveiligde en SameSite-configuraties
 
