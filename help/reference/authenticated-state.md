@@ -1,18 +1,14 @@
 ---
 description: Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
-keywords: ID Service
-seo-description: Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id's en een verificatiestatus aan elke bezoeker koppelen.
-seo-title: Klant-id's en verificatiestatussen
+keywords: ID-service
 title: Klant-id's en verificatiestatussen
-uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 7%
+source-wordcount: '633'
+ht-degree: 6%
 
 ---
-
 
 # Klant-id&#39;s en verificatiestatussen {#customer-ids-and-authentication-states}
 
@@ -20,13 +16,13 @@ Naast de Experience Cloud bezoeker-id kunt u aanvullende klant-id&#39;s en een v
 
 ## Verificatiestatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-De `setCustomerIDs` methode accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) uploaden naar de verschillende oplossingen [!DNL Experience Cloud] en deze gegevens benaderen.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. U kunt deze id&#39;s bijvoorbeeld uploaden als [klantkenmerken](https://docs.adobe.com/content/help/nl-NL/core-services/interface/customer-attributes/attributes.html) naar [!DNL Experience Cloud] en deze gegevens openen voor de verschillende oplossingen.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Core Services - Hoe kan ik uw oplossingen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html) inschakelen voor voorbeelden.
+>`setCustomerIDs` (synchronisatie van klant-id) is vereist door klantkenmerken en kernservicefunctionaliteit. Het synchroniseren van klant-id&#39;s is een optionele identificatiemethode voor [!DNL Analytics]. [!DNL Target] vereist  `Visitor.AuthState.AUTHENTICATED` dat klantkenmerken werken. Zie [Kernservices - Uw oplossingen inschakelen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html) voor voorbeelden.
 
-Vanaf Experience Cloud Identity Service v1.5+ wordt `setCustomerIDs` het optionele `AuthState` object opgenomen. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
+Vanaf Experience Cloud Identity Service v1.5+ bevat `setCustomerIDs` het optionele `AuthState`-object. `AuthState` identificeert bezoekers volgens hun authentificatiestatus (b.v., het programma geopend, het programma geopend). U stelt de verificatiestatus in met een statuswaarde in de tabel. De verificatiestatus wordt geretourneerd als een geheel getal.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -38,24 +34,24 @@ Vanaf Experience Cloud Identity Service v1.5+ wordt `setCustomerIDs` het optione
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 0 </span> </p> </td> 
-   <td colname="col3"> <p>Onbekend of nooit geverifieerd. </p> <p> Onbekend wordt standaard toegepast wanneer <span class="codeph"> </span> AuthState niet wordt gebruikt met een bezoeker-id of niet expliciet wordt ingesteld op elke pagina of toepassingscontext. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 0  </span> </p> </td> 
+   <td colname="col3"> <p>Onbekend of nooit geverifieerd. </p> <p> Onbekend wordt standaard toegepast wanneer <span class="codeph"> AuthState </span> niet wordt gebruikt met een bezoeker-id of niet expliciet wordt ingesteld op elke pagina of toepassingscontext. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 1 </span> </p> </td> 
-   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor Klantkenmerken voor <span class="keyword"> </span> Target. </p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 3  </span> </p> </td> 
+   <td colname="col3"> <p>Voor authentiek verklaard voor een bepaalde instantie, een pagina, of een toepassing. </p> <p> <p>Let op:  Voor een correcte werking is deze status vereist voor Klantkenmerken voor <span class="keyword"> Doel </span>. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 2 </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 2  </span> </p> </td> 
    <td colname="col3"> <p>Afgemeld. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Gevallen gebruiken voor verificatiestatussen {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Gevallen gebruiken voor verificatiestatus {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 U kunt verificatiestatussen toewijzen aan uw gebruikers, afhankelijk van de handelingen die zij uitvoeren op uw wegeigenschappen en of zij zijn geverifieerd. Zie enkele voorbeelden in de onderstaande tabel:
 
@@ -68,7 +64,7 @@ U kunt verificatiestatussen toewijzen aan uw gebruikers, afhankelijk van de hand
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
    <td colname="col2"> <p>Deze status kan worden gebruikt voor scenario's zoals: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Een e-mail lezen (deze handeling betekent mogelijk dat de lezer de beoogde ontvanger is, maar dat de e-mail ook had kunnen worden doorgestuurd). </li> 
@@ -76,11 +72,11 @@ U kunt verificatiestatussen toewijzen aan uw gebruikers, afhankelijk van de hand
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
    <td colname="col2"> <p>De gebruiker is momenteel geverifieerd met een actieve sessie op uw website of app. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
    <td colname="col2"> <p>De gebruiker werd voor authentiek verklaard maar actief het programma geopend. De gebruiker bedoelde en bedoeld om van de voor authentiek verklaarde staat los te maken. De gebruiker wil niet meer worden beschouwd als geverifieerd. </p> </td> 
   </tr> 
  </tbody> 
@@ -145,9 +141,9 @@ visitor.setCustomerIDs({
 }); 
 ```
 
-## Klanten-id&#39;s en geverifieerde statussen retourneren {#section-71a610546188478fa9a3185a01d6e83b}
+## Klantnamen en geverifieerde statussen retourneren {#section-71a610546188478fa9a3185a01d6e83b}
 
-Gebruik deze optie `getCustomerIDs` om de klant-id&#39;s en de bijbehorende geverifieerde statussen te retourneren. Deze methode retourneert de geverifieerde status van een bezoeker als een geheel getal.
+Gebruik `getCustomerIDs` om klant-id&#39;s en verwante geverifieerde statussen te retourneren. Deze methode retourneert de geverifieerde status van een bezoeker als een geheel getal.
 
 **Syntaxis**
 
@@ -214,11 +210,11 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK-ondersteuning {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-De [!DNL Experience Cloud] id-service ondersteunt de klant-id&#39;s en verificatiestatus in onze Android- en iOS SDK-code. Zie de volgende codebibliotheken:
+De [!DNL Experience Cloud] ID-service ondersteunt de klant-id&#39;s en verificatiestatus in onze Android- en iOS SDK-code. Zie de volgende codebibliotheken:
 
 * [Methoden van Android SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/android/overview.html)
 * [Methoden van iOS SDK](https://docs.adobe.com/content/help/nl-NL/mobile-services/ios/overview.html)
 
 ## Bericht voor klanten van Analytics en van de Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Als u gedeclareerde id&#39;s doorgeeft aan [!DNL Audience Manager], moet het `userid` object overeenkomen met de integratiecode die aan een gegevensbron is gekoppeld. Voor meer informatie, zie de [!UICONTROL Visitor ID Service] sectie in de [Configure documentatie van de Code](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code) van de Regels van de Fusie.
+Als u gedeclareerde id&#39;s doorgeeft aan [!DNL Audience Manager], moet het object `userid` overeenkomen met de integratiecode die is gekoppeld aan een gegevensbron. Voor meer informatie, zie [!UICONTROL Visitor ID Service] sectie in [vorm de Code van de Regels van de Fusie](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code) documentatie.
