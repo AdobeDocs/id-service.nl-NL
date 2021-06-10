@@ -3,9 +3,9 @@ description: Het AMCV-cookie bevat de Experience Cloud-id (MID) en een regio-id 
 keywords: ID-service
 title: Regio en gebruikers-id's ophalen van de AMCV-cookie of de ID-service
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 Het AMCV-cookie bevat de Experience Cloud-id (MID) en een regio-id voor uw sitebezoekers. Deze id&#39;s worden opgeslagen als sleutelwaardeparen. De id mid:user bevat de Experience Cloud-id van de bezoeker. De naam:regio-id bevat de regio-id voor uw sitebezoekers. U kunt deze informatie herstellen door het AMCV-cookie te parseren.
 
-Zie [Gebruikersnaam en -regio&#39;s ophalen via de Experience Cloud Identity-service](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html) voor meer informatie.
+Zie [Gebruikersnaam en -regio&#39;s ophalen via de Experience Cloud Identity-service](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html) voor meer informatie.
 
-Als u een [!DNL Audience Manager] klant bent, kunt u gebiedsidentiteitskaart van de reactie krijgen die door de Server van de Inzameling van Gegevens (DCS) wordt verzonden. Zie [Gebruikersnamen en -gebieden ophalen van een DCS-respons](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html).
+Als u een [!DNL Audience Manager] klant bent, kunt u gebiedsidentiteitskaart van de reactie krijgen die door de Server van de Inzameling van Gegevens (DCS) wordt verzonden. Zie [Gebruikersnamen en -gebieden ophalen van een DCS-respons](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html).
 
 U kunt de regio-id ook ophalen met een methode `GET` die wordt geleverd door de id-service. Zie [Gebied-id&#39;s ophalen (Locatiehint)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
