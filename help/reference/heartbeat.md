@@ -3,10 +3,10 @@ description: Voor videohartslag is de Experience Cloud Identity Service vereist.
 keywords: ID-service
 title: Videohartslag en de Experience Cloud Identiteitsdienst
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 14%
+source-wordcount: '105'
+ht-degree: 6%
 
 ---
 
@@ -16,5 +16,5 @@ Voor videohartslag is de Experience Cloud Identity Service vereist. Wanneer u vi
 
 >[!MORELIKETHIS]
 >
->* [Audio en video meten in Adobe Analytics ](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html)
+>* [Audio en video meten in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
