@@ -1,18 +1,14 @@
 ---
 description: ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
 keywords: ID-service
-seo-description: ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
-seo-title: Referentie voor analyse
 title: Referentie voor analyse
-uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
-translation-type: tm+mt
-source-git-commit: 73465dcdab8b8316e0e9d41c5780ff0231270058
+exl-id: bfa13677-77e4-4201-94e4-31328523c421
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 7%
+source-wordcount: '65'
+ht-degree: 9%
 
 ---
-
 
 # Referentie voor analyse{#analytics-reference}
 
