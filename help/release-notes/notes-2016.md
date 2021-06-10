@@ -3,9 +3,9 @@ description: De versies van de eigenschap, updates, of veranderingen in de Diens
 keywords: ID-service
 title: Opmerkingen bij de release 2016
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1145'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2016.
 
-Deze wijzigingen worden ook vastgelegd in de [Experience Cloud Release-notities](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de [Experience Cloud Release-notities](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
 ## Versie 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -80,7 +80,7 @@ Gereviseerd: [Vereisten voor de Experience Cloud Identity Service](../reference/
 
 **Bekende problemen**
 
-Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de DIL-variabele `secureDataCollection= false` instellen. Zie [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
+Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de DIL-variabele `secureDataCollection= false` instellen. Zie [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versie 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
