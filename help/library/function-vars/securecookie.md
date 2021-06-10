@@ -1,18 +1,14 @@
 ---
 description: Een optionele Booleaanse markering die een kenmerk "Secure" toevoegt aan het AMCV-cookie.
-keywords: ID Service
-seo-description: Een optionele Booleaanse markering die een kenmerk "Secure" toevoegt aan het AMCV-cookie.
-seo-title: secureCookie
+keywords: ID-service
 title: secureCookie
-uuid: 995d19f6-9c9d-4493-9c9c-545b0b5696b0
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: ba281b1c-1112-4ed6-b4fd-b8f87cabc575
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
-
 
 # secureCookie{#securecookie}
 
@@ -22,7 +18,7 @@ Dit configuratiekenmerk is beschikbaar in `visitorAPI`, versie 3.3.0.
 
 >[!NOTE]
 >
->De `SecureCookie` configuratie werkt niet op onbeveiligde domeinen en kan ertoe leiden dat u de MID-waarden niet ontvangt voor bezoeken die een onbeveiligd protocol gebruiken. De `secureCookie` configuratie zou aan `true` slechts moeten worden geplaatst wanneer u zeker bent dat alle pagina&#39;s en subdomeinen een veilig protocol altijd gebruiken.
+>De `SecureCookie` configuratie werkt niet op onbeveiligde domeinen en kan ertoe leiden dat u de MID-waarden niet ontvangt voor bezoeken die een onbeveiligd protocol gebruiken. De `secureCookie` configuratie zou aan `true` slechts moeten worden geplaatst wanneer u zeker bent dat alle pagina&#39;s en sub-domeinen een veilig protocol altijd gebruiken.
 
 **Syntaxis:** `secureCookie: true | false` (standaard)
 
@@ -35,4 +31,3 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE",{
         secureCookie: true 
  });
 ```
-
