@@ -1,31 +1,27 @@
 ---
 description: Standaard versus niet-standaard implementatiemethoden van de Experience Cloud Identity Service.
-keywords: ID Service
-seo-description: Standaard versus niet-standaard implementatiemethoden van de Experience Cloud Identity Service.
-seo-title: Implementatiemethoden
+keywords: ID-service
 title: Implementatiemethoden
-uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
-source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
+exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-
 # Implementatiemethoden
 
-U kunt een standaard [!DNL Experience Cloud ID Service] implementatiemethode kiezen met [!DNL Experience Platform Launch] of een niet-standaardmethode.
+U kunt een standaard [!DNL Experience Cloud ID Service] implementatiemethode kiezen gebruikend [!DNL Experience Platform Launch] of een niet-standaardmethode.
 
 >[!IMPORTANT]
 >
->Lees en begrijp de [id-servicevereisten](../reference/requirements.md) voordat u aan de slag gaat met deze procedures.
+>Lees en begrijp de [ID-servicevereisten](../reference/requirements.md) voordat u aan de slag gaat met deze procedures.
 
 ## Standaardimplementatie {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe raadt u ten zeerste aan de id-service te gebruiken [[!DNL Experience Platform Launch]](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) om deze te implementeren. Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
+Adobe raadt u ten zeerste aan [[!DNL Experience Platform Launch]](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) te gebruiken om de id-service te implementeren. Deze methode verzekert integratie met andere [!DNL Experience Cloud] oplossingen, stroomlijnt implementatiewerkstromen, en verzekert automatisch de correcte codeplaatsing en het rangschikken.
 
 ## Niet-standaardimplementaties {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
-De procedures en codesteekproeven in deze gids kunnen u helpen de dienst van [!DNL Experience Cloud] identiteitskaart op een handboek, of niet-standaardmanier plaatsen. Deze implementaties zijn vaak technisch lastig en complex. Zij kunnen schaarse technische middelen van uw deel vereisen of gecontracteerde steuntijd met uw consultant van de Adobe verbruiken.
+De procedures en codesteekproeven in deze gids kunnen u helpen de [!DNL Experience Cloud] dienst van identiteitskaart op een handboek, of niet-standaardmanier plaatsen. Deze implementaties zijn vaak technisch lastig en complex. Zij kunnen schaarse technische middelen van uw deel vereisen of gecontracteerde steuntijd met uw consultant van de Adobe verbruiken.
