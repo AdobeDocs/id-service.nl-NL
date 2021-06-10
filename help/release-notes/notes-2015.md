@@ -1,20 +1,16 @@
 ---
 description: Opmerkingen bij de release en updates voor 2015.
-keywords: ID Service
-seo-description: Opmerkingen bij de release en updates voor 2015.
-seo-title: Opmerkingen bij de release 2015
+keywords: ID-service
 title: Opmerkingen bij de release 2015
-uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
 
-
-# 2015 Release Notes {#release-notes}
+# Opmerkingen bij de release van 2015 {#release-notes}
 
 Opmerkingen bij de release en updates voor 2015.
 
@@ -22,7 +18,7 @@ Opmerkingen bij de release en updates voor 2015.
 
 november 2015
 
-De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt online het verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die zich zorgen maken over COPPA kunnen een optionele variabele toevoegen aan hun [!DNL Experience Cloud] id-servicecode, die verhindert dat cookies worden ingesteld in het domein van derden van een browser. See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Voor versie 1.5.3 of hoger.
+De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt online het verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die bezorgd zijn over COPPA kunnen een facultatieve variabele aan hun [!DNL Experience Cloud] de dienstcode toevoegen van identiteitskaart die het verhindert om koekjes in het derdedomein van browser te plaatsen. Zie [Ondersteuning voor COPPA in de Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Voor versie 1.5.3 of hoger.
 
 ## Versie 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -36,12 +32,12 @@ september 2015
 augustus 2015
 
 * Het probleem waarbij er geen gegevens werden gesynchroniseerd of geactiveerd, is opgelost door een ID-service. (AAM-20164)
-* Het probleem waarbij de id-service een meerdelig domeincookie op hoofdniveau niet correct kon instellen, is opgelost. Bijvoorbeeld, als u een domein zoals hebt, `my_company.co.uk`in sommige omstandigheden, zou de dienst van identiteitskaart een koekje in `co.uk` slechts plaatsen. (AN-104683)
+* Het probleem waarbij de id-service een meerdelig domeincookie op hoofdniveau niet correct kon instellen, is opgelost. Als u bijvoorbeeld een domein als `my_company.co.uk` hebt, zou de id-service onder bepaalde omstandigheden alleen een cookie instellen in `co.uk`. (AN-104683)
 
-   Dit betrof slechts een paar cliënten die aan *alle* volgende criteria voldeden:
+   Dit beïnvloedde slechts een paar cliënten die *all* van de volgende criteria voldeden:
 
    * De id-service gebruiken.
-   * Een [respijtperiode ingeschakeld ](../reference/analytics-reference/grace-period.md)*of* worden cookies van andere leveranciers gebruikt en gebruikers blokkeren cookies van andere leveranciers.
+   * Een [respijtperiode ](../reference/analytics-reference/grace-period.md)*of* is ingeschakeld en gebruikers gebruiken cookies van derden en blokkeren cookies van derden.
 
    * Pagina&#39;s hebben met uit meerdere delen bestaande domeinen op hoofdniveau.
 
@@ -54,7 +50,7 @@ Documentatieherzieningen in deze release zijn onder meer:
 
 juli 2015
 
-De [!DNL Experience Cloud] id-service ondersteunt meerdere id&#39;s en verificatiestatussen. Deze wijziging verwijdert ook vervangen ondersteuning voor DPID-toewijzingen [!DNL Audience Manager] aan gebruikers-id&#39;s die door de `setCustomerIDs` functie worden gebruikt. See [Customer IDs and Authentication States](../reference/authenticated-state.md)
+De [!DNL Experience Cloud] ID-service ondersteunt meerdere id&#39;s en verificatiestatus. Deze wijziging verwijdert ook vervangen ondersteuning voor DPID-toewijzingen [!DNL Audience Manager] aan gebruikers-id&#39;s die door de functie `setCustomerIDs` worden gebruikt. Zie [Klantnamen en verificatiestatus](../reference/authenticated-state.md)
 
 ## Versie 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -82,4 +78,4 @@ Oplossing voor de afhandeling van time-out bij aanvragen voor AAM blob en Locati
 
 januari 2015
 
-Herwerkte `<head>/<body>` tag-zoekactie voor JSONP-aanvraagtagcontainer en het maken van de `<script>` `<script>` tag om rekening te houden met verschillende DOM-implementaties (HTML versus XHTML) met mogelijk andere instellingen voor hoofdlettergevoeligheid. (AN-9355)
+De tag `<head>/<body>` voor JSONP request `<script>` tag container is opnieuw gevonden, evenals het maken van de tag `<script>` om rekening te houden met verschillende DOM implementaties (HTML vs XHTML) met mogelijk verschillende instellingen voor hoofdlettergevoeligheid. (AN-9355)
