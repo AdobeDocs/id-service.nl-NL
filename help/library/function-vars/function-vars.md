@@ -1,18 +1,14 @@
 ---
 description: Vorm de dienst van identiteitskaart door deze eigenschappen tot de statische methode van Visitor.getInstance over te gaan.
-keywords: Organization ID;ID Service
-seo-description: Vorm de dienst van identiteitskaart door deze eigenschappen tot de statische methode van Visitor.getInstance over te gaan.
-seo-title: Configuraties
+keywords: Organisatie-id;ID-service
 title: Configuraties
-uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+exl-id: a369f624-d263-4287-bb7e-b89d584fa245
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 9%
+source-wordcount: '86'
+ht-degree: 10%
 
 ---
-
 
 # Configuraties{#configurations}
 
@@ -20,7 +16,7 @@ Vorm de dienst van identiteitskaart door deze eigenschappen tot de statische met
 
 >[!NOTE]
 >
->De JavaScript-bibliotheken *voor* Experience Cloud-id zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>De *Javascript-bibliotheken met Javascript-id voor Experience Cloud zijn onlangs verplaatst.* De meest recente versie van de ECID JS-bibliotheken vindt u op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwante artikelen:
 
@@ -41,4 +37,3 @@ Verwante artikelen:
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain en whitelistIframeDomains](whitelistdomain.md)
-
