@@ -3,9 +3,9 @@ description: getInstance retourneert een bezoeker-id-object voor de opgegeven Ex
 keywords: ID-service
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Als `getInstance` geen bestaande instantie vindt, wordt een nieuwe instantie gecreeerd en teruggekeerd. Dit is gelijkaardig aan [ `s_gi()` functie ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
+Als `getInstance` geen bestaande instantie vindt, wordt een nieuwe instantie gecreeerd en teruggekeerd. Dit is gelijkaardig aan [ `s_gi()` functie ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
 
 **Algemeen gebruik**
 
