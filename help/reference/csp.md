@@ -3,9 +3,9 @@ description: Een beleid van de Veiligheid van de Inhoud (CSP) is een kopbal en v
 keywords: ID-service
 title: Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Voeg deze domeinnamen of URLs aan uw CSP voor elke Experience Cloud oplossing of
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u ook <code>https://assets.adobedtm.com</code> toevoegen aan de lijst met domeinen.</li></ul></p> <p>De vraag aan <span class="codeph"> demdex.net</span> domein wordt gebruikt om <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies en de Dienst van de Identiteit van de Experience Cloud te produceren </a> en voor de syncs van identiteitskaart. Zie ook, <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> het Begrijpen Vraag aan het Domein van de Index</a>. </p> </td> </tr> 
+   <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u ook <code>https://assets.adobedtm.com</code> toevoegen aan de lijst met domeinen.</li></ul></p> <p>De vraag aan <span class="codeph"> demdex.net</span> domein wordt gebruikt om <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies en de Dienst van de Identiteit van de Experience Cloud te produceren </a> en voor de syncs van identiteitskaart. Zie ook, <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> het Begrijpen Vraag aan het Domein van de Index</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-insteekmodule</b> </p> </td> 
  <td colname="col2"> <p>Wijzig uw CSP om *.adobe.com te omvatten. **Opmerking**: Als er al Activity Map is geïnstalleerd vóór januari 2020, wordt er een eerste aanvraag voor *.omniture.com weergegeven in uw browser, maar wordt deze omgeleid naar *.adobe.com. </p></td> 
