@@ -3,10 +3,10 @@ description: De versies van de eigenschap, updates, of veranderingen in de Diens
 keywords: ID-service
 title: Opmerkingen bij de release 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 3%
+source-wordcount: '744'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 
-Deze wijzigingen worden ook vastgelegd in de [Experience Cloud Release-notities](https://docs.adobe.com/content/help/nl-NL/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de [Experience Cloud Release-notities](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Oplossing voor een probleem dat ertoe leidde dat de id-service redundante server
 
 **Nieuwe documentatie**
 
-[Het gebruiken van DNS Prefetch met Verschillende Oplossingen en de Diensten van Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[Het gebruiken van DNS Prefetch met Verschillende Oplossingen en de Diensten van Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versie 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
