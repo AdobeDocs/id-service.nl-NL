@@ -3,9 +3,9 @@ description: Met deze implementatie kunnen klanten de id-service gebruiken op ap
 keywords: ID-service
 title: Directe integratie met de Experience Cloud Identity Service
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Apparaten die de VisitorAPI.js of SDK codebibliotheken niet kunnen gebruiken kun
 
 ![](assets/directSyntax.png)
 
-In dit syntaxisvoorbeeld, identificeert het `d_` prefix de zeer belangrijk-waardeparen in de vraag als systeem-vlakke variabele. U kunt vrij een paar parameters `d_` tot de dienst van identiteitskaart overgaan, maar blijven geconcentreerd op de zeer belangrijk-waardeparen zoals aangetoond in de code hierboven. Zie [Ondersteunde kenmerken voor DCS API-aanroepen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html) voor meer informatie over andere variabelen.
+In dit syntaxisvoorbeeld, identificeert het `d_` prefix de zeer belangrijk-waardeparen in de vraag als systeem-vlakke variabele. U kunt vrij een paar parameters `d_` tot de dienst van identiteitskaart overgaan, maar blijven geconcentreerd op de zeer belangrijk-waardeparen zoals aangetoond in de code hierboven. Zie [Ondersteunde kenmerken voor DCS API-aanroepen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html) voor meer informatie over andere variabelen.
 
 De id-service ondersteunt HTTP- en HTTPS-aanroepen. Gebruik HTTPS om gegevens van een beveiligde pagina door te geven.
 
@@ -57,7 +57,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Een bestaand domein dat wordt beheerd door <span class="keyword"> Adobe</span>. Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Inzicht in calls naar het Demdex-domein</a>. </p> </td> 
+   <td colname="col2"> <p>Een bestaand domein dat wordt beheerd door <span class="keyword"> Adobe</span>. Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Inzicht in calls naar het Demdex-domein</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Gebied IDs, Locaties, en de Namen van de Gastheer</a>. </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Gebied IDs, Locaties, en de Namen van de Gastheer</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
