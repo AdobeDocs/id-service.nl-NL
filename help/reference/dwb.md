@@ -1,28 +1,24 @@
 ---
 description: Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
-keywords: ID Service
-seo-description: Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
-seo-title: Data Workbench en Experience Cloud Identity Service
+keywords: ID-service
 title: Data Workbench en Experience Cloud Identity Service
-uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '208'
 ht-degree: 3%
 
 ---
 
-
-# Data Workbench en Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench en de Experience Cloud Identiteitsdienst {#data-workbench-and-the-experience-cloud-id-service}
 
 Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
 
-Zo werkt u de [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) bij om de id-service te gebruiken:
+[Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) bijwerken om de id-service te gebruiken:
 
-1. Zoek het huidige configuratiebestand voor de [decodergroep](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) .
+1. Zoek het huidige [Decoderingsbestand](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html).
 
-   De [!DNL Decoder Group] locatie bevindt zich doorgaans in een [!UICONTROL Profile Manager] pad op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
+   De [!DNL Decoder Group] bevindt zich gewoonlijk in een [!UICONTROL Profile Manager] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
 1. Plak de decoderingsindeling onder het origineel.
 1. Open de decoderingsindeling en voeg de volgende nieuwe veldposities toe aan het einde van de lijst:
 
@@ -831,4 +827,3 @@ Log Processing Include = LogProcessingInclude:
   Stage = string: Default
   Transformations = vector: 0 items
 ```
-
