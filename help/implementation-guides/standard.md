@@ -3,9 +3,9 @@ description: Oudere implementaties gebruiken Dynamic Tag Management (DTM) om de 
 keywords: ID-service
 title: Implementatie met dynamisch tagbeheer
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1974'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ mcvid-dtm-implement.xml
 
    Na het opslaan wordt de id-service ingesteld als een hulpprogramma in DTM. Het is echter nog niet gebruiksklaar. Uw DTM-tool moet nog steeds het publicatie-/goedkeuringsproces van DTM doorlopen en u kunt aanvullende parameters configureren. Voor informatie over de extra parameters u aan DTM kunt toevoegen, zie [Experience Cloud Montages van de Dienst van de Identiteit voor DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
-## Experience Cloud Identiteitsservice-instellingen voor DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
+## Experience Cloud Identity Service Settings voor DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
 Beschrijft de [!UICONTROL Organization ID], [!UICONTROL General] en [!UICONTROL Customer Settings] gebieden en hoe zij door de [!DNL Experience Cloud] dienst van identiteitskaart worden gebruikt.
 
@@ -171,7 +171,7 @@ Met deze velden kunt u [functievariabelen](../library/function-vars/function-var
 >
 >Stel hier de variabele `cookieDomain` in. Dit is vereist voor domeinen van het bovenste niveau met meerdere delen, waarbij een van de laatste twee delen van de URL uit meer dan twee tekens bestaat. Zie de hierboven verbonden documentatie van de Variabelen van de Configuratie.
 
-## Klanteninstellingen {#section-238d1272c1504d148fe38fb0ae5d71c2}
+## Klantinstellingen {#section-238d1272c1504d148fe38fb0ae5d71c2}
 
 Extra velden waarmee u een integratiecode of een geverifieerde statusstatus kunt toevoegen.
 
@@ -179,7 +179,7 @@ Extra velden waarmee u een integratiecode of een geverifieerde statusstatus kunt
 
 **Integratiecode**
 
-Een integratiecode is een unieke, door de klant opgegeven id. De integratiecode zou de waarde moeten bevatten u aan [creeerde een gegevensbron](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager] gebruikte.
+Een integratiecode is een unieke, door de klant opgegeven id. De integratiecode zou de waarde moeten bevatten u aan [creeerde een gegevensbron](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager] gebruikte.
 
 **Value**
 
@@ -189,7 +189,7 @@ De waarde moet een gegevenselement zijn dat de gebruikers-id bevat. Gegevenselem
 
 Opties die bezoekers definiëren of identificeren op basis van hun verificatiestatus (bijvoorbeeld aangemeld, afgemeld). Zie [Klantnamen en verificatiestatus](../reference/authenticated-state.md).
 
-## Test en verifieer de Experience Cloud Identiteitsdienst {#concept-644fdbef433b46ba9c0634ac95eaa680}
+## De Experience Cloud Identity Service testen en verifiëren {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van identiteitskaart behoorlijk werkt. Deze tests zijn van toepassing op de dienst van identiteitskaart in het algemeen en voor verschillende de dienstcombinaties van identiteitskaart en [!DNL Experience Cloud] oplossingscombinaties.
 
@@ -197,7 +197,7 @@ Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van
 mcvid-test-verify.xml
 -->
 
-## Voordat u {#section-b1e76ad552ed4eb793b6e521a55127d4} begint
+## Voordat u begint {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
 Belangrijke informatie die u moet weten voordat u de id-service gaat testen en controleren.
 
@@ -211,7 +211,7 @@ U kunt de id-service ook testen in een anonieme of incognito-browsersessie. In e
 
 Met [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) en [Charles HTTP proxy](https://www.charlesproxy.com/) kunt u bepalen of de id-service is geconfigureerd om correct te werken met Analytics. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
-## Testen met Adobe-foutopsporing {#section-861365abc24b498e925b3837ea81d469}
+## Testen met Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
 Uw de dienstintegratie wordt gevormd behoorlijk wanneer u [!DNL Experience Cloud ID] (MID) in [!DNL Adobe] debugger reactie ziet. Zie [Cookies en de Dienst van de Identiteit van de Experience Cloud](../introduction/cookies.md) voor meer informatie over MID.
 
@@ -246,7 +246,7 @@ Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/
 * Retourneert geen MID.
 * Keert een foutenmelding terug die erop wijst dat uw partneridentiteitskaart niet provisioned is.
 
-## Testen met de proxy {#section-d9e91f24984146b2b527fe059d7c9355} van Charles HTTP
+## Testen met de proxy Charles HTTP {#section-d9e91f24984146b2b527fe059d7c9355}
 
 Om de status van de dienst van identiteitskaart met Charles te verifiëren:
 
