@@ -3,9 +3,9 @@ description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de 
 keywords: ID-service
 title: Vereisten voor de Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '731'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de diensten, en de codeversies gebruikt die door de Dienst van de Identiteit van de Experience Cloud worden vereist.
 
-## Vereisten zorgen ervoor dat de implementatie is gelukt en ondersteuning {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
+## Vereisten zorgen voor een succesvolle implementatie en ondersteuning {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
 Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codevereisten en volgt de instructies zoals deze worden weergegeven in de [!DNL Adobe] Help. Een niet-ondersteunde implementatie levert onverwachte resultaten op en voorkomt dat de klantenservice en onze technische teams u helpen bij het oplossen van problemen met de id-service.
 
@@ -79,7 +79,7 @@ Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor [!DNL Exper
 
 ## Analysevereisten: Regionale gegevensverzameling (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle trackingservers zijn omgezet in RDC, zodat de Analytics tracking-server niet hoeft te worden gewijzigd. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle trackingservers zijn omgezet in RDC, zodat de Analytics tracking-server niet hoeft te worden gewijzigd. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)
 
 ## Codebibliotheken en versievereisten {#section-ad7542a4317d430fa79fc6b095beb84d}
 

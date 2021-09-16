@@ -2,9 +2,9 @@
 description: De rol van de Experience Cloud Identity Service in de Adobe Experience Cloud.
 title: Overzicht van Experience Cloud ID-service
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Wanneer uw organisatie de id-service implementeert, kunt u met deze id dezelfde 
 
 Ook, kan de dienst van identiteitskaart de verschillende oplossing-specifieke IDs (b.v., Analytics HULP) vervangen. En via de [Klanten-id&#39;s en verificatiestatus](/help/reference/authenticated-state.md)-functionaliteit kunt u met de id-service uw eigen klant-id&#39;s doorgeven aan de Experience Cloud. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u al bent geabonneerd. Het zal geen toegang tot andere producten verlenen als u niet voor hen wordt geregistreerd.
 
-De id-service is een integraal onderdeel van vele huidige en toekomstige functies, verbeteringen en services voor Experience Cloud. Momenteel, steunt de dienst van identiteitskaart [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html), en [Doel](http://www.adobe.com/marketing-cloud/testing-targeting.html). En dit is vereist als u wilt deelnemen aan de Adobe Experience Cloud Device Co-op. Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen. Voor meer informatie over het belang en de rol van de dienst van identiteitskaart, zie [Waarom de Dienst van de Identiteit van de Experience Cloud op Uw Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/) zou moeten zijn.
+De id-service is een integraal onderdeel van vele huidige en toekomstige functies, verbeteringen en services voor Experience Cloud. Momenteel, steunt de dienst van identiteitskaart [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html), en [Doel](http://www.adobe.com/marketing-cloud/testing-targeting.html). En dit is vereist als u wilt deelnemen aan de Adobe Experience Cloud Device Co-op. Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen.
 
 ## Overzicht van functies
 
