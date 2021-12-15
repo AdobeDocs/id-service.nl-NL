@@ -5,16 +5,15 @@ user-guide-title: Help bij Experience Cloud Identity Service
 breadcrumb-title: Identiteitsservicehandleiding
 user-guide-description: De id-service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het kan de generatiecode van identiteitskaart voor de diensten zoals Analytics, Audience Manager, Doel, en andere oplossingen of eigenschappen van Experience Cloud vervangen.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '394'
 ht-degree: 8%
 
 ---
 
 
-# Help bij Experience Cloud-identiteitsservice {#using}
+# Help bij Experience Cloud Identity Service {#using}
 
 + [Help bij ID-service](home.md)
 + Overzicht {#intro}
@@ -26,8 +25,7 @@ ht-degree: 8%
 + Implementatie {#implementation}
    + [Implementatiemethoden](implementation-guides/implementation-methods.md)
    + [Implementatiehandleidingen](implementation-guides/implementation-guides.md)
-   + [Implementeren met Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementatie met DTM](implementation-guides/standard.md)
+   + [Implementeren met Experience Platform-tags](implementation-guides/ecid-implement-with-launch.md)
    + [Implementeren voor analyse](implementation-guides/setup-analytics.md)
    + [Implementeren voor doel](implementation-guides/setup-target.md)
    + [Implementeren voor analyse en Audience Manager](implementation-guides/setup-aam-analytics.md)
@@ -36,7 +34,7 @@ ht-degree: 8%
    + [Directe integratie met de Dienst van identiteitskaart](implementation-guides/direct-integration.md)
    + [Gebruiksscenario&#39;s voor directe integratie](implementation-guides/direct-integration-examples.md)
    + [De Dienst van identiteitskaart testen en verifiëren](implementation-guides/test-verify.md)
-   + Opt-in service {#opt-in-service}
+   + Opt-in-service {#opt-in-service}
       + [Overzicht van de OpenService](implementation-guides/opt-in-service/optin-overview.md)
       + [Opt-in-service instellen](implementation-guides/opt-in-service/getting-started.md)
       + [Opt-in-service valideren](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
@@ -68,8 +66,8 @@ ht-degree: 8%
       + [secureCookie](library/function-vars/securecookie.md)
       + [useCORSOnly](library/function-vars/use-cors-only.md)
       + [whitelistParentDomain en whitelistIframeDomains](library/function-vars/whitelistdomain.md)
-   + Methods {#methods}
-      + [Methods](library/get-set/get-set.md)
+   + Methoden {#methods}
+      + [Methoden](library/get-set/get-set.md)
       + [appendSupplementalDataIDTo](library/get-set/appendsupplementaldataidto.md)
       + [appendVisitorIDsTo (Cross-Domain Tracking)](library/get-set/appendvisitorid.md)
       + [callTimeOut Methods](library/get-set/timeout-functions.md)
@@ -95,7 +93,7 @@ ht-degree: 8%
       + [Analyses en identiteitsverzoeken](reference/analytics-reference/legacy-analytics.md)
       + [Implementatie aan de serverzijde gemengd met JavaScript](reference/analytics-reference/server-side.md)
       + [De uitstelperiode voor de id-service](reference/analytics-reference/grace-period.md)
-   + [Wijzigingen in de Google Chrome SameSite-labels](reference/chrome-samesite-labelling.md)
+   + [Wijzigingen in Google Chrome SameSite-labels](reference/chrome-samesite-labelling.md)
    + [Het Beleid van de Veiligheid van de inhoud en de Dienst van identiteitskaart](reference/csp.md)
    + [COPPA-ondersteuning in de id-service](reference/coppa.md)
    + [CORS-ondersteuning in de id-service](reference/cors.md)
