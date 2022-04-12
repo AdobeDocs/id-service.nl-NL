@@ -3,9 +3,9 @@ description: Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïden
 keywords: volgorde van activiteiten;ID-service
 title: Overzicht van CNAME-implementatie
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
-source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
+source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,4 +16,4 @@ De implementaties van CNAME staan u toe om het inzamelingsdomein aan te passen d
 
 Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
-Bovendien staat de implementaties van CNAME u toe om te specificeren **[!UICONTROL Choose custom RDC type]** Hiermee bepaalt u waar de treffers van de gebruikers in eerste instantie worden gerouteerd. De meeste klanten gebruiken geen aangepaste RDC-typen.
+Bovendien staat de implementaties van CNAME u toe om [een aangepast RDC-type kiezen](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en) Hiermee bepaalt u waar de treffers van de gebruikers in eerste instantie worden gerouteerd. De meeste klanten gebruiken geen aangepaste RDC-typen.
