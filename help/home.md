@@ -3,9 +3,9 @@ description: 'De Experience Cloud Identity Service biedt een universele, permane
 keywords: ID-service
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '261'
 ht-degree: 18%
 
 ---
@@ -27,7 +27,6 @@ De Adobe Experience Cloud Identity Service (ID-service) biedt een universele, pe
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Inschakelen van service</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
       <li id="li_9E512C6DD15C46C3ABD06ACD60D97E4A"> <a href="faq-intro/faq-intro.md" format="dita" scope="local">Veelgestelde vragen </a> </li> 
-      <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
      <!-- 

@@ -3,18 +3,18 @@ description: De versies van de eigenschap, updates, of veranderingen in de Diens
 keywords: ID-service
 title: Opmerkingen bij de release 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
-# Opmerkingen bij de release van 2017 {#release-notes}
+# Opmerkingen bij de release 2017 {#release-notes}
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 
-Deze wijzigingen worden ook vastgelegd in de [Experience Cloud Release-notities](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de [Opmerkingen bij de release Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -50,30 +50,30 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Oplossing voor een Chrome-gerelateerde fout die ervoor zorgde dat de id-service een fout genereerde wanneer op de knop Vorige in die browser werd geklikt.
 * De dienst van identiteitskaart hervat nu de syncs van identiteitskaart wanneer gebied identiteitskaart in de reactie van de gebeurtenisvraag verandert.
-* Toegevoegde nieuwe documentatie, [Het Beleid van de Veiligheid van de Inhoud en de Dienst van de Identiteit van de Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), die verklaart hoe te whitelist vraag aan Adobe domeinen die door de dienst van identiteitskaart worden gebruikt.
+* Toegevoegde nieuwe documentatie, [Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), dat verklaart hoe te whitelist vraag aan Adobe domeinen die door de dienst van identiteitskaart worden gebruikt.
 
-## Versie 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+<!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-augustus 2017
+August, 2017
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Functie </th> 
-   <th colname="col2" class="entry"> Beschrijving </th> 
+   <th colname="col1" class="entry"> Feature </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>Een optionele, Booleaanse configuratie die bepaalt of de id-service gegevens naar de Adobe Experience Cloud Device Co-op verzendt (of niet verzendt). Zie <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Herziene documentatie**
+**Revised Documentation**
 
-Bijgewerkt en herzien [Veelgestelde vragen](/help/faq-intro/faq-intro.md) om afzonderlijke Veelgestelde vragen voor verschillende [!DNL Experience Cloud] oplossingen op te nemen.
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. -->
 
 ## Versie 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -89,7 +89,7 @@ juli 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sdidParamExpiry</span> </p> </td> 
-   <td colname="col2"> <p>Wanneer toegevoegd aan de functie <span class="codeph"> Visitor.getInstance</span>, laat deze configuratie u het standaard Extra interval van de Vervaltijd van Gegevens van identiteitskaart (SDID) met voeten treden wanneer het overgaan van die identiteitskaart van één pagina aan een andere. U zou <span class="codeph"> sdidParamExpiry</span> met de <span class="codeph"> appendSupplimentalDataTo</span> hulpfunctie gebruiken. Zie <a href="../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458" format="dita" scope="local"> sdidParamExpiry</a>. </p> </td> 
+   <td colname="col2"> <p>Wanneer toegevoegd aan de <span class="codeph"> Visitor.getInstance</span> functie, laat deze configuratie u het standaard Supplemental interval van Gegevens - identiteitskaart (SDID) met voeten treden wanneer het overgaan van die identiteitskaart van één pagina aan een andere. U kunt <span class="codeph"> sdidParamExpiry</span> met de <span class="codeph"> appendSupplimentalDataTo</span> helperfunctie. Zie <a href="../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458" format="dita" scope="local"> sdidParamExpiry</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> resetState</span> </p> </td> 
@@ -116,7 +116,7 @@ Releasedatum: Juni 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain en whitelistIframeDomains  </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain en whitelistIframeDomains </a> </p> </td> 
    <td colname="col2"> <p>Deze configuraties laten verschillende instanties van de de dienstcode van identiteitskaart die in een iFrame en op de ouderpagina wordt uitgevoerd met elkaar communiceren. Zij worden ontworpen helpen problemen met 2 specifieke gebruiksgevallen oplossen waar u of niet de ouderpagina/het domein kunt controleren en u hebt de dienstcode van identiteitskaart die in iFrame van een domein laadt dat u controle hebt. </p> </td> 
   </tr> 
  </tbody> 
@@ -134,7 +134,7 @@ Releasedatum: Juni 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../faq-intro/faq.md" format="dita" scope="local"> Veelgestelde vragen </a> </p> </td> 
-   <td colname="col2"> <p>De sectie <span class="keyword"> Analytics</span> is bijgewerkt met informatie over het zoeken naar informatie over de trackingserver. </p> </td> 
+   <td colname="col2"> <p>De <span class="keyword"> Analyse</span> met informatie over het zoeken naar informatie over de trackingserver. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,12 +150,12 @@ Releasedatum: Juni 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md#reference-8ad017b3e5d24d34b3da25e8f8a56196" format="dita" scope="local"> publiekManagerServer en publiekManagerServerSecure  </a> </p> </td> 
-   <td colname="col2"> <p>Toegevoegde verbindingen aan <span class="keyword"> Audience Manager</span> documentatie die vraag aan <span class="codeph"> demdex.net</span> domein beschrijft. </p> </td> 
+   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md#reference-8ad017b3e5d24d34b3da25e8f8a56196" format="dita" scope="local"> publiekManagerServer en publiekManagerServerSecure </a> </p> </td> 
+   <td colname="col2"> <p>Koppelingen toegevoegd aan <span class="keyword"> Audience Manager</span> documentatie die vraag aan <span class="codeph"> demdex.net</span> domein. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Identiteitssynchronisatie en gelijke Tarieven begrijpen  </a> </p> </td> 
-   <td colname="col2"> <p>Herzien <span class="keyword"> Media Optimizer</span> sectie om de vraag aan <span class="codeph"> cm.eversttech.net</span> te beschrijven. Dit is de automatische synchronisatie van identiteitskaart die de dienst van identiteitskaart met <span class="keyword"> Media Optimizer</span> uitvoert. Deze functie is gepubliceerd in januari 2017. Zie <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local"> Versie 2.0</a> hieronder. </p> </td> 
+   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Identiteitssynchronisatie en gelijke Tarieven begrijpen </a> </p> </td> 
+   <td colname="col2"> <p>Gereviseerd <span class="keyword"> Media optimaliseren</span> sectie om de vraag te beschrijven aan <span class="codeph"> cm.eversttech.net</span>. Dit is de automatische synchronisatie van id's waarmee de id-service werkt <span class="keyword"> Media optimaliseren</span>. Deze functie is gepubliceerd in januari 2017. Zie <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local"> Versie 2.0</a> hieronder. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -175,12 +175,12 @@ Releasedatum: februari 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID service-API-eigenschap, <span class="codeph"> idSyncContainerID</span></p> </td> 
-   <td colname="col2"> <p>This property sets the container ID used by <span class="keyword"> Audience Manager</span> for ID syncs. Zie <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
+   <td colname="col1"> <p> ID-service-API-eigenschap, <span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col2"> <p>Met deze eigenschap wordt de container-id ingesteld die wordt gebruikt door <span class="keyword"> Audience Manager</span> voor ID-syncs. Zie <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID-service-API-methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Deze openbare methode voegt <span class="wintitle"> Aanvullende identiteitskaart van Gegevens</span> (SDID) als parameter van het vraagkoord aan een omleidingsURL toe. Zie <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
+   <td colname="col2"> <p>Deze openbare methode voegt de <span class="wintitle"> Aanvullende gegevens-id</span> (SDID) als parameter voor queryreeksen naar een omleidings-URL. Zie <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -199,7 +199,7 @@ januari 2017
 
 >[!IMPORTANT]
 >
->Met de ID-servicecode v2.0 worden id&#39;s standaard automatisch gesynchroniseerd met Adobe Media Optimizer. Dit betekent u een vraag van de pagina aan `cm.eversttech.net` zult zien, die een erfenis [!DNL Media Optimizer] domein door [!DNL Adobe] wordt gecontroleerd. Zie ook [Id-synchronisatie en Identieke snelheden](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab) begrijpen.
+>Met de ID-servicecode v2.0 worden id&#39;s standaard automatisch gesynchroniseerd met Adobe Media Optimizer. Dit betekent u een vraag van de pagina aan zult zien `cm.eversttech.net`, een erfenis [!DNL Media Optimizer] domein bestuurd door [!DNL Adobe]. Zie ook: [Identiteitssynchronisatie en gelijke Tarieven begrijpen](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Oplossingen en verbeteringen**
 
@@ -207,6 +207,6 @@ januari 2017
 * Oplossing voor een probleem dat ervoor zorgde dat de id-service niet meteen kon mislukken als een bezoeker een advertentieblokker had ingeschakeld en die blokker was geconfigureerd om het domein demdex.net uit te sluiten. Dit is een zeldzame en ongebruikelijke bug omdat de meeste hulpmiddelen voor het blokkeren van advertenties het domein demdex.net niet blokkeren. (MCID-233)
 * Oplossing voor een bug die werd veroorzaakt door interacties tussen ID-servicecode en een aangepast script op de website van een klant. Hierdoor kon Internet Explorer 9 geen webpagina&#39;s laden. (MCID-206)
 
-## Eerdere jaren {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Vorige jaren {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Opmerkingen bij de release van oudere id-services.

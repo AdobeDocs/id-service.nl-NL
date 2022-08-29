@@ -5,10 +5,10 @@ user-guide-title: Help bij Experience Cloud Identity Service
 breadcrumb-title: Identiteitsservicehandleiding
 user-guide-description: De id-service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het kan de generatiecode van identiteitskaart voor de diensten zoals Analytics, Audience Manager, Doel, en andere oplossingen of eigenschappen van Experience Cloud vervangen.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 121fde9981e85da6cc56eec35fc931d6040356d7
+source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 8%
+source-wordcount: '398'
+ht-degree: 7%
 
 ---
 
@@ -57,7 +57,6 @@ ht-degree: 8%
       + [idSyncAttachIframeOnWindowLoad](library/function-vars/idsyncattachiframeonwindowload.md)
       + [idSyncContainerID](library/function-vars/idsyncontainerid.md)
       + [idSyncSSLUseAkamai](library/function-vars/idsyncssluseakamai.md)
-      + [isCoopSafe](library/function-vars/coopsafe.md)
       + [loadTimeout](library/function-vars/loadtimeout.md)
       + [overwriteCrossDomainMCIDAndAID](library/function-vars/overwrite-visitor-id.md)
       + [resetBeforeVersion](library/function-vars/resetbeforeversion.md)
