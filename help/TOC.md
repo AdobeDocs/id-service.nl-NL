@@ -3,11 +3,11 @@ cloud: platform-cloud
 audience: end-user
 user-guide-title: Help bij Experience Cloud Identity Service
 breadcrumb-title: Identiteitsservicehandleiding
-user-guide-description: De id-service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het kan de generatiecode van identiteitskaart voor de diensten zoals Analytics, Audience Manager, Doel, en andere oplossingen of eigenschappen van Experience Cloud vervangen.
+user-guide-description: De Adobe Experience Cloud Identity Service biedt een universele, permanente id die uw bezoekers identificeert voor alle oplossingen in de Experience Cloud. Het helpt verouderde de genereringscode van identiteitskaart voor de oplossingen en de diensten van Experience Cloud vervangen.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
+source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '393'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 # Help bij Experience Cloud Identity Service {#using}
 
-+ [Help bij ID-service](home.md)
++ [Help bij Identiteitsservice](home.md)
 + Overzicht {#intro}
    + [Overzicht](introduction/overview.md)
    + [Over de id-service](introduction/about-id-service.md)
