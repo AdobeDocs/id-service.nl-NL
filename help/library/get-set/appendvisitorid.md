@@ -3,9 +3,9 @@ description: Met deze functie kunt u de Experience Cloud-id van een bezoeker in 
 keywords: ID-service
 title: appendVisitorIDsTo (Cross-Domain Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Om dit probleem te helpen oplossen, implementeert u ` Visitor.appendVisitorIDsTo
 Zie het codevoorbeeld voor meer informatie.
 
 ## Voorbeeld van code bezoeker-id toevoegen {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>Als u wilt dat de waarden die via appendVisitorsIDsTo in de URL zijn doorgegeven, worden opgehaald, [OvewriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
 Aan de slag met het volgende voorbeeld ` Visitor.appendVisitorIDsTo( *`url`*)`. Wanneer uw JavaScript-code correct is geïmplementeerd, kan deze er ongeveer als volgt uitzien.
 
