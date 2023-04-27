@@ -2,10 +2,10 @@
 description: Sluit het Platform voor beheer van toestemming (CMP) aan op de plug-in voor Audience Manager van de plug-in Opt-in voor IAB Transparency and Consent Framework (TCF).
 title: Het gebruiken van Opt-in de Diensten met IAB Kader
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Nadat de instellingen correct zijn geconfigureerd, worden ECID- en DIL-bibliothe
 
 >[!IMPORTANT]
 >
->Audience Manager heeft toestemming nodig voor *Doelstelling 1 en Doelstelling 10, plus instemming van de leverancier* om cookies te implementeren en id-syncs te initiëren of te respecteren. Meer informatie over de IAB TCF-plug-in van de Opt-in in de documentatie van de Audience Manager [hier](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
+>Audience Manager heeft toestemming nodig voor *Doelstelling 1 en Doelstelling 10, plus instemming van de leverancier* om cookies te implementeren en id-syncs te initiëren of te respecteren. Meer informatie over de IAB TCF-plug-in van de Opt-in in de documentatie van de Audience Manager [hier](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
 
 Voor meer informatie over het valideren van de TCF-plug-in van Opt-in, raadpleegt u het gebruik van case nr. 4 in de validatiehandleiding [hier](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 

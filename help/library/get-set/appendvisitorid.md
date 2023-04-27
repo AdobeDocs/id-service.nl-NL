@@ -3,9 +3,9 @@ description: Met deze functie kunt u de Experience Cloud-id van een bezoeker in 
 keywords: ID-service
 title: appendVisitorIDsTo (Cross-Domain Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ Zie het codevoorbeeld voor meer informatie.
 ## Voorbeeld van code bezoeker-id toevoegen {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 De volgende voorbeeldcode kan u helpen om aan de slag te gaan met `appendVisitorIDsTo` functie:
+
+>[!TIP]
+>
+>Deze code kan in de redacteur van de Code van de Douane worden geplaatst die deel van de uitbreiding van Adobe Analytics of bij de bovenkant van uitmaakt [AppMeturement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

@@ -3,10 +3,10 @@ description: Herzie deze sectie om ervoor te zorgen u de juiste oplossingen, de 
 keywords: ID-service
 title: Vereisten voor de Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codev
 
 ### Standaardimplementaties
 
-Zie [Experience Platform-tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) voor uw standaardimplementatie.
+Zie [Experience Platform-tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) voor uw standaardimplementatie.
 
 ### Niet-standaardimplementaties
 
@@ -48,7 +48,7 @@ Om de dienst van identiteitskaart te gebruiken, moet uw bedrijf voor worden toeg
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet zeker</b> </p> </td> 
-   <td colname="col2"> <p> Als u de <span class="keyword"> Experience Cloud</span> status, vraag wie uw Adobe-account beheert of leden van uw bedrijf zich kunnen aanmelden bij <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> een Adobe ID gebruiken. Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Zie de sectie "Beheerpagina" in <a href="https://docs.adobe.com/help/nl-NL/core-services/interface/experience-cloud.html" format="https" scope="external"> Experience Cloud-toediening</a>. </p> </td> 
+   <td colname="col2"> <p> Als u de <span class="keyword"> Experience Cloud</span> status, vraag wie uw Adobe-account beheert of leden van uw bedrijf zich kunnen aanmelden bij <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a> een Adobe ID gebruiken. Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Zie de sectie "Beheerpagina" in <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=en" format="https" scope="external"> Experience Cloud-toediening</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Niet ingeschakeld</b> </p> </td> 
@@ -96,12 +96,12 @@ De volgende secties geven een overzicht van de minimale codesversies die vereist
   </tr> 
   <tr> 
    <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html" format="https" scope="external"> Videohartslag 2.x voor JavaScript</a>. </p> </td> 
-   <td colname="col4"> <p>2,0 </p> </td> 
+   <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library</a> (DIL). </p> </td> 
-   <td colname="col4"> <p>5,0 </p></td> 
+   <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
@@ -110,7 +110,7 @@ De volgende secties geven een overzicht van de minimale codesversies die vereist
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external"> om.js Implementatie</a>. </p> </td> 
-   <td colname="col4"> <p>0,9,1 </p> </td> 
+   <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,10 +3,10 @@ description: De versies van de eigenschap, updates, of veranderingen in de Diens
 keywords: ID-service
 title: Opmerkingen bij de release 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +31,11 @@ Schakel het selectievakje Goedkeuring vóór aanmelding voor mediacontrole in de
 
 **Oplossingen, verbeteringen, verbeteringen**
 
-* We hebben een configuratieupdate uitgevoerd naar `cookieDomain`. De ECID-bibliotheek filtert nu de lege tekenreeks `cookieDomain` in `initConfig` uit en gebruikt het cookiedomein op het hoogste niveau, dat door de getDomain-methode wordt geretourneerd.
-* We hebben een fout met betrekking tot `getVisitorValues` opgelost in `localVisitor`.
-* We hebben een fout verholpen waarbij er een inconsistentie was voor de MCOPTOUT-waarde in de Safari-browser, geretourneerd door de `getVisitorValue`-methode.
-* We hebben de plug-in-bibliotheek bijgewerkt door `optIn.off` toe te voegen om het abonnement op gebeurtenissen op te zeggen.
-* We hebben een fout verholpen met betrekking tot de setTimeout-functie, waarbij `setTimeout` het Content Security Policy (CSP) op bepaalde klantsites heeft overtreden.
+* We hebben een configuratieupdate uitgevoerd naar `cookieDomain`. De ECID-bibliotheek filtert nu de lege tekenreeks uit `cookieDomain` in `initConfig` en gebruikt het cookiedomein op het hoogste niveau, dat door de methode getDomain is teruggekeerd.
+* We hebben een fout verholpen met betrekking tot `getVisitorValues` in `localVisitor`.
+* We hebben een bug opgelost waarbij er een inconsistentie was voor de MCOPTOUT-waarde in de Safari-browser, geretourneerd door de `getVisitorValue` methode.
+* We hebben de plug-in-bibliotheek bijgewerkt door het toevoegen van `optIn.off` om uw abonnement op gebeurtenissen op te zeggen.
+* We hebben een fout verholpen met betrekking tot de functie setTimeout, waarbij `setTimeout` overtreden het Beleid van de Veiligheid van de Inhoud (CSP) op sommige klantenplaatsen.
 
 ## Versie 4.3 {#version-4point3}
 
@@ -45,7 +45,7 @@ Schakel het selectievakje Goedkeuring vóór aanmelding voor mediacontrole in de
 
 ## Versie 4.1
 
-`publishDestinations` bijwerken per nieuwe API-wijziging. Met deze update kan de referentie-informatie van de pagina desgewenst worden weergegeven tijdens de id - synchronisatie.
+Bijwerken `publishDestinations` per nieuwe API-wijziging. Met deze update kan de referentie-informatie van de pagina desgewenst worden weergegeven tijdens de id - synchronisatie.
 
 ## Versie 4.2
 
@@ -55,15 +55,15 @@ Ondersteuning voor de plug-in Audience Manager voor IAB TCF, beschikbaar via het
 
 * IAB + OptIn krijgt geen MID voor het reviseren van klanten.
 * Correctie van bug met betrekking tot de plug-in-configuratie OptInApply in DTM.
-* De optie ECID-uitschakelt ID-syncs.
+* De ECID-optie om te weigeren schakelt id-syncs uit.
 
 ## Versie 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Inschakelen**. Inschakelen is een uitbreiding van de Experience Cloud-id (ECID) waarmee u kunt bepalen of (en welke) Experience Cloud-bibliotheken cookies kunnen maken op webpagina&#39;s voor bezoekers. Gebruikend [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), kunt u het verzamelen van bezoekersopt-in toestemmingen voor de oplossing van de Experience Cloud vereenvoudigen door Analytics, Doel, Audience Manager, en andere of allen toe te laten selecteren Experience Cloud oplossingen aan opt-in aan uw systeem van het toestemmingsbeheer.
+**Inschakelen van service**. Inschakelen is een uitbreiding van de Experience Cloud-id (ECID) waarmee u kunt bepalen of (en welke) Experience Cloud-bibliotheken cookies kunnen maken op webpagina&#39;s voor bezoekers. Gebruiken [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl), kunt u het verzamelen van bezoekersopt-in toestemmingen voor de oplossing van de Experience Cloud vereenvoudigen door Analytics, Doel, Audience Manager, en andere of allen uitgezochte oplossingen van de Experience Cloud toe te laten om aan uw systeem van het toestemmingsbeheer te kiezen.
 
 ## Versie 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
 | Item | Beschrijving |
 |---|---|
-| `disableIdSyncs` markering werkt niet wanneer een tekenreeks wordt doorgegeven. | Vast. Waarden die zijn ingesteld op de parameter `disableidSyncs` voor de functie `getInstance` worden nu gerespecteerd. |
+| `disableIdSyncs` markering werkt niet wanneer een tekenreeks wordt doorgegeven. | Vast. Waarden ingesteld op `disableidSyncs` parameter for `getInstance` de functie wordt nu gerespecteerd . |
 | iFrames van derden die geen ECID krijgen | ECID voor Safari Mobil en ECIDs in diverse iFrames verholpen die niet werkten. |

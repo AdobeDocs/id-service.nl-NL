@@ -5,9 +5,9 @@ solution: Experience Cloud
 title: Implementatiehandleidingen
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
+source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Instructies en codevoorbeelden voor standaard en niet-standaard implementaties v
 
 ## Standaardimplementatie
 
-Een standaardimplementatie [Adobe Exprience Platform launch](https://experienceleague.adobe.com/docs/launch/using/home.html) om u te helpen met de dienst van identiteitskaart beginnen en het met andere oplossingen van Experience Cloud integreren. Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
+Een standaardimplementatie [Adobe Exprience Platform launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) om u te helpen met de dienst van identiteitskaart beginnen en het met andere oplossingen van Experience Cloud integreren. Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
 
 ## Implementatiebronnen
 
