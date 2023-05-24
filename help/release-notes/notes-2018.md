@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release van 2018 {#release-notes}
+# Opmerkingen bij de release 2018 {#release-notes}
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
 

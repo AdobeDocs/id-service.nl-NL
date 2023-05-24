@@ -21,4 +21,4 @@ ID-servicefuncties of -functionaliteit die uniek zijn voor Adobe Analytics.
 + [Analyses en Experience Cloud-id-verzoeken](legacy-analytics.md)
 + [Implementatie aan de serverzijde gemengd met JavaScript](server-side.md)
 + [De uitstelperiode voor de id-service](grace-period.md)
-<!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

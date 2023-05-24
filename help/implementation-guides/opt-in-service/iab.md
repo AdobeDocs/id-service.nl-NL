@@ -4,8 +4,8 @@ title: Het gebruiken van Opt-in de Diensten met IAB Kader
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
 

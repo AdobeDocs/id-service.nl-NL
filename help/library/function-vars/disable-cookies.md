@@ -18,9 +18,9 @@ Een optionele, Booleaanse vlag die voorkomt dat de Experience Cloud Identity Ser
 >
 >Deze configuratie was `idSyncDisable3rdPartySyncing` en hernoemd naar `disableThirdPartyCookies` in de release van 18 januari 2018 van v3.0.
 
-**Syntaxis:** `disableThirdPartyCookies: true|false` (standaardwaarde is  `false`.) Voor `VisitorAPI.js` v3.0.0 of hoger.
+**Syntaxis:** `disableThirdPartyCookies: true|false` (standaard is `false`.) Voor `VisitorAPI.js` v3.0.0 of hoger.
 
-Wanneer `disableThirdPartyCookies: true`, de dienst van identiteitskaart niet de derde terugkeert, demdex.net koekje (zie [Cookies en de Dienst van de Identiteit van de Experience Cloud](../../introduction/cookies.md)). Als een sitebezoeker deze cookie al in zijn browser heeft, gebruikt de id-service deze niet om een nieuwe Experience Cloud-id (MID) te maken of een bestaande id te retourneren. In plaats daarvan maakt de id-service een nieuwe, willekeurige id in het cookie van de eerste partij. Zodra toegelaten, kunt u gegevens met de dienst van identiteitskaart verzamelen en het over verschillende oplossingen van Experience Cloud delen.
+Wanneer `disableThirdPartyCookies: true`, retourneert de id-service niet het cookie demdex.net van de derde (zie [Cookies en de Experience Cloud Identity Service](../../introduction/cookies.md) ). Als een sitebezoeker deze cookie al in zijn browser heeft, gebruikt de id-service deze niet om een nieuwe Experience Cloud-id (MID) te maken of een bestaande id te retourneren. In plaats daarvan maakt de id-service een nieuwe, willekeurige id in het cookie van de eerste partij. Zodra toegelaten, kunt u gegevens met de dienst van identiteitskaart verzamelen en het over verschillende oplossingen van Experience Cloud delen.
 
 **Codevoorbeeld**
 

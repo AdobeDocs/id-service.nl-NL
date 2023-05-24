@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Hiermee wordt opgegeven of de doelpublicatiesjabloon Akamai moet gebruiken voor HTTPS-verbindingen.
 
-De `idSyncSSLUseAkamai` configuratie wordt toegelaten op een per-partnerbasis.
+De `idSyncSSLUseAkamai` de configuratie wordt toegelaten op een per-partnerbasis.
 
 **Syntaxis:** `idSyncSSLUseAkamai: true`
 

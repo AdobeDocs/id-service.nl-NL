@@ -16,13 +16,13 @@ Met deze configuratie kunt u het standaardvervalinterval voor aanvullende gegeve
 
 **De time-out voor SDID overschrijven**
 
-Als u de standaardtime-out van de SDID moet wijzigen, voegt u `sdidParamExpiry` toe aan de functie `Visitor.getInstance` met de volgende syntaxis:
+Als u de standaard-SDID-time-out moet wijzigen, voegt u `sdidParamExpiry` aan de `Visitor.getInstance` gebruiken met de volgende syntaxis:
 
 **Syntaxis:** ` sdidParamExpiry: *`tijd in seconden`*`
 
 **Codevoorbeeld**
 
-Wanneer gevormd, kon uw de dienstcode van identiteitskaart aan deze steekproef gelijkaardig kijken. In dit voorbeeld wordt de SDID-time-out ingesteld op 15 seconden. Deze configuratie werkt met de hulpmethode [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
+Wanneer gevormd, kon uw de dienstcode van identiteitskaart aan deze steekproef gelijkaardig kijken. In dit voorbeeld wordt de SDID-time-out ingesteld op 15 seconden. Deze configuratie werkt met de [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) helpermethode.
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

@@ -30,15 +30,15 @@ De volgende tabel bevat een overzicht en beschrijving van de reacties die door d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> true</span> </p> </td> 
-   <td colname="col2"> <p>De id-service kan geen id ontvangen van de Experience Cloud<span class="keyword">-server. </span> Het leidde tot lokale MID, in browser (cliënt-kant). </p> </td> 
+   <td colname="col2"> <p>De id-service kan geen id van de <span class="keyword"> Experience Cloud</span> server. Het leidde tot lokale MID, in browser (cliënt-kant). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> false</span> </p> </td> 
-   <td colname="col2"> <p>De id-service heeft een id ontvangen van de Experience Cloud<span class="keyword">-server.</span> </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart ontving een MID van <span class="keyword"> Experience Cloud</span> server. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> null</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart deed geen vraag aan de <span class="keyword"> Experience Cloud</span> server. </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart deed geen vraag aan <span class="keyword"> Experience Cloud</span> server. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -18,23 +18,23 @@ Inhoud:
 
 <ul class="simplelist"> 
  <li> <a href="../../library/get-set/getvisitorvalues.md#section-5aebe3907b2b46e997f45a1d1ed35c09" format="dita" scope="local"> Syntaxis </a> </li> 
- <li> <a href="../../library/get-set/getvisitorvalues.md#section-36a31683558742a5915db3a391e09f7b" format="dita" scope="local"> Hoofdlettergebruik 1: De standaardgegevensset aanvragen  </a> </li> 
- <li> <a href="../../library/get-set/getvisitorvalues.md#section-467b2f4e513344c89b7332b05f6f59f3" format="dita" scope="local"> Hoofdlettergebruik 2: Een aangepaste gegevensset aanvragen  </a> </li> 
- <li> <a href="../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5" format="dita" scope="local"> Responsparameters gedefinieerd  </a> </li> 
+ <li> <a href="../../library/get-set/getvisitorvalues.md#section-36a31683558742a5915db3a391e09f7b" format="dita" scope="local"> Hoofdlettergebruik 1: De standaardgegevensset aanvragen </a> </li> 
+ <li> <a href="../../library/get-set/getvisitorvalues.md#section-467b2f4e513344c89b7332b05f6f59f3" format="dita" scope="local"> Hoofdlettergebruik 2: Een aangepaste gegevensset aanvragen </a> </li> 
+ <li> <a href="../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5" format="dita" scope="local"> Responsparameters gedefinieerd </a> </li> 
 </ul>
 
 ## Syntaxis {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-Deze functie gebruikt de volgende syntaxis (cursief staat voor een tijdelijke aanduiding voor een variabele): ` var *`waarden`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID-type`*, visitor.FIELDS. *`ID-type`*]);`
+Deze functie gebruikt de volgende syntaxis (cursief staat voor een tijdelijke aanduiding voor een variabele): ` var *`waarden`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`Type id`*, visitor.FIELDS. *`Type id`*]);`
 
 In de functieparameters:
 
-* ` *``*` callbackrepresenteert uw eigen callback code die teruggekeerde IDs ontvangt.
-* *(Optioneel)* ` visitor.FIELDS. *`ID-`*` type is een opsomming waarmee u kunt opgeven welke  [id-](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) waarden deze functie moet retourneren.
+* ` *`callback`*` vertegenwoordigt uw eigen callback code die teruggekeerde IDs ontvangt.
+* *(Optioneel)* ` visitor.FIELDS. *`Type id`*` is een opsomming waarmee u kunt opgeven welke [ID-waarden](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) u wilt dat deze functie wordt geretourneerd.
 
 Zie de volgende gebruiksgevallen en definities voor meer informatie.
 
-## Hoofdlettergebruik 1: De standaardgegevensset {#section-36a31683558742a5915db3a391e09f7b} aanvragen
+## Hoofdlettergebruik 1: De standaardgegevensset aanvragen {#section-36a31683558742a5915db3a391e09f7b}
 
 Deze code retourneert de standaardgegevensset. Uw verzoek en antwoord kunnen er ongeveer als volgt uitzien.
 
@@ -59,9 +59,9 @@ In de standaardvoorbeeldreactie zijn sommige waarden voor demonstratiedoeleinden
 }
 ```
 
-## Hoofdlettergebruik 2: Aangepaste gegevensset aanvragen {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Hoofdlettergebruik 2: Een aangepaste gegevensset aanvragen {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Deze code gebruikt een optionele array om een specifieke set id&#39;s te retourneren met de `visitor.FIELDS` enum. In dit geval willen we alleen de Experience Cloud-id (MCID) en de Analytics ID (MCAID) van de bezoeker. Uw verzoek en antwoord kunnen er ongeveer als volgt uitzien.
+Deze code gebruikt een optionele array om een specifieke set id&#39;s te retourneren met behulp van de `visitor.FIELDS` enum. In dit geval willen we alleen de Experience Cloud-id (MCID) en de Analytics ID (MCAID) van de bezoeker. Uw verzoek en antwoord kunnen er ongeveer als volgt uitzien.
 
 ```js
 //Call the ID service 
@@ -81,9 +81,9 @@ De aangepaste voorbeeldreactie retourneert alleen de id&#39;s die in de aanvraag
 }
 ```
 
-## Responsparameters {#section-4c4c300167694c6fbff1d6c612f372b5} gedefinieerd
+## Responsparameters gedefinieerd {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Dit zijn ook alle waarden in `visitor.FIELDS` enum. Nota, keert deze methode en leeg koord terug als er geen waarden voor een bepaalde variabele zijn.
+In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Dit zijn ook alle waarden in de `visitor.FIELDS` enum. Nota, keert deze methode en leeg koord terug als er geen waarden voor een bepaalde variabele zijn.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -94,27 +94,27 @@ In de volgende tabel worden de responsparameters weergegeven en gedefinieerd. Di
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> MCAAMB  </span> </p> </td> 
-   <td colname="col2"> <p>De gecodeerde <span class="keyword"> Audience Manager </span> meta-gegevens die als "de blob worden bekend." </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> MCAAMB </span> </p> </td> 
+   <td colname="col2"> <p>Gecodeerd <span class="keyword"> Audience Manager </span> metagegevens die "de blob" worden genoemd. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> MCAAMLH  </span> </p> </td> 
-   <td colname="col2"> <p>The data collection region ID. Dit is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names </a> en <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
+   <td colname="col2"> <p>The data collection region ID. Dit is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> Id's, locaties en hostnamen van DCS-regio's </a> en <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> MCAID  </span> </p> </td> 
-   <td colname="col2"> <p>De <span class="keyword"> Analytics </span>-id van de bezoeker. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
+   <td colname="col2"> <p>De bezoeker <span class="keyword"> Analyse </span> ID. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> MCMID  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
    <td colname="col2"> <p>De Experience Cloud-id van de bezoeker. </p> <p>Zie <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies en de Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> MCOPTOUT  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
    <td colname="col2"> <p>Een markering die aangeeft of een bezoeker zich heeft teruggetrokken uit de gegevensverzameling. </p> <p>Waarden zijn: </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
-      <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'  </span>: Een bezoeker heeft ervoor gekozen geen gegevens meer te verzamelen. </li> 
-      <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false'  </span>: Een bezoeker heeft de gegevensverzameling niet verlaten. </li> 
+      <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true' </span>: Een bezoeker heeft ervoor gekozen geen gegevens meer te verzamelen. </li> 
+      <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false' </span>: Een bezoeker heeft de gegevensverzameling niet verlaten. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 

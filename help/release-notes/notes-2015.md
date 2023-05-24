@@ -10,7 +10,7 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release van 2015 {#release-notes}
+# Opmerkingen bij de release 2015 {#release-notes}
 
 Opmerkingen bij de release en updates voor 2015.
 
@@ -18,45 +18,45 @@ Opmerkingen bij de release en updates voor 2015.
 
 november 2015
 
-De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt online het verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die bezorgd zijn over COPPA kunnen een facultatieve variabele aan hun [!DNL Experience Cloud] de dienstcode toevoegen van identiteitskaart die het verhindert om koekjes in het derdedomein van browser te plaatsen. Zie [Ondersteuning voor COPPA in de Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Voor versie 1.5.3 of hoger.
+De wet ter bescherming van de online privacy van kinderen (COPPA) verbiedt online het verzamelen van persoonsgegevens van kinderen onder de 13 jaar zonder controleerbare toestemming van de ouders. Klanten die betrokken zijn bij COPPA kunnen een optionele variabele toevoegen aan hun [!DNL Experience Cloud] ID-servicecode die verhindert dat cookies worden ingesteld in het externe domein van een browser. Zie [COPPA-ondersteuning in de Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Voor versie 1.5.3 of hoger.
 
 ## Versie 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 september 2015
 
 * Probleem verholpen in de Safari-browser die ervoor zorgde dat synchronisatieservices niet werkten wanneer gebruikers cookies van derden blokkeerden. (AAM-20764)
-* De vraag aan de dienst van identiteitskaart omvat nu versie ID in de `d_visid_ver=` parameter. De teruggekeerde identiteitskaart helpt interne teams met het oplossen van problemen en steunkwesties. (AAM-20824)
+* De vraag van de dienst van identiteitskaart omvat nu versie ID in `d_visid_ver=` parameter. De teruggekeerde identiteitskaart helpt interne teams met het oplossen van problemen en steunkwesties. (AAM-20824)
 
 ## Versie 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 augustus 2015
 
 * Het probleem waarbij er geen gegevens werden gesynchroniseerd of geactiveerd, is opgelost door een ID-service. (AAM-20164)
-* Het probleem waarbij de id-service een meerdelig domeincookie op hoofdniveau niet correct kon instellen, is opgelost. Als u bijvoorbeeld een domein als `my_company.co.uk` hebt, zou de id-service onder bepaalde omstandigheden alleen een cookie instellen in `co.uk`. (AN-104683)
+* Het probleem waarbij de id-service een meerdelig domeincookie op hoofdniveau niet correct kon instellen, is opgelost. Als u bijvoorbeeld een domein hebt zoals `my_company.co.uk`In sommige gevallen zou de id-service een cookie instellen in `co.uk` alleen. (AN-104683)
 
-   Dit beïnvloedde slechts een paar cliënten die *all* van de volgende criteria voldeden:
+   Dit beïnvloedde slechts een paar cliënten die ontmoetten *alles* van de volgende criteria:
 
    * De id-service gebruiken.
-   * Een [respijtperiode ](../reference/analytics-reference/grace-period.md)*of* is ingeschakeld en gebruikers gebruiken cookies van derden en blokkeren cookies van derden.
+   * Ingeschakeld a [respijtperiode ](../reference/analytics-reference/grace-period.md)*of* cookies van andere leveranciers gebruiken en gebruikers blokkeren cookies van andere leveranciers.
 
    * Pagina&#39;s hebben met uit meerdere delen bestaande domeinen op hoofdniveau.
 
 Documentatieherzieningen in deze release zijn onder meer:
 
 * [API-methoden en codebibliotheek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Inhoud en tekst zijn opnieuw ingedeeld. In de meeste gevallen krijgt elke methode een eigen pagina.
-* [Eisen voor de Experience Cloud Identity Service](../reference/requirements.md): Gereviseerde inhoud en opnieuw geordende tekst.
+* [Vereisten voor de Experience Cloud Identity Service](../reference/requirements.md): Gereviseerde inhoud en opnieuw geordende tekst.
 
 ## Versie 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 juli 2015
 
-De [!DNL Experience Cloud] ID-service ondersteunt meerdere id&#39;s en verificatiestatus. Deze wijziging verwijdert ook vervangen ondersteuning voor DPID-toewijzingen [!DNL Audience Manager] aan gebruikers-id&#39;s die door de functie `setCustomerIDs` worden gebruikt. Zie [Klantnamen en verificatiestatus](../reference/authenticated-state.md)
+De [!DNL Experience Cloud] De dienst van identiteitskaart steunt veelvoudige IDs en authentificatiestatus. Deze wijziging verwijdert ook vervangen ondersteuning voor [!DNL Audience Manager] DPID-toewijzingen aan gebruikers-id&#39;s die door de `setCustomerIDs` functie. Zie [Klant-id&#39;s en verificatiestatus](../reference/authenticated-state.md)
 
 ## Versie 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
 Mei 2015
 
-Vanaf versie 1.4, wordt de aangewezen methode om configuratie te plaatsen overgegaan in een config voorwerp binnen als tweede parameter aan de `Visitor.getInstance` functie.
+Vanaf versie 1.4, wordt de aangewezen methode om configuratie te plaatsen overgegaan in een config voorwerp binnen als tweede parameter aan `Visitor.getInstance` functie.
 
 ```js
 var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{ 
@@ -78,4 +78,4 @@ Oplossing voor de afhandeling van time-out bij aanvragen voor AAM blob en Locati
 
 januari 2015
 
-De tag `<head>/<body>` voor JSONP request `<script>` tag container is opnieuw gevonden, evenals het maken van de tag `<script>` om rekening te houden met verschillende DOM implementaties (HTML vs XHTML) met mogelijk verschillende instellingen voor hoofdlettergevoeligheid. (AN-9355)
+Opnieuw bewerkt `<head>/<body>` tag-zoeken voor JSONP-aanvraag `<script>` tagcontainer en het maken van de `<script>` -tag om rekening te houden met verschillende DOM-implementaties (HTML versus XHTML) met mogelijk andere instellingen voor hoofdlettergevoeligheid. (AN-9355)

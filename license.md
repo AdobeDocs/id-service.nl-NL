@@ -7,10 +7,10 @@ ht-degree: 100%
 ---
 # MIT-licentie
 
-© Copyright 2021 Adobe. Alle rechten voorbehouden.
+© Copyright 2021 Adobe. All rights reserved.
 
-Hierbij wordt kosteloos een machtiging verleend aan iedereen die een exemplaar van deze software en de bijbehorende documentatiebestanden (‘de Software’) ontvangt, om de Software zonder beperking te behandelen, met inbegrip van maar niet beperkt tot het recht om de Software te gebruiken, te kopiëren, te wijzigen, samen te voegen, te publiceren, te verspreiden, onder licentie te geven en/of te verkopen, en aan personen aan wie de Software is geleverd, onder de volgende voorwaarden toe te staan:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-De bovenstaande copyrightkennisgeving en deze machtigingskennisgeving worden opgenomen in alle exemplaren of belangrijke delen van de Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-DE SOFTWARE WORDT ‘AS IS’ VERSTREKT, ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIET, INCLUSIEF MAAR NIET BEPERKT TOT DE GARANTIES VAN VERHANDELBAARHEID, GESCHIKTHEID VOOR EEN BIJZONDER DOEL EN NIET-SCHENDING. IN GEEN GEVAL ZULLEN DE AUTEURS OF RECHTHEBBENDEN AANSPRAKELIJK WORDEN GEHOUDEN VOOR ENIGE AANSPRAAK, SCHADE OF ANDERE AANSPRAKELIJKHEID, EVENWEL IN EEN CONTRACTHANDELING, ONRECHTMATIGE DAAD OF ANDERSZINS, VOORTKOMEND UIT, UIT OF IN VERBAND MET DE SOFTWARE OF HET GEBRUIK OF ANDERE SOFTWAREGERELATEERDE GEBEURTENISSEN.
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

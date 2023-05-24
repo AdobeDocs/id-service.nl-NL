@@ -24,9 +24,9 @@ De dienst van de Identiteit van de Experience Cloud laat het gemeenschappelijke 
 
 ![](assets/ecid-new.png)
 
-Ook, kan de dienst van identiteitskaart de verschillende oplossing-specifieke IDs (b.v., Analytics HULP) vervangen. En via de [Klanten-id&#39;s en verificatiestatus](../reference/authenticated-state.md)-functionaliteit kunt u met de id-service uw eigen klant-id&#39;s doorgeven aan [!DNL Experience Cloud]. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u al bent geabonneerd. Het zal geen toegang tot andere producten verlenen als u niet voor hen wordt geregistreerd.
+Ook, kan de dienst van identiteitskaart de verschillende oplossing-specifieke IDs (b.v., Analytics HULP) vervangen. En door [Klant-id&#39;s en verificatiestatus](../reference/authenticated-state.md) functionaliteit, laat de dienst van identiteitskaart u in uw eigen klant IDs tot overgaan [!DNL Experience Cloud]. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u al bent geabonneerd. Het zal geen toegang tot andere producten verlenen als u niet voor hen wordt geregistreerd.
 
-De id-service is een integraal onderdeel van vele huidige en toekomstige [!DNL Experience Cloud]-functies, -verbeteringen en -services. Momenteel, steunt de dienst van identiteitskaart [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html), en [Doel](http://www.adobe.com/marketing-cloud/testing-targeting.html). En, wordt het vereist als u aan [!DNL Adobe Experience Cloud] Apparaatcoop wilt deelnemen. Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen.
+De id-service is een integraal onderdeel van vele huidige en toekomstige [!DNL Experience Cloud] functies, verbeteringen en services. De id-service biedt momenteel ondersteuning voor [Analyse](http://www.adobe.com/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html), en [Doel](http://www.adobe.com/marketing-cloud/testing-targeting.html). En als u wilt deelnemen aan het [!DNL Adobe Experience Cloud] Apparaatcoop. Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen.
 
 ## Overzicht van functies {#section-96555473455c4bf8924c2d56ff4f3255}
 
@@ -35,6 +35,6 @@ Samenvattend, de dienst van identiteitskaart:
 * Hiermee maakt u een algemene sleutel of id die kan worden gebruikt om profielen en identiteiten te koppelen.
 * Identificeert uniek een apparaat over veelvoudige oplossingen.
 * Plaatst een eerstepartijkoekje in het domein van de klant om het volgen op het zelfde domein te verzekeren. Zie [Experience Cloud](../introduction/cookies.md).
-* Ontvangt aliassen en identiteitskaart- afbeeldingen van [!DNL Experience Cloud] klanten en partners.
-* Beheert synchronisatie van id binnen [!DNL Experience Cloud].
+* Ontvangt aliassen en ID-toewijzingen van [!DNL Experience Cloud] klanten en partners.
+* Beheert synchronisatie van id binnen de [!DNL Experience Cloud].
 * Ondersteunt synchronisatie van id&#39;s met verschillende derden in het ecosysteem van de advertentietechnologie.

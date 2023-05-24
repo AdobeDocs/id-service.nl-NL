@@ -16,7 +16,7 @@ setCustomerIDs plaatst 1 of meer zeer belangrijk-waardeparen die klant IDs en hu
 
 **Syntaxis:** `visitor.setCustomerIDs()`
 
-U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [Klantnamen en verificatiestatus](../../reference/authenticated-state.md) voor meer informatie en voorbeelden.
+U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [Klant-id&#39;s en verificatiestatus](../../reference/authenticated-state.md) voor meer informatie en voorbeelden .
 
 ```js
 // Single ID with a single authentication state 

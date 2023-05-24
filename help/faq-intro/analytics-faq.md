@@ -1,6 +1,6 @@
 ---
 description: Veelgestelde vragen over functies, functionaliteit en problemen met betrekking tot het gebruik van Analytics met de Experience Cloud Identity Service.
-keywords: Experience Cloud Identity Service
+keywords: Experience Cloud Identity-service
 title: Veelgestelde vragen over Analytics and Identity Service
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Veelgestelde vragen over functies, functionaliteit en problemen met betrekking tot het gebruik van Analytics met de Identity Service.
 
-## Servers {#section-9a2ad7842e364c869e1650480d17f8ef} bijhouden
+## Servers bijhouden {#section-9a2ad7842e364c869e1650480d17f8ef}
 
 **Hoe vind ik mijn het volgen serverinformatie?**
 
@@ -22,7 +22,7 @@ Elk behoorlijk gevormd stuk van code AppMeasurement bevat uw het volgen serverin
 
 Soms kunnen klanten hun Analytics AppMeturement-bestand echter opsplitsen in afzonderlijke bestanden. Sommige klanten kunnen bijvoorbeeld configuratievariabelen in één bestand plaatsen, een tweede bestand voor plug-ins gebruiken en vervolgens AppMeasurement-code in een derde bestand plaatsen. Dit wordt niet aanbevolen.
 
-Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. Neem contact op met de [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u de gegevens van de trackingserver niet kunt vinden.
+Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. Contact [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u de gegevens van de trackingserver niet kunt vinden.
 
 **Wat gebeurt als ik de Dienst van de Identiteit gebruik en mijn het volgen server verander?**
 
@@ -34,13 +34,13 @@ Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïden
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het [demdex.net domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) tijdens het verzoek om een bezoekersidentiteitskaart op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud bezoeker-id retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
+In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het dialoogvenster [demdex.net-domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) tijdens de aanvraag om een bezoekersidentiteitskaart op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud bezoeker-id retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
 Zelfs wanneer een CNAME wordt gevormd, als de belangrijkste ingangsplaats niet eerst wordt bezocht, worden de bezoekers geïdentificeerd verschillend op de secundaire plaats en de belangrijkste plaats in browsers die derde koekjes niet goedkeuren.
 
 **Waarom is de parameter van Experience Cloud ID (MID) niet in het verzoek Analytics?**
 
-Als de Dienst van de Identiteit correct informatie terugkeert maar u niet de `MID` parameter ziet, zorg ervoor dat u aan een gesteunde versie van AppMeasurement hebt bevorderd.
+Als de Identiteitsdienst correct informatie terugkeert maar u ziet niet `MID` , zorgt u ervoor dat u een upgrade hebt uitgevoerd naar een ondersteunde versie van AppMeasurement.
 
 **Kan mijn site H-code en AppMeasurement gebruiken voor JavaScript met de Identity Service?**
 
@@ -50,7 +50,7 @@ H-code wordt echter niet ondersteund met de code bezoekerAPI.js versie 1.6 of ho
 
 **Wat is een respijtperiode en hoe vorm ik het?**
 
-Zie [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) en neem contact op met [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Zie [De statusrespijtperiode van de identiteitsdienst](../reference/analytics-reference/grace-period.md) en contact opnemen [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Waarom moet ik naar de Inzameling van Gegevens in real time (RDC) migreren om de Dienst van de Identiteit te gebruiken?**
 

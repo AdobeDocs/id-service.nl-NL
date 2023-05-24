@@ -6,7 +6,7 @@ exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
 source-wordcount: '700'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2017.
 
-Deze wijzigingen worden ook vastgelegd in de [Opmerkingen bij de release Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Deze wijzigingen worden ook vastgelegd in de [Opmerkingen bij de release Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Oplossing voor een Chrome-gerelateerde fout die ervoor zorgde dat de id-service een fout genereerde wanneer op de knop Vorige in die browser werd geklikt.
 * De dienst van identiteitskaart hervat nu de syncs van identiteitskaart wanneer gebied identiteitskaart in de reactie van de gebeurtenisvraag verandert.
-* Toegevoegde nieuwe documentatie, [Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), dat verklaart hoe te whitelist vraag aan Adobe domeinen die door de dienst van identiteitskaart worden gebruikt.
+* Toegevoegde nieuwe documentatie, [Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), die verklaart hoe te whitelist vraag aan Adobe domeinen die door de dienst van identiteitskaart worden gebruikt.
 
 <!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 

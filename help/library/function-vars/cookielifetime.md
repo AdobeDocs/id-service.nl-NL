@@ -14,7 +14,7 @@ ht-degree: 8%
 
 Met deze variabele kunt u het standaardleveninterval voor het AMCV-cookie overschrijven.
 
-Standaard verlopen cookies van de [!DNL Experience Cloud] ID-service na 24 maanden. Stel het tijdsinterval in seconden in.
+Standaard, [!DNL Experience Cloud] Cookies van ID-services verlopen na 24 maanden. Stel het tijdsinterval in seconden in.
 
 **Syntaxis:** ` cookieLifetime: *`levensduur in seconden`*`
 

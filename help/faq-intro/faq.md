@@ -18,25 +18,25 @@ Veelgestelde vragen over functies, functionaliteit en problemen met betrekking t
 
 **Welk soort functionaliteit of mogelijkheden verstrekt de dienst van identiteitskaart?**
 
-Zie [Overzicht](../introduction/overview.md).
+Zie de [Overzicht](../introduction/overview.md).
 
 **Waarom doet de dienst van identiteitskaart geen vraag om identiteitskaart van de Experience Cloud terug te winnen?**
 
-Dit kan moeilijk te diagnosticeren zijn. Eén ding dat u kunt controleren, zijn de kopteksten voor inhoudsbeveiligingsbeleid op uw site. Als u een strikt veiligheidsbeleid hebt, kunnen die montages de derdevraag blokkeren die door de dienst van identiteitskaart wordt gemaakt. Zie [Beleid voor inhoudsbeveiliging en de Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Dit kan moeilijk te diagnosticeren zijn. Eén ding dat u kunt controleren, zijn de kopteksten voor inhoudsbeveiligingsbeleid op uw site. Als u een strikt veiligheidsbeleid hebt, kunnen die montages de derdevraag blokkeren die door de dienst van identiteitskaart wordt gemaakt. Zie [Het Beleid van de Veiligheid van de inhoud en de Dienst van de Identiteit van de Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **BezoekerAPI.js, bestandsopslag**
 
 Er kunnen problemen optreden als u de BezoekerAPI.js host als een lokaal bestand in mobiele apps. We raden u aan het bestand op een webserver te hosten.
 
-## Tijdstippen en latentie {#section-c78e148d8dbe4c77a436ef0f2af5434b} voor laden van pagina
+## Duur en vertraging bij laden van pagina {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **Hoe beïnvloedt de plaatsing van de bibliotheek van BezoekerAPI.js van de dienst van identiteitskaart paginaladingstijden?**
 
-Plaats de bibliotheek VisitorAPI.js boven aan de pagina in de sectie `<head>` van uw code. Zo weet u zeker dat de aanroep naar een id wordt uitgevoerd voordat de hoofdtekst van de pagina begint te laden en is de kans groot dat een id met succes wordt geretourneerd.
+Plaats de bibliotheek VisitorAPI.js boven aan de pagina in het dialoogvenster `<head>` van uw code. Zo weet u zeker dat de aanroep naar een id wordt uitgevoerd voordat de hoofdtekst van de pagina begint te laden en is de kans groot dat een id met succes wordt geretourneerd.
 
-De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan [demdex.net domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
+De de dienstvraag van identiteitskaart is asynchroon en is de enige vraag aan [demdex.net-domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). De de dienstvraag van identiteitskaart blokkeert geen andere elementen van het laden op de pagina.
 
-Voor [!DNL Target] klanten, die de dienstcode van identiteitskaart in `<body>` van de pagina plaatsen kan de kansen verhogen dat het een [!DNL Target] vraag kon blokkeren. Als u id-servicecode in de hoofdtekst van de pagina moet plaatsen, moet deze na de open `<body>`-tag worden geplaatst.
+Voor [!DNL Target] klanten, id-servicecode plaatsen in de `<body>` van de pagina kan de kans dat een [!DNL Target] vraag. Als u id-servicecode in de hoofdtekst van de pagina moet plaatsen, moet u deze na het openen plaatsen `<body>` tag.
 
 **Maakt de dienst van identiteitskaart een servervraag met elke paginading?**
 
@@ -80,7 +80,7 @@ Ja. Zie [CORS-ondersteuning in de Experience Cloud Identity Service](../referenc
 
 **Wat als mijn veiligheidsvereisten zo strikt zijn dat ik nooit JSONP wil gebruiken?**
 
-Als u strenge veiligheidsvereisten hebt, plaats de dienst API config `useCORSOnly: true` van identiteitskaart. Schakel deze modus alleen in als u zeker weet dat bezoekers van de site browsers gebruiken die ondersteuning bieden voor CORS.
+Als u strenge veiligheidsvereisten hebt, plaats de dienst API config van identiteitskaart `useCORSOnly: true`. Schakel deze modus alleen in als u zeker weet dat bezoekers van de site browsers gebruiken die ondersteuning bieden voor CORS.
 
 Zie [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) en [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 

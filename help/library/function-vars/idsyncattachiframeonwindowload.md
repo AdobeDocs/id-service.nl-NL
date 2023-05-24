@@ -14,9 +14,9 @@ ht-degree: 2%
 
 Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
 
-**Syntax:** ` `idSyncAttachIframeOnWindowLoad= true|false&quot;(standaardwaarde is  `false`.)
+**Syntaxis:** ` `idSyncAttachIframeOnWindowLoad= true|false&quot;(standaardwaarde is `false`.)
 
-Wanneer `idSyncAttachIframeOnWindowLoad: true` de id-service het iFrame voor id-synchronisatie laadt bij het laden van het venster. Standaard laadt de id-service iFrame voor synchronisatie van id&#39;s zo snel mogelijk in plaats van dat het venster wordt geladen.
+Wanneer `idSyncAttachIframeOnWindowLoad: true` De id-service laadt het iFrame voor synchronisatie van de id tijdens het laden van het venster. Standaard laadt de id-service iFrame voor synchronisatie van id&#39;s zo snel mogelijk in plaats van dat het venster wordt geladen.
 
 **Codevoorbeeld**
 

@@ -1,7 +1,7 @@
 ---
 description: Informatie over andere functies en functies van de Experience Cloud Identity Service.
 keywords: ID-service
-title: 'Referenties '
+title: Referenties
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt

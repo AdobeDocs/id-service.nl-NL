@@ -27,12 +27,12 @@ Met de ID-servicefuncties idSyncByURL en idSyncByDataSource kunt u handmatig een
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByURL();  </span> </p> </td> 
-   <td colname="col2"> <p>Tussen verschillende gegevenspartners en <span class="keyword"> Audience Manager </span> door een synchronisatie-URL van douaneID te gebruiken. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByURL(); </span> </p> </td> 
+   <td colname="col2"> <p>Tussen verschillende gegevenspartners en <span class="keyword"> Audience Manager </span> door een aangepaste id-sync-URL te gebruiken. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByDataSource();  </span> </p> </td> 
-   <td colname="col2"> <p>Als u de DPID en DPUUID al kent en u deze naar <span class="keyword"> Audience Manager </span> in de standaard-id synchronisatie-URL-indeling wilt verzenden. </p> <p></p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> bezoeker.idSyncByDataSource(); </span> </p> </td> 
+   <td colname="col2"> <p>Wanneer u al DPID en DPUUID kent en het wilt verzenden naar <span class="keyword"> Audience Manager </span> in de standaard-id-synchronisatie-URL-indeling. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,22 +51,22 @@ In de volgende tabel worden de eigenschappen weergegeven en gedefinieerd die voo
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> dpid  </span> </td> 
+   <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>ID gegevensaanbieder toegewezen door Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> dpuuid  </span> </td> 
+   <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>De unieke id van de gegevensaanbieder voor de gebruiker. </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> minutesToLive  </span> </td> 
+   <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Getal </td> 
-   <td colname="col3"> <p> <i>(Optioneel) </i> Hiermee stelt u de vervaltijd van het cookie in. Moet een geheel getal zijn. De standaardwaarde is 20160 minuten (14 dagen). </p> </td> 
+   <td colname="col3"> <p> <i>(Optioneel)</i> Hiermee stelt u de vervaltijd van het cookie in. Moet een geheel getal zijn. De standaardwaarde is 20160 minuten (14 dagen). </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <span class="codeph"> url  </span> </td> 
+   <td colname="col1"> <span class="codeph"> url </span> </td> 
    <td colname="col2"> Tekenreeks </td> 
    <td colname="col3"> <p>Doel-URL. </p> </td> 
   </tr> 
@@ -79,11 +79,11 @@ Beide functies accepteren de volgende macro&#39;s:
 
 * `%TIMESTAMP%`: Genereert een tijdstempel (in milliseconden). Wordt gebruikt voor het busten van cache.
 * `%DID%`: Voegt de Audience Manager-id voor de gebruiker in.
-* `%HTTP_PROTO%`: Hiermee stelt u het communicatieprotocol (`http` of  `https`) in.
+* `%HTTP_PROTO%`: Hiermee wordt het communicatieprotocol ingesteld (`http` of `https`).
 
 ## Voorbeeldcode en uitvoer {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Beide functies retourneren `Successfully queued` als dit lukt. Ze retourneren een foutbericht als dat niet het geval is.
+Beide functies retourneren `Successfully queued` indien succesvol. Ze retourneren een foutbericht als dat niet het geval is.
 
 ### visitor.idSyncByURL
 

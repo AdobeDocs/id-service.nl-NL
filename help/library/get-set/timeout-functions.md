@@ -6,7 +6,7 @@ exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -25,16 +25,16 @@ Roep deze de dienstfuncties van identiteitskaart aan om de onderbrekingsstatus v
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.MCIDCallTimedOut()</span> </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity-service </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.AnalyticsIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var  <span class="varname"> variableName</span> = bezoeker.AAMIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = bezoeker.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>

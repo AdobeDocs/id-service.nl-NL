@@ -16,16 +16,16 @@ Deze functie is vooral ontworpen voor klanten van A4T om problemen op te lossen 
 
 ## Gebruiksscenario’s {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-Als klant A4T die de dienst van identiteitskaart gebruikt, kunt u de `visitor.resetState()` functie willen gebruiken wanneer u moet:
+Als klant A4T die de dienst van identiteitskaart gebruikt, kunt u willen gebruiken `visitor.resetState()` functie wanneer u wilt:
 
 * Een aanvullende gegevens-id (SDID) of een andere id doorgeven van de ene pagina of het andere scherm via omleiding. Normaal, zal de dienst van identiteitskaart deze identiteitskaart zonder deze functie niet overgaan.
-* Gebruik code die alleen specifieke secties van een pagina of app bijwerkt via Ajax-aanroepen en u wilt die handelingen bijhouden. Stel dat u een pagina hebt waarop u met klikken op een object alleen een speciale sectie laadt of wijzigt. In dit geval kan de id-service geen andere id aanvragen, tenzij de pagina opnieuw wordt geladen. Met `visitor.resetState()` kunt u echter onder deze omstandigheden een nieuwe id aanvragen.
+* Gebruik code die alleen specifieke secties van een pagina of app bijwerkt via Ajax-aanroepen en u wilt die handelingen bijhouden. Stel dat u een pagina hebt waarop u met klikken op een object alleen een speciale sectie laadt of wijzigt. In dit geval kan de id-service geen andere id aanvragen, tenzij de pagina opnieuw wordt geladen. Met `visitor.resetState()`, je kunt onder deze voorwaarden een nieuwe id aanvragen.
 
 Zie de onderstaande codevoorbeelden.
 
 ## Syntaxis {#section-9e63503e178f4be28ac850abf44d6d91}
 
-**Syntaxis:** ` visitor.resetState( *`status`*);`
+**Syntaxis:** ` visitor.resetState( *`state`*);`
 
 ## Codevoorbeelden {#section-d75b211bb4ea473887eb284de2ad838b}
 
@@ -33,11 +33,11 @@ De implementatie van uw id-service beïnvloedt hoe u deze functie zou gebruiken.
 
 **Implementatie op de server**
 
-Een server-kant implementatie is voor klanten A4T met gemengde server- en cliënt-zijimplementaties van [!DNL Target], [!DNL Analytics], en de dienst van identiteitskaart Als u de id-service met deze methode hebt ingesteld, hoeft u alleen `visitor.resetState()` aan de pagina toe te voegen. De vraag aan de dienst van identiteitskaart zal een nieuwe identiteitskaart en serverstaat automatisch terugkeren.
+Een server-kant implementatie is voor klanten A4T met gemengde server- en cliënt-zijimplementaties van [!DNL Target], [!DNL Analytics]en de id-service. Als u de id-service met deze methode hebt ingesteld, hoeft u alleen maar toe te voegen `visitor.resetState()` naar de pagina. De vraag aan de dienst van identiteitskaart zal een nieuwe identiteitskaart en serverstaat automatisch terugkeren.
 
-**Niet-standaard implementatie**  (met id)
+**Niet-standaardimplementatie** (met ID)
 
-Als u opstelling de dienst van identiteitskaart met [niet-standaard implementatie](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113) hebt, moet u een veranderlijk voorwerp vormen om SDID (of andere IDs) te houden u met `visitor.resetState()` wilt overgaan. Zoals hieronder getoond, zou dit uw [organisatie ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) en identiteitskaart omvatten u wilt overgaan. Uw code kan er ongeveer als volgt uitzien.
+Als u de id-service hebt ingesteld met een [niet-standaardimplementatie](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113), moet u een veranderlijk voorwerp vormen om SDID (of andere IDs) te houden u met wilt overgaan `visitor.resetState()`. Zoals hieronder wordt getoond, omvat dit uw [organisatie-id](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) en de id die u wilt doorgeven. Uw code kan er ongeveer als volgt uitzien.
 
 ```js
 //Instantiate server state variable 
@@ -60,9 +60,9 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.resetState(serverState);
 ```
 
-**Niet-standaard implementatie**  (zonder een id door te geven)
+**Niet-standaardimplementatie** (zonder een id door te geven)
 
-In dit geval kan `visitor.resetState()` worden gebruikt om een nieuwe id te genereren. Dit kan handig zijn in een app van één pagina wanneer een gebruiker naar een nieuw scherm navigeert zonder de pagina te vernieuwen en u een nieuwe id nodig hebt.
+In dit geval: `visitor.resetState()` kan worden gebruikt om een nieuwe id te genereren. Dit kan handig zijn in een app van één pagina wanneer een gebruiker naar een nieuw scherm navigeert zonder de pagina te vernieuwen en u een nieuwe id nodig hebt.
 
 ```js
  

@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laatste twee delen van de URL groter is dan 2 tekens.
 
-**Syntaxis:** ` cookieDomain: " *`URL`*"`  (Het  `www` voorvoegsel is niet vereist.)
+**Syntaxis:** ` cookieDomain: " *`URL`*"` (De `www` voorvoegsel is niet vereist.)
 
 **Gebruiksscenario**
 

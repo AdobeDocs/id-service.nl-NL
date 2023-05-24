@@ -1,7 +1,7 @@
 ---
 description: Oudere implementaties gebruiken Dynamic Tag Management (DTM) om de Experience Cloud Identity Service in te stellen, te implementeren en te integreren met uw andere Experience Cloud-oplossingen.
 keywords: ID-service
-title: Implementatie met dynamisch tagbeheer
+title: Implementatie met Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# Implementatie met dynamisch tagbeheer {#implementation-with-dynamic-tag-management}
+# Implementatie met Dynamic Tag Management {#implementation-with-dynamic-tag-management}
 
 Oudere implementaties gebruiken Dynamic Tag Management (DTM) om de Experience Cloud Identity Service in te stellen, te implementeren en te integreren met uw andere Experience Cloud-oplossingen.
 
-## Implementatie met dynamisch tagbeheer {#topic-6f4ed5d96977406ca991e50f3fbd5b01}
+## Implementatie met Dynamic Tag Management {#topic-6f4ed5d96977406ca991e50f3fbd5b01}
 
 Oudere implementaties gebruiken Dynamic Tag Management (DTM) om de Experience Cloud Identity Service in te stellen, te implementeren en te integreren met uw andere Experience Cloud-oplossingen.
 
@@ -22,9 +22,9 @@ Oudere implementaties gebruiken Dynamic Tag Management (DTM) om de Experience Cl
 >
 >Momenteel [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) is het voorkeursprogramma en het aanbevolen implementatieprogramma omdat dit complexe taken voor tagbeheer vereenvoudigt en code-plaatsing automatiseert die verder gaat dan de mogelijkheden van DTM. Zie [Implementeren met starten](../implementation-guides/ecid-implement-with-launch.md).
 
-## Dynamisch tagbeheer en de id-service {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
+## Dynamic Tag Management en de ID-service {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
-[Dynamisch tagbeheer](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) laat u vormen, opstellen en beheren uw de dienstinstantie van identiteitskaart en verwant [!DNL Experience Cloud] integratie van oplossingen. DTM helpt het implementatieproces te vereenvoudigen, omdat het volledig is geïntegreerd met de id-service en andere Experience Cloud-oplossingen. U hoeft alleen het gereedschap Experience Cloud-id toe te voegen en te configureren en informatie op te geven, zoals:
+[Dynamische Tag Management](https://experienceleague.adobe.com/docs/dtm/using/dtm-home.html) laat u vormen, opstellen en beheren uw de dienstinstantie van identiteitskaart en verwant [!DNL Experience Cloud] integratie van oplossingen. DTM helpt het implementatieproces te vereenvoudigen, omdat het volledig is geïntegreerd met de id-service en andere Experience Cloud-oplossingen. U hoeft alleen het gereedschap Experience Cloud-id toe te voegen en te configureren en informatie op te geven, zoals:
 
 * Organisatie-id Experience Cloud (automatisch ingevuld als deze is gekoppeld aan de Experience Cloud)
 * Analytics tracking-server (beveiligd en niet beveiligd)
@@ -49,7 +49,7 @@ mcvid-dtm-deployment.xml
 Voordat u aan de slag kunt, moet u ervoor zorgen dat uw organisatie en oplossingen zijn ingericht voor de [!DNL Experience Cloud] en je bent vertrouwd met [!DNL Dyanamic Tag Management]. Aan de slag met deze documentatie:
 
 * [Laat uw oplossingen voor de kerndiensten toe](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html): Voer de Experience Cloud uit en word een beheerder. Dit proces moderniseert uw oplossingen voor de kerndiensten zoals klantenattributen en Experience Cloud publiek.
-* [Aan de slag met dynamisch tagbeheer](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html)
+* [Aan de slag met Dynamic Tag Management](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html)
 
 **Plaatsing van ID-servicecode en laadvolgorde**
 
@@ -111,7 +111,7 @@ De instellingen zijn beschikbaar nadat u de id-service hebt toegevoegd en opgesl
 
 ![](assets/installedTools.png)
 
-## Organisatie-id {#section-949b5a0d8af940558b04ff675cf53f77}
+## Organisatie-ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
 Dit is de id die vereist is voor en gekoppeld is aan uw provisioning [!DNL Experience Cloud] bedrijf. Een organisatie is de entiteit die een beheerder toelaat om gebruikers, groepen, en controle enige sign-on toegang in te vormen [!DNL Experience Cloud]. De organisatie-id is een alfanumerieke tekenreeks van 24 tekens, gevolgd door (en moet bevatten) @AdobeOrg. [!DNL Experience Cloud] beheerders kunnen deze id vinden in [Experience Cloud > Gereedschappen](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
@@ -129,7 +129,7 @@ In de volgende tabel worden de [!UICONTROL General] instellingen.
 
 **Visitor-id automatisch aanvragen**
 
-Wanneer gecontroleerd, roept het Dynamische Beheer van de Markering automatisch het `getMarketingCloudVisitorID()` vóór het laden van de Adobe-oplossingen die gebruikmaken van de Experience Cloud Identity Service.
+Als deze optie is ingeschakeld, roept Dynamic Tag Management automatisch het `getMarketingCloudVisitorID()` vóór het laden van de Adobe-oplossingen die gebruikmaken van de Experience Cloud Identity Service.
 
 Zie [getMarketingCloudVisitorID](../library/get-set/getmcvid.md).
 

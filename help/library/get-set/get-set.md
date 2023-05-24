@@ -16,7 +16,7 @@ Openbare methoden waarmee u kunt communiceren met de id-service.
 
 >[!NOTE]
 >
->De *Javascript-bibliotheken met Javascript-id voor Experience Cloud zijn onlangs verplaatst.* De meest recente versie van de ECID JS-bibliotheken vindt u op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>De *Javascript-bibliotheken met Experience Cloud-id* zijn onlangs verplaatst. De meest recente versie van de ECID JS-bibliotheken is te vinden op [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwante artikelen:
 

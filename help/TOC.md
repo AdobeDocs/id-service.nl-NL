@@ -6,8 +6,8 @@ user-guide-description: De Adobe Experience Cloud Identity Service biedt een uni
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 20%
 
 ---
 

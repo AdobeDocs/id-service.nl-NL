@@ -14,11 +14,11 @@ ht-degree: 2%
 
 Een optionele Booleaanse markering die een kenmerk &quot;Secure&quot; toevoegt aan het AMCV-cookie.
 
-Dit configuratiekenmerk is beschikbaar in `visitorAPI`, versie 3.3.0.
+Dit configuratiekenmerk is beschikbaar in het dialoogvenster `visitorAPI`, versie 3.3.0.
 
 >[!NOTE]
 >
->De `SecureCookie` configuratie werkt niet op onbeveiligde domeinen en kan ertoe leiden dat u de MID-waarden niet ontvangt voor bezoeken die een onbeveiligd protocol gebruiken. De `secureCookie` configuratie zou aan `true` slechts moeten worden geplaatst wanneer u zeker bent dat alle pagina&#39;s en sub-domeinen een veilig protocol altijd gebruiken.
+>De `SecureCookie` De configuratie werkt niet op onbeveiligde domeinen en kan ertoe leiden dat u de MID-waarden niet ontvangt voor bezoeken die een onbeveiligd protocol gebruiken. De `secureCookie` configuratie moet worden ingesteld op `true` alleen als u zeker weet dat alle pagina&#39;s en subdomeinen te allen tijde een beveiligd protocol gebruiken.
 
 **Syntaxis:** `secureCookie: true | false` (standaard)
 

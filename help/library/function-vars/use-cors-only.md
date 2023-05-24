@@ -14,11 +14,11 @@ ht-degree: 2%
 
 Een optionele, Booleaanse vlag die bepaalt hoe de browser bronnen van de Experience Cloud Identity Service opvraagt.
 
-**Syntaxis:** `useCORSOnly: true|false` (standaardwaarde is  `false`.)
+**Syntaxis:** `useCORSOnly: true|false` (standaard is `false`.)
 
 **Overzicht**
 
-Wanneer geplaatst aan `false`, voert browser middelcontroles met CORS of JSONP uit. Nochtans, probeert de dienst van identiteitskaart altijd om middelen met CORS eerst te verzoeken. Het keert aan JSONP op oudere browsers terug die geen CORS steunen. Als u browser moet dwingen om CORS slechts te gebruiken, plaats `useCORSOnly:true` in `Visitor.getInstance` functievraag.
+Wanneer ingesteld op `false`, voert browser middelcontroles met CORS of JSONP uit. Nochtans, probeert de dienst van identiteitskaart altijd om middelen met CORS eerst te verzoeken. Het keert aan JSONP op oudere browsers terug die geen CORS steunen. Als u de browser wilt dwingen alleen CORS te gebruiken, stelt u `useCORSOnly:true` in de `Visitor.getInstance` functieaanroep.
 
 >[!IMPORTANT]
 >

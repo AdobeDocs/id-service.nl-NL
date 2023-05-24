@@ -1,5 +1,5 @@
 ---
-description: Een configuratie binnen ECID die kan worden gebruikt voor de ondersteuning van AMCV-cookies op Google AMP-pagina's.
+description: Een configuratie binnen ECID die kan worden gebruikt om AMCV-cookies op Google AMP-pagina's te ondersteunen.
 keywords: ID-service
 title: Beveiligde en SameSite-configuraties
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
@@ -12,17 +12,17 @@ ht-degree: 1%
 
 # Beveiligde en SameSite-configuraties
 
-Met deze configuratie kunt u de instellingen voor uw cookies wijzigen en [AMCV-cookies](../../introduction/cookies.md) op Google AMP-pagina&#39;s ondersteunen.
+Met deze configuratie kunt u de instellingen voor uw cookies en ondersteuning wijzigen [AMCV-cookies](../../introduction/cookies.md) op AMP-pagina&#39;s van Google.
 
-De Adobe-bezoeker-id-service stelt ECID-cookies in met de standaardinstelling voor de browser van `SameSite = Lax`, die niet toegankelijk is als de pagina in een iframe zoals een Google AMP-pagina wordt geladen. Als u toegang wilt tot ECID-cookies, gebruikt u de onderstaande configuraties om de SameSite-instelling bij te werken naar `SameSite = None`.
+Met de service Adobe-bezoeker-id worden ECID-cookies ingesteld met de standaardinstelling van de browser van `SameSite = Lax`, die niet toegankelijk is als de pagina wordt geladen in een iframe zoals een Google AMP-pagina. Voor toegang tot ECID-cookies gebruikt u de onderstaande configuraties om de SameSite-instelling bij te werken naar `SameSite = None`.
 
 >[!NOTE]
 >
->Bij het toepassen van `SameSite = None` moeten cookies worden ingesteld op `Secure`, zodat gegevens alleen via HTTPS-verbindingen kunnen worden doorgegeven.
+>Bij toepassen `SameSite = None`, cookies moeten zijn ingesteld op `Secure`, zodat gegevens alleen via HTTPS-verbindingen kunnen worden doorgegeven.
 
 **Implementatie**:
 
-Als u Adobe Experience Platform Launch gebruikt, dient u de extensie van uw Experience Cloud-id te upgraden naar versie 5.1.0 en `secureCookie: true` en `sameSiteCookie: none` te configureren.
+Als u Adobe Experience Platform Launch gebruikt, dient u de extensie van uw Experience Cloud-id te upgraden naar versie 5.1.0 en de configuratie `secureCookie: true` en `sameSiteCookie: none`.
 
 Als u geen Experience Platform Launch gebruikt, werkt u bij naar de nieuwste bibliotheek van Visitor 5.1.0 en volgt u de onderstaande configuraties terwijl u de Visitor-instantie initialiseert:
 

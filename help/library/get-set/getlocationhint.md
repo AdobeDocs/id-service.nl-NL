@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of locatiehint) is een numerieke id voor de geografische locatie van een bepaald datacenter van de ID-service. U hebt de regio-id nodig om API-aanroepen van de server naar de Audience Manager te kunnen uitvoeren.
 
-**Syntaxis:naam** ` var *`variabele`* = visitor.getLocationHint()`
+**Syntaxis:** ` var *`variabelenaam`* = visitor.getLocationHint()`
 
-Zie [DCS-regio-id&#39;s, -locaties en hostnamen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html) voor een lijst met regio-id&#39;s en bijbehorende locaties.
+Voor een lijst met regio-id&#39;s en bijbehorende locaties raadpleegt u [Id&#39;s, locaties en hostnamen van DCS-regio&#39;s](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
 
 **Codevoorbeeld**
 

@@ -16,7 +16,7 @@ Stelt een time-outinterval in milliseconden in. Gebruikt om andere oplossingen (
 
 **Syntaxis:** ` loadTimeout: *`interval in milliseconden`*`
 
-De standaardwaarde is 30.000 milliseconden (30 seconden). Wij adviseren sterk dat u *niet* de standaardwaarde verandert.
+De standaardwaarde is 30.000 milliseconden (30 seconden). We raden u ten zeerste aan *niet* wijzigt u de standaardwaarde.
 
 >[!NOTE]
 >

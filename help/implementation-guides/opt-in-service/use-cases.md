@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# Gevallen {#opt-in-use-cases} van het Inschakelen
+# Gebruiksscenario&#39;s openen {#opt-in-use-cases}
 
 Steekproef gebruiksgevallen en oplossingen om de Opt-in dienst te beheren.
 
 ## Tips en probleemoplossing {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* Bezoeker JS initialiseert is synchroon en wordt uitgevoerd tijdens het laden van de pagina. Als u met een CMP of toestemmingenpersistentie omzet die een hoge latentie heeft, zou het verkieslijk kunnen zijn om de asynchrone die functies te gebruiken in [Opt-in Opstelling](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047) worden beschreven.
+* Bezoeker JS initialiseert is synchroon en wordt uitgevoerd tijdens het laden van de pagina. Als u een interface maakt met een CMP of een persistentie van machtigingen met een hoge latentie, kunt u beter de asynchrone functies gebruiken die worden beschreven in [Inschakelen](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047).
 * Inschakelen is een implementatie per domein. Het zal geen interdomeinimplementaties behandelen.
 * Als u aanroepen van derden voor een specifieke bibliotheek wilt uitschakelen, moet u die voorkeur in elke bibliotheek afzonderlijk configureren.
 
-## Opt-in scenario&#39;s {#section-1178053c065c430bba26f82ef383a71c}
+## Opt-in-scenario&#39;s {#section-1178053c065c430bba26f82ef383a71c}
 
 Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Option-in-service.
 
@@ -44,7 +44,7 @@ Deze gebruiksgevallen zijn voorbeelden van ideeën voor het gebruik van de Optio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metingen van de eerste partij plus het richten is aanvaardbaar in een staat van de pre-instemming. Alle andere soorten gegevensgebruik zijn voorkomen totdat de toestemming is ontvangen. </p> </td> 
-   <td colname="col2"> <p>Gebruik Opt-in om Analytics + ECID + Target libraries in de pre-toestemmingsstaat toe te laten. </p> <p>Voeg de <span class="codeph"> isablethirdpartycookies</span> config aan de bibliotheek van ECID toe om derdekoekjes + de syncs van identiteitskaart in pre-toestemmingsstaat te blokkeren. Markering verwijderen in toestand na toestemming. </p> </td> 
+   <td colname="col2"> <p>Gebruik Opt-in om Analytics + ECID + Target libraries in de pre-toestemmingsstaat toe te laten. </p> <p>Voeg de <span class="codeph"> isablethirdpartycookies</span> config aan de bibliotheek van ECID om derdekoekje + syncs van identiteitskaart in pre-toestemmingsstaat te blokkeren. Markering verwijderen in toestand na toestemming. </p> </td> 
    <td colname="col3"> <p>Adobe Demdex-aanroep wordt geactiveerd voor ECID-ophaling, maar er zijn geen Demdex-cookie, cookie van andere leveranciers of ID-syncs aanwezig. </p> <p>Houdt constant bezoeker in pre/post toestemmingsstaat voor eerste-partijoplossingen. Verzameling in de toestand vóór de instemming zal worden gekoppeld aan gegevensverzameling na de instemming. </p> </td> 
   </tr> 
   <tr> 

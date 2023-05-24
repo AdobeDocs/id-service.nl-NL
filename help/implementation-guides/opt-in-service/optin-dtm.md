@@ -17,8 +17,8 @@ Opt-in services instellen met DTM.
 
 Vereist:
 
-* Upgrade naar ECID 4.0.0 of hoger. Zie [ECID Download](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+* Upgrade naar ECID 4.0.0 of hoger. Zie [ECID-download](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
-Voer [configuratievelden](/help/implementation-guides/opt-in-service/api.md) in op de pagina General DTM.
+Enter [configuratievelden](/help/implementation-guides/opt-in-service/api.md) op de pagina General DTM.
 
 ![](assets/DTM-example.png)

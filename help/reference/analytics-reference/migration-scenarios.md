@@ -19,33 +19,33 @@ Bevat configuraties van servervoorbeelden en de vereiste migratiestappen.
 * **Klant**: Example Company Inc.
 * **Experience Cloud ingeschakeld**: Nee
 * **Web-eigenschappen**: example.com
-* **Servers** voor gegevensverzameling: metrics.example.com, metrics.example.com
-* **JavaScript-analysebestand**: Eén bestand voor alle sitepagina&#39;s
+* **Servers voor gegevensverzameling**: metrics.example.com, metrics.example.com
+* **JavaScript-bestand Analytics**: Eén bestand voor alle sitepagina&#39;s
 
-Eerst moet deze klant ingeschakeld worden voor de Experience Cloud (zie de [vereisten](../../reference/requirements.md)). En omdat ze één JavaScript-bestand hebben, heeft deze klant geen respijtperiode nodig. Deze klant zal ook de migratie van de opsteller en dan vanaf hun gegevensinzameling CNAME migreren, wat niet noodzakelijk is.
+Eerst, zou deze klant voor de Experience Cloud moeten worden toegelaten (zie [vereisten](../../reference/requirements.md)). En omdat ze één JavaScript-bestand hebben, heeft deze klant geen respijtperiode nodig. Deze klant zal ook de migratie van de opsteller en dan vanaf hun gegevensinzameling CNAME migreren, wat niet noodzakelijk is.
 
-## Meerdere JavaScript-bestanden, met harde codes gecodeerde afbeeldingstags {#section-a665f6ee202940449198e4e7a5dcac54}
+## Meerdere JavaScript-bestanden, hardgecodeerde afbeeldingstags {#section-a665f6ee202940449198e4e7a5dcac54}
 
 * **Klant**: Een ander voorbeeld Company Inc.
 * **Experience Cloud ingeschakeld**: Ja
 * **Web-eigenschappen**: Anotherexample.com
-* **Servers** voor gegevensverzameling: anotherexample.eco.112.2o7.net
-* **JavaScript-analysebestand**: Meerdere JavaScript-bestanden. Eén bestand voor de hoofdsite, een ander bestand voor de ondersteuningssectie dat in een aparte CMS wordt bijgehouden.
-* **Andere methoden** voor gegevensverzameling: Hard gecodeerde afbeeldingstags op één sitesectie
+* **Servers voor gegevensverzameling**: anotherexample.eco.112.2o7.net
+* **JavaScript-bestand Analytics**: Meerdere JavaScript-bestanden. Eén bestand voor de hoofdsite, een ander bestand voor de ondersteuningssectie dat in een aparte CMS wordt bijgehouden.
+* **Andere methoden voor gegevensverzameling**: Hard gecodeerde afbeeldingstags op één sitesectie
 
-Ten eerste moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [requirements](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant stelt ook een migratie van bezoekers in en migreert vervolgens van `*.2o7.net` naar `*.sc.omtrdc.net`.
+Eerst moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant stelt ook een migratie naar bezoekers in en migreert vervolgens van `*.2o7.net` tot `*.sc.omtrdc.net`.
 
-Wanneer deze klant de meest recente JavaScript-code voor Analytics bijwerkt ter voorbereiding op de implementatie van de [!DNL Experience Cloud] ID-service, worden ook alle vasteschijfcodes voor afbeeldingen bijgewerkt zodat deze in plaats daarvan JavaScript kunnen gebruiken.
+Wanneer deze klant de nieuwste JavaScript-code Analytics bijwerkt ter voorbereiding op de [!DNL Experience Cloud] Bij de uitrol van de id-service worden ook alle vastgecodeerde afbeeldingstags bijgewerkt zodat deze JavaScript kunnen gebruiken.
 
 ## Meerdere webeigenschappen, meerdere JavaScript-bestanden en een op Flash gebaseerde videospeler {#section-34647995ff3740b999fdee22d885e515}
 
 * **Klant**: Een goede LLC voor klanten
 * **Experience Cloud ingeschakeld**: Ja
 * **Web-eigenschappen**: mymainsite.com, myothersiteA.com, myothersiteB.com
-* **Servers** voor gegevensverzameling: metrics.mymainsite.com, metrics.mymainsite.com
-* **JavaScript-analysebestand**: Meerdere JavaScript-bestanden. Eén bestand voor elke webeigenschap.
-* **Andere methoden** voor gegevensverzameling: Een op Flash gebaseerde videospeler
+* **Servers voor gegevensverzameling**: metrics.mymainsite.com, metrics.mymainsite.com
+* **JavaScript-bestand Analytics**: Meerdere JavaScript-bestanden. Eén bestand voor elke webeigenschap.
+* **Andere methoden voor gegevensverzameling**: Een op Flash gebaseerde videospeler
 
-Ten eerste moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [requirements](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant volgt bezoekers tussen hun primair domein en hun subdomeinen, zodat zullen zij hun gegevensinzameling CNAME met de dienst van bezoekersidentiteitskaart blijven gebruiken.
+Eerst moet deze klant zijn Adobe Experience Cloud-organisatie-id vinden (zie de [vereisten](../../reference/requirements.md)). Vervolgens moeten ze een migratieperiode configureren omdat ze meerdere JavaScript-bestanden gebruiken. Deze klant volgt bezoekers tussen hun primair domein en hun subdomeinen, zodat zullen zij hun gegevensinzameling CNAME met de dienst van bezoekersidentiteitskaart blijven gebruiken.
 
-Wanneer deze klant de meest recente JavaScript-code voor Analytics bijwerkt ter voorbereiding op de implementatie van de [!DNL Experience Cloud] ID-service, wordt ook de op Flash gebaseerde videospeler bijgewerkt naar de meest recente versie van AppMeasurement voor Flash.
+Wanneer deze klant de nieuwste JavaScript-code Analytics bijwerkt ter voorbereiding op de [!DNL Experience Cloud] De de dienstuitrol van identiteitskaart, zullen zij ook hun op Flash-Gebaseerde videospeler aan de recentste versie van AppMeasurement voor Flash bijwerken.

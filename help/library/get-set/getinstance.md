@@ -32,7 +32,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Instantieer de functie Visitor* niet met  `var visitor = new Visitor`. U moet de juiste hier genoteerde functievraag gebruiken. Is van toepassing op [!UICONTROL VisitorAPI.js] codebibliotheek v3.0 of hoger.
+>*Niet gebruiken* instantiëren van de functie Visitor met `var visitor = new Visitor`. U moet de juiste hier genoteerde functievraag gebruiken. Van toepassing op [!UICONTROL VisitorAPI.js] codebibliotheek v3.0 of hoger.
 
 **ActionScript/Flash**
 
@@ -50,10 +50,10 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Als `getInstance` geen bestaande instantie vindt, wordt een nieuwe instantie gecreeerd en teruggekeerd. Dit is gelijkaardig aan [ `s_gi()` functie ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
+Indien `getInstance` vindt geen bestaande instantie, wordt een nieuwe instantie gecreeerd en teruggekeerd. Dit is vergelijkbaar met het [ `s_gi()` function ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
 
 **Algemeen gebruik**
 
-De [!DNL Experience Cloud] ID service-API onderhoudt een lijst met alle instanties die zijn gemaakt voor elke [!DNL Adobe Experience Cloud] organisatie-id. Als de toepassing die de dienst-API van identiteitskaart gebruikt geen verwijzing naar de instantie overgaat, kan het die instantie vinden door `getInstance` te roepen in plaats van nieuwe te creëren. Dit biedt ook ondersteuning voor meerdere instanties voor verschillende organisaties in dezelfde webpagina of toepassing.
+De [!DNL Experience Cloud] ID-service-API houdt een lijst bij van alle instanties die voor elke [!DNL Adobe Experience Cloud] organisatie-id. Als de toepassing die de dienst-API van identiteitskaart gebruikt geen verwijzing naar de instantie overgaat, kan het die instantie vinden door te roepen `getInstance` in plaats van een nieuwe te maken. Dit biedt ook ondersteuning voor meerdere instanties voor verschillende organisaties in dezelfde webpagina of toepassing.
 
-Dit is nuttig voor toepassingen die geen duidelijke `init` fase hebben, maar in de dienstAPI van identiteitskaart in veelvoudige plaatsen moeten roepen. U kunt `getInstance` in al die plaatsen roepen en het eerste uit te voeren zal tot de instantie leiden. De bestaande instantie zal door verdere vraag zijn teruggekeerd.
+Dit is nuttig voor toepassingen die geen duidelijk `init` fase, maar moet in de dienst API van identiteitskaart op veelvoudige plaatsen roepen. U kunt bellen `getInstance` op al die plaatsen en de eerste uit te voeren zal tot de instantie leiden. De bestaande instantie zal door verdere vraag zijn teruggekeerd.

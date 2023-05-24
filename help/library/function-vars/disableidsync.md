@@ -18,7 +18,7 @@ Een optionele, Booleaanse markering die id-synchronisatie uitschakelt.
 >
 >Deze configuratie was `idSyncDisableSyncs` en hernoemd naar `disableIdSyncs` in de release van 18 januari 2018 van v3.0.
 
-**Syntaxis:** `disableIdSyncs: true|false` (standaardwaarde is  `false`.)
+**Syntaxis:** `disableIdSyncs: true|false` (standaard is `false`.)
 
 **Codevoorbeeld**
 
