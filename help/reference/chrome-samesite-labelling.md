@@ -2,9 +2,9 @@
 title: Wijzigingen in Google Chrome SameSite-labels
 description: Documentatie voor Adobe ECID-bibliotheek (ID Service).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1064'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ De meeste Adobe-producten beschikken al over de juiste vlaggen die aan cookies z
 
 **Mogelijke daling van de koekjesgelijke voor bestemming en marketingplace partners (slechts Audience Manager)**
 
-Hoewel Adobe controle heeft over het bijwerken van de cookies, kan Adobe partners niet dwingen de benodigde wijzigingen aan te brengen. De gelijke van het cookie kan voor Audience Manager klanten verminderen gebruikend bestemmingspartners of marktplaatspartners die deze updates niet hebben gemaakt.
+Terwijl Adobe controle over het bijwerken van zijn koekjes heeft, kan Adobe partners niet dwingen om noodzakelijke veranderingen aan te brengen. De gelijke van het cookie kan voor Audience Manager klanten verminderen gebruikend bestemmingspartners of marktplaatspartners die deze updates niet hebben gemaakt.
 
 **Analytics Friendly third-party Cookies (Analytics `s_vi` alleen cookies)**
 
@@ -117,6 +117,6 @@ Alleen de algemene cookies van de bezoekersstandaard worden in de onderstaande t
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Client-side first-party | Geen toegevoegde waarde *Chrome-standaardinstellingen `lax` instellen | Configureerbaar voor externe pagina&#39;s |
 
-> !![IMPORTANT] Cookies van derden Adobe worden ingesteld op de server
+>  Adobe-cookies van derden worden ingesteld op de server.
 
-Zie het document over [Beleid Google Chrome SameSite van doel](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html).
+Zie het document over [Beleid Google Chrome SameSite van doel](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
