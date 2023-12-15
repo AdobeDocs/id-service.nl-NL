@@ -1,37 +1,36 @@
 ---
-description: Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+description: Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen labels voor gegevensverzameling gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 keywords: ID-service
-title: Implementeer de Experience Cloud Identity Service voor Analytics
+title: Implementeer de dienst Identiteit Experience Cloud voor Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
 
-# Implementeer de Experience Cloud Identity Service voor Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implementeer de dienst Identiteit Experience Cloud voor Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en geen Dynamic Tag Management (DTM) gebruiken. Wij raden u echter sterk aan DTM te gebruiken om de id-service te implementeren. DTM stroomlijnt de implementatieworkflow en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+Deze instructies gelden voor klanten van Analytics die de Experience Cloud Identity Service willen gebruiken en niet [Labels voor gegevensverzameling](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
 >* [Lees de vereisten](../reference/requirements.md) voordat u begint.
 >* Vorm en test deze code in een ontwikkelomgeving alvorens het in productie uit te voeren.
 
-
 Voer de volgende stappen uit om de id-service voor Adobe Analytics te implementeren:
 
 1. [De ID-servicecode downloaden](../implementation-guides/setup-analytics.md#section-ead9403a6b7e45b887f9ac959ef89f7f)
 1. [Voeg de functie Visitor.getInstance aan de Code van de Dienst van identiteitskaart toe](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
-1. [Voeg uw Experience Cloud Organisatie-id toe aan Visitor.getInstance](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
+1. [Voeg uw identiteitskaart van de Organisatie van het Experience Cloud aan Visitor.getInstance toe](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
 1. [Voeg uw volgende servers aan Visitor.getInstance toe](../implementation-guides/setup-analytics.md#section-70ec9ebff47940d8ab520be5ec4728c5)
-1. [Werk het bestand AppMeturement.js of s_code.js bij](../implementation-guides/setup-analytics.md#section-b53113aea1bd4de896e0e4e9a7edee19)
+1. [Het bestand AppMeasurement.js of s_code.js bijwerken](../implementation-guides/setup-analytics.md#section-b53113aea1bd4de896e0e4e9a7edee19)
 1. [API-code van bezoeker toevoegen aan de pagina](../implementation-guides/setup-analytics.md#section-d46d6aa324c842f2931d901e38d6db1d)
 1. [(Optioneel) Configureer een respijtperiode](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3)
 1. [ID-servicecode testen en implementeren](../implementation-guides/setup-analytics.md#section-e9c1764ac21a4ec5be1ff338c0e2e01b)
 
-## Stap 1: De ID-servicecode downloaden {#section-ead9403a6b7e45b887f9ac959ef89f7f}
+## Stap 1: Download de ID Service-code {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
 De [!UICONTROL ID Service] vereist `VisitorAPI.js` codebibliotheek. Deze codebibliotheek downloaden:
 
@@ -48,7 +47,6 @@ De [!UICONTROL ID Service] vereist `VisitorAPI.js` codebibliotheek. Deze codebib
 >
 >* Eerdere versies van de id service-API hebben deze functie op een andere locatie geplaatst en een andere syntaxis vereist. Als u migreert op basis van een eerdere versie dan [versie 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), let op de nieuwe plaatsing en syntaxis die hier wordt gedocumenteerd.
 >* Code in ALL CAPS is een plaatsaanduiding voor werkelijke waarden. Vervang deze tekst door uw organisatie-id, URL van trackingserver of een andere benoemde waarde.
-
 
 **Deel 1: Kopieer de functie Visitor.getInstance hieronder**
 
@@ -89,9 +87,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## Stap 3: Voeg uw Experience Cloud Organisatie-id toe aan Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## Stap 3: Voeg uw identiteitskaart van de Organisatie van het Experience Cloud aan Visitor.getInstance toe {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-In de `Visitor.getInstance` functie, vervangen `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` met uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, kunt u deze vinden op de [!DNL Experience Cloud] beheerpagina. Zie ook: [Beheer - Core Services](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Uw bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+In de `Visitor.getInstance` functie, vervangen `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` met uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, kunt u deze vinden op de [!DNL Experience Cloud] beheerpagina. Zie ook: [Beheer - Core Services](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -103,14 +101,14 @@ In de `Visitor.getInstance` functie, vervangen `INSERT-MARKETING-CLOUD-ORGANIZAT
 
 Trackingservers worden gebruikt voor [!DNL Analytics] gegevensverzameling.
 
-**Deel 1: URL&#39;s van de volgende server zoeken**
+**Deel 1: Zoeken naar URL&#39;s van uw trackingserver**
 
 Controleer uw `s_code.js` of `AppMeasurement.js` bestanden om de URL&#39;s van de trackingserver te zoeken. U wilt de URL&#39;s die door deze variabelen worden opgegeven:
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
 
-**Deel 2: Servervariabelen voor bijhouden instellen**
+**Deel 2: Set tracking server variables**
 
 Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 
@@ -127,10 +125,9 @@ Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 >* [!DNL Experience Cloud] server-URL = URL van traceringsserver
 >* [!DNL Experience Cloud] server secure URL = tracking server secure URL
 
-
 Als u niet zeker bent hoe te om uw het volgen server te vinden zie [Veelgestelde vragen](../faq-intro/faq.md) en [De variabelen trackingServer en trackingServerSecure correct vullen](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
-## Stap 5: Werk het bestand AppMeturement.js of s_code.js bij {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## Stap 5: Werk uw AppMeasurement.js of s_code.js- dossier bij {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 Deze functie toevoegen aan uw `AppMeasurement.js` of `s_code.js` bestand:
 
@@ -147,18 +144,18 @@ Aangepaste proxy instellen in `AppMeasurement.js` of `s_code.js` om de dekking t
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Stap 6: API-code van bezoeker toevoegen aan de pagina {#section-d46d6aa324c842f2931d901e38d6db1d}
+## Stap 6: Bezoeker-API-code toevoegen aan de pagina {#section-d46d6aa324c842f2931d901e38d6db1d}
 
-Plaats de `VisitorAPI.js` in het `<head>` -tags op elke pagina. Wanneer u `VisitorAPI.js` bestand naar uw pagina:
+Plaats de `VisitorAPI.js` bestand in het `<head>` -tags op elke pagina. Wanneer u `VisitorAPI.js` bestand naar uw pagina:
 
-* Zet het aan het begin van `<head>` wordt weergegeven vóór andere oplossingstags.
-* Deze moet worden uitgevoerd vóór AppMeturement en de code voor andere [!DNL Experience Cloud] oplossingen.
+* Zet het aan het begin van `<head>` voor andere oplossingstags.
+* Het moet vóór AppMeasurement en de code voor andere uitvoeren [!DNL Experience Cloud] oplossingen.
 
 Verplaats deze code naar productie na het testen en controleren.
 
-## Stap 7: (Optioneel) Configureer een respijtperiode {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## Stap 7: (Optioneel) Configureer een evaluatieperiode {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-Als een van deze gebruiksgevallen op uw situatie van toepassing is, vraag dan [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) een tijdelijke [respijtperiode](../reference/analytics-reference/grace-period.md). Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
+Als een van deze gebruiksgevallen op uw situatie van toepassing is, raadpleegt u [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) een tijdelijke [respijtperiode](../reference/analytics-reference/grace-period.md). Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
 
 **Gedeeltelijke implementatie**
 
@@ -172,7 +169,7 @@ U hebt een respijtperiode nodig als u nieuwe bezoekers een s_vi koekje na het mi
 
 Sluit de respijtperiode af nadat uw implementatie de MID kan vastleggen in plaats van het s_vi cookie te lezen.
 
-Zie, [Cookies en de Experience Cloud Identity Service](../introduction/cookies.md).
+Zie, [Cookies en de identiteitsservice van Experiencen Cloud](../introduction/cookies.md).
 
 U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt vanuit een Clickstream-gegevensinvoer en die processen het `visid_high` en `visid_low` kolommen.
 
@@ -182,7 +179,7 @@ Zie, [Referentie kolom Clickstream](https://experienceleague.adobe.com/docs/anal
 
 **Clickstream-gegevensinsluiting**
 
-## Stap 8: ID-servicecode testen en implementeren {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
+## Stap 8: Test en implementeer ID-servicecode {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
 U kunt als volgt testen en opstellen.
 
@@ -191,9 +188,9 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [AMCV cookie](../introduction/cookies.md) in het domein waar uw pagina wordt gehost.
-* MID-waarde in het dialoogvenster [!DNL Analytics] afbeeldingsverzoek met de [Adobe debugger, gereedschap](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* MID-waarde in het dialoogvenster [!DNL Analytics] afbeeldingsverzoek met de [Adobe-foutopsporingsprogramma](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 
-Zie, [De Experience Cloud Identity Service testen en verifiëren](../implementation-guides/test-verify.md).
+Zie, [De identiteitsdienst van het Experience Cloud testen en verifiëren](../implementation-guides/test-verify.md).
 
 **Code implementeren**
 
@@ -201,5 +198,5 @@ Implementeer de code nadat deze voor het testen is geslaagd.
 
 Als u een respijtperiode hebt ingeschakeld in [Stap 7](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3):
 
-* Zorg ervoor dat de [!DNL Analytics] ID (AID) en MID bevinden zich in de aanvraag voor de afbeelding.
+* Zorg ervoor dat [!DNL Analytics] ID (HULP) en MID bevinden zich in de aanvraag voor de afbeelding.
 * Vergeet niet de respijtperiode uit te schakelen wanneer u voldoet aan de criteria voor stopzetting.
