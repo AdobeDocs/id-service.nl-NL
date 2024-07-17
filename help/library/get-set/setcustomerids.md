@@ -5,8 +5,8 @@ title: setCustomerIDs
 exl-id: 8fc549d3-2a6f-4214-bb0d-3e0bc1501ce2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 1%
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ setCustomerIDs plaatst 1 of meer zeer belangrijk-waardeparen die klant IDs en hu
 
 **Syntaxis:** `visitor.setCustomerIDs()`
 
-U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [Klant-id&#39;s en verificatiestatus](../../reference/authenticated-state.md) voor meer informatie en voorbeelden .
+U kunt een of meer id&#39;s instellen, zoals in het onderstaande codevoorbeeld wordt getoond. Zie [ identiteitskaarts van de Klant en de Staten van de Authentificatie ](../../reference/authenticated-state.md) voor meer informatie en voorbeelden.
 
 ```js
 // Single ID with a single authentication state 

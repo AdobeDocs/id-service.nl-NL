@@ -1,24 +1,24 @@
 ---
-description: Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
+description: Een optionele, Booleaanse markering die bepaalt hoe de identiteitsservice van het Experience Cloud de id-synchronisatie-iFrame laadt.
 keywords: ID-service
 title: idSyncAttachIframeOnWindowLoad
 exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Een optionele, Booleaanse vlag die bepaalt hoe de Experience Cloud Identity Service het iFrame voor de synchronisatie van id laadt.
+Een optionele, Booleaanse markering die bepaalt hoe de identiteitsservice van het Experience Cloud de id-synchronisatie-iFrame laadt.
 
-**Syntaxis:** ` `idSyncAttachIframeOnWindowLoad= true|false&quot;(standaardwaarde is `false`.)
+**Syntaxis:** ` ` idSyncAttachIframeOnWindowLoad= waar|vals&quot;(het gebrek is `false`.)
 
-Wanneer `idSyncAttachIframeOnWindowLoad: true` De id-service laadt het iFrame voor synchronisatie van de id tijdens het laden van het venster. Standaard laadt de id-service iFrame voor synchronisatie van id&#39;s zo snel mogelijk in plaats van dat het venster wordt geladen.
+Wanneer `idSyncAttachIframeOnWindowLoad: true` de id-service het iFrame voor synchronisatie van de id laadt tijdens het laden van het venster. Standaard laadt de id-service iFrame voor synchronisatie van id&#39;s zo snel mogelijk in plaats van dat het venster wordt geladen.
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

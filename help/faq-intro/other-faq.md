@@ -1,7 +1,7 @@
 ---
-description: Veelgestelde vragen over eigenschappen, functionaliteit, en kwesties met betrekking tot het gebruiken van andere oplossingen van Experience Cloud met de dienst van identiteitskaart
+description: Veelgestelde vragen over eigenschappen, functionaliteit, en kwesties met betrekking tot het gebruiken van andere Experience Cloud oplossingen met de dienst van identiteitskaart
 keywords: ID-service
-title: Veelgestelde vragen voor andere Experience Cloud-oplossingen
+title: Veelgestelde vragen voor andere oplossingen voor Experiencen Cloud
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Veelgestelde vragen voor andere Experience Cloud-oplossingen{#faqs-for-other-experience-cloud-solutions}
+# Veelgestelde vragen voor andere oplossingen voor Experiencen Cloud{#faqs-for-other-experience-cloud-solutions}
 
-Veelgestelde vragen over eigenschappen, functionaliteit, en kwesties met betrekking tot het gebruiken van andere oplossingen van Experience Cloud met de dienst van identiteitskaart
+Veelgestelde vragen over eigenschappen, functionaliteit, en kwesties met betrekking tot het gebruiken van andere Experience Cloud oplossingen met de dienst van identiteitskaart
 
 ## Analyse en Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**Zal de bezoekgeschiedenis van een gebruiker worden uitgevoerd van [!DNL Adobe Analytics] tot [!DNL Audience Manager] nadat ik de Experience Cloud Identity Service heb geïmplementeerd?**
+**zal de het bezoeken geschiedenis van een gebruiker van [!DNL Adobe Analytics] aan [!DNL Audience Manager] worden uitgevoerd nadat ik de Dienst van de Identiteit van het Experience Cloud implementeer?**
 
 Hier zijn twee opties:
 

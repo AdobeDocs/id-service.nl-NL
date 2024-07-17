@@ -5,8 +5,8 @@ title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 10%
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 10%
 
 Vereist voor meerdelige domeinen van het hoogste niveau waarbij een van de laatste twee delen van de URL groter is dan 2 tekens.
 
-**Syntaxis:** ` cookieDomain: " *`URL`*"` (De `www` voorvoegsel is niet vereist.)
+**Syntaxis:** ` cookieDomain: " *` URL `*"` (Het `www` voorvoegsel wordt niet vereist.)
 
-**Gebruiksscenario**
+**Geval van het Gebruik**
 
 * Vereist: `www.example.com.uk`
 * Niet vereist: `www.example.co.uk`
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

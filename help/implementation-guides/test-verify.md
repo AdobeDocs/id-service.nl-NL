@@ -1,47 +1,47 @@
 ---
-description: Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van identiteitskaart behoorlijk werkt. Deze tests zijn op de dienst van identiteitskaart in het algemeen en voor verschillende de dienst en oplossingscombinaties van identiteitskaart van toepassing Experience Cloud.
+description: Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van identiteitskaart behoorlijk werkt. Deze tests zijn van toepassing op de dienst van identiteitskaart in het algemeen en voor verschillende de dienst en van het Experience Cloud oplossingscombinaties van identiteitskaart
 keywords: ID-service
-title: De Experience Cloud Identity Service testen en verifiëren
+title: De identiteitsdienst van het Experience Cloud testen en verifiëren
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
-# De Experience Cloud Identity Service testen en verifiëren{#test-and-verify-the-experience-cloud-id-service}
+# De identiteitsdienst van het Experience Cloud testen en verifiëren{#test-and-verify-the-experience-cloud-id-service}
 
-Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van identiteitskaart behoorlijk werkt. Deze tests zijn op de dienst van identiteitskaart in het algemeen en voor verschillende de dienst en oplossingscombinaties van identiteitskaart van toepassing Experience Cloud.
+Deze instructies, hulpmiddelen, en procedures helpen u bepalen als de dienst van identiteitskaart behoorlijk werkt. Deze tests zijn van toepassing op de dienst van identiteitskaart in het algemeen en voor verschillende de dienst en van het Experience Cloud oplossingscombinaties van identiteitskaart
 
 ## Voordat u begint {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
 Belangrijke informatie die u moet weten voordat u de id-service gaat testen en controleren.
 
-**Browseromgevingen**
+**Browser milieu&#39;s**
 
 Wanneer het testen in een normale browser zitting, ontruim uw browser geheim voorgeheugen vóór elke test.
 
 U kunt de id-service ook testen in een anonieme of incognito-browsersessie. In een anonieme zitting, te hoeven u niet om uw browser koekjes of geheime voorgeheugen vóór elke test te ontruimen.
 
-**Tools**
+**Hulpmiddelen**
 
-De [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) en de [Charles HTTP-proxy](https://www.charlesproxy.com/) kan u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+De [ debugger van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) en de [ volmacht van HTTP van Charles ](https://www.charlesproxy.com/) kunnen u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
-## Testen met Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
+## Testen met de Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-Uw de dienstintegratie wordt gevormd behoorlijk wanneer u ziet [!DNL Experience Cloud ID] (MID) in de [!DNL Adobe] foutopsporingsreactie. Zie [Cookies en de Experience Cloud Identity Service](../introduction/cookies.md) voor meer informatie over de MID.
+Uw service-integratie is op de juiste wijze geconfigureerd wanneer u een [!DNL Experience Cloud ID] (MID) ziet in de foutopsporingsreactie van [!DNL Adobe] . Zie [ Cookies en de Dienst van de Identiteit van het Experience Cloud ](../introduction/cookies.md) voor meer informatie over MID.
 
-Om de status van de id-service te verifiëren met de [!DNL Adobe] [foutopsporing](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html):
+Om het statuut van de dienst van identiteitskaart met [!DNL Adobe] [ debugger ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) te verifiëren:
 
 1. Wis uw browsercookies of open een anonieme bladersessie.
 1. Laad de testpagina die de de dienstcode van identiteitskaart bevat.
-1. Open de [!DNL Adobe] foutopsporing.
+1. Open het foutopsporingsprogramma van [!DNL Adobe] .
 1. Controleer de resultaten voor een MID.
 
-## Resultaten van Adobe-foutopsporing {#section-bd2caa6643d54d41a476d747b41e7e25}
+## De resultaten van Adoben Debugger begrijpen {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis gebruikt: `MID= *`Experience Cloud-id`*`. De debugger toont deze informatie zoals hieronder getoond.
+MID wordt opgeslagen in een zeer belangrijk-waardepaar dat deze syntaxis gebruikt: `MID= *` identiteitskaart van het Experience Cloud `*`. De debugger toont deze informatie zoals hieronder getoond.
 
 **Succes**
 
@@ -51,14 +51,14 @@ De id-service is correct geïmplementeerd als u een reactie ziet die er als volg
 mid=20265673158980419722735089753036633573
 ```
 
-Als je een [!DNL Analytics] klant, u kunt een [!DNL Analytics] ID (STEUN) naast de MID. Dit gebeurt:
+Als u een [!DNL Analytics] -klant bent, ziet u mogelijk een [!DNL Analytics] ID (AID) naast de MID. Dit gebeurt:
 
 * Met sommige van uw vroege/lange-tijdbezoekers van de plaats.
 * Als u een respijtperiode hebt ingeschakeld.
 
-**Mislukt**
+**Mislukking**
 
-Contact [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) als de foutopsporing:
+De klantenzorg van het contact ](https://helpx.adobe.com/marketing-cloud/contact-support.html) als debugger:[
 
 * Retourneert geen MID.
 * Keert een foutenmelding terug die erop wijst dat uw partneridentiteitskaart niet provisioned is.
@@ -76,22 +76,22 @@ Om de status van de dienst van identiteitskaart met Charles te verifiëren:
 
 Verwijs naar deze sectie voor informatie over waar te kijken, en wat te zoeken, wanneer u Charles gebruikt om de vraag van HTTP te controleren.
 
-**Aanvragen voor ID-service met succes in Charles**
+**de Succesvolle verzoeken van de Dienst van identiteitskaart in Karel**
 
-De code van uw id-service werkt correct wanneer de `Visitor.getInstance` functie roept een JavaScript aan `dpm.demdex.net`. Een succesvol verzoek omvat uw [Organisatie-id](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). De organisatie-id wordt doorgegeven als sleutelwaardepaar dat deze syntaxis gebruikt: `d_orgid= *`organisatie-id`*`. Zoek naar `dpm.demdex.net` en de JavaScript-aanroepen onder de [!UICONTROL Structure] tab. Zoek uw organisatie-id onder de [!UICONTROL Request] tab.
+De servicecode van uw id werkt correct wanneer de functie `Visitor.getInstance` een JavaScript-aanroep naar `dpm.demdex.net` uitvoert. Een succesvol verzoek omvat uw [ identiteitskaart van de Organisatie ](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Identiteitskaart van de Organisatie wordt overgegaan als zeer belangrijk-waardepaar dat deze syntaxis gebruikt: `d_orgid= *` organisatie identiteitskaart `*`. Zoek naar de aanroepen `dpm.demdex.net` en JavaScript onder het tabblad [!UICONTROL Structure] . Zoek de organisatie-id op het tabblad [!UICONTROL Request] .
 
 ![](assets/charles_request.png)
 
-**Reacties met geslaagde id-service in Charles**
+**Succesvolle reacties van de Dienst van identiteitskaart in Karel**
 
-Uw account is correct ingericht voor de id-service wanneer de reactie van de [Gegevensverzamelingsservers](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) retourneert een MID. MID is geretourneerd als sleutelwaardepaar dat deze syntaxis gebruikt: `d_mid: *`Experience Cloud-id van bezoeker`*`. Zoek naar MID in [!UICONTROL Response] zoals hieronder weergegeven.
+Uw rekening is verstrekt correct voor de dienst van identiteitskaart wanneer de reactie van de [ Servers van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) een MID terugkeert. MID is teruggekeerd als zeer belangrijk-waardepaar dat deze syntaxis gebruikt: {identiteitskaart van het Experience Cloud van 0} bezoeker `*`. `d_mid: *` Zoek de id op het tabblad [!UICONTROL Response] (zie hieronder).
 
 ![](assets/charles_response_success.png)
 
-**Reacties van id-service in Charles zijn mislukt**
+**Ontbroken Reacties van de Dienst van identiteitskaart in Karel**
 
-Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Een niet-succesvolle reactie retourneert een foutcode en een foutbericht in het dialoogvenster [!UICONTROL Response] zoals hieronder weergegeven. Neem contact op met de klantenservice als dit foutbericht wordt weergegeven in het DCS-antwoord.
+Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Een mislukte reactie retourneert een foutcode en een foutbericht op het tabblad [!UICONTROL Response] , zoals hieronder wordt weergegeven. Neem contact op met de klantenservice als dit foutbericht wordt weergegeven in het DCS-antwoord.
 
 ![](assets/charles_response_unsuccessful.png)
 
-Zie voor meer informatie over foutcodes [DCS-foutcodes, berichten en voorbeelden](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Voor meer informatie over foutencodes, zie [ Codes van de Fout DCS, Berichten, en Voorbeelden ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).

@@ -4,7 +4,7 @@ title: Inschakelen-verwijzing
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ adobe.OptInCategories = {
 
 In deze sectie wordt het gebruik van de API voor het configureren van Inschakelen besproken. Veel van de configuratie en de implementatie kan worden gedaan gebruikend de uitbreiding van het Experience Platform Launch.
 
-Opt-inconfiguraties worden geleverd in de JavaScript-code van de bezoeker `getInstance()` functie, die het globale `adobe` object. De volgende lijst maakt een lijst van de configuraties van JS van de Bezoeker met betrekking tot de open-in dienst.
+Opt-inconfiguraties worden geleverd in de functie Visitor JavaScript `getInstance()` , die het algemene `adobe` -object instantieert. De volgende lijst maakt een lijst van de configuraties van JS van de Bezoeker met betrekking tot de open-in dienst.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
-Indien onwaar, geeft dit aan dat bezoekers niet hoeven aan te melden. Dit resulteert in het maken van Experience Cloud-cookies, ongeacht de categorieën die worden in- of uitgeschakeld. Met deze configuratie kunt u de optie Inschakelen in- of uitschakelen.
+Indien onwaar, geeft dit aan dat bezoekers niet hoeven aan te melden. Dit resulteert in Experiencen Cloud die cookies maken, ongeacht de categorieën die u in- of uitschakelt. Met deze configuratie kunt u de optie Inschakelen in- of uitschakelen.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
-Bepaal welke categorieën worden goedgekeurd of ontkend wanneer nog geen voorkeur door de bezoeker is geplaatst, die als organisatiestandaardinstellingen wordt bedoeld.
+Bepaal welke categorieën worden goedgekeurd of ontkend wanneer nog geen voorkeur door de bezoeker is geplaatst, die als organisatorische gebreken wordt bedoeld.
 
 **`previousPermissions (Object<adobe.OptInCategories enum: boolean>)`**
 
-De expliciet ingestelde voorkeuren van de bezoeker. De toestemmingen in dit config beschrijven organisatiegebreken ( `previousPermissions` overschrijven `preOptInApprovals`).
+De expliciet ingestelde voorkeuren van de bezoeker. De machtigingen in deze configuratie overschrijven de standaardinstellingen van de organisatie ( `previousPermissions` overschrijft `preOptInApprovals` ).
 
 **`isOptInStorageEnabled (boolean)`**
 
@@ -48,7 +48,7 @@ Opt-in inschakelen om de machtigingen op te slaan in een cookie van de eerste pa
 
 (Optioneel) **`optInCookiesDomain (string)`**
 
-Het domein of subdomein van de eerste partij dat voor het Opt-in koekje moet worden gebruikt (als `isOptInStorageEnabled` is waar)
+Domein van eerste partij of subdomein dat wordt gebruikt voor de Inschakelen-cookie (als `isOptInStorageEnabled` true is)
 
 (Optioneel) **`optInStorageExpiry (integer)`**
 
@@ -60,7 +60,7 @@ Op elk gewenst moment tijdens hun ervaring op uw site kan een bezoeker voorkeure
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Functie die de bezoeker goedkeurt of in alle categorieën in een lijst kiest. Zie voor meer informatie over de parameter shouldWaitForComplete [Workflow voor aanmelding](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Functie die de bezoeker goedkeurt of in alle categorieën in een lijst kiest. Voor meer informatie over de parameter shouldWaitForComplete, zie [ Opt-in Werkschema ](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -68,15 +68,15 @@ Functie die de bezoeker uit alle opgegeven categorieën weergeeft of opkiest.
 
 **`adobe.optIn.approveAll()`**:
 
-Als uw verzoek om toestemming voor het maken van cookies door uw site zo is geformuleerd dat een bezoekersdeken toestemming verleent of weigert voor uw site om cookies te maken, gebruikt u `approveAll()` of `denyAll()`, in verhouding tot hun reactie.
+Als uw verzoek om toestemming voor het maken van cookies door uw site zo wordt ingekort dat een bezoekersdeken uw site toestemming verleent of weigert om cookies te maken, gebruikt u `approveAll()` of `denyAll()` in verhouding tot hun reactie.
 
 **`adobe.optIn.denyAll()`**:
 
-Als uw verzoek om toestemming voor het maken van cookies door uw site zo is geformuleerd dat een bezoekersdeken toestemming verleent of weigert voor uw site om cookies te maken, gebruikt u `approveAll()` of `denyAll()`, in verhouding tot de reactie.
+Als uw verzoek om toestemming voor het maken van cookies door uw site zo wordt geformuleerd dat een bezoekersdeken uw site toestemming verleent of weigert om cookies te maken, gebruikt u `approveAll()` of `denyAll()` , afhankelijk van het antwoord.
 
 ## Parameters voor inkomende workflows {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-Inschakelen ondersteunt een workflow waarin rechten kunnen worden verzameld over meerdere aanvraagcycli, bijvoorbeeld waar voorkeuren een voor een worden gegeven. De volgende functies gebruiken en *true* for `shouldWaitForComplete` uw oplossing kan toestemming verzamelen voor één oplossing of een subset van de totale categorieën en vervolgens toestemming verzamelen voor de volgende of subset van categorieën. Beginnen bij de eerste oproep `adobe.optIn.status` eigenschap loopt af tot `adobe.optIn.complete()` wordt aangeroepen aan het einde van de flow. Zodra geroepen, wordt de status geplaatst aan *Voltooid*.
+Inschakelen ondersteunt een workflow waarin rechten kunnen worden verzameld over meerdere aanvraagcycli, bijvoorbeeld waar voorkeuren een voor een worden gegeven. Gebruikend de volgende functies en het verstrekken van *waar* voor `shouldWaitForComplete` plaatsen, kan uw oplossing toestemming voor één oplossing of een ondergroep van de totale categorieën verzamelen, dan toestemmingen voor volgende één of ondergroep van categorieën verzamelen. Vanaf de eerste aanroep is de eigenschap `adobe.optIn.status` in behandeling totdat `adobe.optIn.complete()` aan het einde van de flow wordt aangeroepen. Zodra geroepen, wordt de status geplaatst aan *Voltooid*.
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -88,7 +88,7 @@ Functie die de bezoeker uit alle opgegeven categorieën weergeeft of opkiest.
 
 `adobe.optIn.complete()`
 
-Functie die de samenvoeging van de voortschrijdende vraag om goed te keuren () en te ontkennen () in één verzoek teweegbrengt om de voorkeur van een bezoeker te plaatsen. Bij het abonneren op wijzigingen in Inschakelen (zie `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) hieronder, wordt uw callback teweeggebracht slechts wanneer deze functie wordt geroepen.
+Functie die de samenvoeging van de voortschrijdende vraag om goed te keuren () en te ontkennen () in één verzoek teweegbrengt om de voorkeur van een bezoeker te plaatsen. Wanneer u zich abonneert op wijzigingen in Opt-in (zie `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe` ) hieronder, wordt de callback alleen geactiveerd wanneer deze functie wordt aangeroepen.
 
 ## Parameters voor machtigingen voor bezoekers {#section-7fe57279b5b44b4f8fe47e336df60155}
 
@@ -96,7 +96,7 @@ Verzamel opt-in toestemmingen voor een bezoeker op elk ogenblik gebruikend één
 
 `adobe.optIn.permissions`
 
-Een object waarin alle Experience Cloud-oplossingen, als categorieën, worden vermeld die door de bezoeker zijn verleend of geweigerd.
+Een object waarin alle oplossingen voor Experiencen Cloud, als categorieën, worden vermeld die door de bezoeker zijn toegekend of geweigerd.
 
 `adobe.optIn.isApproved(categories)`
 
@@ -104,11 +104,11 @@ Als alle categorieën zijn goedgekeurd, retourneert deze functie true.
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-Haal de lijst met machtigingen asynchroon op. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. Een waarde opgeven van *true* for `shouldAutoSubscribe` registreert callback voor om het even welke Opt-binnen veranderingen die door:gaan. Hieronder vindt u eigenschappen van `adobe.OptIn`:
+Haal de lijst met machtigingen asynchroon op. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. Het verstrekken van een waarde van *waar* voor `shouldAutoSubscribe` registreert callback voor om het even welke Opt-binnen veranderingen die door:gaan. Hieronder vindt u eigenschappen van `adobe.OptIn` :
 
 **`permissions`**
 
-Een object waarin alle Experience Cloud-oplossingen, als categorieën, worden vermeld die door het voorbeeld van de bezoeker zijn verleend of geweigerd: `{ aa: true, ecid: false, aam: true... }`
+Een object met alle oplossingen voor Experiencen Cloud, als categorieën, die door de bezoeker zijn toegestaan of geweigerd. Voorbeeld: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
@@ -126,14 +126,14 @@ Waar of onwaar, afhankelijk van statuswaarde. Inschakelen rapporteert waar voor 
 
 **`isComplete`**
 
-Waar of onwaar afhankelijk van statuswaarde. Inschakelen kan false voor deze eigenschap melden wanneer een toestemming in workflowstijl is gestart maar niet is voltooid.
+Waar of onwaar afhankelijk van statuswaarde. Inschakelen kan een fout voor deze eigenschap melden wanneer een toestemming in workflowstijl is gestart maar niet is voltooid.
 
 ## Methoden van het object Opt-in {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: Een of meer categorieën die moeten worden goedgekeurd. Bijvoorbeeld: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`**: (optioneel) booleaanse parameter, standaard false. Als u waar doorgeeft, voltooit Opt-in niet het goedkeuringsproces tot u roept `adobe.optIn.complete()`. Dit proces is vergelijkbaar met een workflow.
+**`categories`**: een of meer categorieën die moeten worden goedgekeurd. Bijvoorbeeld: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**: (optioneel) Booleaanse parameter, standaard false. Als u true doorgeeft, wordt het goedkeuringsproces pas voltooid wanneer u `adobe.optIn.complete()` aanroept. Dit proces is vergelijkbaar met een workflow.
 
 ```
 <codeblock>
@@ -154,11 +154,11 @@ Controleer of een of meer categorieën door de klant zijn goedgekeurd.
 
 **`isPreApproved(categories)`**
 
-Controleer of een of meer categorieën vooraf zijn goedgekeurd door de klant. (Als ze zijn doorgegeven in het dialoogvenster `preOptInApprovals` config).
+Controleer of een of meer categorieën vooraf zijn goedgekeurd door de klant. (Als ze zijn doorgegeven in de `preOptInApprovals` config).
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-Async API om de lijst met machtigingen op te halen. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. **`shouldAutoSubscribe`:** Een helpernut, zal automatisch deze callback aan alle toekomstige gebeurtenissen intekenen. Betekenis callback zal worden geroepen telkens als een goedkeuring of ontkenning trekker in Opt binnen. Op deze manier wordt u altijd bijgewerkt, zonder zelf een abonnement op de gebeurtenissen te nemen.
+Async API om de lijst met machtigingen op te halen. De callback wordt geroepen met de lijst van toestemmingen, zodra de toestemmingen die/ontkennend proces verlenen volledig is. **`shouldAutoSubscribe`:** een helpernut, zal automatisch deze callback aan alle toekomstige gebeurtenissen intekenen. Betekenis callback zal worden geroepen telkens als een goedkeuring of ontkenning trekker in Opt binnen. Op deze manier wordt u altijd bijgewerkt, zonder zelf een abonnement op de gebeurtenissen te nemen.
 
 **Voorbeeld**
 
@@ -191,7 +191,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->Alleen gebruiken als u het `shouldWaitForComplete` parameter om goed te keuren of te ontkennen. Deze API voltooit het goedkeuringsproces. Voorbeeld: `adobe.optIn.complete()`.
+>Gebruik dit alleen als u de parameter `shouldWaitForComplete` hebt doorgegeven om goed te keuren of te weigeren. Deze API voltooit het goedkeuringsproces. Voorbeeld: `adobe.optIn.complete()` .
 
 **`approveAll()`:**
 
@@ -205,7 +205,7 @@ Alle bestaande rubrieken weigeren.
 
 **`complete`:**
 
-De gebeurtenis complete wordt geactiveerd wanneer het goedkeuringsproces is voltooid. Als u goedkeurt/ontkent zonder het overgaan roept `shouldWaitForComplete`, of `approveAll`/ `denyAll`, deze gebeurtenis wordt geactiveerd. Of wanneer u slaagt `shouldWaitForComplete`, deze gebeurtenis wordt geactiveerd wanneer `complete` wordt aangeroepen.
+De gebeurtenis complete wordt geactiveerd wanneer het goedkeuringsproces is voltooid. Als u Goedkeuren/Weigeren aanroept zonder `shouldWaitForComplete` of `approveAll` / `denyAll` door te geven, wordt deze gebeurtenis geactiveerd. Of als u `shouldWaitForComplete` doorgeeft, wordt deze gebeurtenis geactiveerd wanneer `complete` wordt aangeroepen.
 
 **Voorbeeld**
 

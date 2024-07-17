@@ -1,5 +1,5 @@
 ---
-description: getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van de Experience Cloud wordt geplaatst.
+description: getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van het Experience Cloud wordt geplaatst.
 keywords: ID-service
 title: getCustomerIDs
 exl-id: 4a05509b-99f6-42c8-a539-0784f5b9fabc
@@ -12,10 +12,10 @@ ht-degree: 0%
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van de Experience Cloud wordt geplaatst.
+getCustomerIDs keert om het even welke klant IDs terug die door de Dienst van de Identiteit van het Experience Cloud wordt geplaatst.
 
 <!--
 Is there anything else we can say about this??
 -->
 
-` var *`variabelenaam`* = visitor.getCustomerIDs();`
+` var *` veranderlijke naam `* = visitor.getCustomerIDs();`

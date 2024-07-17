@@ -5,7 +5,7 @@ title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Retourneert de (eventuele) bestaande Analytics-id die in het s_vi-cookie is opge
 
 **Syntaxis** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Deze functie wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getAnalyticsVisitorID` werkt ook met callback functies om te lezen [!DNL Analytics] ID&#39;s en breng ze naar uw systeem of toepassing.
+Deze functie wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getAnalyticsVisitorID` werkt ook met callback-functies om [!DNL Analytics] ID&#39;s te lezen en deze naar uw systeem of toepassing te brengen.
 
-**Voorbeeldcode**
+**Code van de Steekproef**
 
 ```js
 //callback function 
@@ -32,24 +32,23 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->Als je een [!DNL Analytics] klant, controleren en verzenden ook [!DNL Analytics] ID aan uw functie. U wilt bijvoorbeeld beide id&#39;s wanneer u de bezoekersidentiteitskaart in een verborgen formulierelement doorgeeft aan een servertoepassing die de API voor het invoegen van gegevens gebruikt. In dit geval dient u de [!DNL Experience Cloud] en [!DNL Analytics] bezoeker-id&#39;s. Zie [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
+>Als u een [!DNL Analytics] -klant bent, controleert u ook of de [!DNL Analytics] -id is opgeslagen en verzendt u deze naar uw functie. U wilt bijvoorbeeld beide id&#39;s wanneer u de bezoekersidentiteitskaart in een verborgen formulierelement doorgeeft aan een servertoepassing die de API voor het invoegen van gegevens gebruikt. In dit geval moet u de gebruikers-id&#39;s [!DNL Experience Cloud] en [!DNL Analytics] verzamelen en retourneren. Zie [ getMarketingCloudVisitorID ](../../library/get-set/getmcvid.md).
 
-**De parameter &quot;aid&quot; is een oudere waarde**
+**de &quot;hulp&quot;Parameter is een Verouderde Waarde**
 
-De `aid` wordt in een queryreeks weergegeven onder 2 verschillende sets voorwaarden.
+De parameter `aid` wordt in een queryreeks weergegeven onder twee verschillende toestanden.
 
-**Zaak 1**
+**Geval 1**
 
-U ziet de `aid` parameter in een queryreeks als:
+De parameter `aid` wordt in een queryreeks weergegeven wanneer:
 
-* De [!DNL Experience Cloud] De dienst van identiteitskaart wordt opgesteld correct.
-* De gebruiker die een site bezoekt, heeft al een [!DNL Analytics] ID opgeslagen in hun [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
+* De [!DNL Experience Cloud] ID-service wordt correct geïmplementeerd.
+* De gebruiker die een plaats bezoekt heeft een reeds bestaande [!DNL Analytics] identiteitskaart die in hun [ s_vi koekje ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) wordt opgeslagen.
 
-**Zaak 2**
+**Geval 2**
 
-U ziet de `aid` parameter in een vraagkoord wanneer uw organisatie een [respijtperiode](../../reference/analytics-reference/grace-period.md) voordat u de id-service volledig implementeert. Als de gebruiker die uw site bezoekt nieuw is en u geen respijtperiode gebruikt, krijgt de bezoeker de `mid` ( [!DNL Experience Cloud] ID).
+U zult de `aid` parameter in een vraagkoord zien wanneer uw organisatie a [ respijtperiode ](../../reference/analytics-reference/grace-period.md) alvorens de dienst van identiteitskaart volledig uit te voeren gebruikt. Als de gebruiker die uw site bezoekt nieuw is en u geen respijtperiode gebruikt, krijgt de bezoeker de parameter `mid` ( [!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >
->* [Analysecookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
-
+>* [ Cookies van Analytics ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)

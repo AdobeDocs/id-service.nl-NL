@@ -6,7 +6,7 @@ exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -14,23 +14,23 @@ ht-degree: 3%
 
 Een optionele, Booleaanse markering die voorkomt dat de id-service aanroepen naar andere domeinen uitvoert.
 
-**Syntaxis:** ` `disableThirdPartyCalls: true|false&quot;(standaardwaarde) `false`.)
+**Syntaxis:** ` ` disableThirdPartyCalls: waar|vals&quot;(het gebrek is `false`.)
 
-Wanneer `disableThirdPartyCalls: true`, zal de dienst van identiteitskaart geen vraag aan andere domeinen maken.
+Wanneer `disableThirdPartyCalls: true` , zal de dienst van identiteitskaart geen vraag aan andere domeinen maken.
 
 **Doel**
 
 Deze variabele is ontworpen voor klanten die:
 
 * Om de dienst van identiteitskaart te verhinderen vraag van hun veilige, voor authentiek verklaarde pagina&#39;s te maken.
-* Site-bezoekers moeten een Experience Cloud-id (MID) hebben.
-* Hun andere Experience Cloud oplossingen werken naar behoren.
+* Site-bezoekers krijgen een Experience Cloud-id (MID).
+* Hun andere Experience Cloud oplossingen om goed te werken.
 
-**Implementatiestrategie**
+**Strategie van de Implementatie**
 
-Omdat andere Experience Cloud oplossingen zich op MID baseren, roept de dienst van identiteitskaart Adobe om deze identiteitskaart terug te keren en te plaatsen. Als u de dienst van identiteitskaart van het maken van vraag van voor authentiek verklaarde gedeelten van uw website moet tegenhouden, dan laat het deze vereiste vraag van pagina&#39;s maken die eerst geen authentificatie vereisen. Nadat de bezoeker van de site een id heeft, kunt u `disableThirdPartyCalls= true` in de ID-servicecode op de geverifieerde gedeelten van uw site. De veronderstelling hier is dat de meeste, zo niet alle, van uw klanten aan een authentificatiepagina zullen navigeren alvorens zij toegang tot de veilige delen van uw plaats krijgen.
+Omdat andere Experience Cloud oplossingen zich op MID baseren, roept de dienst van identiteitskaart Adobe om deze identiteitskaart terug te keren en te plaatsen. Als u de dienst van identiteitskaart van het maken van vraag van voor authentiek verklaarde gedeelten van uw website moet tegenhouden, dan laat het deze vereiste vraag van pagina&#39;s maken die eerst geen authentificatie vereisen. Nadat de bezoeker van uw site een id heeft, kunt u `disableThirdPartyCalls= true` instellen in de code voor de id-service op de geverifieerde gedeelten van uw site. De veronderstelling hier is dat de meeste, zo niet alle, van uw klanten aan een authentificatiepagina zullen navigeren alvorens zij toegang tot de veilige delen van uw plaats krijgen.
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

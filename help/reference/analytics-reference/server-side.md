@@ -1,34 +1,34 @@
 ---
-description: In sommige implementaties worden bezoeker-id's vanuit JavaScript doorgegeven aan een server, zodat extra Analytics-gebeurtenissen (zoals een aankoop) door de server kunnen worden verzonden.
+description: In sommige implementaties worden bezoeker-id's doorgegeven van JavaScript naar een server, zodat extra Analytics-gebeurtenissen (zoals een aankoop) door de server kunnen worden verzonden.
 keywords: ID-service
 title: Implementatie aan de serverzijde gemengd met JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 4%
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
 # Implementatie aan de serverzijde gemengd met JavaScript {#server-side-implementation-mixed-with-javascript}
 
-In sommige implementaties worden bezoeker-id&#39;s vanuit JavaScript doorgegeven aan een server, zodat extra Analytics-gebeurtenissen (zoals een aankoop) door de server kunnen worden verzonden.
+In sommige implementaties worden bezoeker-id&#39;s doorgegeven van JavaScript naar een server, zodat extra Analytics-gebeurtenissen (zoals een aankoop) door de server kunnen worden verzonden.
 
-De ID-service-API biedt de methoden. [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) en [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md)om de id-waarden op te halen die vervolgens aan de server kunnen worden doorgegeven.
+De dienst API van identiteitskaart verstrekt de methodes, [ getMarketingCloudVisitorID ](../../library/get-set/getmcvid.md) en [ getAnalyticsVisitorID ](../../library/get-set/getanalyticsvisitorid.md), om de waarden terug te winnen van identiteitskaart die dan aan de server kunnen worden overgegaan.
 
-Controleer of de bezoeker-id van de Experience Cloud en de bezoeker-id van de Analyse zijn gecontroleerd en verstuur beide id&#39;s (indien aanwezig) om te controleren of de verzonden gegevens zijn gekoppeld aan het bestaande profiel van de Analyse-bezoeker.
+Controleer of de bezoeker-id van het Experience Cloud en de bezoeker-id van Analytics zijn gecontroleerd en verzend beide id&#39;s (indien aanwezig) om te controleren of de verzonden gegevens zijn gekoppeld aan het bestaande profiel voor Analytics-bezoekers.
 
 >[!IMPORTANT]
 >
 >AppMeasurement voor Java biedt momenteel geen ondersteuning voor de Experience Cloud Identity Service.
 
-## API voor data-invoer {#section-955ce7664a4646d38b3005cb2df40baf}
+## API voor gegevensinvoer {#section-955ce7664a4646d38b3005cb2df40baf}
 
-De bezoeker-id van Analytics (indien ingesteld) opnemen in het dialoogvenster `<visitorID>` element.
+Neem de bezoeker-id voor Analytics (indien ingesteld) op in het element `<visitorID>` .
 
-De Experience Cloud-bezoeker-id opnemen in het dialoogvenster `<marketingCloudVisitorID>` element.
+Neem de bezoeker-id van het Experience Cloud op in het element `<marketingCloudVisitorID>` .
 
-Zie [Ondersteunde XML-labels](https://developer.adobe.com/).
+Zie [ Gesteunde Markeringen van XML ](https://developer.adobe.com/).
 
 ## AppMeasurement voor Java {#section-d664b94934924d048300d9c2b6560085}
 

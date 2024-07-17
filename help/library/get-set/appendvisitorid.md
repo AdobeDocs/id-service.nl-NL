@@ -5,7 +5,7 @@ title: appendVisitorIDsTo (Cross-Domain Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,14 @@ Inhoud:
 
 ## Bezoekers bijhouden op verschillende domeinen wanneer browsers cookies van derden blokkeren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-De dienst van identiteitskaart schrijft een eerste en derdekoekje aan browser wanneer een persoon uw plaats bezoekt (zie [Cookies en de Experience Cloud Identity Service](../../introduction/cookies.md) ). Het cookie van de eerste partij bevat de MID, een unieke id voor die bezoeker. Het cookie van de andere fabrikant bevat een andere id die door de ID-service wordt gebruikt om de id te genereren. Wanneer een browser dit cookie van derden blokkeert, kan de id-service het volgende niet:
+De dienst van identiteitskaart schrijft een eerste en derdekoekje aan browser wanneer een persoon uw plaats (zie [ Cookies en de Dienst van de Identiteit van het Experience Cloud ](../../introduction/cookies.md)) bezoekt. Het cookie van de eerste partij bevat de MID, een unieke id voor die bezoeker. Het cookie van de andere fabrikant bevat een andere id die door de ID-service wordt gebruikt om de id te genereren. Wanneer een browser dit cookie van derden blokkeert, kan de id-service het volgende niet:
 
 * Regenereer de unieke id voor die sitebezoeker wanneer deze naar een ander domein navigeert.
 * Bezoekers bijhouden in verschillende domeinen die eigendom zijn van uw organisatie.
 
-Om dit probleem te helpen oplossen, implementeert u ` Visitor.appendVisitorIDsTo( *`url`*)`. Met deze eigenschap kunnen bezoekers van sites in meerdere domeinen door de ID-service worden getraceerd, zelfs als hun browsers cookies van derden blokkeren. Het werkt als volgt:
+Om dit probleem op te lossen, voer ` Visitor.appendVisitorIDsTo( *` url `*)` uit. Met deze eigenschap kunnen bezoekers van sites in meerdere domeinen door de ID-service worden getraceerd, zelfs als hun browsers cookies van derden blokkeren. Het werkt als volgt:
 
-* Wanneer een bezoeker naar uw andere domeinen bladert, ` Visitor.appendVisitorIDsTo( *`url`*)` voegt de MID als vraagparameter in URL toe die van het originele domein aan het bestemmingsdomein opnieuw richt.
+* Aangezien een bezoeker aan uw andere domeinen doorbladert, voegt ` Visitor.appendVisitorIDsTo( *` url `*)` MID als vraagparameter in URL toe die van het originele domein aan het bestemmingsdomein opnieuw richt.
 * De de dienstcode van identiteitskaart op het bestemmingsdomein haalt MID uit URL in plaats van het verzenden van een verzoek naar Adobe voor identiteitskaart van die bezoeker. Deze aanvraag bevat de cookie-id van een andere fabrikant, die in dit geval niet beschikbaar is.
 * De de dienstcode van identiteitskaart op de bestemmingspagina gebruikt overgegaan MID om de bezoeker te volgen.
 
@@ -41,11 +41,11 @@ Zie het codevoorbeeld voor meer informatie.
 
 ## Voorbeeld van code bezoeker-id toevoegen {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-De volgende voorbeeldcode kan u helpen om aan de slag te gaan met `appendVisitorIDsTo` functie:
+Met de volgende voorbeeldcode kunt u aan de slag met de functie `appendVisitorIDsTo` :
 
 >[!TIP]
 >
->Deze code kan in de redacteur van de Code van de Douane worden geplaatst die deel van de uitbreiding van Adobe Analytics of bij de bovenkant van uitmaakt [AppMeturement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
+>Deze code kan in de redacteur van de Code van de Douane worden geplaatst die deel van de uitbreiding van Adobe Analytics of bij de bovenkant van [ AppMeasurement.js ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) uitmaakt.
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

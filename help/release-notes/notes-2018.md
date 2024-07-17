@@ -1,18 +1,18 @@
 ---
-description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
+description: De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van het Experience Cloud voor 2018.
 keywords: ID-service
 title: Opmerkingen bij de release 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
 # Opmerkingen bij de release 2018 {#release-notes}
 
-De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van de Experience Cloud voor 2018.
+De versies van de eigenschap, updates, of veranderingen in de Dienst van de Identiteit van het Experience Cloud voor 2018.
 
 ## Versie 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -26,7 +26,7 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Meer beveiliging voor AMCV-cookies </p> </td> 
-   <td colname="col2"> <p>Tijdens een interne beveiligingsscan werd ontdekt dat bij gebruik van de DTM-bibliotheek cookies die voor sessiebeheer worden gebruikt, geen juiste kenmerken kunnen opgeven. Dit kan ertoe leiden dat cookie-informatie onbedoeld wordt gedeeld. Om dit op te lossen, hebben wij een configuratie geïntroduceerd die de Klant toestaat om het koekje van AMCV als veilig te plaatsen. Zie <a href="/help/library/function-vars/securecookie.md" format="https" scope="external"> secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Tijdens een interne beveiligingsscan werd ontdekt dat bij gebruik van de DTM-bibliotheek cookies die voor sessiebeheer worden gebruikt, geen juiste kenmerken kunnen opgeven. Dit kan ertoe leiden dat cookie-informatie onbedoeld wordt gedeeld. Om dit op te lossen, hebben wij een configuratie geïntroduceerd die de Klant toestaat om het koekje van AMCV als veilig te plaatsen. Zie <a href="/help/library/function-vars/securecookie.md" format="https" scope="external"> secureCookie </a> . </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,7 +51,7 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS is beschikbaar in Public Git repo </td> 
-   <td colname="col2"> ECID JS is nu beschikbaar in Public Git repo voor alle klanten van Experience Cloud op https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
+   <td colname="col2"> ECID JS is nu beschikbaar in Public Git repo voor alle klanten in de Experience Cloud op https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,7 +77,7 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
 
 >[!NOTE]
 >
->Het wordt aanbevolen om zo snel mogelijk een upgrade uit te voeren van versie 3.1.0 naar de nieuwste versie. Zie de beschrijving van versie 3.1.2. De nieuwste bundel is beschikbaar in Adobe Experience Platform Launch, DTM en AppMeasurement.
+>Het wordt aanbevolen om zo snel mogelijk een upgrade uit te voeren van versie 3.1.0 naar de nieuwste versie. Zie versie 3.1.2. De nieuwste bundel is beschikbaar in Adobe Experience Platform Launch, DTM en AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -106,11 +106,11 @@ De versies van de eigenschap, updates, of veranderingen in de Dienst van de Iden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread levert meerdere id-synchronisatieaanvragen op </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Voor klanten die meerdere id-synchronisaties uitvoeren, wordt de interface in sommige gevallen geblokkeerd vanwege continue CPU-berekeningen. We introduceren thread die ervoor zorgt dat de verzoeken voor id-synchronisatie met telkens 100 msec worden gescheiden. </p> <p>Deze wijziging verbetert de prestaties voor klanten die Visitor 2.3.0+ en DIL 6.10+ gebruiken. </p> </td> 
+   <td colname="col2"> <p><b> Iframe </b> </p> <p>Voor klanten die meerdere id-synchronisaties uitvoeren, wordt de interface in sommige gevallen geblokkeerd vanwege continue CPU-berekeningen. We introduceren thread die ervoor zorgt dat de verzoeken voor id-synchronisatie met telkens 100 msec worden gescheiden. </p> <p>Deze wijziging verbetert de prestaties voor klanten die Visitor 2.3.0+ en DIL 6.10+ gebruiken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Toegevoegde de capaciteit om derdevraag onbruikbaar te maken </td> 
-   <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>Adobe noemde de volgende configuraties anders om voor het onbruikbaar maken van vraag van de derdesynchronisatie toe te staan. </p> <p>idSyncDisableSyncs to disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing omThirdPartyCookies uit te schakelen </p> </td> 
+   <td colname="col2"> <p><b> JavaScript - 3.0.0 </b> </p> <p>De Adobe hernoemde de volgende configuraties om voor het onbruikbaar maken van derdesynchronisatievraag toe te staan. </p> <p>idSyncDisableSyncs to disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing omThirdPartyCookies uit te schakelen </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ondersteuning voor Internet Explorer </p> </td> 

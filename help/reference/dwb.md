@@ -1,31 +1,31 @@
 ---
-description: Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
+description: Volg deze instructies om het gebied van identiteitskaart van het Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
 keywords: ID-service
-title: Data Workbench en Experience Cloud Identity Service
+title: Data Workbench en de dienst Identiteit Experience Cloud
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
-# Data Workbench en Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench en de dienst Identiteit Experience Cloud {#data-workbench-and-the-experience-cloud-id-service}
 
-Volg deze instructies om het gebied van identiteitskaart van de Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
+Volg deze instructies om het gebied van identiteitskaart van het Experience Cloud in Data Workbench te integreren. Met dit proces kunt u de permanente Experience Cloud-id in uw gegevensfeed gebruiken, waardoor u beter kunt integreren met andere producten in de Adobe Experience Cloud en bezoekers beter kunnen volgen.
 
-Bijwerken [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) om de dienst van identiteitskaart te gebruiken:
+[ Data Workbench ](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) bijwerken om de dienst van identiteitskaart te gebruiken:
 
-1. De huidige locatie [Decoderingsgroep](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) configuratiebestand.
+1. Bepaal de plaats van het huidige ](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) configuratiedossier van de Groep 0} Decoder.[
 
-   De [!DNL Decoder Group] bevindt zich in een [!UICONTROL Profile Manager] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
+   De [!DNL Decoder Group] bevindt zich doorgaans in een [!UICONTROL Profile Manager] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg` . 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
 1. Plak de decoderingsindeling onder het origineel.
 1. Open de decoderingsindeling en voeg de volgende nieuwe veldposities toe aan het einde van de lijst:
 
    * `x-mcvisid`
    * `x-tnt-action`
 
-   Laat de velden leeg als u ze niet kunt gebruiken of definiëren.  **Decoderingsinstructies**
+   Laat de velden leeg als u ze niet kunt gebruiken of definiëren.  **het Decoderen Instructies**
 
 Zie de volledige onderstaande decoderingsinhoud, inclusief de hierboven vermelde nieuwe velden.
 

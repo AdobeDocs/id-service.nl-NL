@@ -6,7 +6,7 @@ exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '37'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ Een optionele, Booleaanse markering die id-synchronisatie uitschakelt.
 >
 >Deze configuratie was `idSyncDisableSyncs` en hernoemd naar `disableIdSyncs` in de release van 18 januari 2018 van v3.0.
 
-**Syntaxis:** `disableIdSyncs: true|false` (standaard is `false`.)
+**Syntaxis:** `disableIdSyncs: true|false` (gebrek is `false`.)
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

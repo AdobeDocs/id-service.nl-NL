@@ -5,8 +5,8 @@ title: Veelgestelde vragen over Analytics and Identity Service
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '963'
+ht-degree: 0%
 
 ---
 
@@ -18,47 +18,47 @@ Veelgestelde vragen over functies, functionaliteit en problemen met betrekking t
 
 **Hoe vind ik mijn het volgen serverinformatie?**
 
-Elk behoorlijk gevormd stuk van code AppMeasurement bevat uw het volgen serverinformatie.
+Elk behoorlijk gevormd stuk van de code van het AppMeasurement bevat uw het volgen serverinformatie.
 
-Soms kunnen klanten hun Analytics AppMeturement-bestand echter opsplitsen in afzonderlijke bestanden. Sommige klanten kunnen bijvoorbeeld configuratievariabelen in één bestand plaatsen, een tweede bestand voor plug-ins gebruiken en vervolgens AppMeasurement-code in een derde bestand plaatsen. Dit wordt niet aanbevolen.
+Soms kunnen klanten hun Analytics AppMeasurement echter opsplitsen in aparte bestanden. Sommige klanten kunnen bijvoorbeeld configuratievariabelen in één bestand plaatsen, een tweede bestand voor plug-ins gebruiken en vervolgens de code van het AppMeasurement in een derde bestand plaatsen. Dit wordt niet aanbevolen.
 
-Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. Contact [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u de gegevens van de trackingserver niet kunt vinden.
+Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. De Zorg van de Klant van het contact [ ](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u uw het volgen serverinformatie niet kunt vinden.
 
-**Wat gebeurt als ik de Dienst van de Identiteit gebruik en mijn het volgen server verander?**
+**wat gebeurt als ik de Dienst van de Identiteit gebruikt en mijn het volgen server veranderen?**
 
-Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïdentificeerd. Oudere bezoekers die niet naar de identiteitsdienst zijn gemigreerd en nog steeds met een Analytics-cookie zijn geïdentificeerd, worden uitgeknipt. Het aantal betrokken gebruikers zou afhangen van hoe lang de Dienst van de Identiteit actief is geweest. Zo kan een implementatie waarbij de identiteitsservice al één week actief is, meer verouderde gebruikers hebben dan een implementatie waarbij de identiteitsservice al zes maanden actief is omdat gebruikers die naar de site terugkeren, zijn gemigreerd.
+Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïdentificeerd. Oudere bezoekers die niet naar de identiteitsdienst zijn gemigreerd en nog steeds met een Analytics-cookie zijn geïdentificeerd, worden uitgeknipt. Het aantal betrokken gebruikers zou afhangen van hoe lang de Dienst van de Identiteit actief was. Zo kan een implementatie waarbij de identiteitsservice al één week actief is, meer verouderde gebruikers hebben dan een implementatie waarbij de identiteitsservice al zes maanden actief is omdat gebruikers die naar de site terugkeren, zijn gemigreerd.
 
 ## Implementatie en configuratie {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
-**Moet ik opstelling een NAAM om bezoekers over domeinen te volgen?**
+**moet ik opstelling een NAAM om bezoekers over domeinen te volgen?**
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die cookies van derden accepteren, wordt een cookie ingesteld in het dialoogvenster [demdex.net-domein](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) tijdens de aanvraag om een bezoekersidentiteitskaart op te halen. Met dit cookie kan de Identity Service dezelfde Experience Cloud bezoeker-id retourneren op alle domeinen die zijn geconfigureerd met dezelfde organisatie-id. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
+In browsers die derdekoekjes goedkeuren, wordt een koekje geplaatst in het [ demdex.net domein ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) tijdens het verzoek om een bezoekersidentiteitskaart terug te winnen. Dit koekje staat de Dienst van de Identiteit toe om zelfde identiteitskaart van de bezoeker van het Experience Cloud op alle domeinen terug te keren die gebruikend zelfde organisatieidentiteitskaart worden gevormd. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
 Zelfs wanneer een CNAME wordt gevormd, als de belangrijkste ingangsplaats niet eerst wordt bezocht, worden de bezoekers geïdentificeerd verschillend op de secundaire plaats en de belangrijkste plaats in browsers die derde koekjes niet goedkeuren.
 
-**Waarom is de parameter van Experience Cloud ID (MID) niet in het verzoek Analytics?**
+**waarom is de parameter van identiteitskaart van het Experience Cloud (MID) niet in het verzoek van Analytics?**
 
-Als de Identiteitsdienst correct informatie terugkeert maar u ziet niet `MID` , zorgt u ervoor dat u een upgrade hebt uitgevoerd naar een ondersteunde versie van AppMeasurement.
+Als de Identity Service de gegevens correct retourneert maar de parameter `MID` niet ziet, controleert u of u de upgrade naar een ondersteunde versie van het AppMeasurement hebt uitgevoerd.
 
-**Kan mijn site H-code en AppMeasurement gebruiken voor JavaScript met de Identity Service?**
+**kan mijn plaats de code en het AppMeasurement van H voor JavaScript met de Dienst van de Identiteit gebruiken?**
 
-Ja. Zolang beide bestanden naar hetzelfde bestand VisitorAPI.js verwijzen, kunt u op uw site een combinatie van H-code en AppMeasurement voor JavaScript gebruiken.
+Ja. Zolang beide bestanden naar hetzelfde bestand VisitorAPI.js verwijzen, kunt u een combinatie van H-code en AppMeasurement voor JavaScript op uw site gebruiken.
 
 H-code wordt echter niet ondersteund met de code bezoekerAPI.js versie 1.6 of hoger. Als u wilt upgraden naar bezoekerAPI.js v 1.6 (of hoger), kunt u niet doorgaan met het gebruik van H-code.
 
-**Wat is een respijtperiode en hoe vorm ik het?**
+**wat een respijtperiode is en hoe vorm ik het?**
 
-Zie [De statusrespijtperiode van de identiteitsdienst](../reference/analytics-reference/grace-period.md) en contact opnemen [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Zie [ de Periode van de Restitutie van de Dienst van de Identiteit ](../reference/analytics-reference/grace-period.md) en contacteer [ de Zorg van de Klant ](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
-**Waarom moet ik naar de Inzameling van Gegevens in real time (RDC) migreren om de Dienst van de Identiteit te gebruiken?**
+**waarom ik aan Inzameling van Gegevens in real time (RDC) moet migreren om de Dienst van de Identiteit te gebruiken?**
 
-De RDC biedt prestatievoordelen en is vereist om ervoor te zorgen dat uw implementatie gereed is voor de volgende functies die wereldwijd Adobe van randnotities kunnen benutten. Zie [Analysevereisten: Regionale gegevensverzameling (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
+De RDC biedt wereldwijd prestatievoordelen en is vereist om ervoor te zorgen dat uw implementatie gereed is voor toekomstige functies die het wereldwijde netwerk van randnoten van de Adobe benutten. Zie [ de Vereisten van Analytics: Regionale Inzameling van Gegevens (RDC) ](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
 
 ## Rapportage {#section-123cd55a32e54a45a23beb140becfa8f}
 
-**Wat zijn enkele mogelijke oorzaken van discrepanties wanneer Analytics met de Dienst van de Identiteit wordt gebruikt?**
+**wat zijn sommige mogelijke oorzaken van discrepanties wanneer het gebruiken van Analytics met de Dienst van de Identiteit?**
 
 Veelvoorkomende oorzaken van verschillen bij het gebruik van de identiteitsdienst zijn:
 
@@ -67,7 +67,7 @@ Veelvoorkomende oorzaken van verschillen bij het gebruik van de identiteitsdiens
 
 ## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
-**Wat gebeurt er in Analytics wanneer de Identity Service het AMCV-cookie niet kan instellen?**
+**wat in Analytics gebeurt wanneer de Dienst van de Identiteit niet het koekje AMCV kan plaatsen?**
 
 Er zijn drie mogelijke scenario&#39;s waarbij dit van invloed is op de analysegegevens voor nieuwe bezoekers:
 
@@ -89,5 +89,4 @@ Er zijn drie mogelijke scenario&#39;s waarbij dit van invloed is op de analysege
 
 >[!MORELIKETHIS]
 >
->* [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html)
-
+>* [ de Zorg van de Klant ](https://helpx.adobe.com/marketing-cloud/contact-support.html)

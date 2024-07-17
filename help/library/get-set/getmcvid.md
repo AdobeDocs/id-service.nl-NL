@@ -1,5 +1,5 @@
 ---
-description: getMarketingCloudVisitorID retourneert de Experience Cloud-bezoeker-id.
+description: getMarketingCloudVisitorID retourneert de Experience Cloud bezoeker-id.
 keywords: ID-service
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # getMarketingCloudVisitorID{#getmarketingcloudvisitorid}
 
-getMarketingCloudVisitorID retourneert de Experience Cloud-bezoeker-id.
+getMarketingCloudVisitorID retourneert de Experience Cloud bezoeker-id.
 
-**Syntaxis:** ` var *`variabelenaam`* = visitor.getMarketingCloudVisitorID()`
+**Syntaxis:** ` var *` veranderlijke naam `* = visitor.getMarketingCloudVisitorID()`
 
-Deze methode wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getMarketingCloudVisitorID` werkt ook met callback functies om te lezen [!DNL Analytics] ID&#39;s en breng ze naar uw systeem of toepassing.
+Deze methode wordt meestal gebruikt met aangepaste oplossingen waarvoor de bezoeker-id moet worden gelezen. Het wordt niet gebruikt door een standaardimplementatie. `getMarketingCloudVisitorID` werkt ook met callback-functies om [!DNL Analytics] ID&#39;s te lezen en deze naar uw systeem of toepassing te brengen.
 
 ```js
 //callback function 
@@ -30,4 +30,4 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingCloudID)
 
 >[!TIP]
 >
->Als je een [!DNL Analytics] klant, controleren en verzenden ook [!DNL Analytics] ID aan uw functie. U wilt bijvoorbeeld beide id&#39;s wanneer u de bezoekersidentiteitskaart in een verborgen formulierelement doorgeeft aan een servertoepassing die de API voor het invoegen van gegevens gebruikt. In dit geval dient u de [!DNL Experience Cloud] en [!DNL Analytics] bezoeker-id&#39;s. Zie [Bezoeker-id voor analyse ophalen](../../library/get-set/getanalyticsvisitorid.md).
+>Als u een [!DNL Analytics] -klant bent, controleert u ook of de [!DNL Analytics] -id is opgeslagen en verzendt u deze naar uw functie. U wilt bijvoorbeeld beide id&#39;s wanneer u de bezoekersidentiteitskaart in een verborgen formulierelement doorgeeft aan een servertoepassing die de API voor het invoegen van gegevens gebruikt. In dit geval moet u de gebruikers-id&#39;s [!DNL Experience Cloud] en [!DNL Analytics] verzamelen en retourneren. Zie [ identiteitskaart van de Bezoeker van de Analyse ](../../library/get-set/getanalyticsvisitorid.md) krijgen.

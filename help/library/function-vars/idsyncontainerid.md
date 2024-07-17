@@ -5,8 +5,8 @@ title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,9 @@ Inhoud:
 
 ## Syntaxis en codevoorbeeld {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**Syntaxis:** ` idSyncContainerID: *`container-id-waarde`*`
+**Syntaxis:** ` idSyncContainerID: *` waarde van containeridentiteitskaart `*`
 
-**Codevoorbeeld:**
+**Steekproef van de Code:**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -40,14 +40,14 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Containers**
 
-Containers zijn objecten die zijn gemaakt door [!DNL Audience Manager]. Hoewel ze niet extern toegankelijk zijn, worden in deze container alle gegevensbronnen weergegeven die:
+Containers zijn objecten die zijn gemaakt door [!DNL Audience Manager] . Hoewel ze niet extern toegankelijk zijn, worden in deze container alle gegevensbronnen weergegeven die:
 
 * Deze bestanden zijn beschikbaar voor u, maar worden niet gebruikt voor het synchroniseren van id&#39;s.
 * Wordt gebruikt voor id-synchronisatie.
 
-Zelfs als je geen [!DNL Audience Manager] klant, heeft uw account deze containers als u id&#39;s met verschillende gegevensbronnen op verschillende pagina&#39;s in uw domein uitwisselt. Dit komt omdat [!DNL Audience Manager] biedt de technologie en back-end functionaliteit waarmee id-synchronisatie mogelijk is.
+Zelfs als u geen [!DNL Audience Manager] klant bent, heeft uw account deze containers als u id&#39;s met verschillende gegevensbronnen op verschillende pagina&#39;s in uw domein uitwisselt. Dit komt omdat [!DNL Audience Manager] de technologie en de achterste-eindfunctionaliteit verstrekt die identiteitskaart synchronisatie toelaat.
 
-**Gevallen gebruiken**
+**Gevallen van het Gebruik**
 
 Afhankelijk van uw situatie, kunt u deze configuratie aan uw de dienstcode van identiteitskaart al dan niet moeten toevoegen.
 
@@ -60,18 +60,18 @@ Afhankelijk van uw situatie, kunt u deze configuratie aan uw de dienstcode van i
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Niet nodig</b> </p> </td> 
+   <td colname="col1"> <p> <b> niet nodig </b> </p> </td> 
    <td colname="col2"> <p>U hoeft deze configuratie niet te gebruiken als: </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">U gebruikt de id-service met een <span class="keyword"> Experience Cloud </span> en geen id-syncs met andere gegevensbronnen uitvoeren. In dit geval heeft uw account een standaardcontainer met ID 0 en is geen actie vereist. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">U gebruikt de id-service met een <span class="keyword"> Experience Cloud </span> -oplossing en voert geen id-syncs uit met andere gegevensbronnen. In dit geval heeft uw account een standaardcontainer met ID 0 en is geen actie vereist. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Al uw gegevensbronnen bevinden zich in één container. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Nodig</b> </p> </td> 
+   <td colname="col1"> <p> <b> nodig </b> </p> </td> 
    <td colname="col2"> <p>U moet deze configuratie gebruiken wanneer elk van deze voorwaarden van toepassing zijn: </p> <p> 
      <ul id="ul_9AFD14FC5A2745F7BD7BE7B64545DA62"> 
-      <li id="li_04F0EFBBD71B43608CAAA7E7409D33FE">U gebruikt dit niet <span class="keyword"> Audience Manager </span>. </li> 
+      <li id="li_04F0EFBBD71B43608CAAA7E7409D33FE">U gebruikt <span class="keyword"> Audience Manager </span> niet. </li> 
       <li id="li_4BFA6DC76CE9455EBBC337FD2FE820BF">U moet IDs met andere gegevensbronnen synchroniseren die door containers worden georganiseerd. </li> 
       <li id="li_731DA5D1CBF244F8BEBE57C0E2EBA713">U moet id's synchroniseren met gegevensbronnen in verschillende containers op verschillende pagina's in uw domein. </li> 
      </ul> </p> </td> 
@@ -81,7 +81,7 @@ Afhankelijk van uw situatie, kunt u deze configuratie aan uw de dienstcode van i
 
 ## Container-id&#39;s instellen wanneer u DIL en BezoekerAPI.js gebruikt {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Als u hebt geïmplementeerd [!UICONTROL DIL]*en* BezoekerAPI.js op dezelfde pagina:
+Als u [!UICONTROL DIL]*en* VisitorAPI.js op de zelfde pagina hebt opgesteld:
 
 * De de dienstcode van bezoekersidentiteitskaart neemt belangrijkheid over DIL voor de syncs van identiteitskaart.
-* Stel de `idSyncContainerID` configuratie in de de dienstcode van identiteitskaart slechts.
+* Stel de `idSyncContainerID` -configuratie alleen in de ID-servicecode in.

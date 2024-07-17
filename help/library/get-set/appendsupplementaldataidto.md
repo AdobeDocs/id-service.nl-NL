@@ -5,8 +5,8 @@ title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +20,14 @@ Inhoud:
  <li> <a href="../../library/get-set/appendsupplementaldataidto.md#section-cbb0b2f73bcc418386796c24c01b2365" format="dita" scope="local"> Syntaxis en codevoorbeeld </a> </li> 
  <li> <a href="../../library/get-set/appendsupplementaldataidto.md#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4" format="dita" scope="local"> Voorbeelduitvoer </a> </li> 
  <li> <a href="../../library/get-set/appendsupplementaldataidto.md#section-cbb0b2f73bcc418386796c24c01b2365" format="dita" scope="local"> Syntaxis en codevoorbeeld </a> </li> 
- <li> <a href="../../library/get-set/appendsupplementaldataidto.md#section-99946715cefa4acc95200b093db5297e" format="dita" scope="local"> De time-out van de SDID wijzigen met sdidParamExpiry </a> </li> 
+ <li> <a href="../../library/get-set/appendsupplementaldataidto.md#section-99946715cefa4acc95200b093db5297e" format="dita" scope="local"> De time-out van de SDID wijzigen met soundParamExpiry </a> </li> 
 </ul>
 
 ## Syntaxis en codevoorbeeld {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Syntaxis:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Syntaxis:** ` appendSupplementalDataIDTo( *` URL `*, *` SDID `*)`
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"); 
@@ -50,13 +50,13 @@ Zoals hieronder getoond, bevat het omleiden URL SDID van de bezoeker, uw identit
 
 ## De time-out van de SDID wijzigen met sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-De [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) Met de configuratie kunt u het standaard-SDID-vervalinterval wijzigen wanneer u die id doorgeeft van de ene pagina naar de andere met behulp van de `appendSupplementalDataIDTo` helperfunctie. Standaard heeft de ID-servicecode op de ontvangende pagina 30 seconden om de SDID op te halen van de URL die door de verwijzende pagina wordt verzonden. Als de de dienstcode van identiteitskaart op de ontvangende pagina niet SDID in minder dan 30 seconden kan terugwinnen vraagt het om een nieuwe SDID. Deze functionaliteit is vooral voor klanten A4T die SDID van één pagina aan een andere moeten overgaan en controle over dit onderbrekingsinterval willen.
+De ](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) configuratie 0} sdidParamExpiry laat u het standaardinterval van de vervaldatum veranderen SDID wanneer het overgaan van die identiteitskaart van één pagina aan een andere gebruikend de `appendSupplementalDataIDTo` hulpfunctie. [ Standaard heeft de ID-servicecode op de ontvangende pagina 30 seconden om de SDID op te halen van de URL die door de verwijzende pagina wordt verzonden. Als de de dienstcode van identiteitskaart op de ontvangende pagina niet SDID in minder dan 30 seconden kan terugwinnen vraagt het om een nieuwe SDID. Deze functionaliteit is vooral voor klanten A4T die SDID van één pagina aan een andere moeten overgaan en controle over dit onderbrekingsinterval willen.
 
-Als u de standaard-SDID-time-out moet wijzigen, voegt u `sdidParamExpiry` aan de `Visitor.getInstance` gebruiken met de volgende syntaxis:
+Als u de standaardtime-out voor SDID wilt wijzigen, voegt u `sdidParamExpiry` toe aan de functie `Visitor.getInstance` met de volgende syntaxis:
 
-**Syntaxis:** ` sdidParamExpiry: *`tijd in seconden`*`
+**Syntaxis:** ` sdidParamExpiry: *` tijd in seconden `*`
 
-**Codevoorbeeld**
+**Steekproef van de Code**
 
 Wanneer uw de dienstcode van identiteitskaart wordt gevormd kon aan deze steekproef gelijkaardig kijken. In dit voorbeeld wordt de SDID-time-out ingesteld op 15 seconden.
 

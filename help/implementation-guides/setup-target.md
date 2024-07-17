@@ -12,28 +12,28 @@ ht-degree: 0%
 
 # Voer de Dienst van de Identiteit van het Experience Cloud voor Doel uit{#implement-the-experience-cloud-id-service-for-target}
 
-Deze instructies gelden voor klanten van het Doel die de service Identiteit Experience Cloud willen gebruiken en niet [Labels voor gegevensverzameling](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en). Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
+Deze instructies zijn voor de klanten van het Doel die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [ geen markeringen van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
->* [Lees de vereisten](../reference/requirements.md) voordat u begint.
+>* [ leest de vereisten ](../reference/requirements.md) alvorens u begint.
 >* Vorm en test deze code in een ontwikkelomgeving alvorens het in productie uit te voeren.
 
 ## Stap 1: Krijg de code van de Dienst van identiteitskaart {#section-b32ba0548aa546a79dd38be59832a53e}
 
-De [!UICONTROL ID Service] vereist `VisitorAPI.js` codebibliotheek. Contact [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) om deze code op te halen.
+Voor [!UICONTROL ID Service] is de codebibliotheek van `VisitorAPI.js` vereist. De Zorg van de Klant van het contact ](https://helpx.adobe.com/marketing-cloud/contact-support.html) {om deze code te krijgen.[
 
 ## Stap 2: Voeg de functie Visitor.getInstance aan de code van de Dienst van identiteitskaart toe {#section-287ef2958e9f43858fe9d630ae519e22}
 
-**Deel 1: Kopieer de functie Visitor.getInstance hieronder**
+**Deel 1: Kopieer hieronder de functie Visitor.getInstance**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE"); 
 ```
 
-**Deel 2: Functiecode toevoegen aan het bestand VisitorAPI.js**
+**Deel 2: Voeg functiecode aan het VisitorAPI.js- dossier** toe
 
-Plaats de `Visitor.getInstance` aan het einde van het bestand na het codeblok. Het bewerkte bestand moet er als volgt uitzien:
+Plaats de functie `Visitor.getInstance` aan het einde van het bestand na het codeblok. Het bewerkte bestand moet er als volgt uitzien:
 
 ```js
 /* 
@@ -50,31 +50,31 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Stap 3: Voeg uw identiteitskaart van de Organisatie van het Experience Cloud aan Visitor.getInstance toe {#section-522b1877be9243c39b222859b821f0ce}
 
-In de `Visitor.getInstance` functie, vervangen `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` met uw [!DNL Experience Cloud] organisatie-id. Als u uw organisatie-id niet kent, kunt u deze vinden op de [!DNL Experience Cloud] beheerpagina. Zie ook: [Beheer - Core Services](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie [!DNL Experience Cloud] door uw organisatie-id. `Visitor.getInstance` Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina van [!DNL Experience Cloud] . Zie ook, [ Beleid - de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
 >[!IMPORTANT]
 >
->*Niet gebruiken* Wijzig het hoofdlettergebruik van de tekens in uw organisatie-id. De id is hoofdlettergevoelig en moet precies worden gebruikt zoals opgegeven.
+>*verander niet* het geval van de karakters in uw organisatieidentiteitskaart De id is hoofdlettergevoelig en moet precies worden gebruikt zoals opgegeven.
 
 ## Stap 4: Bezoeker-API-code toevoegen aan de pagina {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-Implementeer de `VisitorAPI.js` bestand naar uw site in `<head>` -tags vóór de verwijzing naar de `mbox.js` bestand. De [!DNL Experience Cloud] De id-service moet worden uitgevoerd vóór de eerste [!DNL Target] netwerkaanroep wordt gegenereerd. Verplaats deze code naar productie na het testen en controleren.
+Implementeer het bestand `VisitorAPI.js` in de tags `<head>` vóór de verwijzing naar het bestand `mbox.js` naar uw site. De [!DNL Experience Cloud] ID-service moet worden uitgevoerd voordat de eerste [!DNL Target] -netwerkaanroep wordt gegenereerd. Verplaats deze code naar productie na het testen en controleren.
 
 ## Stap 5: Test en stel de Code van de Dienst van identiteitskaart op {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 
 U kunt als volgt testen en opstellen.
 
-**Testen en verifiëren**
+**Test en verifieer**
 
 U kunt als volgt de implementatie van uw id-service testen:
 
 * Controleer of de AMCV-cookie zich in het domein bevindt waar de pagina wordt gehost.
-* Verifiëren `mboxMCGVID` verschijnt in uw [!DNL Target] en dat het de [!DNL Experience Cloud] ID (MID).
+* Controleer of `mboxMCGVID` wordt weergegeven in uw [!DNL Target] -aanvraag en of deze de [!DNL Experience Cloud] ID (MID) bevat.
 
-Zie [Cookies en de identiteitsservice van Experiencen Cloud](../introduction/cookies.md) voor meer informatie over de AMCV-cookie en de MID.
+Zie [ Cookies en de Dienst van de Identiteit van het Experience Cloud ](../introduction/cookies.md) voor informatie over het koekje AMCV en MID.
 
-**Implementeren**
+**opstellen**
 
 Implementeer de code nadat deze voor het testen is geslaagd.
