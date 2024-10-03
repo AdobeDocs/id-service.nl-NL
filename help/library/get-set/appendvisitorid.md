@@ -3,14 +3,18 @@ description: Met deze functie kunt u de Experience Cloud-id van een bezoeker in 
 keywords: ID-service
 title: appendVisitorIDsTo (Cross-Domain Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
 # appendVisitorIDsTo (Cross-Domain Tracking){#appendvisitoridsto-cross-domain-tracking}
+
+>[!TIP]
+>
+>Interdomeintracering werkt niet zoals bedoeld als de ECID in eerste instantie (of eerder) wordt geweigerd. De bestaande id&#39;s die via de URL zijn doorgegeven of die voorheen in het cookie bestonden, worden niet gecontroleerd, aangezien dit de id&#39;s waren toen de toestemming op &quot;NO&quot; was ingesteld
 
 Met deze functie kunt u de Experience Cloud-id van een bezoeker in verschillende domeinen delen wanneer browsers cookies van derden blokkeren. Om deze functie te gebruiken, moet u de dienst van identiteitskaart hebben uitgevoerd en de bron en bestemmingsdomeinen bezitten. Beschikbaar in VisitorAPI.js versie 1.7.0 of hoger.
 
