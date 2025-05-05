@@ -22,7 +22,7 @@ Elk behoorlijk gevormd stuk van de code van het AppMeasurement bevat uw het volg
 
 Soms kunnen klanten hun Analytics AppMeasurement echter opsplitsen in aparte bestanden. Sommige klanten kunnen bijvoorbeeld configuratievariabelen in één bestand plaatsen, een tweede bestand voor plug-ins gebruiken en vervolgens de code van het AppMeasurement in een derde bestand plaatsen. Dit wordt niet aanbevolen.
 
-Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. De Zorg van de Klant van het contact [ ](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u uw het volgen serverinformatie niet kunt vinden.
+Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u uw het volgen serverinformatie niet kunt vinden.
 
 **wat gebeurt als ik de Dienst van de Identiteit gebruikt en mijn het volgen server veranderen?**
 

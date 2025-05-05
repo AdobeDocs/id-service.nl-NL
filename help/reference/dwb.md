@@ -16,7 +16,7 @@ Volg deze instructies om het gebied van identiteitskaart van het Experience Clou
 
 [ Data Workbench ](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) bijwerken om de dienst van identiteitskaart te gebruiken:
 
-1. Bepaal de plaats van het huidige ](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) configuratiedossier van de Groep 0} Decoder.[
+1. Bepaal de plaats van het huidige [&#128279;](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) configuratiedossier van de Groep 0&rbrace; Decoder.
 
    De [!DNL Decoder Group] bevindt zich doorgaans in een [!UICONTROL Profile Manager] op dit pad: `Dataset\Log Processing\Decoding Instructions.cfg` . 1. Kopieer de huidige decoderingsindeling uit het configuratiebestand.
 1. Plak de decoderingsindeling onder het origineel.

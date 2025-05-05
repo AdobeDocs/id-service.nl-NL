@@ -20,7 +20,7 @@ Een geslaagde, ondersteunde implementatie voldoet aan (of overschrijdt) de codev
 
 ### Standaardimplementaties
 
-Zie {de markeringen van 0} Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) voor uw standaardimplementatie.[
+Zie {de markeringen van 0} Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) voor uw standaardimplementatie.
 
 ### Niet-standaardimplementaties
 

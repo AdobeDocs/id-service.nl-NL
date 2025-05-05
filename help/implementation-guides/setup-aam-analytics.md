@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Implementeer de dienst Identiteit Experience Cloud voor Analytics en Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Deze instructies zijn voor klanten Analytics en van de Audience Manager die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) geen markeringen van de Inzameling van 0} Gegevens gebruiken. [ Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
+Deze instructies zijn voor klanten Analytics en van de Audience Manager die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) geen markeringen van de Inzameling van 0&rbrace; Gegevens gebruiken.  Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
@@ -140,7 +140,7 @@ Voeg de hieronder getoonde functie `Visitor.getInstance` toe aan uw `AppMeasurem
 >
 >U moet nu de [!DNL Audience Manager] DIL-code verwijderen en deze vervangen door de Audience Management Module. Zie [ Server-zij het Door:sturen ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor instructies uitvoeren.
 
-***(Facultatief, maar geadviseerd)* creeer een douaneprep **
+***(Facultatief, maar geadviseerd)* creeer een douaneprep &#x200B;**
 
 Stel een aangepaste proxy in `AppMeasurement.js` in om de dekking te meten. Voeg deze aangepaste proxy toe aan de functie `doPlugins` van het `AppMeasurement.js` -bestand:
 
@@ -158,7 +158,7 @@ Plaats het bestand ` [!UICONTROL VisitorAPI.js]` binnen de tags `<head>` op elke
 
 ## Stap 8: (Optioneel) Configureer een evaluatieperiode {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag ](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen. [ Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
+Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
 
 **Gedeeltelijke Implementatie**
 

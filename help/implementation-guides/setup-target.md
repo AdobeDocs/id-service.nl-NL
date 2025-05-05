@@ -21,7 +21,7 @@ Deze instructies zijn voor de klanten van het Doel die de Dienst van de Identite
 
 ## Stap 1: Krijg de code van de Dienst van identiteitskaart {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Voor [!UICONTROL ID Service] is de codebibliotheek van `VisitorAPI.js` vereist. De Zorg van de Klant van het contact ](https://helpx.adobe.com/marketing-cloud/contact-support.html) {om deze code te krijgen.[
+Voor [!UICONTROL ID Service] is de codebibliotheek van `VisitorAPI.js` vereist. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) &lbrace;om deze code te krijgen.
 
 ## Stap 2: Voeg de functie Visitor.getInstance aan de code van de Dienst van identiteitskaart toe {#section-287ef2958e9f43858fe9d630ae519e22}
 

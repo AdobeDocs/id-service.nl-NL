@@ -119,4 +119,4 @@ Alleen de algemene cookies van de bezoekersstandaard worden in de onderstaande t
 
 >  Cookies van derden Adoben worden ingesteld op de server.
 
-Voor meer informatie, zie het document op [ het beleid van Google van Chrome SameSite van het Doel {](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
+Voor meer informatie, zie het document op [ het beleid van Google van Chrome SameSite van het Doel &lbrace;](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).

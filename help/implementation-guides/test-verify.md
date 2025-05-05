@@ -58,7 +58,7 @@ Als u een [!DNL Analytics] -klant bent, ziet u mogelijk een [!DNL Analytics] ID 
 
 **Mislukking**
 
-De klantenzorg van het contact ](https://helpx.adobe.com/marketing-cloud/contact-support.html) als debugger:[
+De klantenzorg van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) als debugger:
 
 * Retourneert geen MID.
 * Keert een foutenmelding terug die erop wijst dat uw partneridentiteitskaart niet provisioned is.

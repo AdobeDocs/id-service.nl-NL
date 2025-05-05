@@ -135,7 +135,7 @@ Voeg deze functie toe aan uw `AppMeasurement.js` - of `s_code.js` -bestand:
 
 Plaats de code in dezelfde sectie die configuraties bevat, zoals `linkInternalFilters` , `charSet` , `trackDownloads` , enz.
 
-***(Optioneel maar aanbevolen)* Een aangepaste proxy maken **
+***(Optioneel maar aanbevolen)* Een aangepaste proxy maken &#x200B;**
 
 Stel een aangepaste proxy in `AppMeasurement.js` of `s_code.js` in om de dekking te meten. Voeg deze aangepaste proxy toe aan de functie `doPlugins` van uw `AppMeasurement.js` - of `s_code.js` -bestanden:
 
@@ -155,7 +155,7 @@ Verplaats deze code naar productie na het testen en controleren.
 
 ## Stap 7: (Optioneel) Configureer een evaluatieperiode {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag ](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen. [ Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
+Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
 
 **Gedeeltelijke Implementatie**
 
@@ -175,7 +175,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 Sluit de respijtperiode af nadat de kolommen `post_visid_high` en `post_visid_low` door het gegevensinvoerproces kunnen worden gebruikt.
 
-Zie, {de Verwijzing van de Kolom van Gegevens 0} Clikstream ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).[
+Zie, {de Verwijzing van de Kolom van Gegevens 0} Clikstream [&#128279;](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Ingestie van Gegevens Clickstream**
 

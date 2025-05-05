@@ -66,13 +66,13 @@ Deze wijziging verbetert de prestaties voor klanten die Visitor 2.3.0+ en DIL 6.
 
 De verzoeken van het middel met CORS zijn over het algemeen geschikter dan met JSONP. Met JSONP, plaatsen sommige browsers en de-rangschikt verzoeken met betrekking tot andere synchrone en asynchrone vraag op de pagina in rij. De hulp van CORS zorgt ervoor dat deze verzoeken met een hogere prioriteit in de browser vraagstapel worden behandeld.
 
-Zie {de Steun van 0} CORS in de Dienst van de Identiteit van het Experience Cloud ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).[
+Zie {de Steun van 0} CORS in de Dienst van de Identiteit van het Experience Cloud [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Beveiliging {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **steunt de dienst van identiteitskaart CORS?**
 
-Ja. Zie {de Steun van 0} CORS in de Dienst van de Identiteit van het Experience Cloud ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).[
+Ja. Zie {de Steun van 0} CORS in de Dienst van de Identiteit van het Experience Cloud [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **wat is CORS?**
 

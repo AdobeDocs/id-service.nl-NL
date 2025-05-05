@@ -22,7 +22,7 @@ Instructies en codevoorbeelden voor standaard en niet-standaard implementaties v
 
 ## Standaardimplementatie
 
-Een standaardimplementatie gebruikt {de Platform launch van de Ervaring van 0} Adobe ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) om u te helpen begonnen met de dienst van identiteitskaart en het met andere oplossingen van het Experience Cloud integreren. [ Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
+Een standaardimplementatie gebruikt {de Platform launch van de Ervaring van 0} Adobe [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl) om u te helpen begonnen met de dienst van identiteitskaart en het met andere oplossingen van het Experience Cloud integreren.  Wij adviseren sterk dat u Experience Platform Launch wanneer het uitvoeren van de dienst van identiteitskaart gebruikt.
 
 ## Implementatiebronnen
 

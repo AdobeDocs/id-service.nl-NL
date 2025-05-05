@@ -25,7 +25,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Wis voordat u de pagina laadt de cache en cookies.
 
-Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspect. Zoals in het schermschot hierboven, selecteer het *1} lusje van het Netwerk {om de verzoeken te bekijken die van browser worden gemaakt.*
+Klik in Chrome met de rechtermuisknop op de webpagina en selecteer Inspect. Zoals in het schermschot hierboven, selecteer het *1&rbrace; lusje van het Netwerk &lbrace;om de verzoeken te bekijken die van browser worden gemaakt.*
 
 In het bovenstaande voorbeeld zijn de volgende JS-tags voor Adobe op de pagina geïnstalleerd: ECID, AAM, Analytics en Target.
 
@@ -91,7 +91,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **hoe te om uw huidige toestemming IAB op de pagina te bekijken:**
 
-Open de ontwikkelaarshulpmiddelen en selecteer het *1} lusje van de Console {.* Plak het volgende codefragment en druk op Enter:
+Open de ontwikkelaarshulpmiddelen en selecteer het *1&rbrace; lusje van de Console &lbrace;.* Plak het volgende codefragment en druk op Enter:
 
 ```
 <codeblock>
