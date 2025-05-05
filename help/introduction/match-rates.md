@@ -50,11 +50,11 @@ De id-synchronisatie is een URL die wordt geactiveerd in het iFrame voor publice
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Zie ook, [ Synchronisatie van identiteitskaart voor Binnenkomende Overdrachten van Gegevens ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en).
+Zie ook, [ Synchronisatie van identiteitskaart voor Binnenkomende Overdrachten van Gegevens ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=nl-NL).
 
 **Stap 4: De opslag IDs**
 
-Gesynchroniseerde IDs wordt opgeslagen op de [ rand en kerngegevensservers ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en).
+Gesynchroniseerde IDs wordt opgeslagen op de [ rand en kerngegevensservers ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=nl-NL).
 
 ## Synchronisatieservices beheren synchronisatie van id&#39;s {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -69,8 +69,8 @@ De term *`Sync Services`* verwijst naar interne [!DNL Experience Cloud] -technol
 
 ## ID-synchronisatie met Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (voorheen [!DNL Adobe Media Optimizer] genoemd) is een uitzondering op het synchronisatieproces van de iFrame-gebaseerde id. Omdat [!DNL Advertising Cloud] een vertrouwd domein is, vindt de synchronisatie van id&#39;s plaats vanaf de bovenliggende pagina in plaats van in [!UICONTROL Destination Publishing iFrame] . Tijdens synchronisatie roept de id-service [!DNL Advertising Cloud] op `cm.eversttech.net` . Dit is een oudere domeinnaam die door [!DNL Advertising Cloud] wordt gebruikt voordat deze via Adobe wordt opgehaald. Door gegevens naar [!DNL Advertising Cloud] te verzenden, verbetert u de overeenkomsten en dit is automatisch voor klanten van id-services die versie 2.0 (of hoger) gebruiken. Zie ook, [ de Koekjes van Advertising Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en).
+[!DNL Adobe Advertising Cloud] (voorheen [!DNL Adobe Media Optimizer] genoemd) is een uitzondering op het synchronisatieproces van de iFrame-gebaseerde id. Omdat [!DNL Advertising Cloud] een vertrouwd domein is, vindt de synchronisatie van id&#39;s plaats vanaf de bovenliggende pagina in plaats van in [!UICONTROL Destination Publishing iFrame] . Tijdens synchronisatie roept de id-service [!DNL Advertising Cloud] op `cm.eversttech.net` . Dit is een oudere domeinnaam die door [!DNL Advertising Cloud] wordt gebruikt voordat deze via Adobe wordt opgehaald. Door gegevens naar [!DNL Advertising Cloud] te verzenden, verbetert u de overeenkomsten en dit is automatisch voor klanten van id-services die versie 2.0 (of hoger) gebruiken. Zie ook, [ de Koekjes van Advertising Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=nl-NL).
 
 >[!MORELIKETHIS]
 >
->* [ Begrip Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
+>* [ Begrip Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL)

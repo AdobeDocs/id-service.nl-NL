@@ -27,12 +27,12 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b> 1 <sup> st </sup> </b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.bezoekerID) </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html?lang=nl-NL" format="http" scope="external"> vid (s.bezoekerID) </a> </p> </td> 
    <td colname="col3"> <p><span class="codeph"> s.bezoekorID </span> wordt geplaatst. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> 2 <sup> en </sup> </b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi cookie) </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=nl-NL" format="http" scope="external"> aid (s_vi cookie) </a> </p> </td> 
    <td colname="col3"> <p>De bezoeker had een bestaand s_vi koekje alvorens u de <span class="keyword"> Experience Cloud </span> dienst van identiteitskaart opstelde, of u hebt een <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> gevormde periode van de gratieperiode </a>. </p> </td> 
   </tr> 
   <tr> 
@@ -42,12 +42,12 @@ In veel scenario&#39;s zou u 2 of 3 verschillende IDs op een vraag kunnen zien, 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> 4 <sup> de </sup> </b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (fallback cookie op H.25.3 of nieuwer, of AppMeasurement voor JavaScript) </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=nl-NL" format="http" scope="external"> fid (fallback cookie op H.25.3 of nieuwer, of AppMeasurement voor JavaScript) </a> </p> </td> 
    <td colname="col3"> <p>Een browser accepteert geen cookies van derden en de Analytics tracking-server is ingesteld als een externe tracingserver. </p> <p> <p>Opmerking: <span class="codeph"> fid </span> is een oudere id en wordt niet gebruikt als u de id-service op uw site hebt geïmplementeerd. In dit geval is <span class="codeph"> fid </span> niet nodig omdat de cookie van de eerste partij, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie </a> , deze verouderd maakt. Het is om historische redenen en ter ondersteuning van de oude code gehandhaafd. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> 5 <sup> de </sup> </b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP Adres, de Agent van de Gebruiker, IP van de Gateway Adres </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html?lang=nl-NL" format="http" scope="external"> IP Adres, de Agent van de Gebruiker, IP van de Gateway Adres </a> </p> </td> 
    <td colname="col3"> <p>De browser van de bezoeker accepteert geen cookies. </p> </td> 
   </tr> 
  </tbody> 

@@ -49,7 +49,7 @@ Met de volgende voorbeeldcode kunt u aan de slag met de functie `appendVisitorID
 
 >[!TIP]
 >
->Deze code kan in de redacteur van de Code van de Douane worden geplaatst die deel van de uitbreiding van Adobe Analytics of bij de bovenkant van [ AppMeasurement.js ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) uitmaakt.
+>Deze code kan in de redacteur van de Code van de Douane worden geplaatst die deel van de uitbreiding van Adobe Analytics of bij de bovenkant van [ AppMeasurement.js ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) uitmaakt.
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

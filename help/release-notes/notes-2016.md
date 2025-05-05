@@ -81,7 +81,7 @@ Herzien: [ Vereisten voor de Dienst van de Identiteit van het Experience Cloud ]
 
 **Bekende Kwesties**
 
-Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de variabele DIL `secureDataCollection= false` instellen. Zie [ secureDataCollection ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
+Klanten die [!DNL Audience Manager] DIL-code en bezoekerAPI.js-code op dezelfde pagina gebruiken, moeten de variabele DIL `secureDataCollection= false` instellen. Zie [ secureDataCollection ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=nl-NL).
 
 ## Versie 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 

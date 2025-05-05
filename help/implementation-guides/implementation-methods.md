@@ -20,7 +20,7 @@ U kunt een standaard [!DNL Experience Cloud ID Service] implementatiemethode kie
 
 ## Standaardimplementatie {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-De Adobe adviseert sterk gebruikend [[!DNL Experience Platform tags] ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) om de dienst van identiteitskaart uit te voeren. Deze methode zorgt voor integratie met andere [!DNL Experience Cloud] -oplossingen, stroomlijnt implementatieworkflows en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
+De Adobe adviseert sterk gebruikend [[!DNL Experience Platform tags] ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) om de dienst van identiteitskaart uit te voeren. Deze methode zorgt voor integratie met andere [!DNL Experience Cloud] -oplossingen, stroomlijnt implementatieworkflows en zorgt automatisch voor de juiste plaatsing van code en de juiste volgorde van code.
 
 ## Niet-standaardimplementaties {#section-2c4f2db1f9704315a7cccab6d2e07113}
 

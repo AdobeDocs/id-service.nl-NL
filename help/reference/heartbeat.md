@@ -18,4 +18,4 @@ Voor videohartslag is de identiteitsservice van het Experience Cloud vereist. Wa
 
 >[!MORELIKETHIS]
 >
->* [ het Meten audio en video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+>* [ het Meten audio en video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL)

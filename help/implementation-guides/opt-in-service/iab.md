@@ -47,7 +47,7 @@ Nadat de instellingen correct zijn geconfigureerd, worden ECID- en DIL-bibliothe
 
 >[!IMPORTANT]
 >
->De Audience Manager heeft toestemming voor *Doel 1 en Doel 10 nodig, plus verkoperstoestemming* om koekjes op te stellen en of de syncs van identiteitskaart in werking te stellen in werking te stellen of te respecteren. Lees meer over de opt-binnen insteekmodule IAB TCF in de documentatie van de Audience Manager [ hier ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
+>De Audience Manager heeft toestemming voor *Doel 1 en Doel 10 nodig, plus verkoperstoestemming* om koekjes op te stellen en of de syncs van identiteitskaart in werking te stellen in werking te stellen of te respecteren. Lees meer over de opt-binnen insteekmodule IAB TCF in de documentatie van de Audience Manager [ hier ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=nl-NL).
 
 Voor meer informatie over hoe te om de stop van IAB TCF van Opt-binnen te bevestigen, controleer gebruiksgeval #4 in de bevestigingsgids [ hier ](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
@@ -55,5 +55,5 @@ Voor meer informatie over hoe te om de stop van IAB TCF van Opt-binnen te bevest
 
 * [ IAB Transparantie en het Kader van de Toestemming (TCF) ](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - voor meer informatie over de norm IAB
 * [ Adobe Opt-binnen ](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - voor meer informatie over Opt-binnen, een vereiste component voor toestemmingsbeheer in de oplossingen van het Platform
-* De Steun van de Transparantie en van het Kader van de Toestemming van IAB (TCF) [ in Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* De Steun van de Transparantie en van het Kader van de Toestemming van IAB (TCF) [ in Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=nl-NL)
 * [ Uw Keuzen van de Privacy ](https://www.adobe.com/privacy/opt-out.html#customeruse) - Een andere privacyoptie bij de verwijdering van uw gebruikers is de capaciteit om uit alle gegevensinzameling te kiezen gebruikend andere globale opt-out hulpmiddelen. Globale Opt-Out neemt belangrijkheid over de Opt-binnen en IAB TCF controle

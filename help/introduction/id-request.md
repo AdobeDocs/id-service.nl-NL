@@ -29,7 +29,7 @@ In de volgende voorbeelden ziet u hoe de id-service de bezoeker-id van het Exper
 In dit voorbeeld komt een nieuwe bezoeker naar de pizza-site die wordt beheerd door de Food Company. De Food Company heeft ID-servicecode op de website van de pizza. Wanneer de pizza-site wordt geladen, controleert de ID-servicecode of het AMCV-cookie zich in het pizza-domein bevindt.
 
 * Als het AMCV-cookie is ingesteld, heeft de sitebezoeker een Experience Cloud-id. In dit geval houdt het cookie de bezoeker bij en deelt het gegevens met andere oplossingen voor Experiencen Cloud.
-* Als het koekje AMCV niet wordt geplaatst, roept de de dienstcode van identiteitskaart een regionale [ server van de gegevensinzameling ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en) (DCS) bij `dpm.demdex.net/id` (zie ook, [ Begrijpende Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). De oproep omvat de organisatie-id voor de Food Company. De organisatie-id wordt ingesteld in de functie `Visitor.getInstance` van de ID-servicecode.
+* Als het koekje AMCV niet wordt geplaatst, roept de de dienstcode van identiteitskaart een regionale [ server van de gegevensinzameling ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=nl-NL) (DCS) bij `dpm.demdex.net/id` (zie ook, [ Begrijpende Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL). De oproep omvat de organisatie-id voor de Food Company. De organisatie-id wordt ingesteld in de functie `Visitor.getInstance` van de ID-servicecode.
 
 ![](assets/request1.png)
 

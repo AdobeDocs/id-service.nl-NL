@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Samen met de bezoeker-id van het Experience Cloud kunt u aanvullende klant-id&#39;s, verificatiestatus en hashtype (SHA-256) koppelen aan elke bezoeker. Als u geen hashtype verstrekt, zal het als geen hash worden beschouwd.
 
-De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. Bijvoorbeeld, kunt u deze IDs als [ klantenattributen ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) aan het Experience Cloud uploaden en tot dit gegeven over de verschillende oplossingen toegang hebben.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. Bijvoorbeeld, kunt u deze IDs als [ klantenattributen ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) aan het Experience Cloud uploaden en tot dit gegeven over de verschillende oplossingen toegang hebben.
 
 Identiteitskaart van de klant, voor authentiek verklaarde staten en knoeiboeltype *worden niet* opgeslagen in een koekje dat later moet worden gebruikt. In plaats daarvan, zouden identiteitskaart van de Klant, voor authentiek verklaarde staten en knoeiboeltype in een instantievariabele moeten worden opgeslagen, die moet worden teruggewonnen gebruikend [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), zoals hieronder getoond:
 
@@ -70,7 +70,7 @@ Zie de tabel hieronder voor een beschrijving van de parameter `d_cid_ic` en de v
 
 Experience Platform Launch is de volgende generatie mogelijkheden voor tagbeheer van Adobe. Lees meer over Platform launch in de [ productdocumentatie van de Lancering ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl).
 
-Om een actie in Lancering toe te voegen, leest de [ documentatie van Regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) in de Lancering van de Adobe en zie het scherm hieronder vangen:
+Om een actie in Lancering toe te voegen, leest de [ documentatie van Regels ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=nl-NL) in de Lancering van de Adobe en zie het scherm hieronder vangen:
 
 ![](/help/reference/assets/hashing-support.png)
 

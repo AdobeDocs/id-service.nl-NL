@@ -16,7 +16,7 @@ Retourneert de Experience Cloud Identity Service region-id. Een regio-id (of loc
 
 **Syntaxis:** ` var *` veranderlijke naam `* = visitor.getLocationHint()`
 
-Voor een lijst van gebied IDs en overeenkomstige plaatsen, zie [ DCS Gebied IDs, Locaties, en de Namen van de Gastheer ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
+Voor een lijst van gebied IDs en overeenkomstige plaatsen, zie [ DCS Gebied IDs, Locaties, en de Namen van de Gastheer ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=nl-NL).
 
 **Steekproef van de Code**
 

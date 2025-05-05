@@ -16,7 +16,7 @@ Naast de bezoeker-id van het Experience Cloud kunt u aanvullende klant-id&#39;s 
 
 ## Verificatiestatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. Bijvoorbeeld, kunt u deze IDs als [ klantenattributen ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) aan [!DNL Experience Cloud] uploaden en tot dit gegeven over de verschillende oplossingen toegang hebben.
+De methode `setCustomerIDs` accepteert meerdere klant-id&#39;s voor dezelfde bezoeker. Hierdoor kunt u een individuele gebruiker op verschillende apparaten herkennen of als doelgebruiker instellen. Bijvoorbeeld, kunt u deze IDs als [ klantenattributen ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=nl-NL) aan [!DNL Experience Cloud] uploaden en tot dit gegeven over de verschillende oplossingen toegang hebben.
 
 >[!IMPORTANT]
 >
@@ -216,4 +216,4 @@ De [!DNL Experience Cloud] ID-service ondersteunt de klant-id&#39;s en verificat
 
 ## Bericht voor klanten van Analytics en van de Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Als u gedeclareerde id&#39;s doorgeeft aan [!DNL Audience Manager] , moet het `userid` -object overeenkomen met de integratiecode die is gekoppeld aan een gegevensbron. Voor meer informatie, zie de [!UICONTROL Visitor ID Service] sectie in [ vormt de documentatie van de Code van de Regels van de Fusie ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code).
+Als u gedeclareerde id&#39;s doorgeeft aan [!DNL Audience Manager] , moet het `userid` -object overeenkomen met de integratiecode die is gekoppeld aan een gegevensbron. Voor meer informatie, zie de [!UICONTROL Visitor ID Service] sectie in [ vormt de documentatie van de Code van de Regels van de Fusie ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=nl-NL#configure-merge-rule-code).

@@ -29,7 +29,7 @@ Inhoud:
 Als u `isCoopSafe` wilt gebruiken, moet u:
 
 * Gebruik ID-servicecode versie 2.4 of hoger.
-* Neem deel aan [ Co-op van het Apparaat van het Experience Cloud ](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html). Prospectieve copop leden zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke zorgen over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen richt.
+* Neem deel aan [ Co-op van het Apparaat van het Experience Cloud ](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=nl-NL). Prospectieve copop leden zouden deze documentatie ook moeten herzien om te bepalen als `isCoopSafe` mogelijke zorgen over hoe de gegevens worden gebruikt om de apparatengrafiek tot stand te brengen richt.
 
 * Werk samen met uw [!DNL Adobe] -consultant om een whitelist- of een blacklist-vlag in te stellen op uw Device Co-op-account. Er is geen zelfbedieningspad om deze markeringen in te schakelen.
 

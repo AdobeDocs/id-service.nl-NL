@@ -21,7 +21,7 @@ Verander de standaarddomeinnaam die door vraag aan de Dienst van de Identiteit v
 
 **Doel**
 
-Normaal gesproken roept de [!DNL Experience Cloud] ID-service [!DNL Adobe] at `dpm.demdex.net` aan. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Als u wilt dat de aanroep van de id-service er meer uitziet als een aanroep van een eerste partij, gebruikt u deze configuraties om de [!DNL Audience Manager] subdomeinnaam aan `demdex.net` toe te voegen, zoals hieronder wordt weergegeven. Voor meer informatie over de `dpm.demdex.net` vraag, zie [ Begrijpende Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html).
+Normaal gesproken roept de [!DNL Experience Cloud] ID-service [!DNL Adobe] at `dpm.demdex.net` aan. Soms kunt u niet vraag aan deze bestemming willen maken omdat het te generisch of &quot;derde-partij.&quot;kijkt Als u wilt dat de aanroep van de id-service er meer uitziet als een aanroep van een eerste partij, gebruikt u deze configuraties om de [!DNL Audience Manager] subdomeinnaam aan `demdex.net` toe te voegen, zoals hieronder wordt weergegeven. Voor meer informatie over de `dpm.demdex.net` vraag, zie [ Begrijpende Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL).
 
 **Vereisten**
 

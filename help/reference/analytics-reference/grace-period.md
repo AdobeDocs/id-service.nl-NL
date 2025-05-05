@@ -32,4 +32,4 @@ Als u veelvoudige JavaScript dossiers hebt die gegevens naar *zelfde rapportreek
 
 ## Hoe kan ik een respijtperiode toestaan? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).

@@ -26,13 +26,13 @@ U kunt de id-service ook testen in een anonieme of incognito-browsersessie. In e
 
 **Hulpmiddelen**
 
-De [ debugger van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) en de [ volmacht van HTTP van Charles ](https://www.charlesproxy.com/) kunnen u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
+De [ debugger van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=nl-NL) en de [ volmacht van HTTP van Charles ](https://www.charlesproxy.com/) kunnen u helpen bepalen als de dienst van identiteitskaart is gevormd om behoorlijk met Analytics te werken. De informatie in deze sectie die op de resultaten wordt gebaseerd die door debugger van de Adobe en Charles zijn teruggekeerd. Nochtans, zou u zich vrij moeten voelen om welk hulpmiddel of debugger het beste voor u te gebruiken.
 
 ## Testen met de Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
 Uw service-integratie is op de juiste wijze geconfigureerd wanneer u een [!DNL Experience Cloud ID] (MID) ziet in de foutopsporingsreactie van [!DNL Adobe] . Zie [ Cookies en de Dienst van de Identiteit van het Experience Cloud ](../introduction/cookies.md) voor meer informatie over MID.
 
-Om het statuut van de dienst van identiteitskaart met [!DNL Adobe] [ debugger ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) te verifiëren:
+Om het statuut van de dienst van identiteitskaart met [!DNL Adobe] [ debugger ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=nl-NL) te verifiëren:
 
 1. Wis uw browsercookies of open een anonieme bladersessie.
 1. Laad de testpagina die de de dienstcode van identiteitskaart bevat.
@@ -58,7 +58,7 @@ Als u een [!DNL Analytics] -klant bent, ziet u mogelijk een [!DNL Analytics] ID 
 
 **Mislukking**
 
-De klantenzorg van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) als debugger:
+De klantenzorg van het contact [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html) als debugger:
 
 * Retourneert geen MID.
 * Keert een foutenmelding terug die erop wijst dat uw partneridentiteitskaart niet provisioned is.
@@ -84,7 +84,7 @@ De servicecode van uw id werkt correct wanneer de functie `Visitor.getInstance` 
 
 **Succesvolle reacties van de Dienst van identiteitskaart in Karel**
 
-Uw rekening is verstrekt correct voor de dienst van identiteitskaart wanneer de reactie van de [ Servers van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) een MID terugkeert. MID is teruggekeerd als zeer belangrijk-waardepaar dat deze syntaxis gebruikt: {identiteitskaart van het Experience Cloud van 0} bezoeker `*`. `d_mid: *` Zoek de id op het tabblad [!UICONTROL Response] (zie hieronder).
+Uw rekening is verstrekt correct voor de dienst van identiteitskaart wanneer de reactie van de [ Servers van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=nl-NL) (DCS) een MID terugkeert. MID is teruggekeerd als zeer belangrijk-waardepaar dat deze syntaxis gebruikt: {identiteitskaart van het Experience Cloud van 0} bezoeker `*`. `d_mid: *` Zoek de id op het tabblad [!UICONTROL Response] (zie hieronder).
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ Uw account is niet correct ingericht als de id ontbreekt in het DCS-antwoord. Ee
 
 ![](assets/charles_response_unsuccessful.png)
 
-Voor meer informatie over foutencodes, zie [ Codes van de Fout DCS, Berichten, en Voorbeelden ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Voor meer informatie over foutencodes, zie [ Codes van de Fout DCS, Berichten, en Voorbeelden ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=nl-NL).

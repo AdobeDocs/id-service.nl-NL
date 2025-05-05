@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Wanneer `getInstance` geen bestaande instantie vindt, wordt een nieuwe instantie gemaakt en geretourneerd. Dit is vergelijkbaar met de functie [`s_gi()` ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement] .
+Wanneer `getInstance` geen bestaande instantie vindt, wordt een nieuwe instantie gemaakt en geretourneerd. Dit is vergelijkbaar met de functie [`s_gi()` ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=nl-NL) in [!DNL AppMeasurement] .
 
 **Algemeen Gebruik**
 

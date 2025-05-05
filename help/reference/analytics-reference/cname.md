@@ -16,4 +16,4 @@ De implementaties van CNAME staan u toe om het inzamelingsdomein aan te passen d
 
 Terwijl een implementatie CNAME geen voordelen in termen van koekjesleven verstrekt, kunnen er sommige andere voordelen zijn. Deze voordelen zijn onder andere adverteerders en minder gangbare browsers die voorkomen dat gegevens worden verzonden naar domeinen die ze als trackers classificeren. In deze gevallen kunt u met een CNAME voorkomen dat de gegevensverzameling wordt onderbroken voor gebruikers die deze gereedschappen gebruiken.
 
-Bovendien staan de implementaties CNAME u toe om [ een type van douaneRDC ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en) te kiezen dat controleert waar de gebruikers&#39; klappen aanvankelijk worden verpletterd. De meeste klanten gebruiken geen aangepaste RDC-typen.
+Bovendien staan de implementaties CNAME u toe om [ een type van douaneRDC ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=nl-NL) te kiezen dat controleert waar de gebruikers&#39; klappen aanvankelijk worden verpletterd. De meeste klanten gebruiken geen aangepaste RDC-typen.

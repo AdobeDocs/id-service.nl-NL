@@ -22,7 +22,7 @@ Elk behoorlijk gevormd stuk van de code van het AppMeasurement bevat uw het volg
 
 Soms kunnen klanten hun Analytics AppMeasurement echter opsplitsen in aparte bestanden. Sommige klanten kunnen bijvoorbeeld configuratievariabelen in één bestand plaatsen, een tweede bestand voor plug-ins gebruiken en vervolgens de code van het AppMeasurement in een derde bestand plaatsen. Dit wordt niet aanbevolen.
 
-Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) als u uw het volgen serverinformatie niet kunt vinden.
+Als u de gegevens van de trackingserver niet kunt vinden, is het mogelijk dat de instantie Analytics niet correct is geconfigureerd. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html) als u uw het volgen serverinformatie niet kunt vinden.
 
 **wat gebeurt als ik de Dienst van de Identiteit gebruikt en mijn het volgen server veranderen?**
 
@@ -34,7 +34,7 @@ Er verandert niets voor gebruikers die al door de identiteitsdienst zijn geïden
 
 Als u een hoofdinvoersite hebt waarop klanten kunnen worden geïdentificeerd voordat ze andere domeinen bezoeken, kan een CNAME het bijhouden van gegevens naar andere domeinen toestaan in browsers die cookies van derden (zoals Safari) niet accepteren.
 
-In browsers die derdekoekjes goedkeuren, wordt een koekje geplaatst in het [ demdex.net domein ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) tijdens het verzoek om een bezoekersidentiteitskaart terug te winnen. Dit koekje staat de Dienst van de Identiteit toe om zelfde identiteitskaart van de bezoeker van het Experience Cloud op alle domeinen terug te keren die gebruikend zelfde organisatieidentiteitskaart worden gevormd. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
+In browsers die derdekoekjes goedkeuren, wordt een koekje geplaatst in het [ demdex.net domein ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL) tijdens het verzoek om een bezoekersidentiteitskaart terug te winnen. Dit koekje staat de Dienst van de Identiteit toe om zelfde identiteitskaart van de bezoeker van het Experience Cloud op alle domeinen terug te keren die gebruikend zelfde organisatieidentiteitskaart worden gevormd. In browsers die cookies van derden afwijzen, wordt voor elk domein een nieuwe Experience Cloud-bezoeker-id toegewezen.
 
 Zelfs wanneer een CNAME wordt gevormd, als de belangrijkste ingangsplaats niet eerst wordt bezocht, worden de bezoekers geïdentificeerd verschillend op de secundaire plaats en de belangrijkste plaats in browsers die derde koekjes niet goedkeuren.
 
@@ -50,7 +50,7 @@ H-code wordt echter niet ondersteund met de code bezoekerAPI.js versie 1.6 of ho
 
 **wat een respijtperiode is en hoe vorm ik het?**
 
-Zie [ de Periode van de Restitutie van de Dienst van de Identiteit ](../reference/analytics-reference/grace-period.md) en contacteer [ de Zorg van de Klant ](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Zie [ de Periode van de Restitutie van de Dienst van de Identiteit ](../reference/analytics-reference/grace-period.md) en contacteer [ de Zorg van de Klant ](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html).
 
 **waarom ik aan Inzameling van Gegevens in real time (RDC) moet migreren om de Dienst van de Identiteit te gebruiken?**
 
@@ -89,4 +89,4 @@ Er zijn drie mogelijke scenario&#39;s waarbij dit van invloed is op de analysege
 
 >[!MORELIKETHIS]
 >
->* [ de Zorg van de Klant ](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [ de Zorg van de Klant ](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html)

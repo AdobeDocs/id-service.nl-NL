@@ -23,6 +23,6 @@ Als de uitbreiding van identiteitskaart van het Experience Cloud nog niet geïns
 
 Om de uitbreiding te vormen, open het *lusje van Uitbreidingen* en beweeg over de uitbreiding. Dan klik *vormen*.
 
-Voor extra verwijzingsinformatie, lees het [ de uitbreidingsoverzicht van de Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
+Voor extra verwijzingsinformatie, lees het [ de uitbreidingsoverzicht van de Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=nl-NL).
 
 ![](assets/optin-launch.jpg)

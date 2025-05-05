@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Voer de Dienst van de Identiteit van het Experience Cloud voor Doel uit{#implement-the-experience-cloud-id-service-for-target}
 
-Deze instructies zijn voor de klanten van het Doel die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [ geen markeringen van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
+Deze instructies zijn voor de klanten van het Doel die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [ geen markeringen van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ Deze instructies zijn voor de klanten van het Doel die de Dienst van de Identite
 
 ## Stap 1: Krijg de code van de Dienst van identiteitskaart {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Voor [!UICONTROL ID Service] is de codebibliotheek van `VisitorAPI.js` vereist. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) &lbrace;om deze code te krijgen.
+Voor [!UICONTROL ID Service] is de codebibliotheek van `VisitorAPI.js` vereist. De Zorg van de Klant van het contact [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html) &lbrace;om deze code te krijgen.
 
 ## Stap 2: Voeg de functie Visitor.getInstance aan de code van de Dienst van identiteitskaart toe {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Stap 3: Voeg uw identiteitskaart van de Organisatie van het Experience Cloud aan Visitor.getInstance toe {#section-522b1877be9243c39b222859b821f0ce}
 
-Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie [!DNL Experience Cloud] door uw organisatie-id. `Visitor.getInstance` Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina van [!DNL Experience Cloud] . Zie ook, [ Beleid - de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie [!DNL Experience Cloud] door uw organisatie-id. `Visitor.getInstance` Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina van [!DNL Experience Cloud] . Zie ook, [ Beleid - de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=nl-NL). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 

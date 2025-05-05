@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Implementeer de dienst Identiteit Experience Cloud voor Analytics en Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Deze instructies zijn voor klanten Analytics en van de Audience Manager die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) geen markeringen van de Inzameling van 0&rbrace; Gegevens gebruiken.  Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
+Deze instructies zijn voor klanten Analytics en van de Audience Manager die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) geen markeringen van de Inzameling van 0&rbrace; Gegevens gebruiken.  Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Deze instructies zijn voor klanten Analytics en van de Audience Manager die de D
 
 ## Stap 1: Plan voor server-zij door:sturen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Naast de hier beschreven stappen, zouden klanten die [!DNL Analytics] en [!DNL Audience Manager] gebruiken aan server-zijdoor:sturen moeten migreren. Server-kant door:sturen laat u DIL (de code van de de gegevensinzameling van de Audience Manager) verwijderen en het vervangen met de [ Module van het Beheer van de Auditie ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Zie [ server-kant het door:sturen documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html) voor meer informatie.
+Naast de hier beschreven stappen, zouden klanten die [!DNL Analytics] en [!DNL Audience Manager] gebruiken aan server-zijdoor:sturen moeten migreren. Server-kant door:sturen laat u DIL (de code van de de gegevensinzameling van de Audience Manager) verwijderen en het vervangen met de [ Module van het Beheer van de Auditie ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=nl-NL). Zie [ server-kant het door:sturen documentatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=nl-NL) voor meer informatie.
 
 Het migreren aan server-zij door:sturen vereist planning en coördinatie. Dit proces omvat externe wijzigingen in uw sitecode en interne stappen die Adobe moet uitvoeren om uw account te kunnen aanbieden. Veel van deze migratieprocedures moeten parallel lopen en samen worden vrijgegeven. Het implementatiepad moet deze reeks gebeurtenissen volgen:
 
@@ -126,7 +126,7 @@ Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 * Experience Cloud-server-URL = URL van trackingserver
 * Beveiligde URL van server voor Experience Cloud = beveiligde URL van server bijhouden
 
-Als u niet zeker bent hoe te om uw het volgen server te vinden [ FAQ ](../faq-intro/faq.md) ziet en [ bevolkt correct de variabelen trackingServer en trackingServerSecure ](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Als u niet zeker bent hoe te om uw het volgen server te vinden [ FAQ ](../faq-intro/faq.md) ziet en [ bevolkt correct de variabelen trackingServer en trackingServerSecure ](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html#).
 
 ## Stap 6: Werk uw AppMeasurement.js- dossier bij {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -138,7 +138,7 @@ Voeg de hieronder getoonde functie `Visitor.getInstance` toe aan uw `AppMeasurem
 
 >[!IMPORTANT]
 >
->U moet nu de [!DNL Audience Manager] DIL-code verwijderen en deze vervangen door de Audience Management Module. Zie [ Server-zij het Door:sturen ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) voor instructies uitvoeren.
+>U moet nu de [!DNL Audience Manager] DIL-code verwijderen en deze vervangen door de Audience Management Module. Zie [ Server-zij het Door:sturen ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=nl-NL) voor instructies uitvoeren.
 
 ***(Facultatief, maar geadviseerd)* creeer een douaneprep &#x200B;**
 
@@ -158,7 +158,7 @@ Plaats het bestand ` [!UICONTROL VisitorAPI.js]` binnen de tags `<head>` op elke
 
 ## Stap 8: (Optioneel) Configureer een evaluatieperiode {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
+Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
 
 **Gedeeltelijke Implementatie**
 
@@ -180,7 +180,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 Sluit de respijtperiode af nadat de kolommen `post_visid_high` en `post_visid_low` door het gegevensinvoerproces kunnen worden gebruikt.
 
-Zie ook, [ de Verwijzing van de Kolom van Gegevens Clickstream ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Zie ook, [ de Verwijzing van de Kolom van Gegevens Clickstream ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=nl-NL).
 
 ## Stap 9: Test en implementeer ID-servicecode {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -191,10 +191,10 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [ het koekje van AMCV ](../introduction/cookies.md) in het domein waar u pagina&#39;s wordt ontvangen.
-* MID waarde in het het beeldverzoek van de Analyse met [ debugger van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* MID waarde in het het beeldverzoek van de Analyse met [ debugger van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=nl-NL).
 * Zie ook, [ Test en verifieer de Dienst van de Identiteit van het Experience Cloud ](../implementation-guides/test-verify.md).
 
-Om server-kant het door:sturen te verifiëren, zie [ hoe te om uw Server-kant het door:sturen Implementatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html) te verifiëren.
+Om server-kant het door:sturen te verifiëren, zie [ hoe te om uw Server-kant het door:sturen Implementatie ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=nl-NL) te verifiëren.
 
 **opstellen**
 

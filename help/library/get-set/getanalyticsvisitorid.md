@@ -43,7 +43,7 @@ De parameter `aid` wordt in een queryreeks weergegeven onder twee verschillende 
 De parameter `aid` wordt in een queryreeks weergegeven wanneer:
 
 * De [!DNL Experience Cloud] ID-service wordt correct geïmplementeerd.
-* De gebruiker die een plaats bezoekt heeft een reeds bestaande [!DNL Analytics] identiteitskaart die in hun [ s_vi koekje ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) wordt opgeslagen.
+* De gebruiker die een plaats bezoekt heeft een reeds bestaande [!DNL Analytics] identiteitskaart die in hun [ s_vi koekje ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=nl-NL#section-5d50a078de444d12b7d927d68ff3b679) wordt opgeslagen.
 
 **Geval 2**
 
@@ -51,4 +51,4 @@ U zult de `aid` parameter in een vraagkoord zien wanneer uw organisatie a [ resp
 
 >[!MORELIKETHIS]
 >
->* [ Cookies van Analytics ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [ Cookies van Analytics ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=nl-NL)

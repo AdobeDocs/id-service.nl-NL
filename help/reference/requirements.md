@@ -44,11 +44,11 @@ Als u de id-service wilt gebruiken, moet uw bedrijf zijn ingeschakeld voor de [!
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b> Toegelaten </b> </p> </td> 
-   <td colname="col2"> <p>Als uw bedrijf voor het <span class="keyword"> Experience Cloud </span> wordt toegelaten maar u hebt uw identiteitskaart van de Organisatie niet, zie <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisatorische IDs </a> (rol neer aan de sectie <i> vindt uw identiteitskaart van de Organisatie </i>). </p> </td> 
+   <td colname="col2"> <p>Als uw bedrijf voor het <span class="keyword"> Experience Cloud </span> wordt toegelaten maar u hebt uw identiteitskaart van de Organisatie niet, zie <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=nl-NL" format="https" scope="external"> Organisatorische IDs </a> (rol neer aan de sectie <i> vindt uw identiteitskaart van de Organisatie </i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> niet zeker </b> </p> </td> 
-   <td colname="col2"> <p> Als u niet de status <span class="keyword"> Experience Cloud </span> van uw bedrijf kent, vraag wie uw rekening van de Adobe beheert als de leden van uw bedrijf zich bij <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com </a> kunnen aanmelden gebruikend Adobe ID. Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Om organisatie identiteitskaart te vinden, zie de sectie van het "Beleid van de Pagina"in <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=en" format="https" scope="external"> Beleid van het Experience Cloud </a>. </p> </td> 
+   <td colname="col2"> <p> Als u niet de status <span class="keyword"> Experience Cloud </span> van uw bedrijf kent, vraag wie uw rekening van de Adobe beheert als de leden van uw bedrijf zich bij <a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com </a> kunnen aanmelden gebruikend Adobe ID. Als u dat kunt, wordt u toegelaten en kan een beheerder uw Organisatie-id bekijken. Om organisatie identiteitskaart te vinden, zie de sectie van het "Beleid van de Pagina"in <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=nl-NL" format="https" scope="external"> Beleid van het Experience Cloud </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> niet toegelaten </b> </p> </td> 
@@ -59,7 +59,7 @@ Als u de id-service wilt gebruiken, moet uw bedrijf zijn ingeschakeld voor de [!
 
 ## Analysevereisten: regionale gegevensverzameling (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle trackingservers zijn omgezet in RDC, zodat de Analytics tracking-server niet hoeft te worden gewijzigd. [ Meer info... ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)
+Alle trackingservers zijn omgezet in RDC, zodat de Analytics tracking-server niet hoeft te worden gewijzigd. [ Meer info... ](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=nl-NL)
 
 ## Codebibliotheken en versievereisten {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -87,7 +87,7 @@ In de volgende secties vindt u een overzicht van de minimale codesversies die ve
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html" format="https" scope="external"> AppMeasurement voor JavaScript </a> . </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL" format="https" scope="external"> AppMeasurement voor JavaScript </a> . </p> </td> 
    <td colname="col4"> <p>1.6.4 of hoger. </p> </td> 
   </tr> 
   <tr> 
@@ -95,21 +95,21 @@ In de volgende secties vindt u een overzicht van de minimale codesversies die ve
    <td colname="col4"> <p>H.27 </p> <p> <p>Opmerking: <span class="keyword"> Analytics </span> s_code version H.27 wordt niet meer ondersteund met de release van de ID-service versie 1.6.0. Voer een upgrade van uw code uit naar de nieuwste versie van het AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html" format="https" scope="external"> Videohartslag 2.x voor JavaScript </a> . </p> </td> 
+   <td colname="col3"> <p>Videohartslag </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL" format="https" scope="external"> Videohartslag 2.x voor JavaScript </a> . </p> </td> 
    <td colname="col4"> <p>2,0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js </span> </p> <p> Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external"> Data Integration Library </a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js </span> </p> <p> Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=nl-NL" format="https" scope="external"> Data Integration Library </a> (DIL). </p> </td> 
    <td colname="col4"> <p>5,0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Doel </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=en" format="https" scope="external"> mbox Code </a> . </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=nl-NL" format="https" scope="external"> mbox Code </a> . </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=en" format="https" scope="external"> at.js Implementation </a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js </span> </p> <p>Zie <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=nl-NL" format="https" scope="external"> at.js Implementation </a>. </p> </td> 
    <td colname="col4"> <p>0,9,1 </p> </td> 
   </tr> 
  </tbody> 
@@ -128,7 +128,7 @@ De id-service vereist minimaal de hieronder vermelde SDK-versies.
 
 De SDK-code moet zijn ingeschakeld voor de ID-service. Laat en download de recentste code van SDK voor elke app van uw [ Adobe Mobiele rekening van de Diensten ](https://mobilemarketing.adobe.com/) toe. Zie ook:
 
-* [ vorm de Opties van de Dienst van identiteitskaart van de Bezoeker SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [ vorm de Opties van de Dienst van identiteitskaart van de Bezoeker SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=nl-NL)
 * [ de methodes van SDK van Android ](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
 * [ de methodes van SKD van iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 

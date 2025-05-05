@@ -20,7 +20,7 @@ Apparaten die de VisitorAPI.js of SDK codebibliotheken niet kunnen gebruiken kun
 
 ![](assets/directSyntax.png)
 
-In dit syntaxisvoorbeeld identificeert het voorvoegsel `d_` de sleutel-waardeparen in de vraag als een systeem-vlakke variabele. U kunt tamelijk een paar `d_` parameters tot de dienst van identiteitskaart overgaan, maar geconcentreerd blijven op de zeer belangrijk-waardeparen zoals aangetoond in de code hierboven. Voor meer informatie over andere variabelen, zie [ Gesteunde Attributen voor vraag DCS API ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+In dit syntaxisvoorbeeld identificeert het voorvoegsel `d_` de sleutel-waardeparen in de vraag als een systeem-vlakke variabele. U kunt tamelijk een paar `d_` parameters tot de dienst van identiteitskaart overgaan, maar geconcentreerd blijven op de zeer belangrijk-waardeparen zoals aangetoond in de code hierboven. Voor meer informatie over andere variabelen, zie [ Gesteunde Attributen voor vraag DCS API ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=nl-NL).
 
 De id-service ondersteunt HTTP- en HTTPS-aanroepen. Gebruik HTTPS om gegevens van een beveiligde pagina door te geven.
 
@@ -57,7 +57,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net </span> </p> </td> 
-   <td colname="col2"> <p>Een verouderd domein dat wordt beheerd door <span class="keyword"> Adobe </span> . Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrip Vraag aan het Domein van de Index </a>. </p> </td> 
+   <td colname="col2"> <p>Een verouderd domein dat wordt beheerd door <span class="keyword"> Adobe </span> . Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL" format="https" scope="external"> Begrip Vraag aan het Domein van de Index </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid </span> </p> </td> 
@@ -87,7 +87,7 @@ De id-service retourneert gegevens in een JSON-object, zoals hieronder wordt wee
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS Gebied IDs, Locaties, en de Namen van de Gastheer </a>. </p> </td> 
+   <td colname="col2"> <p>De dienst van identiteitskaart is geografisch verdeeld en lading-evenwichtig systeem. Identiteitskaart identificeert het gebied van het gegevenscentrum dat de vraag behandelt. Zie <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=nl-NL" format="https" scope="external"> DCS Gebied IDs, Locaties, en de Namen van de Gastheer </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb </span> </p> </td> 

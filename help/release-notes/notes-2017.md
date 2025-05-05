@@ -191,7 +191,7 @@ Oplossing voor een probleem dat ertoe leidde dat de id-service redundante server
 
 **Nieuwe Documentatie**
 
-[ Gebruikend DNS Prefetch met Verschillende Oplossingen en de Diensten van het Experience Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
+[ Gebruikend DNS Prefetch met Verschillende Oplossingen en de Diensten van het Experience Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=nl-NL)
 
 ## Versie 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 

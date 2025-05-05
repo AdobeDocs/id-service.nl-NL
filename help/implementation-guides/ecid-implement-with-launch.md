@@ -17,7 +17,7 @@ Tags in Adobe Experience Platform vormen het belangrijkste hulpmiddel voor het i
 
 ## Informatie over Experience Platform-tags {#section-611711602854464ea351a4af80a8dafe}
 
-[ Markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) is de volgende generatie van het Adobe markering-beheer vermogen dat in Adobe Experience Cloud wordt gebouwd. Met platformtags kunnen clients:
+[ Markeringen in Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) is de volgende generatie van het Adobe markering-beheer vermogen dat in Adobe Experience Cloud wordt gebouwd. Met platformtags kunnen clients:
 
 * Stel cliënt-zijWebproducten op gebruikend integratie genoemd _uitbreidingen_.
 * Op consistente wijze gegevens vastleggen, definiëren, beheren en uitwisselen tussen marketing- en advertentieproducten van andere leveranciers en van Adobe.

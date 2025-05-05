@@ -33,7 +33,7 @@ Zie hieronder voor inspanningen met betrekking tot ITP- en ECID-bibliotheekgebru
 
 ITP 2.1 belemmert de mogelijkheid om cookies aan de clientzijde te schrijven, wat de mogelijkheid om klanten nauwkeurige informatie over het bijhouden van bezoekers te verstrekken, beperkt. Als zodanig wordt een wijziging geïntroduceerd in CNAME-trackingservers van de Adobe om de Experience Cloud-id (ECID) van de bezoeker op te slaan in een cookie van de eerste partij.
 
-Deze wijziging is alleen nuttig voor ECID-klanten die een Analytics CNAME gebruiken in de context van de eerste partij. Als u een klant van de Analyse bent die momenteel geen CNAME, of zelfs een klant niet-Analytics gebruikt, bent u nog verkiesbaar voor een verslag CNAME. De Zorg van de Klant van het contact of uw rekeningsvertegenwoordiger om het proces te beginnen om voor a [ CNAME ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html) te registreren.
+Deze wijziging is alleen nuttig voor ECID-klanten die een Analytics CNAME gebruiken in de context van de eerste partij. Als u een klant van de Analyse bent die momenteel geen CNAME, of zelfs een klant niet-Analytics gebruikt, bent u nog verkiesbaar voor een verslag CNAME. De Zorg van de Klant van het contact of uw rekeningsvertegenwoordiger om het proces te beginnen om voor a [ CNAME ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=nl-NL) te registreren.
 
 Voer een upgrade uit naar de ECID-bibliotheek v.4.3.0 + om deze wijziging te benutten.
 
@@ -49,7 +49,7 @@ Nadat een id-aanvraag is ingediend bij demdex.net en een ECID is opgehaald, word
 
 Voor dit nieuwe `s_ecid` cookie geldt dezelfde status als voor Weigeren als voor het AMCV-cookie. Als het ecid wordt gelezen uit het cookie van `s_ecid` , wordt demdex altijd direct aangeroepen om de laatste status van de optie om te weigeren voor die id op te halen en in het AMCV-cookie opgeslagen.
 
-Bovendien als uw consument uit Analytics het volgen via deze [ methode ](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html) heeft gekozen, zal dit `s_ecid` koekje worden geschrapt.
+Bovendien als uw consument uit Analytics het volgen via deze [ methode ](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html?lang=nl-NL) heeft gekozen, zal dit `s_ecid` koekje worden geschrapt.
 
 De naam van de trackingserver moet worden opgegeven bij het initialiseren van de bibliotheek met `trackingServer` of `trackingServerSecure` in de bibliotheek van VisitorJS. Dit moet overeenkomen met de `trackingServer` config in de Analytics-configuratie.
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht van Experience Cloud Identity Service
 
-De dienst van de Identiteit van het Experience Cloud laat het gemeenschappelijke identificatiekader voor de Diensten van de Toepassing van het Experience Cloud toe. U kunt de Dienst van de Identiteit van het Experience Cloud gebruiken om [ identiteitskaart van het Experience Cloud (ECID) ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html) te plaatsen.
+De dienst van de Identiteit van het Experience Cloud laat het gemeenschappelijke identificatiekader voor de Diensten van de Toepassing van het Experience Cloud toe. U kunt de Dienst van de Identiteit van het Experience Cloud gebruiken om [ identiteitskaart van het Experience Cloud (ECID) ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=nl-NL) te plaatsen.
 
 ECID is een naamruimte voor gedeelde identiteit die in Adobe Experience Platform- en Experience Cloud-toepassingen wordt gebruikt om het gedrag van bezoekers bij te houden en ervoor te zorgen dat elk apparaat een unieke id heeft die tijdens meerdere sessies kan blijven bestaan.
 

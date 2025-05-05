@@ -31,13 +31,13 @@ Met [!UICONTROL Opt-in] kunt u ook bepalen of tags worden geactiveerd voordat de
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Als u geen Experience Platform markeringen gebruikt, kunt u [!UICONTROL Opt-in] configuratie in de initialisering van het globale voorwerp van de Bezoeker plaatsen, zoals aangetoond in de [ documentatie ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=en).
+Als u geen Experience Platform markeringen gebruikt, kunt u [!UICONTROL Opt-in] configuratie in de initialisering van het globale voorwerp van de Bezoeker plaatsen, zoals aangetoond in de [ documentatie ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=nl-NL).
 
 ## [!UICONTROL Opt-In] op de pagina implementeren
 
 Al deze installatie- en achtergrondinformatie is precies in voorbereiding op het bieden van een interface voor bezoekers van de site die met toestemmingsopties kunnen worden weergegeven. Deze interface kan door u worden gebouwd, of u kunt een partner gebruiken CMP (het Platform van het Beheer van de Toestemming) om UI tot stand te brengen.
 
-Wanneer u een gebruikersinterface instelt om [!UICONTROL Opt-in] te gebruiken voor het verzamelen van toestemming, moet u deze zodanig configureren dat API&#39;s worden aangeroepen die aan [!UICONTROL Opt-in] zijn gekoppeld en moet u de gebruikersinterface informeren om toestemming te geven voor sommige of alle Adobe Experience Cloud-oplossingen. De gedetailleerde informatie betreffende deze APIs kan in de [ Opt-binnen documentatie van de Verwijzing ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=en) worden gevonden. Aanvullende informatie over Opt-in vindt u ook op de omliggende documentatiepagina&#39;s.
+Wanneer u een gebruikersinterface instelt om [!UICONTROL Opt-in] te gebruiken voor het verzamelen van toestemming, moet u deze zodanig configureren dat API&#39;s worden aangeroepen die aan [!UICONTROL Opt-in] zijn gekoppeld en moet u de gebruikersinterface informeren om toestemming te geven voor sommige of alle Adobe Experience Cloud-oplossingen. De gedetailleerde informatie betreffende deze APIs kan in de [ Opt-binnen documentatie van de Verwijzing ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=nl-NL) worden gevonden. Aanvullende informatie over Opt-in vindt u ook op de omliggende documentatiepagina&#39;s.
 
 ## [!UICONTROL Opt-In] Demo
 

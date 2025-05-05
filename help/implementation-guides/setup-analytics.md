@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Implementeer de dienst Identiteit Experience Cloud voor Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Deze instructies zijn voor klanten Analytics die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [ geen markeringen van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
+Deze instructies zijn voor klanten Analytics die de Dienst van de Identiteit van het Experience Cloud willen gebruiken en [ geen markeringen van de Inzameling van Gegevens ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL) gebruiken. Nochtans, adviseren wij sterk dat u markeringen gebruikt om de dienst van identiteitskaart uit te voeren. Met labels wordt de implementatieworkflow gestroomlijnd en wordt automatisch de juiste plaatsing van code en de juiste volgorde gegarandeerd.
 
 >[!IMPORTANT]
 >
@@ -89,7 +89,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Stap 3: Voeg uw identiteitskaart van de Organisatie van het Experience Cloud aan Visitor.getInstance toe {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie [!DNL Experience Cloud] door uw organisatie-id. `Visitor.getInstance` Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina van [!DNL Experience Cloud] . Zie ook, [ Beleid - de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
+Vervang `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` in de functie [!DNL Experience Cloud] door uw organisatie-id. `Visitor.getInstance` Als u uw organisatie-id niet kent, vindt u deze op de beheerpagina van [!DNL Experience Cloud] . Zie ook, [ Beleid - de Diensten van de Kern ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=nl-NL). De bewerkte functie kan er ongeveer zo uitzien als het onderstaande voorbeeld.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -125,7 +125,7 @@ Om te bepalen welke volgende servervariabelen moeten worden gebruikt:
 >* [!DNL Experience Cloud] server-URL = URL van traceringsserver
 >* [!DNL Experience Cloud] beveiligde URL van server = beveiligde URL van server bijhouden
 
-Als u niet zeker bent hoe te om uw het volgen server te vinden [ FAQ ](../faq-intro/faq.md) ziet en [ bevolkt correct de variabelen trackingServer en trackingServerSecure ](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Als u niet zeker bent hoe te om uw het volgen server te vinden [ FAQ ](../faq-intro/faq.md) ziet en [ bevolkt correct de variabelen trackingServer en trackingServerSecure ](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html#).
 
 ## Stap 5: Werk uw AppMeasurement.js of s_code.js- dossier bij {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -155,7 +155,7 @@ Verplaats deze code naar productie na het testen en controleren.
 
 ## Stap 7: (Optioneel) Configureer een evaluatieperiode {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
+Als om het even welk van deze gebruiksgevallen op uw situatie van toepassing zijn, vraag [&#128279;](https://helpx.adobe.com/nl/marketing-cloud/contact-support.html) de Zorg van de Klant om een tijdelijke [ respijtperiode ](../reference/analytics-reference/grace-period.md) te vestigen.  Respijtperioden kunnen maximaal 180 dagen duren. U kunt een respijtperiode verlengen als dat nodig is.
 
 **Gedeeltelijke Implementatie**
 
@@ -175,7 +175,7 @@ U hebt een respijtperiode nodig als u gegevens naar een intern systeem verzendt 
 
 Sluit de respijtperiode af nadat de kolommen `post_visid_high` en `post_visid_low` door het gegevensinvoerproces kunnen worden gebruikt.
 
-Zie, {de Verwijzing van de Kolom van Gegevens 0} Clikstream [&#128279;](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Zie, {de Verwijzing van de Kolom van Gegevens 0} Clikstream [&#128279;](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=nl-NL).
 
 **Ingestie van Gegevens Clickstream**
 
@@ -188,7 +188,7 @@ U kunt als volgt testen en opstellen.
 Als u de implementatie van uw id-service wilt testen, controleert u op het volgende:
 
 * [ het koekje van AMCV ](../introduction/cookies.md) in het domein waar uw pagina wordt ontvangen.
-* MID waarde in het [!DNL Analytics] beeldverzoek met het [ debugger hulpmiddel van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* MID waarde in het [!DNL Analytics] beeldverzoek met het [ debugger hulpmiddel van de Adobe ](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=nl-NL).
 
 Zie, [ Test en verifieer de Dienst van de Identiteit van het Experience Cloud ](../implementation-guides/test-verify.md).
 

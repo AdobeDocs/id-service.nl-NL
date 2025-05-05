@@ -115,7 +115,7 @@ In de volgende tabel worden enkele belangrijke kenmerken van het demdex-cookie w
 
 Voor informatie over informatie betreffende Demdex, bezoek de [ informatie van de het apparatenopslag van de Audience Manager ](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
 
-Voor verwante informatie, lees de documentatie over [ het begrip Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en).
+Voor verwante informatie, lees de documentatie over [ het begrip Vraag aan het Domein van de Index ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL).
 
 ## Experience Cloud-id genereren {#section-15f69c0bac394b4b9966a23fbc586d17}
 

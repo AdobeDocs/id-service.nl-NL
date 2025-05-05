@@ -72,7 +72,7 @@ Deze configuraties helpen het probleem op te lossen van het plaatsen van een de 
 
 >[!TIP]
 >
->U kunt deze configuraties ook willen uitvoeren wanneer u video in een iFrame met [ VideoHartslag ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) dient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
+>U kunt deze configuraties ook willen uitvoeren wanneer u video in een iFrame met [ VideoHartslag ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) dient. Voor een goede werking van het videolettertype is een id-service-id (de MID) vereist.
 
 **Geval van het Gebruik 1: Browser Blokkeert de Derde Koekjes van de Partij en de Dienst van identiteitskaart wordt uitgevoerd op iFrame en de Ouderlijke Pagina**
 
