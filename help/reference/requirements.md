@@ -129,8 +129,8 @@ De id-service vereist minimaal de hieronder vermelde SDK-versies.
 De SDK-code moet zijn ingeschakeld voor de ID-service. Laat en download de recentste code van SDK voor elke app van uw [ Adobe Mobiele rekening van de Diensten ](https://mobilemarketing.adobe.com/) toe. Zie ook:
 
 * [ vorm de Opties van de Dienst van identiteitskaart van de Bezoeker SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=nl-NL)
-* [ de methodes van SDK van Android ](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [ de methodes van SKD van iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [ de methodes van SDK van Android ](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=nl-NL)
+* [ de methodes van SKD van iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=nl-NL)
 
 >[!MORELIKETHIS]
 >
