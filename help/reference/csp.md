@@ -71,7 +71,7 @@ Voeg deze domeinnamen of URL&#39;s toe aan uw CSP voor elke Experience Cloud-opl
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
      <li>Als u Adobe Launch gebruikt om tags te implementeren, moet u ook <code>https://assets.adobedtm.com</code> toevoegen aan de lijst met domeinen.</li>
     </ul>
-    <p>De vraag aan het {<span class="codeph"> domein 0} demdex.net wordt gebruikt om de </span> Cookies en de Dienst van de Identiteit van Experience Cloud <a href="../introduction/cookies.md" format="dita" scope="local"> en voor de syncs van identiteitskaart te produceren. </a> Zie ook, <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external"> Begrijpend Vraag aan het Domein van de Index </a>.</p>
+    <p>De vraag aan het {<span class="codeph"> domein 0} demdex.net wordt gebruikt om de </span> Cookies en de Dienst van de Identiteit van Experience Cloud <a href="../introduction/cookies.md" format="dita" scope="local"> en voor de syncs van identiteitskaart te produceren. </a> Zie ook, <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=nl-NL" format="https" scope="external"> Begrijpend Vraag aan het Domein van de Index </a>.</p>
    </td>
   </tr>
   <tr>
